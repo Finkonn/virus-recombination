@@ -3,8 +3,8 @@
 1,AJ133358,ESP,Unknown,Unknown,Unknown,C,rp99,Unknown
 2,AJ133357,ESP,Unknown,Unknown,Unknown,C,C-s8c1,Unknown
 3,X00429,Unknown,Unknown,Unknown,Unknown,A10-61,Unknown,Unknown
-4,OK422491,IND,buffalo,2013,O,Unknown,FMDV/Goat/India/2013/Shahjadpur/P0,Unknown
-5,OK422490,IND,buffalo,Unknown,O,Unknown,FMDV/Goat/India/2013/Shahjadpur/P50-WT,Unknown
+4,OK422491,IND,water-buffalo,2013,O,Unknown,FMDV/Goat/India/2013/Shahjadpur/P0,Unknown
+5,OK422490,IND,water-buffalo,Unknown,O,Unknown,FMDV/Goat/India/2013/Shahjadpur/P50-WT,Unknown
 6,AH012985,KOR,Unknown,Unknown,O,PanAsia,O/SKR/2000,cattle
 7,AH012984,KOR,Unknown,Unknown,O,PanAsia,O/SKR/2002,pig
 8,MZ493234,PAK,cattle,2018,A,FMDV/A/ASIA/Iran-05/SIS-13,A_PAK_C8_2018-Clone-03,Unknown
@@ -17,7 +17,7 @@
 15,MH167962,UGA,cow,2015,O,Unknown,FMDV_O/NAP_189_P_2015,Unknown
 16,AY304994,Unknown,Unknown,Unknown,Asia 1,vaccine IND 63/72,Unknown,Unknown
 17,EF611987,UGA,Unknown,2006,Unknown,Unknown,O/Uganda/2006,bovine
-18,OK422489,IND,buffalo,2013,O,Unknown,FMDV/Goat/India/2013/Shahjadpur/P50-KO,Unknown
+18,OK422489,IND,water-buffalo,2013,O,Unknown,FMDV/Goat/India/2013/Shahjadpur/P50-KO,Unknown
 19,MZ090097,EGY,cattle,2018,SAT2,Unknown,FMDV/SAT2/EGY/Ismailia/2018,tongue
 20,MT018551,ISR,cattle,2018,Unknown,Unknown,329773,epithelium
 21,MT018550,ISR,cattle,2018,Unknown,Unknown,319463,epithelium
@@ -112,7 +112,7 @@
 110,ON652976,VNM,cow,2015,Unknown,Sea-97,A/VIT/239/2015,passaged probang
 111,ON652975,VNM,cow,2015,Unknown,Sea-97,A/VIT/216/2015,probang
 112,ON652974,VNM,cow,2015,Unknown,Sea-97,A/VIT/212/2015,passaged probang
-113,ON652973,VNM,buffalo,2015,Unknown,Sea-97,A/VIT/209/2015,probang
+113,ON652973,VNM,water-buffalo,2015,Unknown,Sea-97,A/VIT/209/2015,probang
 114,ON652972,VNM,cow,2015,Unknown,Sea-97,A/VIT/207/2015,passaged probang
 115,ON652971,VNM,cow,2015,Unknown,Sea-97,A/VIT/206/2015,passaged probang
 116,ON652970,VNM,cow,2015,Unknown,Sea-97,A/VIT/203/2015,passaged probang
@@ -255,7 +255,7 @@
 253,OQ401867,NER,cattle,2020,SAT2,Unknown,NIG-PL-149-PLBL-004GF-2020,epithelial tissue
 254,OQ401866,NER,cattle,2020,SAT2,Unknown,NIG-PL-148-PLBL-003GF-2020,epithelial tissue
 255,OQ401865,NER,cattle,2020,SAT2,Unknown,NIG-PL-147-PLBL-002GF-2020,epithelial tissue
-256,LC771233,IRQ,buffalo,2023,A,Unknown,BASRAHB1,tongue epithelium of Bubalus bubalis
+256,LC771233,IRQ,water-buffalo,2023,A,Unknown,BASRAHB1,tongue epithelium of Bubalus bubalis
 257,LC770123,IRQ,cattle,2023,SAT1,Unknown,BASRAH1C,tongue epithelium
 258,OP957418,BGD,cattle,2021,O,Unknown,BAN/MY/My-466/2021,tongue epithelium
 259,ON868623,VNM,pig,2017,O,Unknown,O/VIT/17-19073/2017,epithelial tissue
@@ -312,19 +312,19 @@
 310,ON868572,VNM,cow,2019,O,Unknown,O/VIT/DT-P-31-3/2019_pro,oropharyngeal fluid (probang sample)
 311,ON868571,VNM,cow,2018,O,Unknown,O/VIT/TN-P04-11/2018_pro,oropharyngeal fluid (probang sample)
 312,ON868570,VNM,Unknown,2019,O,Unknown,O/VIT/DL-P-246C-1/2019_pro,oropharyngeal fluid (probang sample)
-313,ON868569,VNM,buffalo,2018,O,Unknown,O/VIT/BK-P101-1B/2018_pro,oropharyngeal fluid (probang sample)
+313,ON868569,VNM,water-buffalo,2018,O,Unknown,O/VIT/BK-P101-1B/2018_pro,oropharyngeal fluid (probang sample)
 314,ON868568,VNM,cow,2018,O,Unknown,O/VIT/LA-P29-16/2018_pro,oropharyngeal fluid (probang sample)
 315,ON868567,VNM,water-buffalo,2018,O,Unknown,O/VIT/LS-P72-2/2018_pro,oropharyngeal fluid (probang sample)
 316,ON868566,VNM,cow,2018,O,Unknown,O/VIT/LA-P17-13/2018_pro,oropharyngeal fluid (probang sample)
 317,ON868565,VNM,cow,2019,O,Unknown,O/VIT/LAP03-13/2019_pro,oropharyngeal fluid (probang sample)
 318,ON868564,VNM,cow,2018,O,Unknown,O/VIT/TN-P20-14/2018_pro,oropharyngeal fluid (probang sample)
-319,ON868563,VNM,buffalo,2018,O,Unknown,O/VIT/BK-P100-1/2018_pro,oropharyngeal fluid (probang sample)
+319,ON868563,VNM,water-buffalo,2018,O,Unknown,O/VIT/BK-P100-1/2018_pro,oropharyngeal fluid (probang sample)
 320,ON868562,VNM,cow,2019,O,Unknown,O/VIT/DT-P-28-3/2019_pro,oropharyngeal fluid (probang sample)
 321,ON868561,VNM,cow,2019,O,Unknown,O/VIT/LAP03-21/2019_pro,oropharyngeal fluid (probang sample)
 322,ON868560,VNM,cow,2018,O,Unknown,O/VIT/LA-P09-15/2018_pro,oropharyngeal fluid (probang sample)
 323,ON868559,VNM,Unknown,2018,O,Unknown,O/VIT/DT-P55-1/2018_pro,oropharyngeal fluid (probang sample)
 324,ON868558,VNM,cow,2019,O,Unknown,O/VIT/DT-P28-4/2019_pro,oropharyngeal fluid (probang sample)
-325,ON868557,VNM,buffalo,2018,O,Unknown,O/VIT/18-11786/2018,epithelial tissue
+325,ON868557,VNM,water-buffalo,2018,O,Unknown,O/VIT/18-11786/2018,epithelial tissue
 326,ON868556,VNM,cow,2019,O,Unknown,O/VIT/LAP03-23/2019_pro,oropharyngeal fluid (probang sample)
 327,ON868555,VNM,cow,2018,O,Unknown,O/VIT/TN-P09-16/2018_pro,oropharyngeal fluid (probang sample)
 328,ON868554,VNM,pig,2018,O,Unknown,O/VIT/18-23369/2018,epithelial tissue
@@ -653,17 +653,17 @@
 651,MT431593,Unknown,cow,Unknown,O,Unknown,O/BR19-05_03dpi_CB-RF,"vesicle on coronary band, right front foot"
 652,MT431592,Unknown,cow,Unknown,O,Unknown,O/BR19-07_03dpi_CB-RH,"vesicle on coronary band, right hind foot"
 653,MT431591,Unknown,cow,Unknown,O,Unknown,O/BR19-05_03dpi_CB-LF,"vesicle on coronary band, left front foot"
-654,MW355680,ZWE,buffalo,1991,SAT3,Unknown,ZIM/P25/91 UR-7,probang
-655,MW355679,ZWE,buffalo,1990,SAT3,Unknown,ZIM/P26/90 HV-5,probang
-656,MW355678,ZMB,buffalo,1996,SAT3,Unknown,ZAM/P2/96 MUL-4,probang
+654,MW355680,ZWE,african-buffalo,1991,SAT3,Unknown,ZIM/P25/91 UR-7,probang
+655,MW355679,ZWE,african-buffalo,1990,SAT3,Unknown,ZIM/P26/90 HV-5,probang
+656,MW355678,ZMB,african-buffalo,1996,SAT3,Unknown,ZAM/P2/96 MUL-4,probang
 657,MW355677,ZAF,cattle,1979,SAT3,Unknown,SAR/9/79,epithelium
 658,MW355676,ZWE,cattle,1976,SAT3,Unknown,RHO/26/76,epithelium
 659,MW355675,ZWE,cattle,1975,SAT3,Unknown,RHO/3/75,vesicular fluid
 660,MW355674,BWA,cattle,1967,SAT3,Unknown,BOT/209/67,probang
 661,MW355673,ZWE,cattle,1989,SAT2,Unknown,ZIM/8/89,epithelium
-662,MW355672,ZMB,buffalo,1974,SAT2,Unknown,ZAM-BUFF/18/74,probang
+662,MW355672,ZMB,african-buffalo,1974,SAT2,Unknown,ZAM-BUFF/18/74,probang
 663,MW355671,MOZ,Unknown,1970,SAT2,Unknown,MOZ/1/70,epithelium
-664,MW355670,BWA,buffalo,1972,SAT2,Unknown,BOT-BUFF/7/72,probang
+664,MW355670,BWA,african-buffalo,1972,SAT2,Unknown,BOT-BUFF/7/72,probang
 665,MW355669,ZMB,cattle,1988,SAT1,Unknown,ZAM/2/88,epithelium
 666,MW355668,TZA,cattle,1980,SAT1,Unknown,TAN/3/80,epithelium
 667,MT412377,Unknown,cow,Unknown,A,Unknown,A/BR19-07_03dpi_SER,serum
@@ -752,9 +752,9 @@
 750,MT944981,IRN,dog,2016,O,Unknown,O/IRN/9/2016,BTy1 (first passage on bovine thyroid cells)
 751,MT944980,IRN,dog,2016,O,Unknown,O/IRN/9/2016,heart
 752,LC595604,Unknown,Unknown,Unknown,O,O/HKN/1/2015,Unknown,Unknown
-753,MN442540,ZAF,buffalo,1991,Unknown,Unknown,SAT1-KNP/196/91-Recombinant,KNP/196/91 passage PK = 1 / RS = 4 / Bovine = 1 / BHK = 4 / recBHK5
-754,MN442539,ZAF,buffalo,1991,Unknown,Unknown,SAT1-KNP/196/91-Pig,KNP/196/91 passage PK = 1 / IB-RS = 4 / Bovine = 1 / BHK = 4 / Pig = 3
-755,MN442538,ZAF,buffalo,1991,Unknown,Unknown,SAT1-KNP/196/91-Parental,KNP/196/91 passage PK = 1 / IB-RS = 4 / Bovine = 1 / BHK = 5
+753,MN442540,ZAF,african-buffalo,1991,Unknown,Unknown,SAT1-KNP/196/91-Recombinant,KNP/196/91 passage PK = 1 / RS = 4 / Bovine = 1 / BHK = 4 / recBHK5
+754,MN442539,ZAF,african-buffalo,1991,Unknown,Unknown,SAT1-KNP/196/91-Pig,KNP/196/91 passage PK = 1 / IB-RS = 4 / Bovine = 1 / BHK = 4 / Pig = 3
+755,MN442538,ZAF,african-buffalo,1991,Unknown,Unknown,SAT1-KNP/196/91-Parental,KNP/196/91 passage PK = 1 / IB-RS = 4 / Bovine = 1 / BHK = 5
 756,MT602092,KEN,cattle,2017,SAT2,Unknown,KEN/19/2017,epithelium
 757,MT602091,ETH,cattle,2018,SAT2,Unknown,ETH/11/2018,epithelium
 758,MT602090,ETH,cattle,2015,SAT2,Unknown,ETH/16/2015,vesicular fluid
@@ -772,7 +772,7 @@
 770,MT602078,ETH,cattle,2019,A,Unknown,ETH/19/2019,epithelium
 771,MT602077,ETH,cattle,2018,A,Unknown,ETH/2/2018,epithelium
 772,MT863269,EGY,Unknown,2019,O,Unknown,O/inactivated vaccine/Egypt/2019,inactivated vaccine
-773,MT863268,EGY,buffalo,2016,A,Unknown,A/buffalo/Damietta/Egypt/2016,Unknown
+773,MT863268,EGY,water-buffalo,2016,A,Unknown,A/buffalo/Damietta/Egypt/2016,Unknown
 774,MN227144,IND,cattle,2011,A,Unknown,PD68/2011,Unknown
 775,KY322680,VNM,cattle,2013,A,Unknown,VIT/42/2013,Unknown
 776,KY322679,THA,cattle,2014,A,Unknown,TAI/4/2014,Unknown
@@ -949,45 +949,45 @@
 947,MG372729,Unknown,Unknown,Unknown,C,Unknown,C3 INDAIAL,Unknown
 948,MG372728,Unknown,Unknown,Unknown,O,Unknown,O PENGHU,Unknown
 949,MG372727,ZAF,Unknown,Unknown,SAT 3,Unknown,SAT 3/2 S. Africa,Unknown
-950,MF372126,IND,cattle,1994,Asia1,Unknown,IND281/1994,Unknown
-951,MF372125,IND,cattle,2016,Asia1,Unknown,IND4/2016,Unknown
+950,MF372126,IND,gayal,1994,Asia1,Unknown,IND281/1994,Unknown
+951,MF372125,IND,gayal,2016,Asia1,Unknown,IND4/2016,Unknown
 952,MF461724,CHN,cattle,2017,Unknown,Unknown,O/XJ/CHA/2017,Unknown
 953,KY234502,CHN,pig,2015,O,O/GD/CHA/2015,Unknown,Unknown
 954,KY234501,CHN,cow,2011,O,O/CHA/7/2011,Unknown,Unknown
-955,MH053352,ZWE,buffalo,1990,SAT3,Unknown,ZIM/P27/90 (DSA-31),Unknown
+955,MH053352,ZWE,african-buffalo,1990,SAT3,Unknown,ZIM/P27/90 (DSA-31),Unknown
 956,MH053351,ZWE,cattle,1984,SAT3,Unknown,ZIM/2/84,Unknown
-957,MH053350,ZWE,buffalo,1983,SAT3,Unknown,ZIM/P6/83 (WN-19),Unknown
-958,MH053349,ZWE,buffalo,1983,SAT3,Unknown,ZIM/P6/83 (WN-16),Unknown
+957,MH053350,ZWE,african-buffalo,1983,SAT3,Unknown,ZIM/P6/83 (WN-19),Unknown
+958,MH053349,ZWE,african-buffalo,1983,SAT3,Unknown,ZIM/P6/83 (WN-16),Unknown
 959,MH053348,ZWE,cattle,1977,SAT3,Unknown,RHO/11/77,Unknown
 960,MH053347,ZWE,cattle,1976,SAT3,Unknown,RHO/23/76,Unknown
 961,MH053346,ZWE,cattle,1976,SAT3,Unknown,RHO/16/76,Unknown
 962,MH053345,ZWE,cattle,1975,SAT3,Unknown,RHO/5/75,Unknown
 963,MH053344,ZWE,cattle,1974,SAT3,Unknown,RHO/7/74,Unknown
 964,MH053343,ZWE,cattle,1934,SAT3,Unknown,RV/7/34,Unknown
-965,MH053342,ZMB,buffalo,1996,SAT3,Unknown,ZAM/P2/96 (NAN-11),Unknown
-966,MH053341,UGA,buffalo,1970,SAT3,Unknown,UGA-BUFF/27/70,Unknown
+965,MH053342,ZMB,african-buffalo,1996,SAT3,Unknown,ZAM/P2/96 (NAN-11),Unknown
+966,MH053341,UGA,african-buffalo,1970,SAT3,Unknown,UGA-BUFF/27/70,Unknown
 967,MH053340,MWI,cattle,1976,SAT3,Unknown,MAL/3/76,Unknown
-968,MH053339,BWA,buffalo,1970,SAT3,Unknown,BOT-BUFF/13/70,Unknown
+968,MH053339,BWA,african-buffalo,1970,SAT3,Unknown,BOT-BUFF/13/70,Unknown
 969,MH053338,BWA,cattle,1966,SAT3,Unknown,BOT/109/66,Unknown
-970,MH053337,UGA,buffalo,1970,SAT2,Unknown,UGA-BUFF/24/70,Unknown
-971,MH053336,UGA,buffalo,1970,SAT2,Unknown,UGA-BUFF/12/70,Unknown
+970,MH053337,UGA,african-buffalo,1970,SAT2,Unknown,UGA-BUFF/24/70,Unknown
+971,MH053336,UGA,african-buffalo,1970,SAT2,Unknown,UGA-BUFF/12/70,Unknown
 972,MH053335,ZWE,cattle,1965,SAT2,Unknown,SRHO/1/65,Unknown
 973,MH053334,ZMB,cattle,1964,SAT2,Unknown,NR/1/64,Unknown
 974,MH053333,ETH,cattle,1989,SAT2,Unknown,ETH/1/90,Unknown
-975,MH053332,BWA,buffalo,1974,SAT2,Unknown,BOT-BUFF/170/74,Unknown
-976,MH053331,BWA,buffalo,1972,SAT2,Unknown,BOT-BUFF/107/72,Unknown
-977,MH053330,BWA,buffalo,1969,SAT2,Unknown,BOT-BUFF/17/69,Unknown
-978,MH053329,BWA,buffalo,1969,SAT2,Unknown,BOT-BUFF/2/69,Unknown
-979,MH053328,BWA,buffalo,1968,SAT2,Unknown,BOT-BUFF/2/68,Unknown
-980,MH053327,UGA,buffalo,1970,SAT1,Unknown,UGA-BUFF/21/70,Unknown
-981,MH053326,UGA,buffalo,1970,SAT1,Unknown,UGA-BUFF/10/70,Unknown
+975,MH053332,BWA,african-buffalo,1974,SAT2,Unknown,BOT-BUFF/170/74,Unknown
+976,MH053331,BWA,african-buffalo,1972,SAT2,Unknown,BOT-BUFF/107/72,Unknown
+977,MH053330,BWA,african-buffalo,1969,SAT2,Unknown,BOT-BUFF/17/69,Unknown
+978,MH053329,BWA,african-buffalo,1969,SAT2,Unknown,BOT-BUFF/2/69,Unknown
+979,MH053328,BWA,african-buffalo,1968,SAT2,Unknown,BOT-BUFF/2/68,Unknown
+980,MH053327,UGA,african-buffalo,1970,SAT1,Unknown,UGA-BUFF/21/70,Unknown
+981,MH053326,UGA,african-buffalo,1970,SAT1,Unknown,UGA-BUFF/10/70,Unknown
 982,MH053325,UGA,cattle,1978,SAT1,Unknown,UGA/6/78,Unknown
 983,MH053324,UGA,cattle,1971,SAT1,Unknown,UGA/47/71,Unknown
 984,MH053323,TCD,cattle,1972,SAT1,Unknown,TCH/1/72,Unknown
-985,MH053322,NAM,buffalo,1989,SAT1,Unknown,SWA/2/89,Unknown
+985,MH053322,NAM,african-buffalo,1989,SAT1,Unknown,SWA/2/89,Unknown
 986,MH053321,MOZ,cattle,1981,SAT1,Unknown,MOZ/5/81,Unknown
 987,MH053320,KEN,cattle,1983,SAT1,Unknown,K303/83,Unknown
-988,MH053319,BWA,buffalo,1974,SAT1,Unknown,BOT-BUFF/62/74,Unknown
+988,MH053319,BWA,african-buffalo,1974,SAT1,Unknown,BOT-BUFF/62/74,Unknown
 989,MH053318,UGA,unknown,2002,O,Unknown,UGA/3/2002,Unknown
 990,MH053317,UGA,unknown,1998,O,Unknown,UGA/17/98,Unknown
 991,MH053316,UGA,cattle,1996,O,Unknown,UGA/5/96,Unknown
@@ -1131,14 +1131,14 @@
 1129,LC149624,JPN,pig,2010,O,O/JPN/2010-10/396V,Unknown,Unknown
 1130,LC149623,JPN,cow,2010,O,O/JPN/2010-9/1S,Unknown,Unknown
 1131,LC149622,JPN,cow,2010,O,O/JPN/2010-8/1S,Unknown,Unknown
-1132,LC149621,JPN,water-buffalo,2010,O,O/JPN/2010-6/1S,Unknown,Unknown
+1132,LC149621,JPN,wild-water-buffalo,2010,O,O/JPN/2010-6/1S,Unknown,Unknown
 1133,LC149620,JPN,cow,2010,O,O/JPN/2010-5/6S,Unknown,Unknown
 1134,LC149619,JPN,cow,2010,O,O/JPN/2010-3/2S,Unknown,Unknown
 1135,LC149618,JPN,cow,2010,O,O/JPN/2010-2/5S,Unknown,Unknown
 1136,LC149617,JPN,cow,2010,O,O/JPN/2010-1/14C,Unknown,Unknown
-1137,KY446903,PAK,buffalo,2005,O,Unknown,FBD/QOL-UVAS-Pak/2005,epithelial blisters
-1138,KY446902,PAK,buffalo,2005,A,Unknown,Hafizabad/QOL-UVAS-Pak/2005,oral blisters
-1139,KY446901,PAK,buffalo,2006,Asia-1,Unknown,Mazbi/QOL-UVAS-Pak/2006,oral blisters
+1137,KY446903,PAK,water-buffalo,2005,O,Unknown,FBD/QOL-UVAS-Pak/2005,epithelial blisters
+1138,KY446902,PAK,water-buffalo,2005,A,Unknown,Hafizabad/QOL-UVAS-Pak/2005,oral blisters
+1139,KY446901,PAK,water-buffalo,2006,Asia-1,Unknown,Mazbi/QOL-UVAS-Pak/2006,oral blisters
 1140,KY657269,VNM,pig,2015,O,O/VIT/16451DLBPP04/2015,Unknown,Unknown
 1141,KY086466,KOR,pig,2016,O,O/GC/SKR/2016,Unknown,Unknown
 1142,KY086465,KOR,pig,2016,O,O/GJ/SKR/2016,Unknown,Unknown
@@ -1213,20 +1213,20 @@
 1211,KX002178,ARG,cattle,2001,A,A/Arg/01,A/129_LPam_Capital,Unknown
 1212,KX002177,ARG,cattle,2001,A,A/Arg/01,A/1185_ER_Par,Unknown
 1213,KX002176,ARG,cattle,2001,A,A/Arg/01,A/1155_BsAs_MCh,Unknown
-1214,KT968663,CHN,cattle,2013,A,Unknown,A/HY/CHA/2013,Unknown
+1214,KT968663,CHN,yak,2013,A,Unknown,A/HY/CHA/2013,Unknown
 1215,KU127247,SAU,cattle,2015,A,Unknown,SAU/1/2015,Unknown
 1216,KU360085,CHN,pig,2015,Asia l,MDV HN/CHA/06,Unknown,Unknown
 1217,HQ268509,VNM,Unknown,2004,Unknown,Unknown,VIT_4/2004,Unknown
 1218,LC036265,JPN,cattle,2010,O,O/JPN/2010 290-1E,Unknown,Unknown
-1219,KR108950,ZAF,buffalo,2009,SAT3,Unknown,KNP-10-90,Unknown
-1220,KR108949,ZAF,buffalo,2009,SAT2,Unknown,KNP-19-89,Unknown
-1221,KR108948,ZAF,buffalo,2009,SAT1,Unknown,KNP/196/91/1,Unknown
+1219,KR108950,ZAF,african-buffalo,2009,SAT3,Unknown,KNP-10-90,Unknown
+1220,KR108949,ZAF,african-buffalo,2009,SAT2,Unknown,KNP-19-89,Unknown
+1221,KR108948,ZAF,african-buffalo,2009,SAT1,Unknown,KNP/196/91/1,Unknown
 1222,HQ832592,IND,cattle,2009,A,Unknown,IND 17/2009,Unknown
 1223,HQ832591,IND,cattle,2008,A,Unknown,IND 437/2008,Unknown
 1224,HQ832590,IND,cattle,2007,A,Unknown,IND 245/2007,Unknown
 1225,HQ832589,IND,cattle,2006,A,Unknown,IND 109/2006,Unknown
 1226,HQ832588,IND,cattle,2005,A,Unknown,IND 88/2006,Unknown
-1227,HQ832587,IND,bullock,2005,A,Unknown,IND 50/2006,Unknown
+1227,HQ832587,IND,cattle,2005,A,Unknown,IND 50/2006,Unknown
 1228,HQ832586,IND,Unknown,2006,A,Unknown,IND 43/2006,Unknown
 1229,HQ832585,IND,Unknown,2005,A,Unknown,IND 26/2006,Unknown
 1230,HQ832584,IND,cattle,2005,A,Unknown,IND 22/2006,Unknown
@@ -1239,7 +1239,7 @@
 1237,HQ832577,IND,Unknown,1999,A,Unknown,IND 110/1999,Unknown
 1238,HQ832576,IND,Unknown,1990,A,Unknown,IND 21/1990,Unknown
 1239,KC412634,CHN,pig,2006,Asia1,Unknown,Asia1/HN/2006,Unknown
-1240,KT003716,PAK,buffalo,2005,O,Unknown,Nari/UVAS-Pak/2005,Unknown
+1240,KT003716,PAK,water-buffalo,2005,O,Unknown,Nari/UVAS-Pak/2005,Unknown
 1241,KJ608371,VNM,cattle,2013,A,A/VN/T11D/2013,Unknown,Unknown
 1242,KP940474,EGY,cattle,2014,A,Unknown,FMD/A/El-Fayoum/Egypt/2014,tongue epithelium
 1243,KP940473,EGY,cattle,2014,O,Unknown,FMD/O/Dakahlia/Egypt/2014,tongue epithelium
@@ -1424,9 +1424,9 @@
 1422,GU931682,CHN,cow,2005,Unknown,Unknown,Asia1/YS/CHA/05,Unknown
 1423,HQ113233,AFG,cow,2009,Asia 1,Unknown,Asia1/BAM/AFG/L-590/2009,Unknown
 1424,HQ113232,PAK,cow,2009,O,Panasia III,O/ISL/PAK/L1573/2009,Unknown
-1425,HM067706,UGA,buffalo,2007,SAT 1,SAT 1 Uga 1/07,Buffalo 17 QE,Unknown
-1426,HM067705,UGA,buffalo,2007,SAT 2,SAT 2 Uga 1/07,Buffalo 10 QE,Unknown
-1427,HM067704,UGA,buffalo,2007,SAT 2,SAT 2 Uga 2/07,Buffalo 6 QE,Unknown
+1425,HM067706,UGA,african-buffalo,2007,SAT 1,SAT 1 Uga 1/07,Buffalo 17 QE,Unknown
+1426,HM067705,UGA,african-buffalo,2007,SAT 2,SAT 2 Uga 1/07,Buffalo 10 QE,Unknown
+1427,HM067704,UGA,african-buffalo,2007,SAT 2,SAT 2 Uga 2/07,Buffalo 6 QE,Unknown
 1428,GQ452295,VNM,cattle,2007,Asia 1,Unknown,Asia1/Vietnam/QuangTri/2007,Unknown
 1429,HM008917,CHN,pig,2005,O,O/YS/CHA/05,Unknown,Unknown
 1430,HQ412603,CHN,pig,2000,O,O/YM/YN/2000,Unknown,foot epithelial tissue from swine displaying clinical symptoms of foot and mouth disease

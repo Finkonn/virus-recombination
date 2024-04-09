@@ -10,7 +10,7 @@
 (^|\s|\()bovine($|\s|\)|;),cow
 (^|\s|\()Branta canadensis($|\s|\)|;),goose
 (^|\s|\()broiler($|\s|\)|;),chicken
-(^|\s|\()Bubalus bubalis($|\s|\)|;),buffalo
+(^|\s|\()Bubalus bubalis($|\s|\)|;),water-buffalo
 (^|\s|\()Calidris acuminata($|\s|\)|;),sandpiper
 (^|\s|\()[Cc]amel($|\s|\)|;),camel
 (^|\s|\()[Cc]amelus dromedarius($|\s|\)|;),camel
@@ -142,12 +142,13 @@ Camelus bactrianus,camel;
 \b[Ww]ild\s+gazelle\b,gazelle;
 Buffalo,buffalo;
 Cattle,cattle;
-Syncerus caffer,buffalo;
+Syncerus caffer,african-buffalo;
 Ankole cow,cow;
 Capra aegagrus hircus,goat;
-Bos frontalis,cattle;
+Bos frontalis,gayal;
 swamp buffalo,water-buffalo;
 wild [Bb]oar,pig;
 Bos Taurus,cow;
-Bubalus arnee,water-buffalo;
-Bos grunniens,cattle;
+Bubalus arnee,wild-water-buffalo;
+Bos grunniens,yak;
+bullock,cattle;
