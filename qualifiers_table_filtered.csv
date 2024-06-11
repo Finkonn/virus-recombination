@@ -731,11 +731,11 @@ MN062579,IRN,cattle,2010,O,O/KHO/IRN/L1/2010,Unknown,Unknown,O,Unknown
 MN062578,AFG,Unknown,Unknown,O,O/KAB/AFG/LI-709/2009,Unknown,Rescued from O/KAB/AFG/L2826/2009,O,Unknown
 LC483874,THA,cow,2007,A,SEA-97,Unknown,Unknown,A,Unknown
 MK088170,BGD,cattle,2016,O,Unknown,BAN/TA/Dh-301/2016,tongue epithelium,O,Unknown
-MN250318,VNM,pig,2019,O/CATHAY,Unknown,O/VIT/19-005/2019,Unknown,O,Unknown
-MN250317,VNM,pig,2018,O/CATHAY,Unknown,O/VIT/18CD-1610.2/2018,Unknown,O,Unknown
-MN250316,VNM,pig,2018,O/CATHAY,Unknown,O/VIT/18-5490/2018,Unknown,O,Unknown
-MN250315,VNM,pig,2018,O/CATHAY,Unknown,O/VIT/18-3766/2018,Unknown,O,Unknown
-MN250314,VNM,pig,2017,O/CATHAY,Unknown,O/VIT/17-19073/2017,Unknown,O,Unknown
+MN250318,VNM,pig,2019,O/CATHAY,Unknown,O/VIT/19-005/2019,Unknown,O-CATHAY,O-CATHAY
+MN250317,VNM,pig,2018,O/CATHAY,Unknown,O/VIT/18CD-1610.2/2018,Unknown,O-CATHAY,O-CATHAY
+MN250316,VNM,pig,2018,O/CATHAY,Unknown,O/VIT/18-5490/2018,Unknown,O-CATHAY,O-CATHAY
+MN250315,VNM,pig,2018,O/CATHAY,Unknown,O/VIT/18-3766/2018,Unknown,O-CATHAY,O-CATHAY
+MN250314,VNM,pig,2017,O/CATHAY,Unknown,O/VIT/17-19073/2017,Unknown,O-CATHAY,O-CATHAY
 MN275121,CMR,cow,2016,Unknown,Unknown,SAT1/CAR/2186/2016,Unknown,SAT1,Unknown
 MN275120,CMR,cow,2016,Unknown,Unknown,SAT1/CAR/2101/2016,Unknown,SAT1,Unknown
 MN275119,CMR,cow,2016,Unknown,Unknown,SAT1/CAR/171/2016,Unknown,SAT1,Unknown
@@ -1356,7 +1356,7 @@ FJ542368,GBR,cattle,2001,Unknown,Unknown,UKG/1734/2001,Unknown,O,Unknown
 FJ542367,GBR,cattle,2001,Unknown,Unknown,UKG/1558/2001,Unknown,O,Unknown
 FJ542366,GBR,sheep,2001,Unknown,Unknown,UKG/1450/2001,Unknown,O,Unknown
 FJ542365,GBR,cattle,2001,Unknown,Unknown,UKG/417/2001,Unknown,O,Unknown
-EU214601,GBR,sheep,2001,Pan Asia O,UKG/8098/2001,Unknown,epithelium tissue,O,Unknown
+EU214601,GBR,sheep,2001,Pan Asia O,UKG/8098/2001,Unknown,epithelium tissue,Pan-Asia-O,Pan-Asia-O
 EU140964,ARE,Unknown,Unknown,Unknown,UAE 7/99,Unknown,Unknown,O,Unknown
 EF614457,KOR,cattle,Unknown,O,O/SKR/14/02,Unknown,Unknown,O,Unknown
 EF494488,PAK,cattle,2006,Unknown,Unknown,PAK5/2006,epithelium,A,Unknown
@@ -1739,16 +1739,16 @@ MH746921,USA,cow,2017,Unknown,Inoculum-A24-BP2,Unknown,Unknown,A,Unknown
 EU400597,CHN,Unknown,Unknown,O,O/HK/2001,Unknown,vesicle from cloven-hoofed animal,O,Unknown
 AY686687,Unknown,Unknown,Unknown,Unknown,Unknown,O/ES/2001,Unknown,O,Unknown
 AF377945,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,O,Unknown
-EF552697,GBR,sheep,2001,Pan Asia O,UKG/5681/2001,Unknown,infected premise number 1378,O,Unknown
-EF552696,GBR,cattle,2001,Pan Asia O,UKG/5470/2001,Unknown,infected premise number 1256,O,Unknown
-EF552695,GBR,sheep,2001,Pan Asia O,UKG/9443/2001,Unknown,infected premise number 1619,O,Unknown
-EF552694,GBR,cattle,2001,Pan Asia O,UKG/4998/2001,Unknown,infected premise number 1182,O,Unknown
-EF552693,GBR,cattle,2001,Pan Asia O,UKG/4014/2001,Unknown,infected premise number 913,O,Unknown
-EF552692,GBR,sheep,2001,Pan Asia O,UKG/7299/2001,Unknown,infected premise number 1439,O,Unknown
-EF552691,GBR,cattle,2001,Pan Asia O,UKG/9161/2001,Unknown,infected premise number 1583,O,Unknown
-EF552690,GBR,cattle,2001,Pan Asia O,UKG/7039/2001,Unknown,infected premise number 1404,O,Unknown
-EF552689,GBR,sheep,2001,Pan Asia O,UKG/4141/2001,Unknown,infected premise number 927,O,Unknown
-EF552688,GBR,sheep,2001,Pan Asia O,UKG/3952/2001,Unknown,infected premise number 878,O,Unknown
+EF552697,GBR,sheep,2001,Pan Asia O,UKG/5681/2001,Unknown,infected premise number 1378,Pan-Asia-O,Pan-Asia-O
+EF552696,GBR,cattle,2001,Pan Asia O,UKG/5470/2001,Unknown,infected premise number 1256,Pan-Asia-O,Pan-Asia-O
+EF552695,GBR,sheep,2001,Pan Asia O,UKG/9443/2001,Unknown,infected premise number 1619,Pan-Asia-O,Pan-Asia-O
+EF552694,GBR,cattle,2001,Pan Asia O,UKG/4998/2001,Unknown,infected premise number 1182,Pan-Asia-O,Pan-Asia-O
+EF552693,GBR,cattle,2001,Pan Asia O,UKG/4014/2001,Unknown,infected premise number 913,Pan-Asia-O,Pan-Asia-O
+EF552692,GBR,sheep,2001,Pan Asia O,UKG/7299/2001,Unknown,infected premise number 1439,Pan-Asia-O,Pan-Asia-O
+EF552691,GBR,cattle,2001,Pan Asia O,UKG/9161/2001,Unknown,infected premise number 1583,Pan-Asia-O,Pan-Asia-O
+EF552690,GBR,cattle,2001,Pan Asia O,UKG/7039/2001,Unknown,infected premise number 1404,Pan-Asia-O,Pan-Asia-O
+EF552689,GBR,sheep,2001,Pan Asia O,UKG/4141/2001,Unknown,infected premise number 927,Pan-Asia-O,Pan-Asia-O
+EF552688,GBR,sheep,2001,Pan Asia O,UKG/3952/2001,Unknown,infected premise number 878,Pan-Asia-O,Pan-Asia-O
 AY593809,ARG,Unknown,Unknown,C,C5 Argentina,c5arg iso60,Unknown,C,Unknown
 AY593808,ARG,Unknown,Unknown,C,C4 Argentina,C4 Tierra del Fuego iso2,Unknown,C,Unknown
 AY593807,BRA,Unknown,Unknown,C,C3 Resende,c3resende iso1,Unknown,C,Unknown

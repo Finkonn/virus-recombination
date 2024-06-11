@@ -78,9 +78,12 @@ def genotyping(rep_in, tree_in, csv_in):
                 if record.id.endswith('Unknown'):              
                     record.id = record.id[:-7] + names_dict[seq_name]
                     unknown_counter += 1
-
                 else: 
-                    if record.id.split('/')[-1] != names_dict[seq_name]:
+                    if record.id.split('/')[-1] != names_dict[seq_name] and record.id.split('/')[-1] == 'CATHAY':
+                            record.id = record.id[:-7] + '-' + 'CATHAY'
+                    elif record.id.split('/')[-1] != names_dict[seq_name] and record.id.split('/')[-1] == 'Pan-Asia-O':
+                            pass
+                    elif record.id.split('/')[-1] != names_dict[seq_name]:
                         print('Serotype conflict: ', record.id)
                         print('Old serotype: ', record.id.split('/')[-1])
                         print('New serotype: ', names_dict[seq_name])

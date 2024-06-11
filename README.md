@@ -30,3 +30,12 @@ Using script **genotyping.py** to map colors from .nexus tree to certain serotyp
 genotyping.py [-h] -in_rep INPUT_REP_FASTA -in_tree INPUT_FILE_TREE
                      -in_csv INPUT_FILE_CSV
 ```
+
+## Ambiguous Segment Length Plotter
+
+This script plots the distribution of the longest ambiguous segment lengths in sequences from a given FASTA file. The script reads a FASTA file, identifies segments with ambiguous nucleotide characters (R, Y, S, W, K, M, B, D, H, V, N), and plots a histogram showing the distribution of the lengths of these ambiguous segments.
+
+### Usage
+```
+max_ambiguous_length.py [-h] -input INPUT
+```
