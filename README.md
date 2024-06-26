@@ -39,3 +39,18 @@ This script plots the distribution of the longest ambiguous segment lengths in s
 ```
 max_ambiguous_length.py [-h] -input INPUT
 ```
+
+## Remove similar sequences
+
+Script **remove_similar_sequences.py** uses the **distance_table.csv** obtained from MEGA, to remove all sequences that are similar in an alignment up to a certain threshold. 
+
+### Usage 
+```
+-t, --distance_table: Path to the distance table CSV file. (Required)
+-i, --input_fasta: Path to the input FASTA file. (Required)
+-o, --output_fasta: Path to the output FASTA file. (Optional)
+--threshold: Threshold for distance to remove sequences. Default is 0.03. (Optional)
+```
+```
+remove_similar_sequences.py -t ../distance_table.csv -i ../Sequences/filtered_alignment_no_ambiguous_fewer_gaps.fasta
+```
