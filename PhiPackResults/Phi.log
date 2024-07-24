@@ -1,0 +1,36 @@
+Reading sequence file no_similar.fasta
+Allocating space for 333 taxa and 7332 sites
+Alignment looks like a valid DNA alignment.
+Estimated diversity is (pairwise deletion - ignoring missing/ambig): 19.0%
+Found 3956 informative sites.
+Writing alignment of informative sites to: Phi.inf.sites
+Writing list of informative sites to:      Phi.inf.list
+ 0   (19.2): oooooooooo
+ 1   (30.7): oooooooooooooooo
+ 2   (17.3): ooooooooo
+ 3   (16.7): ooooooooo
+ 4   ( 4.5): ooo
+ 5   ( 3.5): oo
+ 6   ( 3.0): oo
+ 7   ( 2.0): oo
+ 8   ( 1.8): o
+ 9   ( 1.8): o
+
+Using a window size of 100 with k as 54
+
+Calculating analytical mean and variance
+
+                      PHI Values
+                      ----------
+              Analytical    (0) Permutations
+
+Mean:          2.10e+00          --
+Variance:      8.14e-06          --
+Observed:      2.11e+00          2.11e+00   
+
+
+       p-Value(s)
+       ----------
+
+PHI (Normal):        1.00e+00
+
