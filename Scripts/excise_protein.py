@@ -18,12 +18,9 @@ def extract_sequences(input_fasta, input_table, product):
 
     # Open input and output FASTA files
     with open(input_fasta, "r") as infile, open(output_fasta, "w") as outfile:
-        # Parse input FASTA file
         for record in SeqIO.parse(infile, "fasta"):
-            # Extract sequence based on coordinates
-            extracted_seq = record.seq[start_coordinate-1:end_coordinate]  # Adjust for 0-based indexing
+            extracted_seq = record.seq[start_coordinate-1:end_coordinate] 
 
-            # Write the extracted sequence to the output file with the original header
             outfile.write(f">{record.id}\n")
             outfile.write(f"{extracted_seq}\n")
 
