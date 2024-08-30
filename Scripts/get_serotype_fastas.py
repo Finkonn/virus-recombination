@@ -24,6 +24,6 @@ def split_fasta_by_serotype(input_fasta, output_dir):
         with open(output_file, "w") as output_handle:
             SeqIO.write(records, output_handle, "fasta")
 
-input_fasta = "../Sequences/genotyped.fasta"
-output_dir = "../Sequences/serotype_fastas_dir"
+input_fasta = "Sequences/genotyped.fasta"
+output_dir = "Sequences/serotype_fastas_dir"
 split_fasta_by_serotype(input_fasta, output_dir)

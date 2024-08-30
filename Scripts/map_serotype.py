@@ -24,4 +24,4 @@ def map_serotype(fasta_file, table_file, output_fasta):
     with open(output_fasta, 'w') as output_handle:
         SeqIO.write(updated_records, output_handle, 'fasta')
 
-map_serotype('../Sequences/filtered_alignment_no_ambiguous_fewer_gaps.fasta', '../qualifiers_table_filtered.csv','../Sequences/genotyped.fasta')
+map_serotype('Sequences/filtered_alignment_no_ambiguous_fewer_gaps.fasta', 'qualifiers_table_filtered.csv','Sequences/genotyped.fasta')
