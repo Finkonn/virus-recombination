@@ -1,4 +1,5 @@
 import os
+import argparse
 from Bio import SeqIO
 
 def split_fasta_by_serotype(input_fasta, output_dir):
@@ -24,6 +25,16 @@ def split_fasta_by_serotype(input_fasta, output_dir):
         with open(output_file, "w") as output_handle:
             SeqIO.write(records, output_handle, "fasta")
 
-input_fasta = "Sequences/genotyped.fasta"
-output_dir = "Sequences/serotype_fastas_dir"
-split_fasta_by_serotype(input_fasta, output_dir)
+    print(f"FASTA files have been written to the directory: {output_dir}")
+
+def main():
+    parser = argparse.ArgumentParser(description='Split a FASTA file by serotype and save each serotype in a separate file.')
+    parser.add_argument('-i', '--input_fasta', required=True, help='Input FASTA file with sequences.')
+    parser.add_argument('-o', '--output_dir', required=True, help='Output directory where serotype-specific FASTA files will be saved.')
+
+    args = parser.parse_args()
+
+    split_fasta_by_serotype(args.input_fasta, args.output_dir)
+
+if __name__ == '__main__':
+    main()

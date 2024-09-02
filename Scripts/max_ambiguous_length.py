@@ -29,8 +29,3 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     plot_ambiguous_segment_lengths(args.input)
-
-
-#plot_ambiguous_segment_lengths('../aln_repo/VP1.fasta')
-#plot_ambiguous_segment_lengths('../RdRp.fasta')
-#plot_ambiguous_segment_lengths('../filtered_CDS_alignment.fasta')
