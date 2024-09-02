@@ -5,7 +5,6 @@ from matplotlib import pyplot as plt
 '''
  Plots distribution of ambiguous nucleotides in sequences
 
-
 Input:
 input_file - file with sequences in fasta format
 
