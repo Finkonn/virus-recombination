@@ -2,20 +2,16 @@ import argparse
 import pandas as pd
 
 def color_nexus(excel_file, nexus_input_file, nexus_output_file, color="#FF0000"):
-    # Read the Excel file
     df = pd.read_excel(excel_file)
 
-    # Collect accessions that match the 'Yes' condition
     accessions = set()
     for num, value in enumerate(df['Match']):
         if value == 'Yes':
             accessions.add(df['Accession no.'].iloc[num])
 
-    # Read the input Nexus file
     with open(nexus_input_file, 'r') as file:
         nexus_lines = file.readlines()
 
-    # Write the modified Nexus file with colored lines
     with open(nexus_output_file, 'w') as output_file:
         for line in nexus_lines:
             if line.strip().startswith(tuple(accessions)):
