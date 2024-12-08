@@ -1,0 +1,32 @@
+X00429/Unknown/Unknown/Unknown/A
+MK341545/ARG/Unknown/Unknown/A
+MK341544/ARG/Unknown/Unknown/A
+MG372729/Unknown/Unknown/Unknown/C
+MG372728/Unknown/Unknown/Unknown/O
+MG372727/ZAF/Unknown/Unknown/SAT3
+KY404935/ARG/Unknown/Unknown/A
+KY404934/ARG/Unknown/Unknown/A
+EU140964/ARE/Unknown/Unknown/O
+AY593839/Unknown/Unknown/Unknown/SAT1
+AY593819/ARG/Unknown/Unknown/O
+AY593816/GBR/Unknown/Unknown/O
+AY593815/GBR/Unknown/Unknown/O
+AY593778/ESP/Unknown/Unknown/A
+AY593777/DEU/Unknown/Unknown/A
+FJ824812/ESP/Unknown/Unknown/C
+DQ478936/CHN/cattle/Unknown/O
+AY359854/Unknown/Unknown/Unknown/O возможно вакцина
+AF506822/Unknown/Unknown/Unknown/O
+AF274010/Unknown/Unknown/Unknown/C
+DQ119643/Unknown/Unknown/Unknown/O
+AM409325/Unknown/Unknown/Unknown/C
+AJ320488/BRA/Unknown/Unknown/O возможно вакцина
+OV121130/Unknown/Unknown/2001/O клон
+AF189157/Unknown/Unknown/Unknown/O
+APHA12CDR/Unknown/Unknown/Unknown/O
+X00871/Unknown/Unknown/Unknown/O
+AM503966/Unknown/Unknown/Unknown/C
+AM503965/Unknown/Unknown/Unknown/C
+AM409190/Unknown/Unknown/Unknown/C
+AJ007572/Unknown/Unknown/Unknown/C клон
+AJ007347/Unknown/Unknown/Unknown/C
