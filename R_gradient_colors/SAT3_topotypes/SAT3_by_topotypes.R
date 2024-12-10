@@ -83,7 +83,8 @@ plot_tree = function(tree_file, meta){
     
     scale_color_manual(values=info$color) + 
     theme(legend.position = "none") +
-    xlim_expand(1, panel = 'label')
+    xlim(NA, max(tree_rooted$edge.length) + 2)
+    #xlim_expand(1, panel = 'label')
   
   return(t)
   
