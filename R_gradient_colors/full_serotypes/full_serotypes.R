@@ -35,7 +35,7 @@ write.table(all_taxa, file="tree_order_2117_2201.csv", col.names=F, row.names=F)
 
 info_upd = add_colors2meta("order_files.txt", "../metadata.csv")
 info_upd = info_upd %>% arrange(GBAC)
-write.csv(info_upd, "metadata_upd_full.csv",row.names=F)
+#write.csv(info_upd, "metadata_upd_full.csv",row.names=F)
 
 t = ggtree(tree_rooted, size=0.1) %<+% info_upd + 
   geom_text2(aes(label = label, 
@@ -103,8 +103,8 @@ for (file in trees){
     ggtitle(strsplit(strsplit(file, '/')[[1]][2], '.treefile')[[1]][1])
   
   # Construct full file paths
-  png_file <- paste0("Images/", basename(file), ".png")
-  svg_file <- paste0("Images/", basename(file), ".svg")
+  png_file <- paste0("Images/SerotypeGradientColoring/", basename(file), ".png")
+  svg_file <- paste0("Images/SerotypeGradientColoring/", basename(file), ".svg")
   
   # Save figures
   ggsave(png_file, g, height = 10, width = 7, dpi = 600)
