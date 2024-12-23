@@ -32,8 +32,8 @@ plot_tree_with_heatmap = function(tree_file, meta, serotype_colors){
     theme(legend.position = "right")
   
   t = gheatmap(t, serotypes,                           
-               offset = 0.5,                  
-               width = 0.2,                        
+               offset = 0.2,                  
+               width = 0.1,                        
                colnames_position = "top",         
                colnames_angle = 0,                  
                colnames_offset_y = 20, 
@@ -49,8 +49,8 @@ for (file in trees){
   g = plot_tree_with_heatmap(file, meta_path, serotype_colors) +
     ggtitle(strsplit(basename(file), '.treefile')[[1]][1])
   
-  png_file <- paste0("Images/SerotypeHeatBar/", basename(file), "_heatmap.png")
-  svg_file <- paste0("Images/SerotypeHeatBar/", basename(file), "_heatmap.svg")
+  png_file <- paste0("Images/Heatbar/", basename(file), "_heatmap.png")
+  svg_file <- paste0("Images/Heatbar/", basename(file), "_heatmap.svg")
   
   ggsave(png_file, g, height = 10, width = 7, dpi = 600)
   ggsave(svg_file, g, height = 10, width = 7, dpi = 300)

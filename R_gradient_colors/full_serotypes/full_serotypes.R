@@ -82,7 +82,7 @@ plot_tree = function(tree_file, meta){
                    subset = !is.na(as.numeric(label)) & as.numeric(label) >= 80),
                size = 1, color = "black") +  
     
-    geom_tiplab(size = 2, aes(color=label)) +
+    geom_tiplab(size = 1, aes(color=label)) +
     
     scale_color_manual(values=info$color) + 
     theme(legend.position = "none") +
@@ -103,8 +103,8 @@ for (file in trees){
     ggtitle(strsplit(strsplit(file, '/')[[1]][2], '.treefile')[[1]][1])
   
   # Construct full file paths
-  png_file <- paste0("Images/SerotypeGradientColoring/", basename(file), ".png")
-  svg_file <- paste0("Images/SerotypeGradientColoring/", basename(file), ".svg")
+  png_file <- paste0("Images/Gradient/", basename(file), ".png")
+  svg_file <- paste0("Images/Gradient/", basename(file), ".svg")
   
   # Save figures
   ggsave(png_file, g, height = 10, width = 7, dpi = 600)
