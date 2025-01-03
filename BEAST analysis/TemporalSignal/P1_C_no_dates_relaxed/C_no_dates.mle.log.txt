@@ -1,0 +1,4 @@
+# BEAST v1.10.4 Prerelease #bc6cbd9
+# Generated Thu Jan 02 22:21:17 MSK 2025 [seed=1735844903597]
+# -window -working -options
+state	pathLikelihood.delta	pathLikelihood.source	pathLikelihood.destination	pathLikelihood.theta	pathLikelihood.pathLikelihood
