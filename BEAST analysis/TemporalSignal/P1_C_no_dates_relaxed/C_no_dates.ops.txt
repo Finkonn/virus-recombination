@@ -1,0 +1,28 @@
+
+Operator analysis
+Operator                                          Tuning   Count      Time     Time/Op  Pr(accept) 
+CP1.gtr.rates                                     0.561   70212      3574     0.05     0.2417      
+CP2.gtr.rates                                     0.983   70074      2827     0.04     0.2419      
+CP3.gtr.rates                                     0.246   69786      6421     0.09     0.2389      
+CP1.frequencies                                   0.09    70300      5055     0.07     0.2385      
+CP2.frequencies                                   0.077   69909      4597     0.07     0.2406      
+CP3.frequencies                                   0.074   70076      8487     0.12     0.2398      
+scale(CP1.alpha)                                  0.253   69999      4550     0.07     0.2408      
+scale(CP2.alpha)                                  0.191   70377      3979     0.06     0.238       
+scale(CP3.alpha)                                  0.347   70338      7781     0.11     0.2389      
+CP1.pInv                                          1.262   69793      4467     0.06     0.2368      
+CP2.pInv                                          2.055   70254      3926     0.06     0.2382      
+CP3.pInv                                          5.952   69597      7860     0.11     0.239       
+scale(ucld.stdev)                                 0.528   209866     26464    0.13     0.2354      
+scale(nodeHeights(treeModel))                     0.753   209513     28761    0.14     0.2342      
+swapOperator(branchRates.categories)                      698759     55889    0.08     0.2629      
+uniformInteger(branchRates.categories)                    699160     48979    0.07     0.4088      
+allNus                                            0.102   210043     20688    0.1      0.2404      
+subtreeSlide(treeModel)                           0.013   2096667    120816   0.06     0.2316      
+Narrow Exchange(treeModel)                                2097677    115464   0.06     0.0551      
+Wide Exchange(treeModel)                                  209131     8830     0.04     0.0033      
+wilsonBalding(treeModel)                                  209769     14514    0.07     0.0016      
+scale(treeModel.rootHeight)                       0.33    209404     11915    0.06     0.2398      
+uniform(nodeHeights(treeModel))                           2099452    155479   0.07     0.2006      
+scale(constant.popSize)                           0.291   209844     4570     0.02     0.2395      
+
