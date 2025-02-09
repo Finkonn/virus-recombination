@@ -18,10 +18,10 @@ def get_first_sequence(fasta_file):
         for record in SeqIO.parse(handle, "fasta"):
             return str(record.seq)
 
-fasta_file = 'Sequences\genotyped.fasta'
+fasta_file = '..\Sequences\main.fasta'
 sequence = get_first_sequence(fasta_file)
 
-products = [['Lpro', 1, 603],['P1', 604, 2805],['P2', 2806, 4275],['P3', 4276, 6999]]
+products = [['Lpro', 1, 603],['P1', 1050, 2614],['P2', 2806, 4275],['P3', 4276, 6999]]
 
 results = []
 for product in products:
