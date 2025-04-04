@@ -1,0 +1,2 @@
+tree1,tree2,bipartitions,bipartitions1 posterior>0.8,bipartitions2 bootstrap>0.8,coinciding bipartitions no threshold,coinciding bipartitions,RF bipartitions no threshold,RF bipartitions,coinciding bipartitions no threshold (no nested clades),coinciding bipartitions (no nested),RF bipartitions no threshold (no nested),RF bipartitions (no nested),coinciding subtrees no threshold,RF subtrees no threshold,coinciding subtrees,RF subtrees
+SAT1_P1,SAT1,89,66,69,22,21,3.3131,3.2424,1,10,220.0528,9.6336,8,4.6297,8,4.6297
