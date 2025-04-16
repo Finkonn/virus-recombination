@@ -1,6 +1,6 @@
 library('randomcoloR')
 library('colorspace')
-library('RColorBrewer') # Добавлено для использования профессиональных палитр
+library('RColorBrewer')
 library('dplyr')
 
 #' Adds colors for taxa labels to metadata.
@@ -25,7 +25,7 @@ add_colors2meta = function(order_files, metadata){
   }
   
   # Generate base colors using RColorBrewer
-  base_colors = brewer.pal(max(3, length(list_taxa_df)), "Set3") # Используем Set3 для мягких, красивых цветов
+  base_colors = brewer.pal(max(3, length(list_taxa_df)), "Set3")
   print(base_colors)
   
   for (i in 1:length(list_taxa_df)){

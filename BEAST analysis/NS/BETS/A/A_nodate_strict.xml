@@ -641,7 +641,7 @@ name="alignment">
 
     
 
-    <run id="NS" spec="nestedsampling.gss.NS" chainLength="20000" epsilon="1.0E-12" particleCount="1" subChainLength="5000">
+    <run id="NS" spec="nestedsampling.gss.NS" chainLength="20000" epsilon="1.0E-12" particleCount="2" subChainLength="5000">
             
         <state id="state" spec="State" storeEvery="5000">
                     
