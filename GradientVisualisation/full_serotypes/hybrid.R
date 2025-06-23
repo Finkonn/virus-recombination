@@ -15,7 +15,7 @@ meta_path = "metadata_upd_full.csv"
 # Цвета для серотипов и топотипов
 info = read.csv(meta_path)
 unique_serotypes <- unique(info$serotype)
-serotype_colors <- setNames(c("#B7B718", "#B67603", "#5F93B3", "#BDB9DB", "#D54514", "#3F9588", "#9FC845"), 
+serotype_colors <- setNames(c("#B7B718","#1F93B3" ,"#4AC245", "#BDB9DB","#3F5289", "#D54514", "#B67603"), 
                             unique_serotypes)
 
 # Create colors for topotypes (adjust colors as needed)
@@ -86,9 +86,6 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
   
   # Построение дерева с градиентной окраской
   t = ggtree(tree_rooted, size=0.1) %<+% info + 
-    geom_nodepoint(aes(label = label, 
-                       subset = !is.na(as.numeric(label)) & as.numeric(label) >= 100),
-                   size = 0.01, color = "green") +  
     geom_tiplab(size = 0.4, aes(color=label)) +
     scale_color_manual(values=info$color, guide='none') + 
     theme(legend.position = "none") 
@@ -114,7 +111,7 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
     #scale_fill_manual(values=topotype_colors_abbreviated, name = "Topotype") +
     #theme(legend.position = "right")
   
-  return(t_with_both)
+  return(t_with_serotype)
 }
 
 
@@ -132,8 +129,8 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
        )
      ) +
      theme(
-       legend.text = element_text(size = 6),
-       legend.title = element_text(size = 8)
+       legend.text = element_text(size = 14),
+       legend.title = element_text(size = 18)
        #legend.spacing.y = unit(0.2, "cm")
      )
    g

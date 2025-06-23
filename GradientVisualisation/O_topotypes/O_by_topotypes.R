@@ -72,10 +72,10 @@ plot_tree = function(tree_file, meta){
   # read csv file with metadata
   info = read.csv(meta)
   
-  t = ggtree(tree_rooted, size=0.1) %<+% info + 
-    geom_text2(aes(label = label, 
-                   subset = !is.na(as.numeric(label)) & as.numeric(label) >= 80),
-               size = 1, color = "black") +  
+  t = ggtree(tree_rooted, size=0.4) %<+% info + 
+#    geom_text2(aes(label = label, 
+#                   subset = !is.na(as.numeric(label)) & as.numeric(label) >= 80),
+#               size = 1, color = "black") +  
     
     geom_tiplab(size = 2, aes(color=label)) +
     

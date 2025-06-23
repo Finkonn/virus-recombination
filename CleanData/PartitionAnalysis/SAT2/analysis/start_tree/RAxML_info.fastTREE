@@ -1,0 +1,79 @@
+
+
+WARNING: RAxML is not checking sequences for duplicate seqs and sites with missing data!
+
+
+Alignment has 75 completely undetermined sites that will be automatically removed from the input data
+
+
+
+This is RAxML version 8.2.7 released by Alexandros Stamatakis on March 10 2016.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+
+Alignment has 954 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 4.43%
+
+RAxML experimental very fast tree search
+
+Using 3 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 10.0000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 205
+Name: Subset1
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+Partition: 1
+Alignment Patterns: 124
+Name: Subset2
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+Partition: 2
+Alignment Patterns: 625
+Name: Subset3
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+C:\Users\Mate_\Downloads\Tools\partitionfinder-2.1.1\programs\raxml_pthreads.exe -f E -s .\analysis\start_tree\filtered_source.phy -m GTRGAMMA -O -n fastTREE -# 1 -p 123456789 -q .\analysis\start_tree\partitions.txt -e 10 -w C:\Users\Mate_\Downloads\FromScratch\PartitionAnalysis\analysis\start_tree -T 16 
+
+
+Time after init : 0.055513
+Time after init and starting tree: 0.209915
+Time after init, starting tree, mod opt: 1.436676
+Partion 0 number of Cats: 1
+Partion 1 number of Cats: 1
+Partion 2 number of Cats: 1
+LH after SPRs -26505.892089, after NNI -26504.180222
+LH after SPRs -26503.880211, after NNI -26503.137738
+LH after SPRs -26503.136789, after NNI -26503.120593
+RAxML fast tree written to file: C:\Users\Mate_\Downloads\FromScratch\PartitionAnalysis\analysis\start_tree\RAxML_fastTree.fastTREE
+
+Model parameters (binary file format) written to: C:\Users\Mate_\Downloads\FromScratch\PartitionAnalysis\analysis\start_tree\RAxML_binaryModelParameters.fastTREE
+Total execution time: 4.939627
+Good bye ... 

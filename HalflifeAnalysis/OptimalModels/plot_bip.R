@@ -15,7 +15,7 @@ for (serotype in serotypes) {
   for (region in regions) {
     
     commontree_file = file.path("Results", serotype, paste0(serotype, "_", region, "_commontrees_bip.txt"))
-    tree1_file = file.path("MCMC", paste0(serotype, "_P1.tree"))
+    tree1_file = file.path("MCC", paste0(serotype, "_P1.tree"))
     tree2_file = file.path(region, paste0(serotype, ".treefile"))
     output_dir = file.path("Plots/bip", serotype)
     

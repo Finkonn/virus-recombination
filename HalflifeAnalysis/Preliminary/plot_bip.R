@@ -3,13 +3,35 @@ library(treeio)
 library(ape)
 library(tidyr)
 library(ggpubr)
+library(dplyr)
 
-setwd("C:/Users/Mate_/Downloads/Diploma/virus-recombination/HalflifeAnalysis")
+setwd("C:/Users/Mate_/Downloads/Diploma/virus-recombination/HalflifeAnalysis/Preliminary")
+meta = read.csv("metadata_upd_full.csv", stringsAsFactors = FALSE)
+
+
 
 source("get_subtrees.R")
 
 serotypes = c("A", "Asia1", "C", "O", "SAT1", "SAT2", "SAT3")
 regions = c("Lpro", "P1", "P2", "P3")
+
+
+library(RColorBrewer)
+
+# Уникальные топотипы из всей таблицы
+all_topotypes <- unique(na.omit(meta$Topotype))
+
+# Проверка: если топотипов больше 12, используем более длинную палитру
+n_colors <- length(all_topotypes)
+palette <- if (n_colors <= 12) {
+  brewer.pal(n_colors, "Set3")
+} else {
+  colorRampPalette(brewer.pal(12, "Set3"))(n_colors)
+}
+
+# Назначаем имена цветам
+topotype_colors <- setNames(palette, all_topotypes)
+
 
 for (serotype in serotypes) {
   for (region in regions) {
@@ -51,7 +73,58 @@ for (serotype in serotypes) {
       theme(plot.margin=margin(6, 40, 6, 6), legend.position="none") +
       coord_cartesian(clip='off')
     
-
+    library(ggnewscale)
+    library(ggplot2)
+    
+    # Сопоставим метаданные
+    tree1_tips = tree1@phylo$tip.label
+    tree2_tips = tree2$tip.label
+    
+    meta1 = meta[meta$GBAC %in% tree1_tips, ]
+    meta2 = meta[meta$GBAC %in% tree2_tips, ]
+    
+    # Аббревиатура топотипов
+    abbreviate_topotypes <- function(df) {
+      df$Topotype <- case_when(
+        df$Topotype == "EUROPE-SOUTH-AMERICA-EURO-SA-SOUTH" ~ "EURO-SA",
+        df$Topotype == "EAST-AFRICA-1-EA-1" ~ "EA-1",
+        df$Topotype == "EAST-AFRICA-2-EA-2" ~ "EA-2",
+        df$Topotype == "EAST-AFRICA-3-EA-3" ~ "EA-3",
+        df$Topotype == "EAST-AFRICA-4-EA-4" ~ "EA-4",
+        df$Topotype == "I-NORTHWEST-ZIMBABWE-NWZ" ~ "NWZ",
+        df$Topotype == "I-SOUTHEAST-ZIMBABWE-SEZ" ~ "SEZ",
+        df$Topotype == "III-NORTHWEST-ZIMBABWE-NWZ" ~ "NWZ",
+        df$Topotype == "II-WESTERN-ZIMBABWE-WZ" ~ "WZ",
+        df$Topotype == "III-WESTERN-ZIMBABWE-WZ" ~ "WZ",
+        df$Topotype == "INDONESIA-1-ISA-1-1" ~ "ISA-1",
+        df$Topotype == "IV-EAST-AFRICA1-EA-1" ~ "EA-1",
+        df$Topotype == "MIDDLE-EAST-SOUTH-ASIA-ME-SA" ~ "ME-SA",
+        df$Topotype == "V-East Africa-EA" ~ "V-EA",
+        df$Topotype == "VII-EAST-AFRICA-2-EA-2" ~ "VII-EA-2",
+        df$Topotype == "WEST-AFRICA-WA" ~ "WA",
+        TRUE ~ df$Topotype
+      )
+      return(df)
+    }
+    
+    meta1 = abbreviate_topotypes(meta1)
+    meta2 = abbreviate_topotypes(meta2)
+    
+    # Подготовка датафрейма heatmap
+    topo_df1 = data.frame(Topotype = meta1$Topotype)
+    rownames(topo_df1) = meta1$GBAC
+    topo_df2 = data.frame(Topotype = meta2$Topotype)
+    rownames(topo_df2) = meta2$GBAC
+    
+    # Добавим heatmap для p1 и p2
+    p1 = gheatmap(p1, topo_df1["Topotype"], offset = 0.01, width = 0.03, colnames = FALSE) +
+      ggnewscale::new_scale_fill() +
+      scale_fill_manual(values = topotype_colors, name = "Topotype")
+    
+    p2 = gheatmap(p2, topo_df2["Topotype"], offset = 0.01, width = 0.03, colnames = FALSE) +
+      ggnewscale::new_scale_fill() +
+      scale_fill_manual(values = topotype_colors, name = "Topotype")
+    
     
     final_plot = ggarrange(p1, p2)
     
