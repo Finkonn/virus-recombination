@@ -36,6 +36,7 @@ for (tree1_path in tree1_files) {
       
       subtrees = get_subtrees(subtree_file)
       
+      # Построение дерева 1
       p1 = ggtree(tree1, mrsd = "2025-01-01", size = 0.3) + 
         geom_tiplab(size = 1) + 
         geom_point2(aes(subset = !is.na(as.numeric(posterior)) & as.numeric(posterior) > 0.9), 
@@ -46,6 +47,7 @@ for (tree1_path in tree1_files) {
         coord_cartesian(clip = "off") +
         theme_tree2(plot.margin = margin(5, 60, 5, 5), legend.position = "none")
       
+      # Построение дерева 2
       p2 = ggtree(tree2, size = 0.3) +  
         geom_tiplab(size = 1) + 
         geom_point2(aes(subset = !is.na(as.numeric(label)) & as.numeric(label) > 90), 
@@ -56,15 +58,22 @@ for (tree1_path in tree1_files) {
         coord_cartesian(clip = "off") +
         theme_tree2(plot.margin = margin(5, 60, 5, 5), legend.position = "none")
       
-      plot_combined = ggarrange(p1, p2)
+      # Заголовок по типу файла
+      plot_type = ifelse(grepl("bip", suffix), "bipartitions", "subtrees")
+      plot_title = paste(serotype, "-", region2, plot_type)
       
+      plot_combined = ggarrange(p1, p2)
+      plot_combined = annotate_figure(plot_combined, top = text_grob(plot_title, face = "bold", size = 14))
+      
+      # Сохранение
       out_dir = file.path("Plots", serotype, paste0(region1, "_", region2))
       dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
-      plot_name = tools::file_path_sans_ext(suffix)  # "commontrees" or "commontrees_bip"
+      plot_name = tools::file_path_sans_ext(suffix)
       out_base = file.path(out_dir, paste0(base_name, "_", serotype, "_", region2, "_", plot_name))
       
-      ggsave(paste0(out_base, ".png"), plot_combined, width = 10, height = 5, dpi = 300)
+      ggsave(paste0(out_base, ".png"), plot_combined, width = 10, height = 5, dpi = 300, bg = "white")
       ggsave(paste0(out_base, ".svg"), plot_combined, width = 10, height = 5)
     }
+    
   }
 }
