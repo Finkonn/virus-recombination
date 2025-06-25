@@ -27,6 +27,7 @@ for (tree1_path in tree1_files) {
     tree2_path = file.path(region2, paste0(serotype, ".fasta.treefile"))
     if (!file.exists(tree2_path)) next
     tree2 = read.tree(tree2_path)
+    tree2 = midpoint.root(tree2)
     
     for (suffix in c("commontrees.txt", "commontrees_bip.txt")) {
       
@@ -66,7 +67,7 @@ for (tree1_path in tree1_files) {
       plot_combined = annotate_figure(plot_combined, top = text_grob(plot_title, face = "bold", size = 14))
       
       # Сохранение
-      out_dir = file.path("Plots", serotype, paste0(region1, "_", region2))
+      out_dir = file.path("Plots", serotype)
       dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
       plot_name = tools::file_path_sans_ext(suffix)
       out_base = file.path(out_dir, paste0(base_name, "_", serotype, "_", region2, "_", plot_name))
