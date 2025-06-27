@@ -3,6 +3,7 @@ library(treeio) #read.beast
 library(ape) # for phylo objects
 library(tidyr)
 library(ggpubr)
+library(phytools)
 
 # set  working directory
 setwd("C:/Users/Mate_/Downloads/compare_trees_RF")
@@ -46,16 +47,19 @@ ggarrange(p1,p2)
 tree1_name = "MCMC/Asia1_P1.tree"
 tree1 = read.beast(tree1_name)
 
-tree2_name = "P3/Asia1.fasta.treefile"
+tree2_name = "Lpro/Asia1.fasta.treefile"
 tree2 = read.tree(tree2_name)
+tree2 = midpoint.root(tree2)
+
 
 # common subtrees determined from coinciding bipartitions in two trees
-subtrees = get_subtrees("Asia1_P3/Asia1_P1_Asia1.fasta_commontrees.txt")
+subtrees = get_subtrees("Asia1_Lpro/Asia1_P1_Asia1.fasta_commontrees_bip.txt")
 
 p1 = ggtree(tree1, mrsd = "2025-01-01", size = 0.3) + geom_tiplab(size = 1) + 
   geom_point2(aes(subset = !is.na(as.numeric(posterior)) & as.numeric(posterior) > 0.9), 
               shape = 21, fill = "blue", color = "black", size = 0.5) +
   theme_tree2()
+  
 
 p1 = groupOTU(p1, subtrees, 'Clade') + aes(color = Clade) +
   scale_color_manual(values = c("black", "firebrick")) + 
@@ -73,5 +77,6 @@ p2 = groupOTU(p2, subtrees, 'Clade') + aes(color = Clade) +
   coord_cartesian(clip = "off") +
   theme_tree2(plot.margin = margin(5, 60, 5, 5), legend.position = "none")
 
-ggarrange(p1, p2)
+plot = ggarrange(p1, p2)
 
+annotate_figure(plot, top = text_grob("Lpro subtrees", face = "bold", size = 14))

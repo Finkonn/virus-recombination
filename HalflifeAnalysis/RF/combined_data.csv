@@ -1,0 +1,10 @@
+tree1,tree2,bipartitions,bipartitions1 posterior>0.9,bipartitions2 bootstrap>90.0,coinciding bipartitions no threshold,coinciding bipartitions,RF bipartitions no threshold,RF bipartitions,coinciding bipartitions no threshold (no nested clades),coinciding bipartitions (no nested),RF bipartitions no threshold (no nested),RF bipartitions (no nested),coinciding subtrees no threshold,RF subtrees no threshold,coinciding subtrees,RF subtrees
+Asia1_P1,Asia1.fasta,120,58,43,33,20,2.9445,5.8072,1,10,158.5385,13.0535,14,8.1881,13,9.6886
+Asia1_P1,Asia1.fasta,120,58,41,32,18,0.8738,2.741,1,10,158.5385,5.8072,17,2.5375,13,6.6875
+Asia1_P1,Asia1.fasta,120,58,56,35,23,0.9857,1.504,1,11,158.5385,6.6875,18,1.2449,16,2.0207
+O_P1,O.fasta,99,73,52,52,37,5.7822,6.2961,1,10,124.1124,30.9357,16,3.4518,15,2.8528
+O_P1,O.fasta,99,73,56,57,42,8.479,7.2589,1,12,124.1124,18.0606,16,4.5262,15,4.868
+O_P1,O.fasta,99,73,69,53,41,5.4433,6.0389,1,10,124.1124,31.5918,18,3.7477,17,4.868
+SAT1_P1,SAT1.fasta,86,59,34,22,16,1.7226,0.6693,1,8,208.1986,2.8201,8,1.7713,9,0.6517
+SAT1_P1,SAT1.fasta,86,59,32,25,19,4.9533,0.687,1,10,208.1986,9.573,11,0.6517,11,0.6517
+SAT1_P1,SAT1.fasta,86,59,36,27,19,3.0511,0.6517,1,9,208.1986,3.0533,9,2.8556,9,0.687
