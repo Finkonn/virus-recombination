@@ -6,7 +6,7 @@ from scipy.stats import pearsonr, spearmanr, linregress
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 
-main_path = "RandomSamplingTemp/O_single_picking/tempest_data"
+main_path = "../Tempest/Serotypes/SAT3"
 output_path = os.path.join(main_path)
 os.makedirs(output_path, exist_ok=True)
 
@@ -38,7 +38,7 @@ for ax, file in zip(axes, csv_files):
 
     intercept_str = f"- {abs(intercept):.2f}" if intercept < 0 else f"+ {intercept:.2f}"
 
-    metrics_label = (f'Коэфф. Спирмена: {spearman_corr:.2f}\n'
+    metrics_label = (f'Spearman coeff.: {spearman_corr:.2f}\n'
                      f'p-value: {p_spearman:.2e}\n'
                      f'y = {slope:.4f}x {intercept_str}')
 
@@ -47,14 +47,14 @@ for ax, file in zip(axes, csv_files):
     sns.regplot(data=data, x='date', y='distance', scatter=False, color='red', ax=ax)
 
     ax.set_title(f"{file.split('.')[0]}", fontsize=24)
-    ax.set_xlabel("Год", fontsize=20)
-    ax.set_ylabel("Генетическое расстояние", fontsize=20)
+    ax.set_xlabel("Year", fontsize=20)
+    ax.set_ylabel("Genetic distance", fontsize=20)
     ax.tick_params(labelsize=16)
     ax.legend(fontsize=14)
 
 plt.tight_layout(rect=[0, 0, 1, 0.96])
-output_file_png = os.path.join(output_path, "all_graphs.png")
-output_file_svg = os.path.join(output_path, "all_graphs.svg")
+output_file_png = os.path.join(output_path, "SAT3_graphs.png")
+output_file_svg = os.path.join(output_path, "SAT3_graphs.svg")
 plt.savefig(output_file_png, format='png')
 plt.savefig(output_file_svg, format='svg')
 plt.close()

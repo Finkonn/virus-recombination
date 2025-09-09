@@ -107,11 +107,11 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
                           width = 0.1,
                           color = NULL,
                           colnames=FALSE,
-                          legend_title='Topotype') 
-    #scale_fill_manual(values=topotype_colors_abbreviated, name = "Topotype") +
-    #theme(legend.position = "right")
+                          legend_title='Topotype') +
+    scale_fill_manual(values=topotype_colors_abbreviated, name = "Topotype") +
+    theme(legend.position = "right")
   
-  return(t_with_serotype)
+  return(t_with_both)
 }
 
 

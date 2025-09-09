@@ -50,6 +50,6 @@ def process_nexus_file(input_file, output_file):
                 file.write(f"{cleaned_seq}_{topotype}\n")
 
 # Пример вызова функции
-input_nexus_file = "../Trees/VP1_topotype_colored.nexus"  # Входной Nexus файл
-output_file = "../Maps/genotyped_topotypes.txt"  # Выходной файл
+input_nexus_file = "../lineages_colored.nexus"  # Входной Nexus файл
+output_file = "../Maps/genotyped_lineages.txt"  # Выходной файл
 process_nexus_file(input_nexus_file, output_file)
