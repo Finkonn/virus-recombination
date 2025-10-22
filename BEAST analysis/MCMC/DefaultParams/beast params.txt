@@ -1,8 +1,0 @@
-BEAST Parameters
-
-Tip Dates - Parse Dates 
-Site model - Gamma Site Model; Subst Model - GTR
-Clock Model - Strict Clock
-Priors -  Coalescent Constant Population; clock.Rate - (Uniform / 0.001 / 0.01 / 0.0001)
-MCMC - 10 000 000 Chain Length
-Treelog - Log Every 10000

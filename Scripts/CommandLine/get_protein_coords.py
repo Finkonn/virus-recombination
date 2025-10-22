@@ -3,7 +3,7 @@ import pandas as pd
 from Bio import SeqIO
 
 def extract_and_process_proteins(genbank_file, fasta_file, protein_output_file, gapped_output_file):
-    # Step 1: Extract mature peptide coordinates from the GenBank file
+    # Extract mature peptide coordinates from the GenBank file
     records = SeqIO.parse(genbank_file, "genbank")
     mat_peptides = []
 
@@ -22,7 +22,7 @@ def extract_and_process_proteins(genbank_file, fasta_file, protein_output_file, 
     protein_coordinates.to_csv(protein_output_file, index=False)
     print(f"Protein coordinates saved to: {protein_output_file}")
 
-    # Step 2: Get the first sequence from the FASTA file
+    # Get the first sequence from the FASTA file
     def get_first_sequence(fasta_file):
         with open(fasta_file, "r") as handle:
             for record in SeqIO.parse(handle, "fasta"):
@@ -30,7 +30,7 @@ def extract_and_process_proteins(genbank_file, fasta_file, protein_output_file, 
 
     reference_sequence = get_first_sequence(fasta_file)
 
-    # Step 3: Find gapped positions
+    # Find gapped positions
     def find_gapped_positions(sequence, ungapped_coordinates):
         gapped_coordinates = []
         gapped_index = 0
@@ -43,7 +43,7 @@ def extract_and_process_proteins(genbank_file, fasta_file, protein_output_file, 
         seq = sequence[gapped_coordinates[0] - 1:gapped_coordinates[1]]
         return seq, gapped_coordinates
 
-    # Step 4: Process the table and find corresponding sequences with gapped positions
+    # Process the table and find corresponding sequences with gapped positions
     def process_table(table, sequence):
         results = []
         for index, row in table.iterrows():

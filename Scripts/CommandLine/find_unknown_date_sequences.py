@@ -8,19 +8,19 @@ def find_unknown_date_sequences(fasta_file, output_file):
         header_parts = record.id.split('/')
         if header_parts[-2] == "Unknown":
             unknown_date_sequences.append(record.id)
-    print(f"Количество последовательностей с неизвестной датой: {len(unknown_date_sequences)}")
+    print(f"Number of unknown dates: {len(unknown_date_sequences)}")
 
     if len(unknown_date_sequences) > 0:
-        print("Список последовательностей с неизвестной датой:")
+        print("List of sequences without dates:")
         for seq_id in unknown_date_sequences:
             print(seq_id)
 
         with open(output_file, "w") as output_file_handle:
             for seq_id in unknown_date_sequences:
                 output_file_handle.write(seq_id + "\n")
-        print(f"Список сохранён в файл: {output_file}")
+        print(f"List saved to file: {output_file}")
     else:
-        print("Нет последовательностей с неизвестной датой.")
+        print("No sequences with unknown dates")
 
 def main():
     parser = argparse.ArgumentParser(description='Find sequences with an unknown date in a FASTA file.')

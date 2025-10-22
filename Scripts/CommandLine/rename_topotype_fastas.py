@@ -29,7 +29,7 @@ def update_fasta_headers(fasta_file, annotations, output_file):
                 # Update the header
                 new_header = annotations[accession]
                 record.id = new_header
-                record.description = ""  # Clear the description to avoid redundancy
+                record.description = ""
             SeqIO.write(record, fout, "fasta")
 
 def main():
