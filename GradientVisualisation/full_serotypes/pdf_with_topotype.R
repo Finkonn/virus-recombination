@@ -18,42 +18,23 @@ meta_path = "metadata_no_similar_upd.csv"
 
 info = read.csv(meta_path)
 unique_serotypes <- unique(info$serotype)
-unique_topotypes <- unique(info$Topotype) 
-unique_lineages <- unique(info$lineage)
-n_lineages <- length(unique_lineages)
-n_topotypes <- length(unique_topotypes)
-
-#n <- 60
-#qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
-#col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
-#pie(rep(1,n), col=sample(col_vector, n))
-#write(col_vector, file = "RcolorBrewer_74_most_distinct_colors.txt")
-#col_vector = scan("RcolorBrewer_74_most_distinct_colors.txt", character())
-
-serotype_colors <- setNames(c("#b0b006","#d84a1c" ,"#43998c", "#857fa9","#9ec744", "#d3973f", "#6194b5"), 
+serotype_colors <- setNames(c("#B7B718","#1F93B3" ,"#4AC245", "#BDB9DB","#3F5289", "#D54514", "#B67603"), 
                             unique_serotypes)
 
-lineage_colors <- c(
-  "#7FC97F", "#BEAED4", "#FDC086", "#FFFF99", "#321faf", 
-  "#F0027F", "#BF5B17", "#842f16", "#1B9E77", "#A1aa00",
-  "#7570B3", "#5168EE", "#66A6fE"
+unique_topotypes <- unique(info$Topotype) 
+unique_lineages <- unique(info$lineage)
+
+#lineage_colors <- setNames(rainbow(length(unique_lineages)), unique_lineages)
+lineage_colors <- setNames(
+  distinctColorPalette(k = length(unique_lineages)),
+  unique_lineages
 )
 
-topotype_colors <- c(
-  "#FF7F00", "#A6761D", "#A6CEE3", "#1F78B4", "#c90303",
-  "#33A02C", "#FB9A99", "#E30AFC", "#FDBF6F", "#E6AB02",
-  "#CAB2D6", "#6A3D9A", "#B15928", "#FBB4AE", "#B3CDE3",
-  "#bbE535", "#DECBE4", "#A9A2F9", "#2FaFCC", "#A1D2AD",
-  "#FDDAEC", "#F2a2F2", "#a1f8aa", "#FDCDAC", "#1EA5E8",
-  "#11feE4", "#E6F5C9", "#c9017F", "#F1E2CC"
+topotype_colors <- setNames(
+  distinctColorPalette(k = length(unique_topotypes)),
+  unique_topotypes
 )
 
-names(lineage_colors) <- unique_lineages
-names(topotype_colors) <- unique_topotypes
-
-
-#lineage_colors <- setNames(col_vector[1:n_lineages], unique_lineages)
-#topotype_colors <- setNames(col_vector[(n_lineages + 1):(n_lineages + n_topotypes)], unique_topotypes)
 
 plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors, topotype_colors, lineage_colors) {
   tree = read.tree(tree_file)
@@ -112,15 +93,14 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
   )
   rownames(heat_data) <- info$GBAC
   
+  info$label_with_topotype <- paste0(info$GBAC, " [", info$Topotype, "]")
+  
   t = ggtree(tree_rooted, size = 0.1) %<+% info +
     geom_point2(aes(label=label, 
                     subset = !is.na(as.numeric(label)) & as.numeric(label) < 95), size=0.1, color="red",alpha=0.5) +
-    geom_tiplab(size = 0.4, aes(color=label)) +
-    #geom_text2(aes(label = label, 
-    #               subset = !is.na(as.numeric(label)) & as.numeric(label) >= 95),
-    #           size = 0.5, color = "black") +
-    scale_color_manual(values=info$color, guide='none') + 
-    theme(legend.position = "none") 
+    geom_tiplab(aes(label=label_with_topotype), size = 0.8) +  
+    theme(legend.position = "none")
+  
   
   
   t_with_serotype <- gheatmap(t, heat_data["serotype"], 
@@ -142,13 +122,13 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
     theme(legend.position = "right")
   
   t_with_topotype <- t_with_topotype + ggnewscale::new_scale_fill()
-  lineage_colors
+  
   t_with_lineage <- gheatmap(t_with_topotype, heat_data["Lineage"],
                              offset = 0.9,
                              width = 0.1,
                              color = NULL,
-                             colnames = FALSE) +
-    scale_fill_manual(values = lineage_colors, name = "Lineage")
+                             colnames = FALSE)
+  scale_fill_manual(values = lineage_colors, name = "Lineage")
   
   return(t_with_lineage)
 }
@@ -173,16 +153,11 @@ for (file in trees) {
   legend <- cowplot::get_legend(g)
   g_nolegend <- g + theme(legend.position = "none")
   
-  png_file <- paste0("no_similar/", basename(file), "_combined.png")
-  svg_file <- paste0("no_similar/", basename(file), "_combined.svg")
+  pdf_file <- paste0("no_similar/", basename(file), "_combined.pdf")
   
-  ggsave(png_file, g_nolegend, height = 10, width = 7, dpi = 600)
-  ggsave(svg_file, g_nolegend, height = 10, width = 7, dpi = 600)
+  ggsave(pdf_file, g_nolegend, height = 10, width = 7)
   
   
 }
 
-ggsave(paste0("no_similar/", basename(file), "_legend.png"), 
-       plot = legend, height = 10, width = 7, dpi = 600)
-ggsave(paste0("no_similar/", basename(file), "_legend.svg"), 
-       plot = legend, height = 10, width = 7, dpi = 600)
+
