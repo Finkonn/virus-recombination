@@ -168,9 +168,11 @@ for (file in trees) {
   
   png_file <- paste0("all_sequences_plots/full/", basename(file), "_combined.png")
   svg_file <- paste0("all_sequences_plots/full/", basename(file), "_combined.svg")
+  pdf_file <- paste0("all_sequences_plots/full/", basename(file), "_combined.pdf")
   
-  ggsave(png_file, g_nolegend, height = 10, width = 7, dpi = 600)
-  ggsave(svg_file, g_nolegend, height = 10, width = 7, dpi = 600)
+  ggsave(pdf_file, g_nolegend, height = 16, width = 7)
+  ggsave(png_file, g_nolegend, height = 16, width = 7, dpi = 600)
+  ggsave(svg_file, g_nolegend, height = 16, width = 7, dpi = 600)
   
 
 }
@@ -178,4 +180,6 @@ for (file in trees) {
 ggsave(paste0("all_sequences_plots/full/", basename(file), "_legend.png"), 
        plot = legend, height = 10, width = 7, dpi = 600)
 ggsave(paste0("all_sequences_plots/full/", basename(file), "_legend.svg"), 
+       plot = legend, height = 10, width = 7, dpi = 600)
+ggsave(paste0("all_sequences_plots/full/", basename(file), "_legend.pdf"), 
        plot = legend, height = 10, width = 7, dpi = 600)
