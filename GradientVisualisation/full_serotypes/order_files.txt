@@ -1,7 +1,0 @@
-tree_order_1578.csv
-tree_order_1581.csv
-tree_order_1870.csv
-tree_order_1891.csv
-tree_order_2101.csv
-tree_order_2123.csv
-tree_order_2244.csv
