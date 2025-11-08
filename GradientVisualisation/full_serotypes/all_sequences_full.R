@@ -105,7 +105,7 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
   )
   rownames(heat_data) <- info$GBAC
   
-  t = ggtree(tree_rooted, size = 0.1) %<+% info +
+  t = ggtree(tree_rooted, size = 0.3) %<+% info +
     geom_point2(aes(label=label, 
                     subset = !is.na(as.numeric(label)) & as.numeric(label) < 95), size=0.1, color="red",alpha=0.5) +
     geom_tiplab(size = 0.4, aes(color=label)) +
