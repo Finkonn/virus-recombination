@@ -114,7 +114,8 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
                     subset = !is.na(as.numeric(label)) & as.numeric(label) < 95), size=0.1, color="red",alpha=0.5) +
     geom_tiplab(aes(label=label_with_topotype, color=label), size = 0.2) +
     scale_color_manual(values=info$color, guide='none') + 
-    theme(legend.position = "none")
+    theme(legend.position = "none") +
+    theme_tree2()
   
   return(t)
 }
@@ -139,9 +140,9 @@ for (file in trees) {
   legend <- cowplot::get_legend(g)
   g_nolegend <- g + theme(legend.position = "none")
   
-  pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar.pdf")
+  pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar_shrinked.pdf")
   
-  ggsave(pdf_file, g_nolegend, height = 20, width = 12)
+  ggsave(pdf_file, g_nolegend, height = 20, width = 2)
   
   
 }
