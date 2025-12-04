@@ -114,7 +114,8 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
                     subset = !is.na(as.numeric(label)) & as.numeric(label) < 95), size=0.1, color="red",alpha=0.5) +
     geom_tiplab(aes(label=label_with_topotype, color=label), size = 0.2) +
     scale_color_manual(values=info$color, guide='none') + 
-    theme(legend.position = "none")
+    theme(legend.position = "none") +
+    theme_tree2()
   
   return(t)
 }
@@ -142,8 +143,16 @@ for (file in trees) {
   
   g_nolegend <- g + theme(legend.position = "none")
   
+<<<<<<< HEAD
   pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar_labeled.pdf")
   ggsave(pdf_file, g_nolegend, height = 20, width = 12)
+=======
+  pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar_shrinked.pdf")
+  
+  ggsave(pdf_file, g_nolegend, height = 20, width = 2)
+  
+  
+>>>>>>> 9fff97bb13a60f741e6c418e809bef1f7085d436
 }
 
 ggsave(paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_legend.png"), 
