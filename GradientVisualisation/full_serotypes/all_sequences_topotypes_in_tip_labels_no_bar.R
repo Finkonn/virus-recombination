@@ -109,7 +109,7 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
   
   info$label_with_topotype <- paste0(info$GBAC, " [", info$Topotype, "]")
   
-  t = ggtree(tree_rooted, size = 0.1) %<+% info +
+  t = ggtree(tree_rooted, size = 0.2) %<+% info +
     geom_point2(aes(label=label, 
                     subset = !is.na(as.numeric(label)) & as.numeric(label) < 95), size=0.1, color="red",alpha=0.5) +
     geom_tiplab(aes(label=label_with_topotype, color=label), size = 0.2) +
@@ -121,29 +121,29 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
 
 
 for (file in trees) {
+  
+  file_base <- strsplit(basename(file), ".treefile")[[1]][1]
+  
+  region_titles <- list(
+    "Lpro" = "Region L",
+    "P1"   = "Region P1",
+    "P2"   = "Region P2",
+    "P3"   = "Region P3"
+  )
+  
+  region_key <- names(region_titles)[sapply(names(region_titles), function(x) grepl(x, file_base, ignore.case = TRUE))]
+  region_title <- ifelse(length(region_key) == 1, region_titles[[region_key]], file_base)
+  
   g = plot_tree_with_gradient_and_heatmap(file, meta_path, serotype_colors, topotype_colors, lineage_colors) +
-    ggtitle(strsplit(basename(file), '.treefile')[[1]][1]) +
-    guides(
-      fill = guide_legend(
-        ncol = 1,
-        keywidth = unit(0.1, "cm"),
-        keyheight = unit(0.1, "cm"),
-        override.aes = list(size = 2)
-      )
-    ) +
+    ggtitle(region_title) +
     theme(
-      legend.text = element_text(size = 14),
-      legend.title = element_text(size = 18)
+      plot.title = element_text(size = 34, hjust = 0.5)
     )
   
-  legend <- cowplot::get_legend(g)
   g_nolegend <- g + theme(legend.position = "none")
   
-  pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar.pdf")
-  
+  pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar_labeled.pdf")
   ggsave(pdf_file, g_nolegend, height = 20, width = 12)
-  
-  
 }
 
 ggsave(paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_legend.png"), 
