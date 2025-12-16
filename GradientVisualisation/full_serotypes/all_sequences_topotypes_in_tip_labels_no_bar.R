@@ -143,16 +143,13 @@ for (file in trees) {
   
   g_nolegend <- g + theme(legend.position = "none")
   
-<<<<<<< HEAD
   pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar_labeled.pdf")
   ggsave(pdf_file, g_nolegend, height = 20, width = 12)
-=======
   pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar_shrinked.pdf")
   
   ggsave(pdf_file, g_nolegend, height = 20, width = 2)
   
   
->>>>>>> 9fff97bb13a60f741e6c418e809bef1f7085d436
 }
 
 ggsave(paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_legend.png"), 
