@@ -12,7 +12,7 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 source("../modified_gradients.R")
 
 trees = list.files(path = "all_sequences_treefiles/", full.names = TRUE, pattern = ".treefile$")
-meta_path = "metadata_all_sequences.csv"
+meta_path = "metadata_all_sequences_pools.csv"
 info = read.csv(meta_path)
 
 unique_serotypes <- unique(info$serotype)
@@ -107,15 +107,35 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
   )
   rownames(heat_data) <- info$GBAC
   
-  info$label_with_topotype <- paste0(info$GBAC, " [", info$Topotype, "]")
+  info$label_with_topotype <- paste0(info$GBAC, "/", info$Topotype, "/", info$pool)
+  
+  
+  create_tip_label <- function(gbac, country, topotype, pool) {
+    gbac_parts <- unlist(strsplit(gbac, "/"))
+    
+    if (length(gbac_parts) >= 2) {
+      gbac_parts[2] <- country
+    }
+    
+    updated_gbac <- paste(gbac_parts, collapse = "/")
+    
+    tip_label <- paste0(updated_gbac, "/", topotype, "/", pool)
+    
+    return(tip_label)
+  }
+  
+  info$label_with_topotype <- mapply(create_tip_label, 
+                                     info$GBAC, 
+                                     info$country, 
+                                     info$Topotype, 
+                                     info$pool)
   
   t = ggtree(tree_rooted, size = 0.2) %<+% info +
     geom_point2(aes(label=label, 
                     subset = !is.na(as.numeric(label)) & as.numeric(label) < 95), size=0.1, color="red",alpha=0.5) +
-    geom_tiplab(aes(label=label_with_topotype, color=label), size = 0.2) +
-    scale_color_manual(values=info$color, guide='none') + 
+    geom_tiplab(aes(label=label_with_topotype), size = 0.2) +
     theme(legend.position = "none") +
-    theme_tree2()
+    theme_tree()
   
   return(t)
 }
@@ -126,10 +146,10 @@ for (file in trees) {
   file_base <- strsplit(basename(file), ".treefile")[[1]][1]
   
   region_titles <- list(
-    "Lpro" = "Region L",
-    "P1"   = "Region P1",
-    "P2"   = "Region P2",
-    "P3"   = "Region P3"
+    "Lpro" = "A",
+    "P1"   = "B",
+    "P2"   = "C",
+    "P3"   = "D"
   )
   
   region_key <- names(region_titles)[sapply(names(region_titles), function(x) grepl(x, file_base, ignore.case = TRUE))]
@@ -138,17 +158,14 @@ for (file in trees) {
   g = plot_tree_with_gradient_and_heatmap(file, meta_path, serotype_colors, topotype_colors, lineage_colors) +
     ggtitle(region_title) +
     theme(
-      plot.title = element_text(size = 34, hjust = 0.5)
+      plot.title = element_text(size = 34, hjust = 0)
     )
   
   g_nolegend <- g + theme(legend.position = "none")
   
-  pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar_labeled.pdf")
+  pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_color.pdf")
   ggsave(pdf_file, g_nolegend, height = 20, width = 12)
-  pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar_shrinked.pdf")
-  
-  ggsave(pdf_file, g_nolegend, height = 20, width = 2)
-  
+
   
 }
 
