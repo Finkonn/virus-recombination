@@ -1,0 +1,429 @@
+IQ-TREE version 3.0.1 for Windows 64-bit built May  5 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-IAVMJI2 (AVX2, FMA3, 7 GB RAM)
+Command: bin/iqtree3.exe -s alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang.fasta -bb 1000 -m GTR+F+I+G -pre alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang
+Seed:    412766 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Jan 15 15:16:42 2026
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang.fasta ... Fasta format detected
+Reading fasta file: done in 0.0074785 secs
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.0036395 secs
+WARNING: 117 sites contain only gaps or ambiguous characters.
+Alignment has 82 sequences with 2282 columns, 898 distinct patterns
+803 parsimony-informative, 135 singleton sites, 1344 constant sites
+                                                 Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0004158 secs
+   1  KC440883/EGY/Unknown/2011/O/ME-SA/PanAsia-2        5.92%    passed     84.67%
+   2  HM229661/HKG/pig/2010/O/SEA/Unknown                5.92%    passed     92.13%
+   3  JQ900581/CHN/pig/2010/O/SEA/Unknown                5.92%    passed     96.53%
+   4  OQ211396/ISR/cattle/2007/O/ME-SA/PanAsia-2         5.92%    passed     84.55%
+   5  OQ211363/ISR/sheep/2007/O/ME-SA/PanAsia-2          5.92%    passed     80.13%
+   6  OQ211362/PSE/sheep/2007/O/ME-SA/PanAsia-2          5.92%    passed     80.08%
+   7  OQ211360/ISR/cattle/2007/O/ME-SA/PanAsia-2         5.92%    passed     73.76%
+   8  OQ211352/ISR/cattle/2007/O/ME-SA/PanAsia-2         5.92%    passed     90.90%
+   9  OP957418/BGD/cattle/2021/O/ME-SA/PanAsia-2         5.92%    passed     95.88%
+  10  ON868618/VNM/pig/2019/O/SEA/Unknown                5.92%    passed     83.86%
+  11  ON868607/VNM/pig/2019/O/SEA/Unknown                5.92%    passed     85.91%
+  12  ON868600/VNM/pig/2018/O/SEA/Unknown                5.92%    passed     81.61%
+  13  ON868596/VNM/pig/2018/O/SEA/Unknown                5.92%    passed     82.32%
+  14  ON868595/VNM/pig/2018/O/SEA/Unknown                5.92%    passed     91.74%
+  15  ON868593/VNM/pig/2018/O/SEA/Unknown                5.92%    passed     82.67%
+  16  ON868590/VNM/pig/2019/O/SEA/Unknown                5.92%    passed     77.63%
+  17  OP751924/IDN/cattle/2022/O/ME-SA/Unknown           5.92%    passed     95.09%
+  18  ON736860/UGA/cow/2015/O/EA-2/Unknown               5.13%    passed     81.05%
+  19  OP585403/IDN/cattle/2022/O/ME-SA/Unknown           5.92%    passed     95.53%
+  20  OM160615/TUN/cattle/2014/O/ME-SA/Ind-2001d         5.92%    passed     95.13%
+  21  OM456148/PAK/buffalo/2012/O/ME-SA/PanAsia-2        5.92%    passed     95.84%
+  22  OM456134/PAK/cattle/2012/O/ME-SA/PanAsia-2         5.92%    passed     93.53%
+  23  OK019689/IRN/cow/2016/O/ME-SA/PanAsia-2            5.92%    passed     88.60%
+  24  MN389541/CHN/pig/2010/O/SEA/Unknown                5.92%    passed     95.30%
+  25  MN095357/IND/cattle/2013/O/ME-SA/Ind-2001d         5.92%    passed     98.10%
+  26  NC_039210/GBR/Unknown/1965/O/EURO-SA/Unknown       5.92%    passed     97.11%
+  27  MK071699/BGD/cattle/2013/O/ME-SA/Unknown           5.92%    passed     99.95%
+  28  MH845413/VNM/pig/2014/O/SEA/Unknown                5.92%    passed     85.65%
+  29  MF947132/VNM/buffalo/2015/O/ME-SA/Unknown          5.92%    passed     96.75%
+  30  MH891503/VNM/cow/2017/O/ME-SA/Unknown              5.92%    passed     97.87%
+  31  MG983733/LKA/cattle/2014/O/ME-SA/Ind-2001d         5.92%    passed     97.94%
+  32  MG983727/SAU/cattle/2015/O/ME-SA/Unknown           5.92%    passed     99.85%
+  33  MG983722/SAU/cattle/2013/O/ME-SA/Ind-2001d         5.92%    passed     97.44%
+  34  MG983714/NPL/pig/2013/O/ME-SA/Ind-2001d            5.92%    passed     99.35%
+  35  MG983702/MUS/cattle/2016/O/ME-SA/Unknown           5.92%    passed     96.92%
+  36  MF461724/CHN/cattle/2017/O/ME-SA/Unknown           5.92%    passed     99.88%
+  37  LC320038/MNG/cow/2015/O/ME-SA/Unknown              5.92%    passed     99.19%
+  38  KX534089/KOR/pig/2016/O/SEA/Unknown                5.92%    passed     93.79%
+  39  LC149713/JPN/cow/2010/O/SEA/Unknown                5.92%    passed     97.09%
+  40  LC149692/JPN/pig/2010/O/SEA/Unknown                5.92%    passed     96.14%
+  41  LC149690/JPN/pig/2010/O/SEA/Unknown                5.92%    passed     94.18%
+  42  LC149681/JPN/cow/2010/O/SEA/Unknown                5.92%    passed     95.30%
+  43  LC149674/JPN/cow/2010/O/SEA/Unknown                5.92%    passed     95.30%
+  44  LC149657/JPN/pig/2010/O/SEA/Unknown                5.92%    passed     96.36%
+  45  LC149634/JPN/pig/2010/O/SEA/Unknown                5.92%    passed     96.40%
+  46  LC149633/JPN/pig/2010/O/SEA/Unknown                5.92%    passed     95.46%
+  47  LC149628/JPN/pig/2010/O/SEA/Unknown                5.92%    passed     95.46%
+  48  KY446903/PAK/water-buffalo/2005/O/ME-SA/Unknown    5.92%    passed     91.97%
+  49  KY657269/VNM/pig/2015/O/ME-SA/Ind-2001d            5.92%    passed     91.60%
+  50  KX712091/BGD/pig/2015/O/ME-SA/Unknown              5.92%    passed     99.96%
+  51  KX162590/KOR/pig/2014/O/SEA/Unknown                5.92%    passed     86.92%
+  52  KU726614/GRC/sheep/1994/O/ME-SA/Unknown            5.92%    passed     87.20%
+  53  KU821591/ZMB/cow/2010/O/EA-2/Unknown               5.92%    passed     95.47%
+  54  KU291242/MAR/cow/2015/O/ME-SA/Ind-2001d            5.92%    passed     93.01%
+  55  KP940473/EGY/cattle/2014/O/ME-SA/Unknown           5.92%    passed     92.30%
+  56  HQ268524/BTN/Unknown/2004/O/ME-SA/PanAsia-2        5.92%    passed     93.53%
+  57  KM268895/TUR/cattle/2013/O/ME-SA/PanAsia-2         5.92%    passed     84.18%
+  58  JX869178/GBR/cattle/1967/O/EURO-SA/Unknown         5.92%    passed     87.50%
+  59  KF985189/BGD/cattle/2013/O/ME-SA/Unknown           5.92%    passed     92.45%
+  60  KF694743/KOR/pig/2002/O/ME-SA/PanAsia              5.92%    passed     99.25%
+  61  KF112880/MMR/cattle/2009/O/SEA/Unknown             5.92%    passed     96.13%
+  62  JX040487/BGR/cattle/2011/O/ME-SA/PanAsia-2         5.92%    passed     96.09%
+  63  HQ113232/PAK/cow/2009/O/ME-SA/PanAsia-2            5.92%    passed     87.44%
+  64  HM191257/UGA/cow/2006/O/EA-2/Unknown               5.92%    passed     91.88%
+  65  HM055510/VNM/Unknown/2009/O/SEA/Unknown            5.92%    passed     96.07%
+  66  EU214601/GBR/sheep/2001/O/ME-SA/PanAsia            5.92%    passed     93.08%
+  67  EF614457/KOR/cattle/2002/O/ME-SA/PanAsia           5.92%    passed     99.11%
+  68  AY593823/TUR/Unknown/1969/O/ME-SA/Unknown          5.92%    passed     84.60%
+  69  AY593818/ARG/Unknown/1958/O/EURO-SA/Unknown        5.92%    passed     97.19%
+  70  AF511039/CHN/Unknown/1958/O/CATHAY/Unknown         5.92%    passed     86.26%
+  71  EF175732/CHN/Unknown/1999/O/CATHAY/Unknown         5.92%    passed     18.57%
+  72  DQ404167/GBR/sheep/2001/O/ME-SA/PanAsia            5.92%    passed     90.91%
+  73  DQ404164/GBR/cow/2001/O/ME-SA/PanAsia              5.92%    passed     88.96%
+  74  AF026168/TWN/Unknown/1997/O/CATHAY/Unknown         5.92%    passed     90.36%
+  75  AB079061/JPN/Unknown/2000/O/ME-SA/PanAsia          5.92%    passed     97.84%
+  76  EU448369/GBR/cow/1967/O/EURO-SA/Unknown            5.92%    passed     95.35%
+  77  AJ633821/FRA/Unknown/2001/O/ME-SA/PanAsia          5.92%    passed     87.30%
+  78  AY317098/HKG/Unknown/2002/O/CATHAY/Unknown         5.92%    passed     56.50%
+  79  EU400597/CHN/Unknown/2001/O/CATHAY/Unknown         5.92%    passed     50.59%
+  80  AY686687/Unknown/Unknown/2001/O/CATHAY/Unknown     5.92%    passed     75.83%
+  81  AF377945/Unknown/Unknown/2000/O/ME-SA/PanAsia      5.92%    passed     82.52%
+  82  EF552690/GBR/cattle/2001/O/ME-SA/PanAsia           5.92%    passed     93.08%
+****  TOTAL                                              5.91%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: LC149628/JPN/pig/2010/O/SEA/Unknown is identical to LC149633/JPN/pig/2010/O/SEA/Unknown but kept for subsequent analysis
+NOTE: EF552690/GBR/cattle/2001/O/ME-SA/PanAsia is identical to EU214601/GBR/sheep/2001/O/ME-SA/PanAsia but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.017772 secs
+Creating fast initial parsimony tree by random order stepwise addition...
+0.025 seconds, parsimony score: 4025 (based on 938 sites)
+Generating 1000 samples for ultrafast bootstrap (seed: 412766)...
+
+NOTE: 13 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.244 / LogL: -21464.661
+Init pinv, alpha: 0.065, 1.000 / Estimate: 0.080, 0.282 / LogL: -21461.023
+Init pinv, alpha: 0.131, 1.000 / Estimate: 0.492, 1.213 / LogL: -21425.953
+Init pinv, alpha: 0.196, 1.000 / Estimate: 0.492, 1.213 / LogL: -21425.961
+Init pinv, alpha: 0.262, 1.000 / Estimate: 0.491, 1.205 / LogL: -21425.992
+Init pinv, alpha: 0.327, 1.000 / Estimate: 0.491, 1.207 / LogL: -21425.984
+Init pinv, alpha: 0.393, 1.000 / Estimate: 0.492, 1.214 / LogL: -21425.963
+Init pinv, alpha: 0.458, 1.000 / Estimate: 0.492, 1.210 / LogL: -21425.977
+Init pinv, alpha: 0.524, 1.000 / Estimate: 0.497, 1.255 / LogL: -21425.883
+Init pinv, alpha: 0.589, 1.000 / Estimate: 0.501, 1.298 / LogL: -21425.930
+Optimal pinv,alpha: 0.497, 1.255 / LogL: -21425.883
+
+Parameters optimization took 41.184 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.102154 secs using 91.77% CPU
+Computing ML distances took 0.110317 sec (of wall-clock time) 0.093750 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0002675 secs
+Constructing RapidNJ tree: done in 0.000919 secs
+Computing RapidNJ tree took 0.039058 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -21423.666
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 2.275 second
+Computing log-likelihood of 98 initial trees ... 4.590 seconds
+Current best score: -21405.004
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 1.00382 secs using 98.06% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -21381.365
+Optimizing NNI: done in 1.05331 secs using 96.42% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -21377.253
+Optimizing NNI: done in 1.04702 secs using 89.54% CPU
+Optimizing NNI: done in 0.93227 secs using 100.6% CPU
+Optimizing NNI: done in 0.962785 secs using 94.13% CPU
+Optimizing NNI: done in 1.06459 secs using 88.06% CPU
+Optimizing NNI: done in 1.01221 secs using 89.53% CPU
+Optimizing NNI: done in 1.04669 secs using 94.05% CPU
+Optimizing NNI: done in 0.929154 secs using 90.81% CPU
+Optimizing NNI: done in 1.06141 secs using 95.69% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 10: -21376.148
+Iteration 10 / LogL: -21376.148 / Time: 0h:0m:59s
+Optimizing NNI: done in 1.03707 secs using 91.91% CPU
+Optimizing NNI: done in 0.880506 secs using 95.83% CPU
+Optimizing NNI: done in 1.09184 secs using 91.59% CPU
+Optimizing NNI: done in 1.01888 secs using 99.68% CPU
+Optimizing NNI: done in 1.12942 secs using 95.46% CPU
+Optimizing NNI: done in 1.06418 secs using 95.44% CPU
+Optimizing NNI: done in 0.875039 secs using 94.64% CPU
+Optimizing NNI: done in 0.895828 secs using 97.67% CPU
+Optimizing NNI: done in 1.18469 secs using 89.69% CPU
+Optimizing NNI: done in 0.954064 secs using 96.63% CPU
+Iteration 20 / LogL: -21385.620 / Time: 0h:1m:10s
+Finish initializing candidate tree set (20)
+Current best tree score: -21376.148 / CPU time: 28.487
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 0.909973 secs using 96.16% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 21: -21372.852
+Optimizing NNI: done in 1.15123 secs using 89.58% CPU
+Optimizing NNI: done in 1.01273 secs using 95.66% CPU
+BETTER TREE FOUND at iteration 23: -21372.842
+Optimizing NNI: done in 0.780854 secs using 98.05% CPU
+Optimizing NNI: done in 1.05569 secs using 94.72% CPU
+Optimizing NNI: done in 1.36616 secs using 96.07% CPU
+UPDATE BEST LOG-LIKELIHOOD: -21372.842
+Optimizing NNI: done in 0.737738 secs using 95.31% CPU
+Optimizing NNI: done in 0.821202 secs using 97.04% CPU
+Optimizing NNI: done in 1.01865 secs using 95.1% CPU
+Optimizing NNI: done in 0.897616 secs using 99.22% CPU
+Iteration 30 / LogL: -21372.858 / Time: 0h:1m:20s (0h:4m:18s left)
+Optimizing NNI: done in 1.13944 secs using 94.62% CPU
+Optimizing NNI: done in 1.10669 secs using 93.18% CPU
+Optimizing NNI: done in 1.12319 secs using 98.77% CPU
+Optimizing NNI: done in 0.85543 secs using 98.63% CPU
+Optimizing NNI: done in 0.916832 secs using 100.6% CPU
+Optimizing NNI: done in 0.719527 secs using 99.89% CPU
+Optimizing NNI: done in 0.660141 secs using 99.41% CPU
+Optimizing NNI: done in 1.06423 secs using 92.5% CPU
+Optimizing NNI: done in 0.979683 secs using 100.5% CPU
+Optimizing NNI: done in 0.98918 secs using 94.78% CPU
+Iteration 40 / LogL: -21376.960 / Time: 0h:1m:30s (0h:3m:12s left)
+Optimizing NNI: done in 0.907277 secs using 96.44% CPU
+Optimizing NNI: done in 1.13745 secs using 96.16% CPU
+Optimizing NNI: done in 1.01713 secs using 92.17% CPU
+Optimizing NNI: done in 1.10095 secs using 96.51% CPU
+Optimizing NNI: done in 0.80188 secs using 99.38% CPU
+Optimizing NNI: done in 0.891894 secs using 94.6% CPU
+Optimizing NNI: done in 0.978397 secs using 97.42% CPU
+Optimizing NNI: done in 0.780172 secs using 98.14% CPU
+Optimizing NNI: done in 0.919958 secs using 100.2% CPU
+Optimizing NNI: done in 1.05136 secs using 96.6% CPU
+Iteration 50 / LogL: -21372.850 / Time: 0h:1m:40s (0h:2m:29s left)
+Log-likelihood cutoff on original alignment: -21434.655
+Optimizing NNI: done in 0.929201 secs using 97.53% CPU
+Optimizing NNI: done in 1.11012 secs using 88.67% CPU
+Optimizing NNI: done in 1.16279 secs using 95.41% CPU
+Optimizing NNI: done in 0.947493 secs using 92.35% CPU
+Optimizing NNI: done in 0.898731 secs using 99.1% CPU
+Optimizing NNI: done in 1.0038 secs using 98.06% CPU
+Optimizing NNI: done in 1.03427 secs using 92.15% CPU
+Optimizing NNI: done in 0.976384 secs using 92.82% CPU
+Optimizing NNI: done in 0.561511 secs using 97.39% CPU
+Optimizing NNI: done in 1.00803 secs using 97.65% CPU
+Iteration 60 / LogL: -21372.856 / Time: 0h:1m:50s (0h:1m:58s left)
+Optimizing NNI: done in 0.70339 secs using 99.96% CPU
+Optimizing NNI: done in 0.914339 secs using 100.8% CPU
+Optimizing NNI: done in 0.78794 secs using 97.17% CPU
+Optimizing NNI: done in 1.03523 secs using 99.62% CPU
+Optimizing NNI: done in 0.853652 secs using 100.7% CPU
+Optimizing NNI: done in 1.00626 secs using 99.38% CPU
+Optimizing NNI: done in 0.89728 secs using 99.26% CPU
+Optimizing NNI: done in 0.727286 secs using 101% CPU
+Optimizing NNI: done in 0.701808 secs using 97.96% CPU
+Optimizing NNI: done in 1.1801 secs using 100.6% CPU
+Iteration 70 / LogL: -21377.075 / Time: 0h:1m:59s (0h:1m:32s left)
+Optimizing NNI: done in 0.843283 secs using 100.1% CPU
+Optimizing NNI: done in 0.977518 secs using 99.1% CPU
+Optimizing NNI: done in 0.754281 secs using 95.29% CPU
+Optimizing NNI: done in 0.995016 secs using 95.79% CPU
+Optimizing NNI: done in 0.947011 secs using 95.7% CPU
+Optimizing NNI: done in 0.974273 secs using 101% CPU
+Optimizing NNI: done in 0.751248 secs using 99.83% CPU
+Optimizing NNI: done in 0.819269 secs using 99.17% CPU
+Optimizing NNI: done in 1.08113 secs using 99.72% CPU
+Optimizing NNI: done in 0.932622 secs using 100.5% CPU
+Iteration 80 / LogL: -21377.495 / Time: 0h:2m:9s (0h:1m:10s left)
+Optimizing NNI: done in 0.959587 secs using 99.33% CPU
+Optimizing NNI: done in 1.07289 secs using 97.57% CPU
+Optimizing NNI: done in 0.866475 secs using 99.18% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 83: -21372.816
+Optimizing NNI: done in 0.927629 secs using 99.38% CPU
+Optimizing NNI: done in 0.954236 secs using 99.88% CPU
+Optimizing NNI: done in 0.941897 secs using 99.53% CPU
+Optimizing NNI: done in 1.12643 secs using 98.49% CPU
+Optimizing NNI: done in 0.905216 secs using 100.1% CPU
+Optimizing NNI: done in 1.05237 secs using 99.48% CPU
+Optimizing NNI: done in 0.91062 secs using 99.52% CPU
+BETTER TREE FOUND at iteration 90: -21372.814
+Iteration 90 / LogL: -21372.814 / Time: 0h:2m:19s (0h:2m:36s left)
+Optimizing NNI: done in 0.891719 secs using 98.13% CPU
+Optimizing NNI: done in 0.851867 secs using 97.21% CPU
+Optimizing NNI: done in 0.934177 secs using 100.4% CPU
+Optimizing NNI: done in 1.13098 secs using 99.47% CPU
+Optimizing NNI: done in 0.835935 secs using 97.2% CPU
+Optimizing NNI: done in 0.856382 secs using 98.52% CPU
+Optimizing NNI: done in 1.08096 secs using 98.29% CPU
+BETTER TREE FOUND at iteration 97: -21372.813
+Optimizing NNI: done in 1.0346 secs using 98.17% CPU
+Optimizing NNI: done in 0.945768 secs using 100.8% CPU
+Optimizing NNI: done in 1.06789 secs using 101% CPU
+Iteration 100 / LogL: -21372.817 / Time: 0h:2m:29s (0h:2m:26s left)
+Log-likelihood cutoff on original alignment: -21434.655
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+Optimizing NNI: done in 0.701623 secs using 100.2% CPU
+Optimizing NNI: done in 0.894875 secs using 99.53% CPU
+Optimizing NNI: done in 1.14816 secs using 100.7% CPU
+Optimizing NNI: done in 1.0295 secs using 100.2% CPU
+Optimizing NNI: done in 0.905582 secs using 100.1% CPU
+Optimizing NNI: done in 0.936325 secs using 100.1% CPU
+Optimizing NNI: done in 1.00418 secs using 99.58% CPU
+Optimizing NNI: done in 0.966773 secs using 100.2% CPU
+Optimizing NNI: done in 0.967885 secs using 100.1% CPU
+Optimizing NNI: done in 0.894218 secs using 97.85% CPU
+Iteration 110 / LogL: -21372.828 / Time: 0h:2m:39s (0h:2m:11s left)
+Optimizing NNI: done in 1.00658 secs using 99.35% CPU
+Optimizing NNI: done in 0.823084 secs using 100.6% CPU
+Optimizing NNI: done in 1.06494 secs using 95.37% CPU
+Optimizing NNI: done in 0.753759 secs using 99.5% CPU
+Optimizing NNI: done in 0.760616 secs using 100.7% CPU
+Optimizing NNI: done in 0.806667 secs using 100.7% CPU
+Optimizing NNI: done in 0.657238 secs using 99.85% CPU
+Optimizing NNI: done in 0.903784 secs using 96.82% CPU
+Optimizing NNI: done in 1.02618 secs using 98.97% CPU
+Optimizing NNI: done in 1.15618 secs using 98.65% CPU
+Iteration 120 / LogL: -21372.845 / Time: 0h:2m:49s (0h:1m:53s left)
+Optimizing NNI: done in 0.858397 secs using 98.29% CPU
+Optimizing NNI: done in 0.804973 secs using 98.99% CPU
+Optimizing NNI: done in 0.893065 secs using 97.98% CPU
+Optimizing NNI: done in 0.946725 secs using 100.7% CPU
+Optimizing NNI: done in 0.753181 secs using 99.58% CPU
+Optimizing NNI: done in 0.919604 secs using 98.55% CPU
+Optimizing NNI: done in 0.911326 secs using 97.73% CPU
+Optimizing NNI: done in 0.770602 secs using 99.35% CPU
+Optimizing NNI: done in 0.818727 secs using 101.1% CPU
+Optimizing NNI: done in 0.84226 secs using 100.2% CPU
+Iteration 130 / LogL: -21402.496 / Time: 0h:2m:57s (0h:1m:36s left)
+Optimizing NNI: done in 0.864549 secs using 99.4% CPU
+Optimizing NNI: done in 0.977758 secs using 97.48% CPU
+Optimizing NNI: done in 0.538548 secs using 98.64% CPU
+Optimizing NNI: done in 1.0554 secs using 99.19% CPU
+Optimizing NNI: done in 1.06357 secs using 98.43% CPU
+Optimizing NNI: done in 0.968062 secs using 100.1% CPU
+Optimizing NNI: done in 0.918871 secs using 100.3% CPU
+Optimizing NNI: done in 0.927935 secs using 95.98% CPU
+Optimizing NNI: done in 0.776146 secs using 98.64% CPU
+Optimizing NNI: done in 0.899458 secs using 97.28% CPU
+Iteration 140 / LogL: -21375.910 / Time: 0h:3m:7s (0h:1m:20s left)
+Optimizing NNI: done in 1.11402 secs using 99.58% CPU
+Optimizing NNI: done in 0.857218 secs using 100.3% CPU
+Optimizing NNI: done in 0.958814 secs using 96.15% CPU
+Optimizing NNI: done in 0.789109 secs using 101% CPU
+Optimizing NNI: done in 1.02218 secs using 91.72% CPU
+Optimizing NNI: done in 1.12776 secs using 98.37% CPU
+Optimizing NNI: done in 0.724197 secs using 97.09% CPU
+Optimizing NNI: done in 0.602465 secs using 98.55% CPU
+Optimizing NNI: done in 0.889357 secs using 100.1% CPU
+Optimizing NNI: done in 0.761573 secs using 98.48% CPU
+Iteration 150 / LogL: -21372.849 / Time: 0h:3m:16s (0h:1m:5s left)
+Log-likelihood cutoff on original alignment: -21434.655
+Optimizing NNI: done in 1.02208 secs using 93.25% CPU
+Optimizing NNI: done in 0.780288 secs using 94.12% CPU
+Optimizing NNI: done in 1.04556 secs using 100.1% CPU
+Optimizing NNI: done in 0.932232 secs using 97.21% CPU
+Optimizing NNI: done in 1.16553 secs using 97.86% CPU
+Optimizing NNI: done in 0.865814 secs using 99.26% CPU
+Optimizing NNI: done in 0.84869 secs using 99.42% CPU
+Optimizing NNI: done in 1.14754 secs using 85.78% CPU
+Optimizing NNI: done in 1.0176 secs using 96.74% CPU
+Optimizing NNI: done in 0.996294 secs using 92.53% CPU
+Iteration 160 / LogL: -21535.393 / Time: 0h:3m:27s (0h:0m:52s left)
+Optimizing NNI: done in 1.07076 secs using 97.77% CPU
+Optimizing NNI: done in 0.80782 secs using 96.71% CPU
+Optimizing NNI: done in 0.964056 secs using 89.14% CPU
+Optimizing NNI: done in 1.08283 secs using 85.14% CPU
+Optimizing NNI: done in 0.880773 secs using 95.8% CPU
+Optimizing NNI: done in 0.862877 secs using 97.78% CPU
+Optimizing NNI: done in 0.974551 secs using 97.8% CPU
+Optimizing NNI: done in 1.01438 secs using 93.96% CPU
+Optimizing NNI: done in 0.934858 secs using 96.94% CPU
+Optimizing NNI: done in 0.800219 secs using 99.58% CPU
+Iteration 170 / LogL: -21373.199 / Time: 0h:3m:36s (0h:0m:38s left)
+Optimizing NNI: done in 0.924647 secs using 92.94% CPU
+Optimizing NNI: done in 1.14579 secs using 94.09% CPU
+Optimizing NNI: done in 0.694388 secs using 94.51% CPU
+Optimizing NNI: done in 0.922856 secs using 88.04% CPU
+Optimizing NNI: done in 1.07189 secs using 94.75% CPU
+Optimizing NNI: done in 1.09946 secs using 99.48% CPU
+Optimizing NNI: done in 1.12865 secs using 94.14% CPU
+Optimizing NNI: done in 1.16645 secs using 95.11% CPU
+Optimizing NNI: done in 1.11933 secs using 92.13% CPU
+Optimizing NNI: done in 1.01256 secs using 94.13% CPU
+Iteration 180 / LogL: -21372.818 / Time: 0h:3m:47s (0h:0m:25s left)
+Optimizing NNI: done in 0.939097 secs using 99.83% CPU
+Optimizing NNI: done in 0.872539 secs using 98.49% CPU
+Optimizing NNI: done in 1.22809 secs using 99.24% CPU
+Optimizing NNI: done in 1.02579 secs using 94.44% CPU
+Optimizing NNI: done in 0.885921 secs using 98.77% CPU
+Optimizing NNI: done in 0.950718 secs using 96.97% CPU
+Optimizing NNI: done in 1.01103 secs using 97.36% CPU
+Optimizing NNI: done in 1.1443 secs using 99.68% CPU
+Optimizing NNI: done in 1.03425 secs using 95.18% CPU
+Optimizing NNI: done in 0.871609 secs using 91.43% CPU
+Iteration 190 / LogL: -21519.191 / Time: 0h:3m:58s (0h:0m:12s left)
+Optimizing NNI: done in 1.0605 secs using 95.77% CPU
+Optimizing NNI: done in 1.07 secs using 94.92% CPU
+Optimizing NNI: done in 0.767879 secs using 91.57% CPU
+Optimizing NNI: done in 1.11839 secs using 93.61% CPU
+Optimizing NNI: done in 1.00712 secs using 99.29% CPU
+Optimizing NNI: done in 1.19094 secs using 90.53% CPU
+Optimizing NNI: done in 1.25441 secs using 79.72% CPU
+Optimizing NNI: done in 1.33345 secs using 93.74% CPU
+TREE SEARCH COMPLETED AFTER 198 ITERATIONS / Time: 0h:4m:7s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -21372.813
+Optimal log-likelihood: -21372.813
+Rate parameters:  A-C: 0.79026  A-G: 7.68346  A-T: 0.97878  C-G: 0.27277  C-T: 11.56775  G-T: 1.00000
+Base frequencies:  A: 0.244  C: 0.305  G: 0.251  T: 0.200
+Proportion of invariable sites: 0.497
+Gamma shape alpha: 1.254
+Parameters optimization took 1 rounds (0.178 sec)
+BEST SCORE FOUND : -21372.813
+Creating bootstrap support values...
+Split supports printed to NEXUS file alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang.splits.nex
+Total tree length: 2.420
+
+Total number of iterations: 198
+CPU time used for tree search: 197.297 sec (0h:3m:17s)
+Wall-clock time used for tree search: 205.326 sec (0h:3m:25s)
+Total CPU time used: 238.016 sec (0h:3m:58s)
+Total wall-clock time used: 248.039 sec (0h:4m:8s)
+
+Computing bootstrap consensus tree...
+Reading input file alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang.splits.nex...
+82 taxa and 521 splits.
+Consensus tree written to alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang.contree
+Reading input trees file alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang.contree
+Log-likelihood of consensus tree: -21372.895
+
+Analysis results written to: 
+  IQ-TREE report:                alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang.iqtree
+  Maximum-likelihood tree:       alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang.treefile
+  Likelihood distances:          alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang.splits.nex
+  Consensus tree:                alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang.contree
+  Screen log file:               alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample1\O_637-2783_no_probang.log
+
+Date and Time: Thu Jan 15 15:20:51 2026

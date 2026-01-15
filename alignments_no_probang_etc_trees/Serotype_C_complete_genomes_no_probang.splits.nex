@@ -1,0 +1,75 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=16;
+TAXLABELS
+[1] 'MH053310/UGA/cattle/1970/C/AFRICA/Unknown'
+[2] 'MH053309/KEN/cattle/1967/C/AFRICA/Unknown'
+[3] 'MH053308/ETH/Unknown/1971/C/AFRICA/Unknown'
+[4] 'KM268897/KEN/cattle/2004/C/AFRICA/Unknown'
+[5] 'AY593810/GBR/Unknown/1970/C/V-EA/Unknown'
+[6] 'X74812/AZE/Unknown/1965/C/EURO-SA/Unknown'
+[7] 'OQ383267/BRA/cow/1963/C/EURO-SA/Unknown'
+[8] 'OQ383266/GBR/Unknown/2002/C/V-EA/Unknown'
+[9] 'OQ383265/NLD/cow/2000/C/EURO-SA/Unknown'
+[10] 'OQ356339/GBR/cow/1987/C/V-EA/Unknown'
+[11] 'AY593809/ARG/Unknown/1969/C/EURO-SA/Unknown'
+[12] 'AY593808/ARG/Unknown/1966/C/EURO-SA/Unknown'
+[13] 'AY593807/BRA/Unknown/1955/C/EURO-SA/Unknown'
+[14] 'AY593806/BRA/Unknown/1971/C/EURO-SA/Unknown'
+[15] 'AY593805/DEU/Unknown/1960/C/EURO-SA/Unknown'
+[16] 'AY593804/CHE/Unknown/1965/C/EURO-SA/Unknown'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=16 nsplits=44;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 4,
+	100	 2 4,
+	100	 3,
+	100	 2 3 4,
+	100	 5,
+	100	 10,
+	83	 5 10,
+	100	 8,
+	100	 5 8 10,
+	100	 6,
+	100	 9,
+	100	 15,
+	65	 9 15,
+	56	 6 9 15,
+	100	 16,
+	100	 6 9 15 16,
+	100	 12,
+	100	 6 9 12 15 16,
+	100	 7,
+	100	 11,
+	13	 7 11,
+	100	 13,
+	100	 7 11 13,
+	100	 14,
+	72	 7 11 13 14,
+	100	 1 2 3 4 5 8 10,
+	100	 1 2 3 4,
+	100	 1,
+	13	 15 16,
+	11	 6 15 16,
+	22	 9 15 16,
+	80	 7 13,
+	25	 1 2 3 4 5 8 10 14,
+	10	 5 8,
+	12	 6 9,
+	8	 6 16,
+	7	 8 10,
+	4	 9 16,
+	8	 6 15,
+	7	 11 13,
+	3	 6 9 12 14 15 16,
+	2	 6 9 16,
+	0	 1 2 4,
+;
+END; [Splits]
+

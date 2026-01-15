@@ -1,0 +1,457 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Input file name: alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample3\O_637-2783_no_probang.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 372734
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 80 sequences with 2282 nucleotide sites
+Number of constant sites: 1334 (= 58.4575% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1334 (= 58.4575% of all sites)
+Number of parsimony informative sites: 808
+Number of distinct site patterns: 901
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+G4
+
+Rate parameter R:
+
+  A-C: 0.8439
+  A-G: 7.8682
+  A-T: 0.9551
+  C-G: 0.3034
+  C-T: 11.8821
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2443
+  pi(C) = 0.3046
+  pi(G) = 0.2513
+  pi(T) = 0.1998
+
+Rate matrix Q:
+
+  A   -0.8731   0.09253    0.7119   0.06869
+  C    0.0742   -0.9562   0.02745    0.8546
+  G    0.6918   0.03326    -0.797   0.07192
+  T   0.08398     1.303   0.09047    -1.477
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.4841
+Gamma shape alpha: 1.13
+
+ Category  Relative_rate  Proportion
+  0         0              0.4841
+  1         0.3144         0.129
+  2         0.9938         0.129
+  3         1.974          0.129
+  4         4.471          0.129
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -21891.9724 (s.e. 534.1594)
+Unconstrained log-likelihood (without tree): -10124.2914
+Number of free parameters (#branches + #model parameters): 167
+Akaike information criterion (AIC) score: 44117.9449
+Corrected Akaike information criterion (AICc) score: 44144.4879
+Bayesian information criterion (BIC) score: 45075.3238
+
+Total tree length (sum of branch lengths): 2.5000
+Sum of internal branch lengths: 1.2750 (50.9983% of tree length)
+
+WARNING: 11 near-zero internal branches (<0.0004) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'KC440883/EGY/Unknown/2011/O/ME-SA/PanAsia-2' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++----KC440883/EGY/Unknown/2011/O/ME-SA/PanAsia-2
+|
+|                                                            +--HM229661/HKG/pig/2010/O/SEA/Unknown
+|                                                         +--| (95)
+|                                                         |  +--MN389541/CHN/pig/2010/O/SEA/Unknown
+|                                                      +--| (93)
+|                                                      |  +--JQ900581/CHN/pig/2010/O/SEA/Unknown
+|                                             +--------| (100)
+|                                             |        |                     +--ON868620/VNM/pig/2019/O/SEA/Unknown
+|                                             |        |                  +**| (63)
+|                                             |        |                  |  |  +--ON868618/VNM/pig/2019/O/SEA/Unknown
+|                                             |        |                  |  +**| (36)
+|                                             |        |                  |     +--ON868611/VNM/pig/2018/O/SEA/Unknown
+|                                             |        |               +--| (87)
+|                                             |        |               |  +--ON868616/VNM/pig/2018/O/SEA/Unknown
+|                                             |        |           +---| (100)
+|                                             |        |           |   +--ON868613/VNM/pig/2019/O/SEA/Unknown
+|                                             |        |        +--| (100)
+|                                             |        |        |  +--MH845413/VNM/pig/2014/O/SEA/Unknown
+|                                             |        |     +--| (100)
+|                                             |        |     |  |  +--KX534089/KOR/pig/2016/O/SEA/Unknown
+|                                             |        |     |  +--| (100)
+|                                             |        |     |     +--KX162590/KOR/pig/2014/O/SEA/Unknown
+|                                             |        |  +--| (85)
+|                                             |        |  |  |                 +--LC149718/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  |              +**| (25)
+|                                             |        |  |  |              |  +--LC149674/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  |           +**| (7)
+|                                             |        |  |  |           |  +--LC149704/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  |        +**| (3)
+|                                             |        |  |  |        |  |  +**LC149700/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  |        |  +**| (32)
+|                                             |        |  |  |        |     +**LC149627/JPN/pig/2010/O/SEA/Unknown
+|                                             |        |  |  |     +**| (10)
+|                                             |        |  |  |     |  |  +--LC149685/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  |     |  +--| (95)
+|                                             |        |  |  |     |     +**LC149665/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  |  +--| (96)
+|                                             |        |  |  |  |  +--LC149686/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  +--| (100)
+|                                             |        |  |     +--LC149617/JPN/cow/2010/O/SEA/Unknown
+|                                             |        +--| (74)
+|                                             |           +--HM055510/VNM/Unknown/2009/O/SEA/Unknown
+|                                   +---------| (100)
+|                                   |         +-------KF112881/MNG/cattle/2010/O/SEA/Mya-98
+|                                +--| (85)
+|                                |  |               +-----ON736860/UGA/cow/2015/O/EA-2/Unknown
+|                                |  |  +------------| (100)
+|                                |  |  |            |  +--KU821591/ZMB/cow/2010/O/EA-2/Unknown
+|                                |  |  |            +--| (100)
+|                                |  |  |               +--HM191257/UGA/cow/2006/O/EA-2/Unknown
+|                                |  +--| (96)
+|                                |     |             +----------NC_039210/GBR/Unknown/1965/O/EURO-SA/Unknown
+|                                |     |  +----------| (100)
+|                                |     |  |          |          +--JX869181/GBR/cattle/1967/O/EURO-SA/Unknown
+|                                |     |  |          +----------| (100)
+|                                |     |  |                     +--AY593817/BEL/Unknown/1973/O/EURO-SA/Unknown
+|                                |     +--| (98)
+|                                |        |                                +--AY593833/TWN/Unknown/1999/O/CATHAY/Unknown
+|                                |        |                             +--| (100)
+|                                |        |                             |  +--AF026168/TWN/Unknown/1997/O/CATHAY/Unknown
+|                                |        |                          +--| (100)
+|                                |        |                          |  +---AY686687/Unknown/Unknown/2001/O/CATHAY/Unknown
+|                                |        |      +-------------------| (100)
+|                                |        |      |                   |  +-----EF175732/CHN/Unknown/1999/O/CATHAY/Unknown
+|                                |        |      |                   +--| (100)
+|                                |        |      |                      |   +--AY317098/HKG/Unknown/2002/O/CATHAY/Unknown
+|                                |        |      |                      +---| (100)
+|                                |        |      |                          +--EU400597/CHN/Unknown/2001/O/CATHAY/Unknown
+|                                |        +------| (100)
+|                                |               +------AF511039/CHN/Unknown/1958/O/CATHAY/Unknown
+|                             +--| (98)
+|                             |  +---------KP940473/EGY/cattle/2014/O/ME-SA/Unknown
+|                          +--| (89)
+|                          |  +------------KU726614/GRC/sheep/1994/O/ME-SA/Unknown
+|                       +--| (100)
+|                       |  +--------KY446903/PAK/water-buffalo/2005/O/ME-SA/Unknown
+|                    +--| (100)
+|                    |  |                            +--OP751924/IDN/cattle/2022/O/ME-SA/Unknown
+|                    |  |                      +-----| (100)
+|                    |  |                      |     +--OP585403/IDN/cattle/2022/O/ME-SA/Unknown
+|                    |  |                   +--| (57)
+|                    |  |                   |  |  +--MH891503/VNM/cow/2017/O/ME-SA/Unknown
+|                    |  |                   |  +--| (85)
+|                    |  |                   |     |  +--MF461724/CHN/cattle/2017/O/ME-SA/Unknown
+|                    |  |                   |     +--| (100)
+|                    |  |                   |        +--LC320038/MNG/cow/2015/O/ME-SA/Unknown
+|                    |  |                +--| (42)
+|                    |  |                |  +--KX712091/BGD/pig/2015/O/ME-SA/Unknown
+|                    |  |           +----| (100)
+|                    |  |           |    +--MG983702/MUS/cattle/2016/O/ME-SA/Unknown
+|                    |  |        +--| (82)
+|                    |  |        |  +--KF985189/BGD/cattle/2013/O/ME-SA/Unknown
+|                    |  |     +--| (95)
+|                    |  |     |  |           +--OM160625/DZA/sheep/2015/O/ME-SA/Ind-2001d
+|                    |  |     |  |        +--| (100)
+|                    |  |     |  |        |  +--KU291242/MAR/cow/2015/O/ME-SA/Ind-2001d
+|                    |  |     |  |     +--| (100)
+|                    |  |     |  |     |  |  +--MG983726/SAU/cattle/2014/O/ME-SA/Ind-2001d
+|                    |  |     |  |     |  +--| (97)
+|                    |  |     |  |     |     +--MG983725/SAU/cattle/2014/O/ME-SA/Ind-2001d
+|                    |  |     |  |  +--| (96)
+|                    |  |     |  |  |  +--MG983709/NPL/cattle/2012/O/ME-SA/Ind-2001d
+|                    |  |     |  +--| (100)
+|                    |  |     |     |     +--MN095366/IND/cattle/2014/O/ME-SA/Ind-2001d
+|                    |  |     |     |  +--| (99)
+|                    |  |     |     |  |  +--MG983734/LKA/water-buffalo/2014/O/ME-SA/Ind-2001d
+|                    |  |     |     +--| (100)
+|                    |  |     |        +--KY657269/VNM/pig/2015/O/ME-SA/Ind-2001d
+|                    |  +-----| (100)
+|                    |        +---MK071699/BGD/cattle/2013/O/ME-SA/Unknown
+|                 +--| (98)
+|                 |  |       +-----ON868547/VNM/cow/2018/O/ME-SA/Unknown
+|                 |  |  +----| (100)
+|                 |  |  |    +----MF947127/VNM/buffalo/2012/O/ME-SA/Unknown
+|                 |  +--| (99)
+|                 |     |     +**KF694736/KOR/pig/2002/O/ME-SA/PanAsia
+|                 |     |  +--| (100)
+|                 |     |  |  +--EF614457/KOR/cattle/2002/O/ME-SA/PanAsia
+|                 |     +--| (100)
+|                 |        |           +**EU214601/GBR/sheep/2001/O/ME-SA/PanAsia
+|                 |        |        +--| (98)
+|                 |        |        |  +**DQ404169/GBR/sheep/2001/O/ME-SA/PanAsia
+|                 |        |     +--| (100)
+|                 |        |     |  |     +**DQ404177/GBR/pig/2001/O/ME-SA/PanAsia
+|                 |        |     |  |  +**| (88)
+|                 |        |     |  |  |  +**AJ633821/FRA/Unknown/2001/O/ME-SA/PanAsia
+|                 |        |     |  +**| (96)
+|                 |        |     |     +--EF552688/GBR/sheep/2001/O/ME-SA/PanAsia
+|                 |        |  +--| (98)
+|                 |        |  |  +--AB079061/JPN/Unknown/2000/O/ME-SA/PanAsia
+|                 |        +--| (92)
+|                 |           +---AF377945/Unknown/Unknown/2000/O/ME-SA/PanAsia
+|              +--| (100)
+|              |  +-------OP957418/BGD/cattle/2021/O/ME-SA/PanAsia-2
+|           +--| (71)
+|           |  +--HQ268524/BTN/Unknown/2004/O/ME-SA/PanAsia-2
+|        +--| (71)
+|        |  +---HQ113232/PAK/cow/2009/O/ME-SA/PanAsia-2
+|     +--| (96)
+|     |  +-------OK019689/IRN/cow/2016/O/ME-SA/PanAsia-2
+|  +--| (62)
+|  |  |  +--OM456137/PAK/cattle/2012/O/ME-SA/PanAsia-2
+|  |  +--| (100)
+|  |     |  +--OM456134/PAK/cattle/2012/O/ME-SA/PanAsia-2
+|  |     +**| (99)
+|  |        +--JX040490/BGR/cattle/2011/O/ME-SA/PanAsia-2
++--| (100)
+|  +--KM268895/TUR/cattle/2013/O/ME-SA/PanAsia-2
+|
+|  +--OQ211403/ISR/cattle/2007/O/ME-SA/PanAsia-2
++--| (97)
+   |     +**OQ211392/ISR/cattle/2007/O/ME-SA/PanAsia-2
+   |  +--| (100)
+   |  |  +**OQ211386/ISR/cattle/2007/O/ME-SA/PanAsia-2
+   +**| (97)
+      |  +--OQ211377/ISR/cattle/2007/O/ME-SA/PanAsia-2
+      +--| (100)
+         +--OQ211372/ISR/goat/2007/O/ME-SA/PanAsia-2
+
+Tree in newick format:
+
+(KC440883/EGY/Unknown/2011/O/ME-SA/PanAsia-2:0.0409055380,((((((((((((((((HM229661/HKG/pig/2010/O/SEA/Unknown:0.0032487034,MN389541/CHN/pig/2010/O/SEA/Unknown:0.0037218970)95:0.0013825998,JQ900581/CHN/pig/2010/O/SEA/Unknown:0.0027999838)93:0.0027685722,(((((((ON868620/VNM/pig/2019/O/SEA/Unknown:0.0018615861,(ON868618/VNM/pig/2019/O/SEA/Unknown:0.0023305388,ON868611/VNM/pig/2018/O/SEA/Unknown:0.0032727676)36:0.0000010022)63:0.0000010022,ON868616/VNM/pig/2018/O/SEA/Unknown:0.0018609021)87:0.0008491627,ON868613/VNM/pig/2019/O/SEA/Unknown:0.0028920346)100:0.0324588512,MH845413/VNM/pig/2014/O/SEA/Unknown:0.0064104156)100:0.0078563367,(KX534089/KOR/pig/2016/O/SEA/Unknown:0.0100426676,KX162590/KOR/pig/2014/O/SEA/Unknown:0.0009443289)100:0.0132213595)100:0.0218172546,((((((LC149718/JPN/cow/2010/O/SEA/Unknown:0.0032380924,LC149674/JPN/cow/2010/O/SEA/Unknown:0.0004598637)25:0.0000026239,LC149704/JPN/cow/2010/O/SEA/Unknown:0.0009200573)7:0.0000010022,(LC149700/JPN/cow/2010/O/SEA/Unknown:0.0000010023,LC149627/JPN/pig/2010/O/SEA/Unknown:0.0000010023)32:0.0000010022)3:0.0000010022,(LC149685/JPN/cow/2010/O/SEA/Unknown:0.0004597414,LC149665/JPN/cow/2010/O/SEA/Unknown:0.0000010023)95:0.0004597005)10:0.0000010022,LC149686/JPN/cow/2010/O/SEA/Unknown:0.0018492593)96:0.0009286740,LC149617/JPN/cow/2010/O/SEA/Unknown:0.0013819661)100:0.0046528342)85:0.0009944775,HM055510/VNM/Unknown/2009/O/SEA/Unknown:0.0023276717)74:0.0009439345)100:0.0636464565,KF112881/MNG/cattle/2010/O/SEA/Mya-98:0.0607877480)100:0.0730544160,((ON736860/UGA/cow/2015/O/EA-2/Unknown:0.0485877748,(KU821591/ZMB/cow/2010/O/EA-2/Unknown:0.0192496317,HM191257/UGA/cow/2006/O/EA-2/Unknown:0.0146416425)100:0.0225586734)100:0.0913458607,((NC_039210/GBR/Unknown/1965/O/EURO-SA/Unknown:0.0839506079,(JX869181/GBR/cattle/1967/O/EURO-SA/Unknown:0.0053115464,AY593817/BEL/Unknown/1973/O/EURO-SA/Unknown:0.0080694511)100:0.0835145809)100:0.0802964114,((((AY593833/TWN/Unknown/1999/O/CATHAY/Unknown:0.0023403372,AF026168/TWN/Unknown/1997/O/CATHAY/Unknown:0.0067253281)100:0.0217790525,AY686687/Unknown/Unknown/2001/O/CATHAY/Unknown:0.0329797710)100:0.0219143088,(EF175732/CHN/Unknown/1999/O/CATHAY/Unknown:0.0433484063,(AY317098/HKG/Unknown/2002/O/CATHAY/Unknown:0.0055716838,EU400597/CHN/Unknown/2001/O/CATHAY/Unknown:0.0099615347)100:0.0291580449)100:0.0200890410)100:0.1453923200,AF511039/CHN/Unknown/1958/O/CATHAY/Unknown:0.0498248324)100:0.0551294977)98:0.0258497563)96:0.0165088462)85:0.0115638883,KP940473/EGY/cattle/2014/O/ME-SA/Unknown:0.0700366692)98:0.0108042662,KU726614/GRC/sheep/1994/O/ME-SA/Unknown:0.0923772666)89:0.0065295438,KY446903/PAK/water-buffalo/2005/O/ME-SA/Unknown:0.0648347519)100:0.0262713835,(((((((OP751924/IDN/cattle/2022/O/ME-SA/Unknown:0.0015511620,OP585403/IDN/cattle/2022/O/ME-SA/Unknown:0.0007690619)100:0.0463394984,(MH891503/VNM/cow/2017/O/ME-SA/Unknown:0.0101162661,(MF461724/CHN/cattle/2017/O/ME-SA/Unknown:0.0018368493,LC320038/MNG/cow/2015/O/ME-SA/Unknown:0.0027844226)100:0.0046461919)85:0.0012598344)57:0.0011708312,KX712091/BGD/pig/2015/O/ME-SA/Unknown:0.0016777270)42:0.0015315827,MG983702/MUS/cattle/2016/O/ME-SA/Unknown:0.0065694419)100:0.0362996425,KF985189/BGD/cattle/2013/O/ME-SA/Unknown:0.0256250721)82:0.0038499478,((((OM160625/DZA/sheep/2015/O/ME-SA/Ind-2001d:0.0012229368,KU291242/MAR/cow/2015/O/ME-SA/Ind-2001d:0.0058557077)100:0.0144167201,(MG983726/SAU/cattle/2014/O/ME-SA/Ind-2001d:0.0075778509,MG983725/SAU/cattle/2014/O/ME-SA/Ind-2001d:0.0047367451)97:0.0011613978)100:0.0098293828,MG983709/NPL/cattle/2012/O/ME-SA/Ind-2001d:0.0088018785)96:0.0024120154,((MN095366/IND/cattle/2014/O/ME-SA/Ind-2001d:0.0035341379,MG983734/LKA/water-buffalo/2014/O/ME-SA/Ind-2001d:0.0063911715)99:0.0014438792,KY657269/VNM/pig/2015/O/ME-SA/Ind-2001d:0.0134429275)100:0.0093808698)100:0.0236145843)95:0.0082266161,MK071699/BGD/cattle/2013/O/ME-SA/Unknown:0.0341054967)100:0.0424668004)100:0.0154116734,((ON868547/VNM/cow/2018/O/ME-SA/Unknown:0.0445642406,MF947127/VNM/buffalo/2012/O/ME-SA/Unknown:0.0365505679)100:0.0381255535,((KF694736/KOR/pig/2002/O/ME-SA/PanAsia:0.0000010023,EF614457/KOR/cattle/2002/O/ME-SA/PanAsia:0.0027792440)100:0.0173916090,((((EU214601/GBR/sheep/2001/O/ME-SA/PanAsia:0.0000010023,DQ404169/GBR/sheep/2001/O/ME-SA/PanAsia:0.0000010023)98:0.0009437926,((DQ404177/GBR/pig/2001/O/ME-SA/PanAsia:0.0000010023,AJ633821/FRA/Unknown/2001/O/ME-SA/PanAsia:0.0000010023)88:0.0000010022,EF552688/GBR/sheep/2001/O/ME-SA/PanAsia:0.0022978731)96:0.0004336571)100:0.0049594225,AB079061/JPN/Unknown/2000/O/ME-SA/PanAsia:0.0081571362)98:0.0025853751,AF377945/Unknown/Unknown/2000/O/ME-SA/PanAsia:0.0302374307)92:0.0004939788)100:0.0105550885)99:0.0089529809)98:0.0075032540,OP957418/BGD/cattle/2021/O/ME-SA/PanAsia-2:0.0592827236)100:0.0149229106,HQ268524/BTN/Unknown/2004/O/ME-SA/PanAsia-2:0.0095925478)71:0.0034379672,HQ113232/PAK/cow/2009/O/ME-SA/PanAsia-2:0.0317539208)71:0.0060908325,OK019689/IRN/cow/2016/O/ME-SA/PanAsia-2:0.0615009669)96:0.0039024559,(OM456137/PAK/cattle/2012/O/ME-SA/PanAsia-2:0.0199989244,(OM456134/PAK/cattle/2012/O/ME-SA/PanAsia-2:0.0161091581,JX040490/BGR/cattle/2011/O/ME-SA/PanAsia-2:0.0134147346)99:0.0004271196)100:0.0254159050)62:0.0019543273,KM268895/TUR/cattle/2013/O/ME-SA/PanAsia-2:0.0278035236)100:0.0052735177,(OQ211403/ISR/cattle/2007/O/ME-SA/PanAsia-2:0.0074606105,((OQ211392/ISR/cattle/2007/O/ME-SA/PanAsia-2:0.0000010023,OQ211386/ISR/cattle/2007/O/ME-SA/PanAsia-2:0.0000010023)100:0.0037036086,(OQ211377/ISR/cattle/2007/O/ME-SA/PanAsia-2:0.0009239583,OQ211372/ISR/goat/2007/O/ME-SA/PanAsia-2:0.0018280223)100:0.0027819634)97:0.0004376390)97:0.0020996063);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -21892.035434
+Robinson-Foulds distance between ML tree and consensus tree: 8
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++----KC440883/EGY/Unknown/2011/O/ME-SA/PanAsia-2
+|
+|                                                            +--HM229661/HKG/pig/2010/O/SEA/Unknown
+|                                                         +--| (95)
+|                                                         |  +--MN389541/CHN/pig/2010/O/SEA/Unknown
+|                                                      +--| (93)
+|                                                      |  +--JQ900581/CHN/pig/2010/O/SEA/Unknown
+|                                             +--------| (100)
+|                                             |        |                        +--ON868620/VNM/pig/2019/O/SEA/Unknown
+|                                             |        |                     +--| (37)
+|                                             |        |                     |  +--ON868611/VNM/pig/2018/O/SEA/Unknown
+|                                             |        |                  +--| (63)
+|                                             |        |                  |  +--ON868618/VNM/pig/2019/O/SEA/Unknown
+|                                             |        |               +--| (87)
+|                                             |        |               |  +--ON868616/VNM/pig/2018/O/SEA/Unknown
+|                                             |        |           +---| (100)
+|                                             |        |           |   +--ON868613/VNM/pig/2019/O/SEA/Unknown
+|                                             |        |        +--| (100)
+|                                             |        |        |  +--MH845413/VNM/pig/2014/O/SEA/Unknown
+|                                             |        |     +--| (100)
+|                                             |        |     |  |  +--KX534089/KOR/pig/2016/O/SEA/Unknown
+|                                             |        |     |  +--| (100)
+|                                             |        |     |     +--KX162590/KOR/pig/2014/O/SEA/Unknown
+|                                             |        |  +--| (85)
+|                                             |        |  |  |                 +--LC149718/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  |              +--| (25)
+|                                             |        |  |  |              |  +--LC149674/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  |           +--| (11)
+|                                             |        |  |  |           |  +--LC149686/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  |        +--| (7)
+|                                             |        |  |  |        |  +--LC149704/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  |     +--| (9)
+|                                             |        |  |  |     |  |  +--LC149700/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  |     |  +--| (32)
+|                                             |        |  |  |     |     +--LC149627/JPN/pig/2010/O/SEA/Unknown
+|                                             |        |  |  |  +--| (96)
+|                                             |        |  |  |  |  |  +--LC149685/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  |  |  +--| (95)
+|                                             |        |  |  |  |     +--LC149665/JPN/cow/2010/O/SEA/Unknown
+|                                             |        |  |  +--| (100)
+|                                             |        |  |     +--LC149617/JPN/cow/2010/O/SEA/Unknown
+|                                             |        +--| (74)
+|                                             |           +--HM055510/VNM/Unknown/2009/O/SEA/Unknown
+|                                   +---------| (100)
+|                                   |         +-------KF112881/MNG/cattle/2010/O/SEA/Mya-98
+|                                +--| (85)
+|                                |  |               +-----ON736860/UGA/cow/2015/O/EA-2/Unknown
+|                                |  |  +------------| (100)
+|                                |  |  |            |  +--KU821591/ZMB/cow/2010/O/EA-2/Unknown
+|                                |  |  |            +--| (100)
+|                                |  |  |               +--HM191257/UGA/cow/2006/O/EA-2/Unknown
+|                                |  +--| (96)
+|                                |     |             +----------NC_039210/GBR/Unknown/1965/O/EURO-SA/Unknown
+|                                |     |  +----------| (100)
+|                                |     |  |          |          +--JX869181/GBR/cattle/1967/O/EURO-SA/Unknown
+|                                |     |  |          +----------| (100)
+|                                |     |  |                     +--AY593817/BEL/Unknown/1973/O/EURO-SA/Unknown
+|                                |     +--| (98)
+|                                |        |                                +--AY593833/TWN/Unknown/1999/O/CATHAY/Unknown
+|                                |        |                             +--| (100)
+|                                |        |                             |  +--AF026168/TWN/Unknown/1997/O/CATHAY/Unknown
+|                                |        |                          +--| (100)
+|                                |        |                          |  +---AY686687/Unknown/Unknown/2001/O/CATHAY/Unknown
+|                                |        |      +-------------------| (100)
+|                                |        |      |                   |  +-----EF175732/CHN/Unknown/1999/O/CATHAY/Unknown
+|                                |        |      |                   +--| (100)
+|                                |        |      |                      |   +--AY317098/HKG/Unknown/2002/O/CATHAY/Unknown
+|                                |        |      |                      +---| (100)
+|                                |        |      |                          +--EU400597/CHN/Unknown/2001/O/CATHAY/Unknown
+|                                |        +------| (100)
+|                                |               +------AF511039/CHN/Unknown/1958/O/CATHAY/Unknown
+|                             +--| (98)
+|                             |  +---------KP940473/EGY/cattle/2014/O/ME-SA/Unknown
+|                          +--| (89)
+|                          |  +------------KU726614/GRC/sheep/1994/O/ME-SA/Unknown
+|                       +--| (100)
+|                       |  +--------KY446903/PAK/water-buffalo/2005/O/ME-SA/Unknown
+|                    +--| (100)
+|                    |  |                            +--OP751924/IDN/cattle/2022/O/ME-SA/Unknown
+|                    |  |                      +-----| (100)
+|                    |  |                      |     +--OP585403/IDN/cattle/2022/O/ME-SA/Unknown
+|                    |  |                   +--| (57)
+|                    |  |                   |  |  +--MH891503/VNM/cow/2017/O/ME-SA/Unknown
+|                    |  |                   |  +--| (85)
+|                    |  |                   |     |  +--MF461724/CHN/cattle/2017/O/ME-SA/Unknown
+|                    |  |                   |     +--| (100)
+|                    |  |                   |        +--LC320038/MNG/cow/2015/O/ME-SA/Unknown
+|                    |  |                +--| (42)
+|                    |  |                |  +--KX712091/BGD/pig/2015/O/ME-SA/Unknown
+|                    |  |           +----| (100)
+|                    |  |           |    +--MG983702/MUS/cattle/2016/O/ME-SA/Unknown
+|                    |  |        +--| (82)
+|                    |  |        |  +--KF985189/BGD/cattle/2013/O/ME-SA/Unknown
+|                    |  |     +--| (95)
+|                    |  |     |  |           +--OM160625/DZA/sheep/2015/O/ME-SA/Ind-2001d
+|                    |  |     |  |        +--| (100)
+|                    |  |     |  |        |  +--KU291242/MAR/cow/2015/O/ME-SA/Ind-2001d
+|                    |  |     |  |     +--| (100)
+|                    |  |     |  |     |  |  +--MG983726/SAU/cattle/2014/O/ME-SA/Ind-2001d
+|                    |  |     |  |     |  +--| (97)
+|                    |  |     |  |     |     +--MG983725/SAU/cattle/2014/O/ME-SA/Ind-2001d
+|                    |  |     |  |  +--| (96)
+|                    |  |     |  |  |  +--MG983709/NPL/cattle/2012/O/ME-SA/Ind-2001d
+|                    |  |     |  +--| (100)
+|                    |  |     |     |     +--MN095366/IND/cattle/2014/O/ME-SA/Ind-2001d
+|                    |  |     |     |  +--| (99)
+|                    |  |     |     |  |  +--MG983734/LKA/water-buffalo/2014/O/ME-SA/Ind-2001d
+|                    |  |     |     +--| (100)
+|                    |  |     |        +--KY657269/VNM/pig/2015/O/ME-SA/Ind-2001d
+|                    |  +-----| (100)
+|                    |        +---MK071699/BGD/cattle/2013/O/ME-SA/Unknown
+|                 +--| (98)
+|                 |  |       +-----ON868547/VNM/cow/2018/O/ME-SA/Unknown
+|                 |  |  +----| (100)
+|                 |  |  |    +----MF947127/VNM/buffalo/2012/O/ME-SA/Unknown
+|                 |  +--| (99)
+|                 |     |     +--KF694736/KOR/pig/2002/O/ME-SA/PanAsia
+|                 |     |  +--| (100)
+|                 |     |  |  +--EF614457/KOR/cattle/2002/O/ME-SA/PanAsia
+|                 |     +--| (100)
+|                 |        |           +--EU214601/GBR/sheep/2001/O/ME-SA/PanAsia
+|                 |        |        +--| (98)
+|                 |        |        |  +--DQ404169/GBR/sheep/2001/O/ME-SA/PanAsia
+|                 |        |     +--| (100)
+|                 |        |     |  |     +--DQ404177/GBR/pig/2001/O/ME-SA/PanAsia
+|                 |        |     |  |  +--| (88)
+|                 |        |     |  |  |  +--AJ633821/FRA/Unknown/2001/O/ME-SA/PanAsia
+|                 |        |     |  +--| (96)
+|                 |        |     |     +--EF552688/GBR/sheep/2001/O/ME-SA/PanAsia
+|                 |        |  +--| (98)
+|                 |        |  |  +--AB079061/JPN/Unknown/2000/O/ME-SA/PanAsia
+|                 |        +--| (92)
+|                 |           +---AF377945/Unknown/Unknown/2000/O/ME-SA/PanAsia
+|              +--| (100)
+|              |  +-------OP957418/BGD/cattle/2021/O/ME-SA/PanAsia-2
+|           +--| (71)
+|           |  +--HQ268524/BTN/Unknown/2004/O/ME-SA/PanAsia-2
+|        +--| (71)
+|        |  +---HQ113232/PAK/cow/2009/O/ME-SA/PanAsia-2
+|     +--| (96)
+|     |  +-------OK019689/IRN/cow/2016/O/ME-SA/PanAsia-2
+|  +--| (62)
+|  |  |  +--OM456137/PAK/cattle/2012/O/ME-SA/PanAsia-2
+|  |  +--| (100)
+|  |     |  +--OM456134/PAK/cattle/2012/O/ME-SA/PanAsia-2
+|  |     +--| (99)
+|  |        +--JX040490/BGR/cattle/2011/O/ME-SA/PanAsia-2
++--| (100)
+|  +--KM268895/TUR/cattle/2013/O/ME-SA/PanAsia-2
+|
+|  +--OQ211403/ISR/cattle/2007/O/ME-SA/PanAsia-2
++--| (97)
+   |     +--OQ211392/ISR/cattle/2007/O/ME-SA/PanAsia-2
+   |  +--| (100)
+   |  |  +--OQ211386/ISR/cattle/2007/O/ME-SA/PanAsia-2
+   +--| (97)
+      |  +--OQ211377/ISR/cattle/2007/O/ME-SA/PanAsia-2
+      +--| (100)
+         +--OQ211372/ISR/goat/2007/O/ME-SA/PanAsia-2
+
+
+Consensus tree in newick format: 
+
+(KC440883/EGY/Unknown/2011/O/ME-SA/PanAsia-2:0.0408893009,((((((((((((((((HM229661/HKG/pig/2010/O/SEA/Unknown:0.0032462586,MN389541/CHN/pig/2010/O/SEA/Unknown:0.0037190689)95:0.0013808048,JQ900581/CHN/pig/2010/O/SEA/Unknown:0.0027971999)93:0.0027634581,((((((((ON868620/VNM/pig/2019/O/SEA/Unknown:0.0018600892,ON868611/VNM/pig/2018/O/SEA/Unknown:0.0032701087)37:0.0000027088,ON868618/VNM/pig/2019/O/SEA/Unknown:0.0023286387)63:0.0000027088,ON868616/VNM/pig/2018/O/SEA/Unknown:0.0018593298)87:0.0008476846,ON868613/VNM/pig/2019/O/SEA/Unknown:0.0028892525)100:0.0324327220,MH845413/VNM/pig/2014/O/SEA/Unknown:0.0064061847)100:0.0078509463,(KX534089/KOR/pig/2016/O/SEA/Unknown:0.0100348285,KX162590/KOR/pig/2014/O/SEA/Unknown:0.0009433397)100:0.0132110111)100:0.0217997815,((((((LC149718/JPN/cow/2010/O/SEA/Unknown:0.0032348578,LC149674/JPN/cow/2010/O/SEA/Unknown:0.0004589908)25:0.0000027088,LC149686/JPN/cow/2010/O/SEA/Unknown:0.0018474276)11:0.0000027088,LC149704/JPN/cow/2010/O/SEA/Unknown:0.0009185989)7:0.0000027088,(LC149700/JPN/cow/2010/O/SEA/Unknown:0.0000027088,LC149627/JPN/pig/2010/O/SEA/Unknown:0.0000027088)32:0.0000027088)9:0.0000027088,(LC149685/JPN/cow/2010/O/SEA/Unknown:0.0004588801,LC149665/JPN/cow/2010/O/SEA/Unknown:0.0000027088)95:0.0004588266)96:0.0009272106,LC149617/JPN/cow/2010/O/SEA/Unknown:0.0013805800)100:0.0046493745)85:0.0009921264,HM055510/VNM/Unknown/2009/O/SEA/Unknown:0.0023258796)74:0.0009474478)100:0.0635981552,KF112881/MNG/cattle/2010/O/SEA/Mya-98:0.0607405733)100:0.0729835218,((ON736860/UGA/cow/2015/O/EA-2/Unknown:0.0485601084,(KU821591/ZMB/cow/2010/O/EA-2/Unknown:0.0192384518,HM191257/UGA/cow/2006/O/EA-2/Unknown:0.0146302557)100:0.0225380144)100:0.0912623251,((NC_039210/GBR/Unknown/1965/O/EURO-SA/Unknown:0.0838853226,(JX869181/GBR/cattle/1967/O/EURO-SA/Unknown:0.0053029719,AY593817/BEL/Unknown/1973/O/EURO-SA/Unknown:0.0080669423)100:0.0834509149)100:0.0802354913,((((AY593833/TWN/Unknown/1999/O/CATHAY/Unknown:0.0023388127,AF026168/TWN/Unknown/1997/O/CATHAY/Unknown:0.0067207144)100:0.0217639764,AY686687/Unknown/Unknown/2001/O/CATHAY/Unknown:0.0329602420)100:0.0219032814,(EF175732/CHN/Unknown/1999/O/CATHAY/Unknown:0.0433223558,(AY317098/HKG/Unknown/2002/O/CATHAY/Unknown:0.0055692446,EU400597/CHN/Unknown/2001/O/CATHAY/Unknown:0.0099554212)100:0.0291380424)100:0.0200759297)100:0.1452708724,AF511039/CHN/Unknown/1958/O/CATHAY/Unknown:0.0497911996)100:0.0550841705)98:0.0258314379)96:0.0164966954)85:0.0115565841,KP940473/EGY/cattle/2014/O/ME-SA/Unknown:0.0699893111)98:0.0108051704,KU726614/GRC/sheep/1994/O/ME-SA/Unknown:0.0923162938)89:0.0065271545,KY446903/PAK/water-buffalo/2005/O/ME-SA/Unknown:0.0647913450)100:0.0262542178,(((((((OP751924/IDN/cattle/2022/O/ME-SA/Unknown:0.0015502176,OP585403/IDN/cattle/2022/O/ME-SA/Unknown:0.0007680279)100:0.0463133218,(MH891503/VNM/cow/2017/O/ME-SA/Unknown:0.0101109540,(MF461724/CHN/cattle/2017/O/ME-SA/Unknown:0.0018356817,LC320038/MNG/cow/2015/O/ME-SA/Unknown:0.0027824366)100:0.0046428630)85:0.0012590815)57:0.0011702093,KX712091/BGD/pig/2015/O/ME-SA/Unknown:0.0016772872)42:0.0015307210,MG983702/MUS/cattle/2016/O/ME-SA/Unknown:0.0065663180)100:0.0362785202,KF985189/BGD/cattle/2013/O/ME-SA/Unknown:0.0256108915)82:0.0038491284,((((OM160625/DZA/sheep/2015/O/ME-SA/Ind-2001d:0.0012222237,KU291242/MAR/cow/2015/O/ME-SA/Ind-2001d:0.0058523830)100:0.0144087122,(MG983726/SAU/cattle/2014/O/ME-SA/Ind-2001d:0.0075727785,MG983725/SAU/cattle/2014/O/ME-SA/Ind-2001d:0.0047341480)97:0.0011606475)100:0.0098237753,MG983709/NPL/cattle/2012/O/ME-SA/Ind-2001d:0.0087959820)96:0.0024101476,((MN095366/IND/cattle/2014/O/ME-SA/Ind-2001d:0.0035322614,MG983734/LKA/water-buffalo/2014/O/ME-SA/Ind-2001d:0.0063867655)99:0.0014431498,KY657269/VNM/pig/2015/O/ME-SA/Ind-2001d:0.0134354693)100:0.0093766149)100:0.0236016110)95:0.0082231472,MK071699/BGD/cattle/2013/O/ME-SA/Unknown:0.0340865110)100:0.0424438573)100:0.0154051981,((ON868547/VNM/cow/2018/O/ME-SA/Unknown:0.0445434889,MF947127/VNM/buffalo/2012/O/ME-SA/Unknown:0.0365290209)100:0.0381123043,((KF694736/KOR/pig/2002/O/ME-SA/PanAsia:0.0000027088,EF614457/KOR/cattle/2002/O/ME-SA/PanAsia:0.0027776683)100:0.0173839964,((((EU214601/GBR/sheep/2001/O/ME-SA/PanAsia:0.0000027088,DQ404169/GBR/sheep/2001/O/ME-SA/PanAsia:0.0000027088)98:0.0009425415,((DQ404177/GBR/pig/2001/O/ME-SA/PanAsia:0.0000027088,AJ633821/FRA/Unknown/2001/O/ME-SA/PanAsia:0.0000027088)88:0.0000027088,EF552688/GBR/sheep/2001/O/ME-SA/PanAsia:0.0022967302)96:0.0004321943)100:0.0049563309,AB079061/JPN/Unknown/2000/O/ME-SA/PanAsia:0.0081523843)98:0.0025849706,AF377945/Unknown/Unknown/2000/O/ME-SA/PanAsia:0.0302221686)92:0.0004933569)100:0.0105501054)99:0.0089513811)98:0.0075008792,OP957418/BGD/cattle/2021/O/ME-SA/PanAsia-2:0.0592521190)100:0.0149164783,HQ268524/BTN/Unknown/2004/O/ME-SA/PanAsia-2:0.0095886254)71:0.0034363611,HQ113232/PAK/cow/2009/O/ME-SA/PanAsia-2:0.0317400444)71:0.0060903290,OK019689/IRN/cow/2016/O/ME-SA/PanAsia-2:0.0614719690)96:0.0039011652,(OM456137/PAK/cattle/2012/O/ME-SA/PanAsia-2:0.0199901009,(OM456134/PAK/cattle/2012/O/ME-SA/PanAsia-2:0.0161026419,JX040490/BGR/cattle/2011/O/ME-SA/PanAsia-2:0.0134090162)99:0.0004274407)100:0.0254056840)62:0.0019535957,KM268895/TUR/cattle/2013/O/ME-SA/PanAsia-2:0.0277926554)100:0.0052712362,(OQ211403/ISR/cattle/2007/O/ME-SA/PanAsia-2:0.0074573231,((OQ211392/ISR/cattle/2007/O/ME-SA/PanAsia-2:0.0000027088,OQ211386/ISR/cattle/2007/O/ME-SA/PanAsia-2:0.0000027088)100:0.0037019755,(OQ211377/ISR/cattle/2007/O/ME-SA/PanAsia-2:0.0009227699,OQ211372/ISR/goat/2007/O/ME-SA/PanAsia-2:0.0018271813)100:0.0027806869)97:0.0004364117)97:0.0020981636);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample3\O_637-2783_no_probang.treefile -m "GTR{0.843913,7.86821,0.955075,0.303353,11.8821}+F{0.244269,0.304585,0.251342,0.199804}+I{0.484094}+G4{1.13034}" --length 2282
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample3\O_637-2783_no_probang.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s alignments_no_probang_etc\recombinant_free_regions\O\subsamples\sample3\O_637-2783_no_probang.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Jan 15 15:29:06 2026
+Total CPU time used: 144.421875 seconds (0h:2m:24s)
+Total wall-clock time used: 147.3957367 seconds (0h:2m:27s)
+

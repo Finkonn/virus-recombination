@@ -1,0 +1,873 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Input file name: alignments_no_probang_etc\recombinant_free_regions\A\A_6333-7002_no_probang.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 61899
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 189 sequences with 694 nucleotide sites
+Number of constant sites: 429 (= 61.8156% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 429 (= 61.8156% of all sites)
+Number of parsimony informative sites: 208
+Number of distinct site patterns: 269
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+G4
+
+Rate parameter R:
+
+  A-C: 0.8039
+  A-G: 9.6608
+  A-T: 0.8152
+  C-G: 0.8135
+  C-T: 15.6310
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2424
+  pi(C) = 0.269
+  pi(G) = 0.2404
+  pi(T) = 0.2482
+
+Rate matrix Q:
+
+  A   -0.7529   0.05941    0.6379   0.05557
+  C   0.05353    -1.173   0.05371     1.065
+  G    0.6433   0.06012   -0.7716   0.06816
+  T   0.05429     1.155   0.06603    -1.275
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.5009
+Gamma shape alpha: 0.6153
+
+ Category  Relative_rate  Proportion
+  0         0              0.5009
+  1         0.1127         0.1248
+  2         0.6425         0.1248
+  3         1.781          0.1248
+  4         5.478          0.1248
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -8298.5825 (s.e. 462.3096)
+Unconstrained log-likelihood (without tree): -2657.3354
+Number of free parameters (#branches + #model parameters): 365
+Akaike information criterion (AIC) score: 17327.1650
+Corrected Akaike information criterion (AICc) score: 18141.7381
+Bayesian information criterion (BIC) score: 18985.1672
+
+Total tree length (sum of branch lengths): 3.4048
+Sum of internal branch lengths: 1.4137 (41.5218% of tree length)
+
+WARNING: 50 near-zero internal branches (<0.0014) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'MZ493234/PAK/cattle/2018/A/ASIA/Iran-05' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**MZ493234/PAK/cattle/2018/A/ASIA/Iran-05
+|
++**MZ493233/PAK/cattle/2018/A/ASIA/Iran-05
+|
+|   +--MZ493232/PAK/cattle/2017/A/ASIA/Iran-05
++---| (100)
+    |                                +--ON652967/VNM/cow/2013/A/ASIA/Sea-97
+    |                             +**| (14)
+    |                             |  +--OQ745961/THA/cattle/2016/A/ASIA/Sea-97
+    |                          +**| (2)
+    |                          |  |           +**LC564915/THA/cow/2014/A/ASIA/Sea-97
+    |                          |  |        +--| (100)
+    |                          |  |        |  +--LC564912/THA/cow/2013/A/ASIA/Sea-97
+    |                          |  |     +--| (99)
+    |                          |  |     |  |  +**LC564914/THA/cow/2014/A/ASIA/Sea-97
+    |                          |  |     |  +--| (100)
+    |                          |  |     |     +**KY322679/THA/cattle/2014/A/ASIA/Sea-97
+    |                          |  |  +**| (18)
+    |                          |  |  |  +--KY322675/LAO/cattle/2014/A/ASIA/Sea-97
+    |                          |  +**| (13)
+    |                          |     +**KY322677/MYS/cattle/2013/A/ASIA/Sea-97
+    |                       +**| (7)
+    |                       |  +--LC564911/THA/cow/2013/A/ASIA/Sea-97
+    |                    +--| (99)
+    |                    |  +--KY322680/VNM/cattle/2013/A/ASIA/Sea-97
+    |                 +--| (64)
+    |                 |  |     +**LC564909/THA/cow/2012/A/ASIA/Sea-97
+    |                 |  |  +--| (100)
+    |                 |  |  |  +--KY322676/MYS/cattle/2013/A/ASIA/Sea-97
+    |                 |  +--| (93)
+    |                 |     |                             +--LC564907/THA/cow/2011/A/ASIA/Sea-97
+    |                 |     |                          +**| (34)
+    |                 |     |                          |  +--LC564906/THA/cow/2011/A/ASIA/Sea-97
+    |                 |     |                       +**| (34)
+    |                 |     |                       |  +--LC564903/THA/cow/2010/A/ASIA/Sea-97
+    |                 |     |                    +--| (100)
+    |                 |     |                    |  +--LC564904/THA/cow/2010/A/ASIA/Sea-97
+    |                 |     |                 +**| (89)
+    |                 |     |                 |  +--KY322678/MYS/cattle/2013/A/ASIA/Sea-97
+    |                 |     |              +--| (95)
+    |                 |     |              |  |  +**LC564905/THA/cow/2011/A/ASIA/Sea-97
+    |                 |     |              |  +**| (98)
+    |                 |     |              |     +**LC564902/THA/cow/2010/A/ASIA/Sea-97
+    |                 |     |           +--| (79)
+    |                 |     |           |  +--KJ608371/VNM/cattle/2013/A/ASIA/Sea-97
+    |                 |     |        +--| (95)
+    |                 |     |        |  +--HQ268509/VNM/Unknown/2004/A/ASIA/Sea-97
+    |                 |     |     +**| (35)
+    |                 |     |     |  |     +**LC564896/THA/cow/2007/A/ASIA/Sea-97
+    |                 |     |     |  |  +--| (100)
+    |                 |     |     |  |  |  +**LC564895/THA/cow/2007/A/ASIA/Sea-97
+    |                 |     |     |  +--| (99)
+    |                 |     |     |     +**HQ632773/MYS/cattle/2007/A/ASIA/Sea-97
+    |                 |     |  +**| (65)
+    |                 |     |  |  |  +**LC564894/THA/cow/2007/A/ASIA/Sea-97
+    |                 |     |  |  +--| (100)
+    |                 |     |  |     +**LC483874/THA/cow/2007/A/ASIA/Sea-97
+    |                 |     +--| (94)
+    |                 |        |     +--LC564901/THA/cow/2009/A/ASIA/Sea-97
+    |                 |        |  +--| (99)
+    |                 |        |  |  |           +--LC564900/THA/cow/2009/A/ASIA/Sea-97
+    |                 |        |  |  |        +**| (27)
+    |                 |        |  |  |        |  |  +--GQ406251/VNM/pig/2009/A/ASIA/Sea-97
+    |                 |        |  |  |        |  +--| (99)
+    |                 |        |  |  |        |     +--GQ406247/VNM/cattle/2009/A/ASIA/Sea-97
+    |                 |        |  |  |     +**| (21)
+    |                 |        |  |  |     |  |  +**GQ406252/VNM/buffalo/2009/A/ASIA/Sea-97
+    |                 |        |  |  |     |  +**| (92)
+    |                 |        |  |  |     |     +**GQ406248/VNM/cattle/2009/A/ASIA/Sea-97
+    |                 |        |  |  |  +**| (34)
+    |                 |        |  |  |  |  |  +--KC588943/KOR/cattle/2010/A/ASIA/Sea-97
+    |                 |        |  |  |  |  +--| (93)
+    |                 |        |  |  |  |     +--GQ406249/VNM/cattle/2009/A/ASIA/Sea-97
+    |                 |        |  |  +--| (98)
+    |                 |        |  |     +--GQ406250/VNM/cattle/2009/A/ASIA/Sea-97
+    |                 |        +--| (81)
+    |                 |           +--LC564898/THA/cow/2008/A/ASIA/Sea-97
+    |              +--| (95)
+    |              |  |      +---LC564923/THA/cow/2016/A/ASIA/Sea-97
+    |              |  |  +---| (100)
+    |              |  |  |   |  +--LC564922/THA/cow/2016/A/ASIA/Sea-97
+    |              |  |  |   +--| (99)
+    |              |  |  |      |        +--LC564921/THA/cow/2016/A/ASIA/Sea-97
+    |              |  |  |      |     +--| (99)
+    |              |  |  |      |     |  +--KT968663/CHN/yak/2013/A/ASIA/Sea-97
+    |              |  |  |      |  +**| (62)
+    |              |  |  |      |  |  |     +--LC564920/THA/cow/2015/A/ASIA/Sea-97
+    |              |  |  |      |  |  |  +**| (11)
+    |              |  |  |      |  |  |  |  +--LC564917/THA/cow/2015/A/ASIA/Sea-97
+    |              |  |  |      |  |  +**| (26)
+    |              |  |  |      |  |     |  +--LC564919/THA/cow/2015/A/ASIA/Sea-97
+    |              |  |  |      |  |     +**| (17)
+    |              |  |  |      |  |        +--LC564918/THA/cow/2015/A/ASIA/Sea-97
+    |              |  |  |      +--| (54)
+    |              |  |  |         +--LC564916/THA/cow/2014/A/ASIA/Sea-97
+    |              |  +--| (62)
+    |              |     +------KJ933864/MYS/Unknown/1997/A/ASIA/Sea-97
+    |           +**| (57)
+    |           |  |      +--HQ832586/IND/Unknown/2006/A/ASIA/Unknown
+    |           |  +------| (100)
+    |           |         +--HQ832577/IND/Unknown/1999/A/ASIA/Unknown
+    |        +--| (28)
+    |        |  +--HQ832585/IND/Unknown/2005/A/ASIA/Unknown
+    |     +**| (20)
+    |     |  |           +---JF749848/TUR/Unknown/2003/A/ASIA/Unknown
+    |     |  |        +--| (99)
+    |     |  |        |  +--AY593791/IRN/Unknown/1998/A/ASIA/Iran-96
+    |     |  |     +--| (78)
+    |     |  |     |  |     +---HQ832591/IND/cattle/2008/A/ASIA/Unknown
+    |     |  |     |  |  +--| (100)
+    |     |  |     |  |  |  +---HQ832588/IND/cattle/2005/A/ASIA/Unknown
+    |     |  |     |  +--| (98)
+    |     |  |     |     |  +--MT340198/VNM/cattle/2017/A/ASIA/Sea-97
+    |     |  |     |     +--| (100)
+    |     |  |     |        +--MT340197/VNM/cattle/2017/A/ASIA/Sea-97
+    |     |  |  +--| (51)
+    |     |  |  |  |     +--KC440882/EGY/Unknown/2012/A/ASIA/Iran-05
+    |     |  |  |  |  +--| (99)
+    |     |  |  |  |  |  |  +**MG334583/IRQ/cow/2009/A/ASIA/Iran-05
+    |     |  |  |  |  |  +--| (99)
+    |     |  |  |  |  |     |     +--JN099699/IRQ/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |  |  |     |  +--| (100)
+    |     |  |  |  |  |     |  |  +**JN099697/IRQ/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |  |  |     +--| (100)
+    |     |  |  |  |  |        |     +--JN099698/IRQ/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |  |  |        |  +**| (12)
+    |     |  |  |  |  |        |  |  +--JN099694/IRQ/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |  |  |        +**| (19)
+    |     |  |  |  |  |           +**JN099688/IRQ/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |  +--| (95)
+    |     |  |  |     |        +**OM455482/PAK/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |     |     +--| (99)
+    |     |  |  |     |     |  +**OM455480/PAK/cattle/2008/A/ASIA/Iran-05
+    |     |  |  |     |  +--| (73)
+    |     |  |  |     |  |  |  +--MN062587/PAK/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |     |  |  +--| (99)
+    |     |  |  |     |  |     +----MN062586/AFG/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |     +--| (62)
+    |     |  |  |        |     +**OM455481/PAK/buffalo/2012/A/ASIA/Iran-05
+    |     |  |  |        |  +--| (37)
+    |     |  |  |        |  |  |                                                +**MG923580/DZA/cattle/2017/A/AFRICA/Unknown
+    |     |  |  |        |  |  |                                             +--| (100)
+    |     |  |  |        |  |  |                                             |  +--MG923579/DZA/cattle/2017/A/AFRICA/Unknown
+    |     |  |  |        |  |  |                                          +--| (98)
+    |     |  |  |        |  |  |                                          |  +--MG725873/NER/cow/2015/A/AFRICA/Unknown
+    |     |  |  |        |  |  |                                   +------| (100)
+    |     |  |  |        |  |  |                                   |      |  +**MG725876/NER/cow/2015/A/AFRICA/Unknown
+    |     |  |  |        |  |  |                                   |      +**| (95)
+    |     |  |  |        |  |  |                                   |         +**MG725875/NER/cow/2015/A/AFRICA/Unknown
+    |     |  |  |        |  |  |                                +--| (94)
+    |     |  |  |        |  |  |                                |  +------MG725872/NER/cow/2013/A/AFRICA/Unknown
+    |     |  |  |        |  |  +--------------------------------| (100)
+    |     |  |  |        |  |                                   +----MG725874/NER/cow/2015/A/AFRICA/Unknown
+    |     |  |  |        +--| (37)
+    |     |  |  |           +--JN006722/PAK/Unknown/2008/A/ASIA/Iran-05
+    |     |  +**| (16)
+    |     |     |                        +**JF749843/EGY/Unknown/2006/A/AFRICA/Unknown
+    |     |     |                 +------| (100)
+    |     |     |                 |      +**OQ356347/EGY/cow/2008/A/AFRICA/Unknown
+    |     |     |              +--| (91)
+    |     |     |              |  |  +-----------MH053305/EGY/cattle/1972/A/AFRICA/Unknown
+    |     |     |              |  +**| (93)
+    |     |     |              |     +------AY593766/KEN/Unknown/1965/A/__/Unknown
+    |     |     |           +--| (67)
+    |     |     |           |  |  +----OM863581/KEN/cattle/2012/A/AFRICA/Unknown
+    |     |     |           |  +--| (99)
+    |     |     |           |     +--MT602077/ETH/cattle/2018/A/AFRICA/Unknown
+    |     |     |        +--| (72)
+    |     |     |        |  +---MH053307/ZMB/cattle/1990/A/AFRICA/Unknown
+    |     |     |     +--| (61)
+    |     |     |     |  |              +**KC440881/EGY/Unknown/2011/A/AFRICA/Unknown
+    |     |     |     |  |           +--| (100)
+    |     |     |     |  |           |  +**KP940474/EGY/cattle/2014/A/AFRICA/Unknown
+    |     |     |     |  |        +--| (100)
+    |     |     |     |  |        |  +--OM863580/EGY/cattle/2012/A/AFRICA/Unknown
+    |     |     |     |  |     +--| (92)
+    |     |     |     |  |     |  +--MT602078/ETH/cattle/2019/A/AFRICA/Unknown
+    |     |     |     |  |  +--| (100)
+    |     |     |     |  |  |  +--MT602079/SDN/cattle/2018/A/AFRICA/Unknown
+    |     |     |     |  +**| (56)
+    |     |     |     |     |    +--AY593772/TUR/Unknown/1972/A/ASIA/A22
+    |     |     |     |     +----| (100)
+    |     |     |     |          |  +**AY593765/TUR/Unknown/1965/A/ASIA/A22
+    |     |     |     |          +--| (91)
+    |     |     |     |             |     +**AY593764/IRQ/Unknown/1970/A/ASIA/A22
+    |     |     |     |             |  +--| (100)
+    |     |     |     |             |  |  +**AY593763/IRQ/Unknown/1964/A/ASIA/A22
+    |     |     |     |             +--| (100)
+    |     |     |     |                +--FJ623456/KAZ/Unknown/1999/A/ASIA/A22
+    |     |     |  +--| (60)
+    |     |     |  |  |          +--LC771233/IRQ/water-buffalo/2023/A/AFRICA/Unknown
+    |     |     |  |  |     +----| (100)
+    |     |     |  |  |     |    +**MT863268/EGY/water-buffalo/2016/A/AFRICA/Unknown
+    |     |     |  |  |  +--| (92)
+    |     |     |  |  |  |  +--------AY593755/THA/Unknown/1960/A/ASIA/Unknown
+    |     |     |  |  +--| (88)
+    |     |     |  |     +-------MN116688/KEN/cow/2016/A/AFRICA/Unknown
+    |     |     +--| (62)
+    |     |        |                   +--JF749841/TUR/Unknown/2006/A/ASIA/Iran-05
+    |     |        |                +--| (48)
+    |     |        |                |  +--EF494488/PAK/cattle/2006/A/ASIA/Iran-05
+    |     |        |             +--| (48)
+    |     |        |             |  +**EF494486/TUR/cattle/2005/A/ASIA/Iran-05
+    |     |        |        +----| (100)
+    |     |        |        |    |  +**EF117837/PAK/cattle/2006/A/ASIA/Iran-05
+    |     |        |        |    +--| (100)
+    |     |        |        |       +**EF494487/PAK/cattle/2006/A/ASIA/Iran-05
+    |     |        |     +--| (92)
+    |     |        |     |  |  +--HQ832592/IND/cattle/2009/A/ASIA/Unknown
+    |     |        |     |  +--| (99)
+    |     |        |     |     |  +--HQ832589/IND/cattle/2006/A/ASIA/Unknown
+    |     |        |     |     +--| (100)
+    |     |        |     |        +--HQ832584/IND/cattle/2005/A/ASIA/Unknown
+    |     |        |  +**| (40)
+    |     |        |  |  |        +---------MH053306/TCD/cattle/1973/A/AFRICA/Unknown
+    |     |        |  |  |     +--| (99)
+    |     |        |  |  |     |  +--AY593761/KEN/Unknown/1964/A/AFRICA/Unknown
+    |     |        |  |  |  +**| (78)
+    |     |        |  |  |  |  |   +**AY593789/ARG/Unknown/1961/A/EURO-SA/Unknown
+    |     |        |  |  |  |  +---| (100)
+    |     |        |  |  |  |      +**AY593769/ARG/Unknown/1959/A/EURO-SA/Unknown
+    |     |        |  |  +--| (85)
+    |     |        |  |     +----AY593770/ARG/Unknown/1966/A/EURO-SA/Unknown
+    |     |        +--| (77)
+    |     |           |                          +**OQ356341/BRA/cow/1970/A/EURO-SA/Unknown
+    |     |           |                       +--| (100)
+    |     |           |                       |  +**AY593758/VEN/Unknown/1967/A/EURO-SA/Unknown
+    |     |           |                    +--| (100)
+    |     |           |                    |  +--AY593757/BRA/Unknown/1967/A/EURO-SA/Unknown
+    |     |           |                 +--| (47)
+    |     |           |                 |  +---AY593771/COL/Unknown/1967/A/EURO-SA/Unknown
+    |     |           |              +--| (47)
+    |     |           |              |  +--AY593768/BRA/Unknown/1955/A/EURO-SA/Unknown
+    |     |           |           +--| (87)
+    |     |           |           |  |              +--OQ256242/ISR/cow/1969/A/EURO-SA/Unknown
+    |     |           |           |  |           +--| (89)
+    |     |           |           |  |           |  +--AY593751/NLD/Unknown/1942/A/EURO-SA/Unknown
+    |     |           |           |  |        +**| (77)
+    |     |           |           |  |        |  |  +--AY593776/DEU/Unknown/1968/A/EURO-SA/Unknown
+    |     |           |           |  |        |  +--| (99)
+    |     |           |           |  |        |     +---AY593759/DEU/Unknown/1971/A/EURO-SA/Unknown
+    |     |           |           |  |     +**| (96)
+    |     |           |           |  |     |  |  +**AY593779/DEU/Unknown/1972/A/EURO-SA/Unknown
+    |     |           |           |  |     |  +**| (83)
+    |     |           |           |  |     |     +**AY593774/ESP/Unknown/1969/A/EURO-SA/Unknown
+    |     |           |           |  |  +--| (96)
+    |     |           |           |  |  |  +----AY593794/COL/Unknown/1985/A/EURO-SA/Unknown
+    |     |           |           |  +--| (55)
+    |     |           |           |     |     +--AY593792/ITA/Unknown/1962/A/EURO-SA/Unknown
+    |     |           |           |     |  +--| (98)
+    |     |           |           |     |  |  |     +--AY593781/DEU/Unknown/1951/A/EURO-SA/Unknown
+    |     |           |           |     |  |  |  +**| (48)
+    |     |           |           |     |  |  |  |  +--AY593754/ESP/Unknown/1959/A/EURO-SA/Unknown
+    |     |           |           |     |  |  +--| (99)
+    |     |           |           |     |  |     +--AY593780/FRA/Unknown/1960/A/EURO-SA/Unknown
+    |     |           |           |     +--| (67)
+    |     |           |           |        +----AY593760/RUS/Unknown/1964/A/EURO-SA/Unknown
+    |     |           |        +**| (55)
+    |     |           |        |  |      +--AY593775/VEN/Unknown/1970/A/EURO-SA/Unknown
+    |     |           |        |  |   +--| (100)
+    |     |           |        |  |   |  +**AY593773/PER/Unknown/1969/A/EURO-SA/Unknown
+    |     |           |        |  +---| (100)
+    |     |           |        |      +--AY593767/ARG/Unknown/1965/A/EURO-SA/Unknown
+    |     |           |     +--| (67)
+    |     |           |     |  +---AY593788/BRA/Unknown/1958/A/EURO-SA/Unknown
+    |     |           |  +--| (90)
+    |     |           |  |  |                                 +**KX002205/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                              +--| (100)
+    |     |           |  |  |                              |  +**AY593786/ARG/Unknown/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           +**| (16)
+    |     |           |  |  |                           |  |  +**KX002204/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |  +--| (99)
+    |     |           |  |  |                           |     +**AY593790/ARG/Unknown/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                        +--| (97)
+    |     |           |  |  |                        |  |              +**KX002198/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                        |  |           +**| (73)
+    |     |           |  |  |                        |  |           |  +**KX002197/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                        |  |        +--| (98)
+    |     |           |  |  |                        |  |        |  |  +**KX002180/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                        |  |        |  +--| (100)
+    |     |           |  |  |                        |  |        |     +**KX002179/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                        |  |     +**| (9)
+    |     |           |  |  |                        |  |     |  +--KX002187/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                        |  |  +**| (6)
+    |     |           |  |  |                        |  |  |  |  +**KX002178/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                        |  |  |  +--| (100)
+    |     |           |  |  |                        |  |  |     +**KX002177/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                        |  +**| (20)
+    |     |           |  |  |                        |     |     +--KX002192/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                        |     |  +--| (100)
+    |     |           |  |  |                        |     |  |  +**KX002189/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                        |     +**| (8)
+    |     |           |  |  |                        |        +--KX002183/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                     +--| (98)
+    |     |           |  |  |                     |  |  +--KX002202/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                     |  +**| (63)
+    |     |           |  |  |                     |     +--KX002194/ARG/cattle/2000/A/EURO-SA/Unknown
+    |     |           |  |  |                  +--| (99)
+    |     |           |  |  |                  |  |        +**KX002203/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |  |     +**| (57)
+    |     |           |  |  |                  |  |     |  |  +**AY593785/ARG/Unknown/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |  |     |  +**| (82)
+    |     |           |  |  |                  |  |     |     +**AY593784/ARG/Unknown/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |  |  +**| (63)
+    |     |           |  |  |                  |  |  |  +--AY593802/URY/Unknown/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |  +--| (99)
+    |     |           |  |  |                  |     |     +--KX002201/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |     |  +**| (66)
+    |     |           |  |  |                  |     |  |  |  +**KX002200/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |     |  |  +**| (64)
+    |     |           |  |  |                  |     |  |     +**KX002199/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |     +--| (99)
+    |     |           |  |  |                  |        +--KX002181/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |               +--| (100)
+    |     |           |  |  |               |  +--KX002193/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |            +--| (99)
+    |     |           |  |  |            |  |  +**KX002191/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |            |  +--| (100)
+    |     |           |  |  |            |     +**KX002190/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |     +------| (100)
+    |     |           |  |  |     |      +--KX002196/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |  +--| (61)
+    |     |           |  |  |  |  |  +---AY593803/BRA/Unknown/1979/A/EURO-SA/Unknown
+    |     |           |  |  |  |  +--| (77)
+    |     |           |  |  |  |     +--AY593756/BRA/Unknown/1959/A/EURO-SA/Unknown
+    |     |           |  |  +**| (53)
+    |     |           |  |     +------AY593782/ARG/Unknown/2000/A/EURO-SA/Unknown
+    |     |           +--| (91)
+    |     |              +---AY593793/PHL/Unknown/1975/A/EURO-SA/Unknown
+    |  +--| (100)
+    |  |  |     +---PP273559/IND/elephant/1988/A/ASIA/Unknown
+    |  |  |  +**| (88)
+    |  |  |  |  |  +--HQ832590/IND/cattle/2007/A/ASIA/Unknown
+    |  |  |  |  +--| (99)
+    |  |  |  |     |        +--HQ832583/IND/Unknown/2005/A/ASIA/Unknown
+    |  |  |  |     |     +**| (41)
+    |  |  |  |     |     |  |  +--HQ832580/IND/cattle/2003/A/ASIA/Unknown
+    |  |  |  |     |     |  +--| (98)
+    |  |  |  |     |     |     +--HQ832578/IND/Unknown/2003/A/ASIA/Unknown
+    |  |  |  |     |  +**| (43)
+    |  |  |  |     |  |  |  +--HQ832581/IND/cattle/2004/A/ASIA/Unknown
+    |  |  |  |     |  |  +--| (98)
+    |  |  |  |     |  |     +--HQ832579/IND/buffalo/2003/A/ASIA/Unknown
+    |  |  |  |     +--| (100)
+    |  |  |  |        +--HQ832582/IND/buffalo/2004/A/ASIA/Unknown
+    |  |  +--| (87)
+    |  |     |       +**MK940253/SAU/cattle/2017/A/ASIA/Unknown
+    |  |     |    +--| (100)
+    |  |     |    |  +**KU127247/SAU/cattle/2015/A/ASIA/Unknown
+    |  |     +----| (100)
+    |  |          +--KJ754939/BGD/cattle/2013/A/ASIA/Unknown
+    +--| (99)
+       |     +**OM455484/PAK/buffalo/2012/A/ASIA/Iran-05
+       |  +--| (100)
+       |  |  +**OM455483/PAK/cattle/2012/A/ASIA/Iran-05
+       +--| (98)
+          +--KM268896/TUR/cattle/2013/A/ASIA/Iran-05
+
+Tree in newick format:
+
+(MZ493234/PAK/cattle/2018/A/ASIA/Iran-05:0.0000010033,MZ493233/PAK/cattle/2018/A/ASIA/Iran-05:0.0000010033,(MZ493232/PAK/cattle/2017/A/ASIA/Iran-05:0.0173308505,(((((((((((ON652967/VNM/cow/2013/A/ASIA/Sea-97:0.0017245798,OQ745961/THA/cattle/2016/A/ASIA/Sea-97:0.0163736141)14:0.0000026758,((((LC564915/THA/cow/2014/A/ASIA/Sea-97:0.0000026084,LC564912/THA/cow/2013/A/ASIA/Sea-97:0.0034773626)100:0.0017331939,(LC564914/THA/cow/2014/A/ASIA/Sea-97:0.0000022696,KY322679/THA/cattle/2014/A/ASIA/Sea-97:0.0000020619)100:0.0052491370)99:0.0017418958,KY322675/LAO/cattle/2014/A/ASIA/Sea-97:0.0017255021)18:0.0000024239,KY322677/MYS/cattle/2013/A/ASIA/Sea-97:0.0000023951)13:0.0000022434)2:0.0000024779,LC564911/THA/cow/2013/A/ASIA/Sea-97:0.0017262241)7:0.0000024293,KY322680/VNM/cattle/2013/A/ASIA/Sea-97:0.0070274050)99:0.0155979968,((LC564909/THA/cow/2012/A/ASIA/Sea-97:0.0000026022,KY322676/MYS/cattle/2013/A/ASIA/Sea-97:0.0124852497)100:0.0166735774,((((((((((LC564907/THA/cow/2011/A/ASIA/Sea-97:0.0034509919,LC564906/THA/cow/2011/A/ASIA/Sea-97:0.0052143360)34:0.0000021201,LC564903/THA/cow/2010/A/ASIA/Sea-97:0.0017148702)34:0.0000020960,LC564904/THA/cow/2010/A/ASIA/Sea-97:0.0017139596)100:0.0052111425,KY322678/MYS/cattle/2013/A/ASIA/Sea-97:0.0143464257)89:0.0000022806,(LC564905/THA/cow/2011/A/ASIA/Sea-97:0.0000010033,LC564902/THA/cow/2010/A/ASIA/Sea-97:0.0000010033)98:0.0000021305)95:0.0022777932,KJ608371/VNM/cattle/2013/A/ASIA/Sea-97:0.0065447024)79:0.0053101225,HQ268509/VNM/Unknown/2004/A/ASIA/Sea-97:0.0085020367)95:0.0097625045,((LC564896/THA/cow/2007/A/ASIA/Sea-97:0.0000010033,LC564895/THA/cow/2007/A/ASIA/Sea-97:0.0000010033)100:0.0070156054,HQ632773/MYS/cattle/2007/A/ASIA/Sea-97:0.0000020814)99:0.0070477242)35:0.0000023618,(LC564894/THA/cow/2007/A/ASIA/Sea-97:0.0000021542,LC483874/THA/cow/2007/A/ASIA/Sea-97:0.0000021542)100:0.0183220963)65:0.0006185944,((LC564901/THA/cow/2009/A/ASIA/Sea-97:0.0063330022,((((LC564900/THA/cow/2009/A/ASIA/Sea-97:0.0052323089,(GQ406251/VNM/pig/2009/A/ASIA/Sea-97:0.0017199631,GQ406247/VNM/cattle/2009/A/ASIA/Sea-97:0.0017366780)99:0.0017254262)27:0.0000029467,(GQ406252/VNM/buffalo/2009/A/ASIA/Sea-97:0.0000023951,GQ406248/VNM/cattle/2009/A/ASIA/Sea-97:0.0000023951)92:0.0000021543)21:0.0000024774,(KC588943/KOR/cattle/2010/A/ASIA/Sea-97:0.0090491271,GQ406249/VNM/cattle/2009/A/ASIA/Sea-97:0.0016417841)93:0.0018128545)34:0.0000027519,GQ406250/VNM/cattle/2009/A/ASIA/Sea-97:0.0034648666)98:0.0042918554)99:0.0095340959,LC564898/THA/cow/2008/A/ASIA/Sea-97:0.0081704573)81:0.0017783787)94:0.0089389773)93:0.0180029597)64:0.0052982937,((LC564923/THA/cow/2016/A/ASIA/Sea-97:0.0334617968,(LC564922/THA/cow/2016/A/ASIA/Sea-97:0.0033198956,(((LC564921/THA/cow/2016/A/ASIA/Sea-97:0.0017249412,KT968663/CHN/yak/2013/A/ASIA/Sea-97:0.0125238424)99:0.0017328627,((LC564920/THA/cow/2015/A/ASIA/Sea-97:0.0017195274,LC564917/THA/cow/2015/A/ASIA/Sea-97:0.0017194337)11:0.0000027647,(LC564919/THA/cow/2015/A/ASIA/Sea-97:0.0052201354,LC564918/THA/cow/2015/A/ASIA/Sea-97:0.0017197803)17:0.0000021817)26:0.0000022581)62:0.0000024447,LC564916/THA/cow/2014/A/ASIA/Sea-97:0.0017197594)54:0.0019057626)99:0.0084973344)100:0.0347038591,KJ933864/MYS/Unknown/1997/A/ASIA/Sea-97:0.0529637222)62:0.0032564587)95:0.0152075057,(HQ832586/IND/Unknown/2006/A/ASIA/Unknown:0.0026525015,HQ832577/IND/Unknown/1999/A/ASIA/Unknown:0.0061709619)100:0.0523319840)57:0.0000023284,HQ832585/IND/Unknown/2005/A/ASIA/Unknown:0.0286043575)28:0.0021474579,((((JF749848/TUR/Unknown/2003/A/ASIA/Unknown:0.0312368019,AY593791/IRN/Unknown/1998/A/ASIA/Iran-96:0.0183991069)99:0.0239812241,((HQ832591/IND/cattle/2008/A/ASIA/Unknown:0.0327990987,HQ832588/IND/cattle/2005/A/ASIA/Unknown:0.0294570751)100:0.0146134179,(MT340198/VNM/cattle/2017/A/ASIA/Sea-97:0.0018164568,MT340197/VNM/cattle/2017/A/ASIA/Sea-97:0.0016611607)100:0.0213178958)98:0.0117073528)78:0.0035033121,((KC440882/EGY/Unknown/2012/A/ASIA/Iran-05:0.0168376477,(MG334583/IRQ/cow/2009/A/ASIA/Iran-05:0.0000023135,((JN099699/IRQ/cattle/2009/A/ASIA/Iran-05:0.0017271014,JN099697/IRQ/cattle/2009/A/ASIA/Iran-05:0.0000026371)100:0.0017262339,((JN099698/IRQ/cattle/2009/A/ASIA/Iran-05:0.0017254683,JN099694/IRQ/cattle/2009/A/ASIA/Iran-05:0.0034697014)12:0.0000025074,JN099688/IRQ/cattle/2009/A/ASIA/Iran-05:0.0000026899)19:0.0000026327)100:0.0035003154)99:0.0034411098)99:0.0091270156,(((OM455482/PAK/cattle/2009/A/ASIA/Iran-05:0.0000026292,OM455480/PAK/cattle/2008/A/ASIA/Iran-05:0.0000021076)99:0.0119746262,(MN062587/PAK/cattle/2009/A/ASIA/Iran-05:0.0095062193,MN062586/AFG/cattle/2009/A/ASIA/Iran-05:0.0369861127)99:0.0020699683)73:0.0018152543,((OM455481/PAK/buffalo/2012/A/ASIA/Iran-05:0.0000021212,(((((MG923580/DZA/cattle/2017/A/AFRICA/Unknown:0.0000023951,MG923579/DZA/cattle/2017/A/AFRICA/Unknown:0.0017360569)100:0.0108464140,MG725873/NER/cow/2015/A/AFRICA/Unknown:0.0036239717)98:0.0034268827,(MG725876/NER/cow/2015/A/AFRICA/Unknown:0.0000023951,MG725875/NER/cow/2015/A/AFRICA/Unknown:0.0000023951)95:0.0000024823)100:0.0558113976,MG725872/NER/cow/2013/A/AFRICA/Unknown:0.0571245328)94:0.0207729064,MG725874/NER/cow/2015/A/AFRICA/Unknown:0.0413653499)100:0.2451359002)37:0.0056276941,JN006722/PAK/Unknown/2008/A/ASIA/Iran-05:0.0165611220)37:0.0058635551)62:0.0067653873)95:0.0103722759)51:0.0042128764,(((((((JF749843/EGY/Unknown/2006/A/AFRICA/Unknown:0.0000026585,OQ356347/EGY/cow/2008/A/AFRICA/Unknown:0.0000028759)100:0.0521005205,(MH053305/EGY/cattle/1972/A/AFRICA/Unknown:0.0911341818,AY593766/KEN/Unknown/1965/A/__/Unknown:0.0534150779)93:0.0009575324)91:0.0075058466,(OM863581/KEN/cattle/2012/A/AFRICA/Unknown:0.0414231350,MT602077/ETH/cattle/2018/A/AFRICA/Unknown:0.0162027102)99:0.0235255702)67:0.0020049498,MH053307/ZMB/cattle/1990/A/AFRICA/Unknown:0.0312855481)72:0.0133244612,(((((KC440881/EGY/Unknown/2011/A/AFRICA/Unknown:0.0000010033,KP940474/EGY/cattle/2014/A/AFRICA/Unknown:0.0000010033)100:0.0050975309,OM863580/EGY/cattle/2012/A/AFRICA/Unknown:0.0076909804)100:0.0140967173,MT602078/ETH/cattle/2019/A/AFRICA/Unknown:0.0252741817)92:0.0042728300,MT602079/SDN/cattle/2018/A/AFRICA/Unknown:0.0136346622)100:0.0216016866,(AY593772/TUR/Unknown/1972/A/ASIA/A22:0.0186010349,(AY593765/TUR/Unknown/1965/A/ASIA/A22:0.0000022173,((AY593764/IRQ/Unknown/1970/A/ASIA/A22:0.0000026222,AY593763/IRQ/Unknown/1964/A/ASIA/A22:0.0000028070)100:0.0072294499,FJ623456/KAZ/Unknown/1999/A/ASIA/A22:0.0036528412)100:0.0052754839)91:0.0039424529)100:0.0401686551)56:0.0006264973)61:0.0040344179,(((LC771233/IRQ/water-buffalo/2023/A/AFRICA/Unknown:0.0053162763,MT863268/EGY/water-buffalo/2016/A/AFRICA/Unknown:0.0000029607)100:0.0410827119,AY593755/THA/Unknown/1960/A/ASIA/Unknown:0.0687829021)92:0.0017151338,MN116688/KEN/cow/2016/A/AFRICA/Unknown:0.0638967830)88:0.0030078674)60:0.0057461371,((((((JF749841/TUR/Unknown/2006/A/ASIA/Iran-05:0.0089842304,EF494488/PAK/cattle/2006/A/ASIA/Iran-05:0.0126867865)48:0.0017965236,EF494486/TUR/cattle/2005/A/ASIA/Iran-05:0.0000023012)48:0.0066647368,(EF117837/PAK/cattle/2006/A/ASIA/Iran-05:0.0000021618,EF494487/PAK/cattle/2006/A/ASIA/Iran-05:0.0000027388)100:0.0041468264)100:0.0407266055,(HQ832592/IND/cattle/2009/A/ASIA/Unknown:0.0248759448,(HQ832589/IND/cattle/2006/A/ASIA/Unknown:0.0206567152,HQ832584/IND/cattle/2005/A/ASIA/Unknown:0.0220586752)100:0.0053834107)99:0.0092918991)92:0.0046977713,(((MH053306/TCD/cattle/1973/A/AFRICA/Unknown:0.0733874129,AY593761/KEN/Unknown/1964/A/AFRICA/Unknown:0.0200735170)99:0.0195556666,(AY593789/ARG/Unknown/1961/A/EURO-SA/Unknown:0.0000023121,AY593769/ARG/Unknown/1959/A/EURO-SA/Unknown:0.0000026892)100:0.0353337116)78:0.0009869177,AY593770/ARG/Unknown/1966/A/EURO-SA/Unknown:0.0427686944)85:0.0098769153)40:0.0000027214,(((((((((OQ356341/BRA/cow/1970/A/EURO-SA/Unknown:0.0000028926,AY593758/VEN/Unknown/1967/A/EURO-SA/Unknown:0.0000025581)100:0.0036798387,AY593757/BRA/Unknown/1967/A/EURO-SA/Unknown:0.0016312301)100:0.0259922758,AY593771/COL/Unknown/1967/A/EURO-SA/Unknown:0.0315967396)47:0.0027088192,AY593768/BRA/Unknown/1955/A/EURO-SA/Unknown:0.0273475643)47:0.0028699933,(((((OQ256242/ISR/cow/1969/A/EURO-SA/Unknown:0.0092436141,AY593751/NLD/Unknown/1942/A/EURO-SA/Unknown:0.0055376401)89:0.0014897244,(AY593776/DEU/Unknown/1968/A/EURO-SA/Unknown:0.0101884166,AY593759/DEU/Unknown/1971/A/EURO-SA/Unknown:0.0309681291)99:0.0164975008)77:0.0000029099,(AY593779/DEU/Unknown/1972/A/EURO-SA/Unknown:0.0000023951,AY593774/ESP/Unknown/1969/A/EURO-SA/Unknown:0.0000023951)83:0.0000029148)96:0.0012395811,AY593794/COL/Unknown/1985/A/EURO-SA/Unknown:0.0424894428)96:0.0094611540,((AY593792/ITA/Unknown/1962/A/EURO-SA/Unknown:0.0053324385,((AY593781/DEU/Unknown/1951/A/EURO-SA/Unknown:0.0035009748,AY593754/ESP/Unknown/1959/A/EURO-SA/Unknown:0.0070759937)48:0.0000027249,AY593780/FRA/Unknown/1960/A/EURO-SA/Unknown:0.0070654006)99:0.0017607428)98:0.0096519296,AY593760/RUS/Unknown/1964/A/EURO-SA/Unknown:0.0384834610)67:0.0079001281)55:0.0077225318)87:0.0087062452,((AY593775/VEN/Unknown/1970/A/EURO-SA/Unknown:0.0017382271,AY593773/PER/Unknown/1969/A/EURO-SA/Unknown:0.0000025554)100:0.0265033562,AY593767/ARG/Unknown/1965/A/EURO-SA/Unknown:0.0043950279)100:0.0310704045)55:0.0014238121,AY593788/BRA/Unknown/1958/A/EURO-SA/Unknown:0.0345614848)67:0.0025264319,((((((((((KX002205/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000023325,AY593786/ARG/Unknown/2001/A/EURO-SA/Unknown:0.0000020449)100:0.0053017029,(KX002204/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000026375,AY593790/ARG/Unknown/2001/A/EURO-SA/Unknown:0.0000020079)99:0.0017246896)16:0.0000025244,(((((KX002198/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000023071,KX002197/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000029846)73:0.0000021527,(KX002180/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024932,KX002179/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024431)100:0.0034868888)98:0.0017320659,KX002187/ARG/cattle/2001/A/EURO-SA/Unknown:0.0052580846)9:0.0000021007,(KX002178/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000027354,KX002177/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000020355)100:0.0017314117)6:0.0000021935,((KX002192/ARG/cattle/2001/A/EURO-SA/Unknown:0.0017348422,KX002189/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000022856)100:0.0052641618,KX002183/ARG/cattle/2001/A/EURO-SA/Unknown:0.0017310451)8:0.0000023175)20:0.0000027549)97:0.0017286325,(KX002202/ARG/cattle/2001/A/EURO-SA/Unknown:0.0017286726,KX002194/ARG/cattle/2000/A/EURO-SA/Unknown:0.0034779032)63:0.0000026902)98:0.0017345361,(((KX002203/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000023951,(AY593785/ARG/Unknown/2001/A/EURO-SA/Unknown:0.0000023951,AY593784/ARG/Unknown/2001/A/EURO-SA/Unknown:0.0000023951)82:0.0000020442)57:0.0000026582,AY593802/URY/Unknown/2001/A/EURO-SA/Unknown:0.0017229472)63:0.0000026526,((KX002201/ARG/cattle/2001/A/EURO-SA/Unknown:0.0017313512,(KX002200/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000023951,KX002199/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000023951)64:0.0000023993)66:0.0000026921,KX002181/ARG/cattle/2001/A/EURO-SA/Unknown:0.0034842921)99:0.0017304979)99:0.0034869036)99:0.0017110039,KX002193/ARG/cattle/2001/A/EURO-SA/Unknown:0.0034988075)100:0.0017784719,(KX002191/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000010033,KX002190/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000010033)100:0.0035226969)99:0.0015311900,KX002196/ARG/cattle/2001/A/EURO-SA/Unknown:0.0019169693)100:0.0531216604,(AY593803/BRA/Unknown/1979/A/EURO-SA/Unknown:0.0300810925,AY593756/BRA/Unknown/1959/A/EURO-SA/Unknown:0.0149284251)77:0.0063881597)61:0.0044833885,AY593782/ARG/Unknown/2000/A/EURO-SA/Unknown:0.0511300789)53:0.0000027633)90:0.0048060487,AY593793/PHL/Unknown/1975/A/EURO-SA/Unknown:0.0292390956)91:0.0038125483)77:0.0056948864)62:0.0055548135)16:0.0000026030)20:0.0000023783,((PP273559/IND/elephant/1988/A/ASIA/Unknown:0.0348487364,(HQ832590/IND/cattle/2007/A/ASIA/Unknown:0.0016587333,(((HQ832583/IND/Unknown/2005/A/ASIA/Unknown:0.0089622773,(HQ832580/IND/cattle/2003/A/ASIA/Unknown:0.0035795523,HQ832578/IND/Unknown/2003/A/ASIA/Unknown:0.0072075164)98:0.0016935927)41:0.0000026620,(HQ832581/IND/cattle/2004/A/ASIA/Unknown:0.0052955067,HQ832579/IND/buffalo/2003/A/ASIA/Unknown:0.0017760260)98:0.0017360997)43:0.0000020958,HQ832582/IND/buffalo/2004/A/ASIA/Unknown:0.0071019670)100:0.0149626816)99:0.0130558433)88:0.0007429556,((MK940253/SAU/cattle/2017/A/ASIA/Unknown:0.0000010033,KU127247/SAU/cattle/2015/A/ASIA/Unknown:0.0000021275)100:0.0250460511,KJ754939/BGD/cattle/2013/A/ASIA/Unknown:0.0124393892)100:0.0415402868)87:0.0087266552)100:0.0212178879,((OM455484/PAK/buffalo/2012/A/ASIA/Iran-05:0.0000010033,OM455483/PAK/cattle/2012/A/ASIA/Iran-05:0.0000010033)100:0.0185254167,KM268896/TUR/cattle/2013/A/ASIA/Iran-05:0.0196848056)98:0.0101624233)99:0.0110839753)100:0.0320031956);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -8299.547765
+Robinson-Foulds distance between ML tree and consensus tree: 48
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--MZ493234/PAK/cattle/2018/A/ASIA/Iran-05
+|
++--MZ493233/PAK/cattle/2018/A/ASIA/Iran-05
+|
+|   +--MZ493232/PAK/cattle/2017/A/ASIA/Iran-05
++---| (100)
+    |                       +--ON652967/VNM/cow/2013/A/ASIA/Sea-97
+    |                    +--| (99)
+    |                    |  |        +--OQ745961/THA/cattle/2016/A/ASIA/Sea-97
+    |                    |  |     +--| (43)
+    |                    |  |     |  +--KY322680/VNM/cattle/2013/A/ASIA/Sea-97
+    |                    |  |  +--| (11)
+    |                    |  |  |  +--LC564911/THA/cow/2013/A/ASIA/Sea-97
+    |                    |  +--| (36)
+    |                    |     |           +--LC564915/THA/cow/2014/A/ASIA/Sea-97
+    |                    |     |        +--| (100)
+    |                    |     |        |  +--LC564912/THA/cow/2013/A/ASIA/Sea-97
+    |                    |     |     +--| (99)
+    |                    |     |     |  |  +--LC564914/THA/cow/2014/A/ASIA/Sea-97
+    |                    |     |     |  +--| (100)
+    |                    |     |     |     +--KY322679/THA/cattle/2014/A/ASIA/Sea-97
+    |                    |     |  +--| (18)
+    |                    |     |  |  +--KY322675/LAO/cattle/2014/A/ASIA/Sea-97
+    |                    |     +--| (13)
+    |                    |        +--KY322677/MYS/cattle/2013/A/ASIA/Sea-97
+    |                 +--| (64)
+    |                 |  |     +--LC564909/THA/cow/2012/A/ASIA/Sea-97
+    |                 |  |  +--| (100)
+    |                 |  |  |  +--KY322676/MYS/cattle/2013/A/ASIA/Sea-97
+    |                 |  +--| (93)
+    |                 |     |                    +--LC564907/THA/cow/2011/A/ASIA/Sea-97
+    |                 |     |                 +--| (100)
+    |                 |     |                 |  |     +--LC564906/THA/cow/2011/A/ASIA/Sea-97
+    |                 |     |                 |  |  +--| (44)
+    |                 |     |                 |  |  |  +--LC564904/THA/cow/2010/A/ASIA/Sea-97
+    |                 |     |                 |  +--| (43)
+    |                 |     |                 |     +--LC564903/THA/cow/2010/A/ASIA/Sea-97
+    |                 |     |              +--| (89)
+    |                 |     |              |  +--KY322678/MYS/cattle/2013/A/ASIA/Sea-97
+    |                 |     |           +--| (95)
+    |                 |     |           |  |  +--LC564905/THA/cow/2011/A/ASIA/Sea-97
+    |                 |     |           |  +--| (98)
+    |                 |     |           |     +--LC564902/THA/cow/2010/A/ASIA/Sea-97
+    |                 |     |        +--| (79)
+    |                 |     |        |  +--KJ608371/VNM/cattle/2013/A/ASIA/Sea-97
+    |                 |     |     +--| (95)
+    |                 |     |     |  +--HQ268509/VNM/Unknown/2004/A/ASIA/Sea-97
+    |                 |     |  +--| (65)
+    |                 |     |  |  |        +--LC564896/THA/cow/2007/A/ASIA/Sea-97
+    |                 |     |  |  |     +--| (100)
+    |                 |     |  |  |     |  +--LC564895/THA/cow/2007/A/ASIA/Sea-97
+    |                 |     |  |  |  +--| (99)
+    |                 |     |  |  |  |  +--HQ632773/MYS/cattle/2007/A/ASIA/Sea-97
+    |                 |     |  |  +--| (38)
+    |                 |     |  |     |  +--LC564894/THA/cow/2007/A/ASIA/Sea-97
+    |                 |     |  |     +--| (100)
+    |                 |     |  |        +--LC483874/THA/cow/2007/A/ASIA/Sea-97
+    |                 |     +--| (94)
+    |                 |        |     +--LC564901/THA/cow/2009/A/ASIA/Sea-97
+    |                 |        |  +--| (99)
+    |                 |        |  |  |  +--LC564900/THA/cow/2009/A/ASIA/Sea-97
+    |                 |        |  |  +--| (98)
+    |                 |        |  |     |           +--KC588943/KOR/cattle/2010/A/ASIA/Sea-97
+    |                 |        |  |     |        +--| (93)
+    |                 |        |  |     |        |  +--GQ406249/VNM/cattle/2009/A/ASIA/Sea-97
+    |                 |        |  |     |     +--| (29)
+    |                 |        |  |     |     |  +--GQ406250/VNM/cattle/2009/A/ASIA/Sea-97
+    |                 |        |  |     |  +--| (26)
+    |                 |        |  |     |  |  |  +--GQ406252/VNM/buffalo/2009/A/ASIA/Sea-97
+    |                 |        |  |     |  |  +--| (92)
+    |                 |        |  |     |  |     +--GQ406248/VNM/cattle/2009/A/ASIA/Sea-97
+    |                 |        |  |     +--| (37)
+    |                 |        |  |        |  +--GQ406251/VNM/pig/2009/A/ASIA/Sea-97
+    |                 |        |  |        +--| (99)
+    |                 |        |  |           +--GQ406247/VNM/cattle/2009/A/ASIA/Sea-97
+    |                 |        +--| (81)
+    |                 |           +--LC564898/THA/cow/2008/A/ASIA/Sea-97
+    |              +--| (95)
+    |              |  |       +---LC564923/THA/cow/2016/A/ASIA/Sea-97
+    |              |  |  +----| (100)
+    |              |  |  |    |  +--LC564922/THA/cow/2016/A/ASIA/Sea-97
+    |              |  |  |    +--| (99)
+    |              |  |  |       |        +--LC564921/THA/cow/2016/A/ASIA/Sea-97
+    |              |  |  |       |     +--| (99)
+    |              |  |  |       |     |  +--KT968663/CHN/yak/2013/A/ASIA/Sea-97
+    |              |  |  |       |  +--| (62)
+    |              |  |  |       |  |  |     +--LC564920/THA/cow/2015/A/ASIA/Sea-97
+    |              |  |  |       |  |  |  +--| (25)
+    |              |  |  |       |  |  |  |  +--LC564918/THA/cow/2015/A/ASIA/Sea-97
+    |              |  |  |       |  |  +--| (26)
+    |              |  |  |       |  |     |  +--LC564919/THA/cow/2015/A/ASIA/Sea-97
+    |              |  |  |       |  |     +--| (38)
+    |              |  |  |       |  |        +--LC564917/THA/cow/2015/A/ASIA/Sea-97
+    |              |  |  |       +--| (54)
+    |              |  |  |          +--LC564916/THA/cow/2014/A/ASIA/Sea-97
+    |              |  +--| (62)
+    |              |     +------KJ933864/MYS/Unknown/1997/A/ASIA/Sea-97
+    |           +--| (57)
+    |           |  |      +--HQ832586/IND/Unknown/2006/A/ASIA/Unknown
+    |           |  +------| (100)
+    |           |         +--HQ832577/IND/Unknown/1999/A/ASIA/Unknown
+    |        +--| (28)
+    |        |  +---HQ832585/IND/Unknown/2005/A/ASIA/Unknown
+    |     +--| (20)
+    |     |  |           +---JF749848/TUR/Unknown/2003/A/ASIA/Unknown
+    |     |  |        +--| (99)
+    |     |  |        |  +--AY593791/IRN/Unknown/1998/A/ASIA/Iran-96
+    |     |  |     +--| (78)
+    |     |  |     |  |     +---HQ832591/IND/cattle/2008/A/ASIA/Unknown
+    |     |  |     |  |  +--| (100)
+    |     |  |     |  |  |  +---HQ832588/IND/cattle/2005/A/ASIA/Unknown
+    |     |  |     |  +--| (98)
+    |     |  |     |     |  +--MT340198/VNM/cattle/2017/A/ASIA/Sea-97
+    |     |  |     |     +--| (100)
+    |     |  |     |        +--MT340197/VNM/cattle/2017/A/ASIA/Sea-97
+    |     |  |  +--| (51)
+    |     |  |  |  |     +--KC440882/EGY/Unknown/2012/A/ASIA/Iran-05
+    |     |  |  |  |  +--| (99)
+    |     |  |  |  |  |  |  +--MG334583/IRQ/cow/2009/A/ASIA/Iran-05
+    |     |  |  |  |  |  +--| (99)
+    |     |  |  |  |  |     |           +--JN099699/IRQ/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |  |  |     |        +--| (100)
+    |     |  |  |  |  |     |        |  +--JN099697/IRQ/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |  |  |     |     +--| (66)
+    |     |  |  |  |  |     |     |  +--JN099694/IRQ/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |  |  |     |  +--| (47)
+    |     |  |  |  |  |     |  |  +--JN099688/IRQ/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |  |  |     +--| (100)
+    |     |  |  |  |  |        +--JN099698/IRQ/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |  +--| (95)
+    |     |  |  |     |           +--OM455482/PAK/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |     |        +--| (99)
+    |     |  |  |     |        |  +--OM455480/PAK/cattle/2008/A/ASIA/Iran-05
+    |     |  |  |     |     +--| (73)
+    |     |  |  |     |     |  |  +--MN062587/PAK/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |     |     |  +--| (99)
+    |     |  |  |     |     |     +----MN062586/AFG/cattle/2009/A/ASIA/Iran-05
+    |     |  |  |     |  +--| (43)
+    |     |  |  |     |  |  |  +--OM455481/PAK/buffalo/2012/A/ASIA/Iran-05
+    |     |  |  |     |  |  +--| (63)
+    |     |  |  |     |  |     +--JN006722/PAK/Unknown/2008/A/ASIA/Iran-05
+    |     |  |  |     +--| (62)
+    |     |  |  |        |                                                   +--MG923580/DZA/cattle/2017/A/AFRICA/Unknown
+    |     |  |  |        |                                                +--| (100)
+    |     |  |  |        |                                                |  +--MG923579/DZA/cattle/2017/A/AFRICA/Unknown
+    |     |  |  |        |                                             +--| (98)
+    |     |  |  |        |                                             |  +--MG725873/NER/cow/2015/A/AFRICA/Unknown
+    |     |  |  |        |                                     +-------| (100)
+    |     |  |  |        |                                     |       |  +--MG725876/NER/cow/2015/A/AFRICA/Unknown
+    |     |  |  |        |                                     |       +--| (95)
+    |     |  |  |        |                                     |          +--MG725875/NER/cow/2015/A/AFRICA/Unknown
+    |     |  |  |        |                                  +--| (94)
+    |     |  |  |        |                                  |  +-------MG725872/NER/cow/2013/A/AFRICA/Unknown
+    |     |  |  |        +----------------------------------| (100)
+    |     |  |  |                                           +-----MG725874/NER/cow/2015/A/AFRICA/Unknown
+    |     |  +--| (16)
+    |     |     |                        +--JF749843/EGY/Unknown/2006/A/AFRICA/Unknown
+    |     |     |                 +------| (100)
+    |     |     |                 |      +--OQ356347/EGY/cow/2008/A/AFRICA/Unknown
+    |     |     |              +--| (91)
+    |     |     |              |  |  +------------MH053305/EGY/cattle/1972/A/AFRICA/Unknown
+    |     |     |              |  +--| (93)
+    |     |     |              |     +------AY593766/KEN/Unknown/1965/A/__/Unknown
+    |     |     |           +--| (67)
+    |     |     |           |  |  +-----OM863581/KEN/cattle/2012/A/AFRICA/Unknown
+    |     |     |           |  +--| (99)
+    |     |     |           |     +--MT602077/ETH/cattle/2018/A/AFRICA/Unknown
+    |     |     |        +--| (72)
+    |     |     |        |  +---MH053307/ZMB/cattle/1990/A/AFRICA/Unknown
+    |     |     |     +--| (61)
+    |     |     |     |  |              +--KC440881/EGY/Unknown/2011/A/AFRICA/Unknown
+    |     |     |     |  |           +--| (100)
+    |     |     |     |  |           |  +--KP940474/EGY/cattle/2014/A/AFRICA/Unknown
+    |     |     |     |  |        +--| (100)
+    |     |     |     |  |        |  +--OM863580/EGY/cattle/2012/A/AFRICA/Unknown
+    |     |     |     |  |     +--| (92)
+    |     |     |     |  |     |  +--MT602078/ETH/cattle/2019/A/AFRICA/Unknown
+    |     |     |     |  |  +--| (100)
+    |     |     |     |  |  |  +--MT602079/SDN/cattle/2018/A/AFRICA/Unknown
+    |     |     |     |  +--| (56)
+    |     |     |     |     |    +--AY593772/TUR/Unknown/1972/A/ASIA/A22
+    |     |     |     |     +----| (100)
+    |     |     |     |          |  +--AY593765/TUR/Unknown/1965/A/ASIA/A22
+    |     |     |     |          +--| (91)
+    |     |     |     |             |        +**AY593764/IRQ/Unknown/1970/A/ASIA/A22
+    |     |     |     |             |     +--|
+    |     |     |     |             |     |  +**AY593762/IRQ/Unknown/1964/A/ASIA/A22
+    |     |     |     |             |  +--| (100)
+    |     |     |     |             |  |  +--AY593763/IRQ/Unknown/1964/A/ASIA/A22
+    |     |     |     |             +--| (100)
+    |     |     |     |                +--FJ623456/KAZ/Unknown/1999/A/ASIA/A22
+    |     |     |  +--| (60)
+    |     |     |  |  |           +--LC771233/IRQ/water-buffalo/2023/A/AFRICA/Unknown
+    |     |     |  |  |     +-----| (100)
+    |     |     |  |  |     |     +--MT863268/EGY/water-buffalo/2016/A/AFRICA/Unknown
+    |     |     |  |  |  +--| (92)
+    |     |     |  |  |  |  +---------AY593755/THA/Unknown/1960/A/ASIA/Unknown
+    |     |     |  |  +--| (88)
+    |     |     |  |     +--------MN116688/KEN/cow/2016/A/AFRICA/Unknown
+    |     |     +--| (62)
+    |     |        |                   +--JF749841/TUR/Unknown/2006/A/ASIA/Iran-05
+    |     |        |                +--| (52)
+    |     |        |                |  +--EF494486/TUR/cattle/2005/A/ASIA/Iran-05
+    |     |        |             +--| (52)
+    |     |        |             |  |  +--EF117837/PAK/cattle/2006/A/ASIA/Iran-05
+    |     |        |             |  +--| (100)
+    |     |        |             |     +--EF494487/PAK/cattle/2006/A/ASIA/Iran-05
+    |     |        |        +----| (100)
+    |     |        |        |    +--EF494488/PAK/cattle/2006/A/ASIA/Iran-05
+    |     |        |     +--| (92)
+    |     |        |     |  |  +--HQ832592/IND/cattle/2009/A/ASIA/Unknown
+    |     |        |     |  +--| (99)
+    |     |        |     |     |  +--HQ832589/IND/cattle/2006/A/ASIA/Unknown
+    |     |        |     |     +--| (100)
+    |     |        |     |        +--HQ832584/IND/cattle/2005/A/ASIA/Unknown
+    |     |        |  +--| (40)
+    |     |        |  |  |        +---------MH053306/TCD/cattle/1973/A/AFRICA/Unknown
+    |     |        |  |  |     +--| (99)
+    |     |        |  |  |     |  +--AY593761/KEN/Unknown/1964/A/AFRICA/Unknown
+    |     |        |  |  |  +--| (78)
+    |     |        |  |  |  |  |    +--AY593789/ARG/Unknown/1961/A/EURO-SA/Unknown
+    |     |        |  |  |  |  +----| (100)
+    |     |        |  |  |  |       +--AY593769/ARG/Unknown/1959/A/EURO-SA/Unknown
+    |     |        |  |  +--| (85)
+    |     |        |  |     +-----AY593770/ARG/Unknown/1966/A/EURO-SA/Unknown
+    |     |        +--| (77)
+    |     |           |                             +**OQ356341/BRA/cow/1970/A/EURO-SA/Unknown
+    |     |           |                          +--|
+    |     |           |                          |  +**AY593753/BRA/Unknown/1958/A/EURO-SA/Unknown
+    |     |           |                       +--| (100)
+    |     |           |                       |  +--AY593758/VEN/Unknown/1967/A/EURO-SA/Unknown
+    |     |           |                    +--| (100)
+    |     |           |                    |  +--AY593757/BRA/Unknown/1967/A/EURO-SA/Unknown
+    |     |           |                 +--| (47)
+    |     |           |                 |  +---AY593771/COL/Unknown/1967/A/EURO-SA/Unknown
+    |     |           |              +--| (47)
+    |     |           |              |  +---AY593768/BRA/Unknown/1955/A/EURO-SA/Unknown
+    |     |           |           +--| (87)
+    |     |           |           |  |              +--OQ256242/ISR/cow/1969/A/EURO-SA/Unknown
+    |     |           |           |  |           +--| (89)
+    |     |           |           |  |           |  +--AY593751/NLD/Unknown/1942/A/EURO-SA/Unknown
+    |     |           |           |  |        +--| (77)
+    |     |           |           |  |        |  |  +--AY593776/DEU/Unknown/1968/A/EURO-SA/Unknown
+    |     |           |           |  |        |  +--| (99)
+    |     |           |           |  |        |     +---AY593759/DEU/Unknown/1971/A/EURO-SA/Unknown
+    |     |           |           |  |     +--| (96)
+    |     |           |           |  |     |  |  +--AY593779/DEU/Unknown/1972/A/EURO-SA/Unknown
+    |     |           |           |  |     |  +--| (83)
+    |     |           |           |  |     |     +--AY593774/ESP/Unknown/1969/A/EURO-SA/Unknown
+    |     |           |           |  |  +--| (96)
+    |     |           |           |  |  |  +-----AY593794/COL/Unknown/1985/A/EURO-SA/Unknown
+    |     |           |           |  +--| (55)
+    |     |           |           |     |     +--AY593792/ITA/Unknown/1962/A/EURO-SA/Unknown
+    |     |           |           |     |  +--| (98)
+    |     |           |           |     |  |  |  +--AY593781/DEU/Unknown/1951/A/EURO-SA/Unknown
+    |     |           |           |     |  |  +--| (99)
+    |     |           |           |     |  |     |  +--AY593780/FRA/Unknown/1960/A/EURO-SA/Unknown
+    |     |           |           |     |  |     +--| (53)
+    |     |           |           |     |  |        +--AY593754/ESP/Unknown/1959/A/EURO-SA/Unknown
+    |     |           |           |     +--| (67)
+    |     |           |           |        +----AY593760/RUS/Unknown/1964/A/EURO-SA/Unknown
+    |     |           |        +--| (55)
+    |     |           |        |  |      +--AY593775/VEN/Unknown/1970/A/EURO-SA/Unknown
+    |     |           |        |  |   +--| (100)
+    |     |           |        |  |   |  +--AY593773/PER/Unknown/1969/A/EURO-SA/Unknown
+    |     |           |        |  +---| (100)
+    |     |           |        |      +--AY593767/ARG/Unknown/1965/A/EURO-SA/Unknown
+    |     |           |     +--| (67)
+    |     |           |     |  +----AY593788/BRA/Unknown/1958/A/EURO-SA/Unknown
+    |     |           |  +--| (90)
+    |     |           |  |  |                                 +--KX002205/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                              +--| (100)
+    |     |           |  |  |                              |  +--AY593786/ARG/Unknown/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           +--| (17)
+    |     |           |  |  |                           |  |                       +**KX002198/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |  |                    +**|
+    |     |           |  |  |                           |  |                    |  +**KX002184/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |  |                 +**|
+    |     |           |  |  |                           |  |                 |  +**KX002182/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |  |              +--|
+    |     |           |  |  |                           |  |              |  +**KX002176/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |  |           +--| (73)
+    |     |           |  |  |                           |  |           |  +--KX002197/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |  |        +--| (98)
+    |     |           |  |  |                           |  |        |  |  +--KX002180/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |  |        |  +--| (100)
+    |     |           |  |  |                           |  |        |     +--KX002179/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |  |     +--| (19)
+    |     |           |  |  |                           |  |     |  |  +--KX002178/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |  |     |  +--| (100)
+    |     |           |  |  |                           |  |     |     +--KX002177/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |  |  +--| (8)
+    |     |           |  |  |                           |  |  |  +--KX002183/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |  +--| (20)
+    |     |           |  |  |                           |     |     +--KX002192/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |     |  +--| (100)
+    |     |           |  |  |                           |     |  |  +--KX002189/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                           |     +--| (27)
+    |     |           |  |  |                           |        +--KX002187/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                        +--| (97)
+    |     |           |  |  |                        |  |  +--KX002204/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                        |  +--| (99)
+    |     |           |  |  |                        |     +--AY593790/ARG/Unknown/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                     +--| (98)
+    |     |           |  |  |                     |  |  +--KX002202/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                     |  +--| (63)
+    |     |           |  |  |                     |     +--KX002194/ARG/cattle/2000/A/EURO-SA/Unknown
+    |     |           |  |  |                  +--| (99)
+    |     |           |  |  |                  |  |        +--KX002203/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |  |     +--| (57)
+    |     |           |  |  |                  |  |     |  |     +**AY593785/ARG/Unknown/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |  |     |  |  +--|
+    |     |           |  |  |                  |  |     |  |  |  +**AY593783/ARG/Unknown/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |  |     |  +--| (82)
+    |     |           |  |  |                  |  |     |     +--AY593784/ARG/Unknown/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |  |  +--| (63)
+    |     |           |  |  |                  |  |  |  +--AY593802/URY/Unknown/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |  +--| (99)
+    |     |           |  |  |                  |     |     +--KX002201/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |     |  +--| (66)
+    |     |           |  |  |                  |     |  |  |           +**KX002200/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |     |  |  |        +**|
+    |     |           |  |  |                  |     |  |  |        |  +**KX002188/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |     |  |  |     +**|
+    |     |           |  |  |                  |     |  |  |     |  +**KX002185/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |     |  |  |  +--|
+    |     |           |  |  |                  |     |  |  |  |  +**KX002186/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |     |  |  +--| (64)
+    |     |           |  |  |                  |     |  |     +--KX002199/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |                  |     +--| (99)
+    |     |           |  |  |                  |        +--KX002181/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |               +--| (100)
+    |     |           |  |  |               |  +--KX002193/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |            +--| (99)
+    |     |           |  |  |            |  |  +--KX002191/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |            |  +--| (100)
+    |     |           |  |  |            |     +--KX002190/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |     +------| (100)
+    |     |           |  |  |     |      +--KX002196/ARG/cattle/2001/A/EURO-SA/Unknown
+    |     |           |  |  |  +--| (61)
+    |     |           |  |  |  |  |  +---AY593803/BRA/Unknown/1979/A/EURO-SA/Unknown
+    |     |           |  |  |  |  +--| (77)
+    |     |           |  |  |  |     +--AY593756/BRA/Unknown/1959/A/EURO-SA/Unknown
+    |     |           |  |  +--| (53)
+    |     |           |  |     +------AY593782/ARG/Unknown/2000/A/EURO-SA/Unknown
+    |     |           +--| (91)
+    |     |              +---AY593793/PHL/Unknown/1975/A/EURO-SA/Unknown
+    |  +--| (100)
+    |  |  |     +----PP273559/IND/elephant/1988/A/ASIA/Unknown
+    |  |  |  +--| (88)
+    |  |  |  |  |  +--HQ832590/IND/cattle/2007/A/ASIA/Unknown
+    |  |  |  |  +--| (99)
+    |  |  |  |     |  +--HQ832583/IND/Unknown/2005/A/ASIA/Unknown
+    |  |  |  |     +--| (100)
+    |  |  |  |        |     +--HQ832582/IND/buffalo/2004/A/ASIA/Unknown
+    |  |  |  |        |  +--| (34)
+    |  |  |  |        |  |  |  +--HQ832580/IND/cattle/2003/A/ASIA/Unknown
+    |  |  |  |        |  |  +--| (98)
+    |  |  |  |        |  |     +--HQ832578/IND/Unknown/2003/A/ASIA/Unknown
+    |  |  |  |        +--| (44)
+    |  |  |  |           |  +--HQ832581/IND/cattle/2004/A/ASIA/Unknown
+    |  |  |  |           +--| (98)
+    |  |  |  |              +--HQ832579/IND/buffalo/2003/A/ASIA/Unknown
+    |  |  +--| (87)
+    |  |     |        +--MK940253/SAU/cattle/2017/A/ASIA/Unknown
+    |  |     |     +--| (100)
+    |  |     |     |  +--KU127247/SAU/cattle/2015/A/ASIA/Unknown
+    |  |     +-----| (100)
+    |  |           +--KJ754939/BGD/cattle/2013/A/ASIA/Unknown
+    +--| (99)
+       |        +**OM455484/PAK/buffalo/2012/A/ASIA/Iran-05
+       |     +--|
+       |     |  +**OM455479/PAK/cattle/2012/A/ASIA/Iran-05
+       |  +--| (100)
+       |  |  +--OM455483/PAK/cattle/2012/A/ASIA/Iran-05
+       +--| (98)
+          +--KM268896/TUR/cattle/2013/A/ASIA/Iran-05
+
+
+Consensus tree in newick format: 
+
+(MZ493234/PAK/cattle/2018/A/ASIA/Iran-05:0.0000024097,MZ493233/PAK/cattle/2018/A/ASIA/Iran-05:0.0000024097,(MZ493232/PAK/cattle/2017/A/ASIA/Iran-05:0.0173411032,((((((((ON652967/VNM/cow/2013/A/ASIA/Sea-97:0.0017247529,(((OQ745961/THA/cattle/2016/A/ASIA/Sea-97:0.0163784629,KY322680/VNM/cattle/2013/A/ASIA/Sea-97:0.0070303146)43:0.0000024097,LC564911/THA/cow/2013/A/ASIA/Sea-97:0.0017266432)11:0.0000024097,((((LC564915/THA/cow/2014/A/ASIA/Sea-97:0.0000024097,LC564912/THA/cow/2013/A/ASIA/Sea-97:0.0034786042)100:0.0017336391,(LC564914/THA/cow/2014/A/ASIA/Sea-97:0.0000024097,KY322679/THA/cattle/2014/A/ASIA/Sea-97:0.0000024097)100:0.0052504160)99:0.0017423631,KY322675/LAO/cattle/2014/A/ASIA/Sea-97:0.0017259280)18:0.0000024097,KY322677/MYS/cattle/2013/A/ASIA/Sea-97:0.0000024097)13:0.0000024097)36:0.0000024097)99:0.0155820556,((LC564909/THA/cow/2012/A/ASIA/Sea-97:0.0000023936,KY322676/MYS/cattle/2013/A/ASIA/Sea-97:0.0124895777)100:0.0166991553,(((((((LC564907/THA/cow/2011/A/ASIA/Sea-97:0.0034522970,((LC564906/THA/cow/2011/A/ASIA/Sea-97:0.0052157932,LC564904/THA/cow/2010/A/ASIA/Sea-97:0.0017134600)44:0.0000024097,LC564903/THA/cow/2010/A/ASIA/Sea-97:0.0017143694)43:0.0000024097)100:0.0052125051,KY322678/MYS/cattle/2013/A/ASIA/Sea-97:0.0143513957)89:0.0000024097,(LC564905/THA/cow/2011/A/ASIA/Sea-97:0.0000024097,LC564902/THA/cow/2010/A/ASIA/Sea-97:0.0000024097)98:0.0000024097)95:0.0022786863,KJ608371/VNM/cattle/2013/A/ASIA/Sea-97:0.0065481976)79:0.0053115861,HQ268509/VNM/Unknown/2004/A/ASIA/Sea-97:0.0085061886)95:0.0097667540,(((LC564896/THA/cow/2007/A/ASIA/Sea-97:0.0000024097,LC564895/THA/cow/2007/A/ASIA/Sea-97:0.0000024097)100:0.0070186247,HQ632773/MYS/cattle/2007/A/ASIA/Sea-97:0.0000024097)99:0.0070505944,(LC564894/THA/cow/2007/A/ASIA/Sea-97:0.0000024097,LC483874/THA/cow/2007/A/ASIA/Sea-97:0.0000024097)100:0.0183289098)38:0.0000024097)65:0.0006239943,((LC564901/THA/cow/2009/A/ASIA/Sea-97:0.0063282349,(LC564900/THA/cow/2009/A/ASIA/Sea-97:0.0052337666,((((KC588943/KOR/cattle/2010/A/ASIA/Sea-97:0.0090530509,GQ406249/VNM/cattle/2009/A/ASIA/Sea-97:0.0016413231)93:0.0018134197,GQ406250/VNM/cattle/2009/A/ASIA/Sea-97:0.0034661376)29:0.0000024097,(GQ406252/VNM/buffalo/2009/A/ASIA/Sea-97:0.0000024097,GQ406248/VNM/cattle/2009/A/ASIA/Sea-97:0.0000024097)92:0.0000024097)26:0.0000024097,(GQ406251/VNM/pig/2009/A/ASIA/Sea-97:0.0017204253,GQ406247/VNM/cattle/2009/A/ASIA/Sea-97:0.0017371603)99:0.0017259362)37:0.0000024097)98:0.0043008703)99:0.0095381540,LC564898/THA/cow/2008/A/ASIA/Sea-97:0.0081668377)81:0.0017789117)94:0.0089189986)93:0.0180181364)64:0.0053234350,((LC564923/THA/cow/2016/A/ASIA/Sea-97:0.0334717722,(LC564922/THA/cow/2016/A/ASIA/Sea-97:0.0033217163,(((LC564921/THA/cow/2016/A/ASIA/Sea-97:0.0017253574,KT968663/CHN/yak/2013/A/ASIA/Sea-97:0.0125279313)99:0.0017333277,((LC564920/THA/cow/2015/A/ASIA/Sea-97:0.0017199373,LC564918/THA/cow/2015/A/ASIA/Sea-97:0.0017202158)25:0.0000024097,(LC564919/THA/cow/2015/A/ASIA/Sea-97:0.0052213398,LC564917/THA/cow/2015/A/ASIA/Sea-97:0.0017198377)38:0.0000024097)26:0.0000024097)62:0.0000024097,LC564916/THA/cow/2014/A/ASIA/Sea-97:0.0017201724)54:0.0019066555)99:0.0085042060)100:0.0347146276,KJ933864/MYS/Unknown/1997/A/ASIA/Sea-97:0.0529642311)62:0.0032619852)95:0.0151986432,(HQ832586/IND/Unknown/2006/A/ASIA/Unknown:0.0026532268,HQ832577/IND/Unknown/1999/A/ASIA/Unknown:0.0061738791)100:0.0523654550)57:0.0000021460,HQ832585/IND/Unknown/2005/A/ASIA/Unknown:0.0286075815)28:0.0021482881,((((JF749848/TUR/Unknown/2003/A/ASIA/Unknown:0.0312406325,AY593791/IRN/Unknown/1998/A/ASIA/Iran-96:0.0184028798)99:0.0240784263,((HQ832591/IND/cattle/2008/A/ASIA/Unknown:0.0327871873,HQ832588/IND/cattle/2005/A/ASIA/Unknown:0.0294291429)100:0.0145279995,(MT340198/VNM/cattle/2017/A/ASIA/Sea-97:0.0018170452,MT340197/VNM/cattle/2017/A/ASIA/Sea-97:0.0016611538)100:0.0214294769)98:0.0117006006)78:0.0035370031,((KC440882/EGY/Unknown/2012/A/ASIA/Iran-05:0.0168146734,(MG334583/IRQ/cow/2009/A/ASIA/Iran-05:0.0000024097,((((JN099699/IRQ/cattle/2009/A/ASIA/Iran-05:0.0017265861,JN099697/IRQ/cattle/2009/A/ASIA/Iran-05:0.0000024097)100:0.0017257416,JN099694/IRQ/cattle/2009/A/ASIA/Iran-05:0.0034698875)66:0.0000024097,JN099688/IRQ/cattle/2009/A/ASIA/Iran-05:0.0000024097)47:0.0000024097,JN099698/IRQ/cattle/2009/A/ASIA/Iran-05:0.0017249396)100:0.0035003643)99:0.0034693823)99:0.0090736629,((((OM455482/PAK/cattle/2009/A/ASIA/Iran-05:0.0000024097,OM455480/PAK/cattle/2008/A/ASIA/Iran-05:0.0000024097)99:0.0119548153,(MN062587/PAK/cattle/2009/A/ASIA/Iran-05:0.0095305069,MN062586/AFG/cattle/2009/A/ASIA/Iran-05:0.0369568630)99:0.0020653153)73:0.0017859215,(OM455481/PAK/buffalo/2012/A/ASIA/Iran-05:0.0056213287,JN006722/PAK/Unknown/2008/A/ASIA/Iran-05:0.0165584434)63:0.0059223650)43:0.0067828556,(((((MG923580/DZA/cattle/2017/A/AFRICA/Unknown:0.0000024097,MG923579/DZA/cattle/2017/A/AFRICA/Unknown:0.0017356222)100:0.0108482838,MG725873/NER/cow/2015/A/AFRICA/Unknown:0.0036241617)98:0.0034274116,(MG725876/NER/cow/2015/A/AFRICA/Unknown:0.0000024097,MG725875/NER/cow/2015/A/AFRICA/Unknown:0.0000024097)95:0.0000020632)100:0.0555493848,MG725872/NER/cow/2013/A/AFRICA/Unknown:0.0570254191)94:0.0196705959,MG725874/NER/cow/2015/A/AFRICA/Unknown:0.0423734277)100:0.2397250803)62:0.0000024693)95:0.0104347975)51:0.0041236563,(((((((JF749843/EGY/Unknown/2006/A/AFRICA/Unknown:0.0000024097,OQ356347/EGY/cow/2008/A/AFRICA/Unknown:0.0000024097)100:0.0520984692,(MH053305/EGY/cattle/1972/A/AFRICA/Unknown:0.0910747851,AY593766/KEN/Unknown/1965/A/__/Unknown:0.0534117710)93:0.0009703198)91:0.0075019740,(OM863581/KEN/cattle/2012/A/AFRICA/Unknown:0.0414382216,MT602077/ETH/cattle/2018/A/AFRICA/Unknown:0.0161957556)99:0.0235277930)67:0.0019992671,MH053307/ZMB/cattle/1990/A/AFRICA/Unknown:0.0312684954)72:0.0133003451,(((((KC440881/EGY/Unknown/2011/A/AFRICA/Unknown:0.0000024097,KP940474/EGY/cattle/2014/A/AFRICA/Unknown:0.0000024097)100:0.0050983956,OM863580/EGY/cattle/2012/A/AFRICA/Unknown:0.0076925450)100:0.0140948700,MT602078/ETH/cattle/2019/A/AFRICA/Unknown:0.0252832258)92:0.0042767491,MT602079/SDN/cattle/2018/A/AFRICA/Unknown:0.0136399237)100:0.0215832702,(AY593772/TUR/Unknown/1972/A/ASIA/A22:0.0186153443,(AY593765/TUR/Unknown/1965/A/ASIA/A22:0.0000024097,(((AY593764/IRQ/Unknown/1970/A/ASIA/A22:0.0000000000,AY593762/IRQ/Unknown/1964/A/ASIA/A22:0.0000000000):0.0000024097,AY593763/IRQ/Unknown/1964/A/ASIA/A22:0.0000024097)100:0.0072310114,FJ623456/KAZ/Unknown/1999/A/ASIA/A22:0.0036532363)100:0.0052765897)91:0.0039341992)100:0.0401980152)56:0.0006431062)61:0.0040235901,(((LC771233/IRQ/water-buffalo/2023/A/AFRICA/Unknown:0.0053169403,MT863268/EGY/water-buffalo/2016/A/AFRICA/Unknown:0.0000024097)100:0.0410474746,AY593755/THA/Unknown/1960/A/ASIA/Unknown:0.0687390014)92:0.0017139657,MN116688/KEN/cow/2016/A/AFRICA/Unknown:0.0639402481)88:0.0030132813)60:0.0056483377,((((((JF749841/TUR/Unknown/2006/A/ASIA/Iran-05:0.0107778548,EF494486/TUR/cattle/2005/A/ASIA/Iran-05:0.0000024097)52:0.0018856126,(EF117837/PAK/cattle/2006/A/ASIA/Iran-05:0.0000024097,EF494487/PAK/cattle/2006/A/ASIA/Iran-05:0.0000024097)100:0.0088531936)52:0.0028084747,EF494488/PAK/cattle/2006/A/ASIA/Iran-05:0.0101086944)100:0.0378469917,(HQ832592/IND/cattle/2009/A/ASIA/Unknown:0.0236991561,(HQ832589/IND/cattle/2006/A/ASIA/Unknown:0.0221338003,HQ832584/IND/cattle/2005/A/ASIA/Unknown:0.0204924246)100:0.0052463448)99:0.0069189568)92:0.0080518654,(((MH053306/TCD/cattle/1973/A/AFRICA/Unknown:0.0734039953,AY593761/KEN/Unknown/1964/A/AFRICA/Unknown:0.0200789898)99:0.0196528477,(AY593789/ARG/Unknown/1961/A/EURO-SA/Unknown:0.0000024097,AY593769/ARG/Unknown/1959/A/EURO-SA/Unknown:0.0000024097)100:0.0351892777)78:0.0009616089,AY593770/ARG/Unknown/1966/A/EURO-SA/Unknown:0.0429174903)85:0.0101121261)40:0.0000022532,((((((((((OQ356341/BRA/cow/1970/A/EURO-SA/Unknown:0.0000000000,AY593753/BRA/Unknown/1958/A/EURO-SA/Unknown:0.0000000000):0.0000024097,AY593758/VEN/Unknown/1967/A/EURO-SA/Unknown:0.0000024097)100:0.0036826723,AY593757/BRA/Unknown/1967/A/EURO-SA/Unknown:0.0016291788)100:0.0259766399,AY593771/COL/Unknown/1967/A/EURO-SA/Unknown:0.0315830397)47:0.0027073895,AY593768/BRA/Unknown/1955/A/EURO-SA/Unknown:0.0273576977)47:0.0028631354,(((((OQ256242/ISR/cow/1969/A/EURO-SA/Unknown:0.0092421314,AY593751/NLD/Unknown/1942/A/EURO-SA/Unknown:0.0055368835)89:0.0014892656,(AY593776/DEU/Unknown/1968/A/EURO-SA/Unknown:0.0101870104,AY593759/DEU/Unknown/1971/A/EURO-SA/Unknown:0.0309667537)99:0.0164981197)77:0.0000024097,(AY593779/DEU/Unknown/1972/A/EURO-SA/Unknown:0.0000024097,AY593774/ESP/Unknown/1969/A/EURO-SA/Unknown:0.0000024097)83:0.0000024097)96:0.0012416092,AY593794/COL/Unknown/1985/A/EURO-SA/Unknown:0.0424769403)96:0.0094593672,((AY593792/ITA/Unknown/1962/A/EURO-SA/Unknown:0.0053317958,(AY593781/DEU/Unknown/1951/A/EURO-SA/Unknown:0.0035009285,(AY593780/FRA/Unknown/1960/A/EURO-SA/Unknown:0.0070645995,AY593754/ESP/Unknown/1959/A/EURO-SA/Unknown:0.0070751436)53:0.0000024097)99:0.0017605210)98:0.0096498921,AY593760/RUS/Unknown/1964/A/EURO-SA/Unknown:0.0384750777)67:0.0079048927)55:0.0077430857)87:0.0087114886,((AY593775/VEN/Unknown/1970/A/EURO-SA/Unknown:0.0017378365,AY593773/PER/Unknown/1969/A/EURO-SA/Unknown:0.0000024097)100:0.0264847465,AY593767/ARG/Unknown/1965/A/EURO-SA/Unknown:0.0044146225)100:0.0310527784)55:0.0014320436,AY593788/BRA/Unknown/1958/A/EURO-SA/Unknown:0.0345698739)67:0.0025518307,((((((((((KX002205/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024097,AY593786/ARG/Unknown/2001/A/EURO-SA/Unknown:0.0000024097)100:0.0052992764,((((((((KX002198/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000000000,KX002184/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000000000):0.0000000000,KX002182/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000000000):0.0000000000,KX002176/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000000000):0.0000024097,KX002197/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024097)73:0.0000024097,(KX002180/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024097,KX002179/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024097)100:0.0034858016)98:0.0017313577,(KX002178/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024097,KX002177/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024097)100:0.0017307031)19:0.0000024097,KX002183/ARG/cattle/2001/A/EURO-SA/Unknown:0.0017303286)8:0.0000024097,((KX002192/ARG/cattle/2001/A/EURO-SA/Unknown:0.0017341189,KX002189/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024097)100:0.0052618378,KX002187/ARG/cattle/2001/A/EURO-SA/Unknown:0.0052557405)27:0.0000024097)20:0.0000024097)17:0.0000024097,(KX002204/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024097,AY593790/ARG/Unknown/2001/A/EURO-SA/Unknown:0.0000024097)99:0.0017239388)97:0.0017278903,(KX002202/ARG/cattle/2001/A/EURO-SA/Unknown:0.0017279577,KX002194/ARG/cattle/2000/A/EURO-SA/Unknown:0.0034768347)63:0.0000024097)98:0.0017338927,(((KX002203/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024097,((AY593785/ARG/Unknown/2001/A/EURO-SA/Unknown:0.0000000000,AY593783/ARG/Unknown/2001/A/EURO-SA/Unknown:0.0000000000):0.0000024097,AY593784/ARG/Unknown/2001/A/EURO-SA/Unknown:0.0000024097)82:0.0000024097)57:0.0000024097,AY593802/URY/Unknown/2001/A/EURO-SA/Unknown:0.0017221987)63:0.0000024097,((KX002201/ARG/cattle/2001/A/EURO-SA/Unknown:0.0017306443,((((KX002200/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000000000,KX002188/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000000000):0.0000000000,KX002185/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000000000):0.0000000000,KX002186/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000000000):0.0000024097,KX002199/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024097)64:0.0000024097)66:0.0000024097,KX002181/ARG/cattle/2001/A/EURO-SA/Unknown:0.0034832366)99:0.0017297992)99:0.0034858119)99:0.0017102276,KX002193/ARG/cattle/2001/A/EURO-SA/Unknown:0.0034978074)100:0.0017776266,(KX002191/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024097,KX002190/ARG/cattle/2001/A/EURO-SA/Unknown:0.0000024097)100:0.0035215735)99:0.0015395400,KX002196/ARG/cattle/2001/A/EURO-SA/Unknown:0.0019107320)100:0.0530124418,(AY593803/BRA/Unknown/1979/A/EURO-SA/Unknown:0.0300125203,AY593756/BRA/Unknown/1959/A/EURO-SA/Unknown:0.0149907029)77:0.0063926014)61:0.0044731738,AY593782/ARG/Unknown/2000/A/EURO-SA/Unknown:0.0510583533)53:0.0000027811)90:0.0048134229,AY593793/PHL/Unknown/1975/A/EURO-SA/Unknown:0.0291662930)91:0.0038638766)77:0.0058580550)62:0.0056744123)16:0.0000024138)20:0.0000020714,((PP273559/IND/elephant/1988/A/ASIA/Unknown:0.0348547715,(HQ832590/IND/cattle/2007/A/ASIA/Unknown:0.0016356630,(HQ832583/IND/Unknown/2005/A/ASIA/Unknown:0.0089621470,((HQ832582/IND/buffalo/2004/A/ASIA/Unknown:0.0071012055,(HQ832580/IND/cattle/2003/A/ASIA/Unknown:0.0035792537,HQ832578/IND/Unknown/2003/A/ASIA/Unknown:0.0072082623)98:0.0016928252)34:0.0000024097,(HQ832581/IND/cattle/2004/A/ASIA/Unknown:0.0052953597,HQ832579/IND/buffalo/2003/A/ASIA/Unknown:0.0017753223)98:0.0017352033)44:0.0000024097)100:0.0149855799)99:0.0131009815)88:0.0007280979,((MK940253/SAU/cattle/2017/A/ASIA/Unknown:0.0000024097,KU127247/SAU/cattle/2015/A/ASIA/Unknown:0.0000024097)100:0.0250460714,KJ754939/BGD/cattle/2013/A/ASIA/Unknown:0.0124463311)100:0.0415328031)87:0.0087207904)100:0.0212355458,(((OM455484/PAK/buffalo/2012/A/ASIA/Iran-05:0.0000000000,OM455479/PAK/cattle/2012/A/ASIA/Iran-05:0.0000000000):0.0000024097,OM455483/PAK/cattle/2012/A/ASIA/Iran-05:0.0000024097)100:0.0185238557,KM268896/TUR/cattle/2013/A/ASIA/Iran-05:0.0196841863)98:0.0101742614)99:0.0110650599)100:0.0320147998);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t alignments_no_probang_etc\recombinant_free_regions\A\A_6333-7002_no_probang.treefile -m "GTR{0.803914,9.66078,0.81525,0.813484,15.631}+F{0.242423,0.269043,0.240378,0.248156}+I{0.500887}+G4{0.615282}" --length 694
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s alignments_no_probang_etc\recombinant_free_regions\A\A_6333-7002_no_probang.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s alignments_no_probang_etc\recombinant_free_regions\A\A_6333-7002_no_probang.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Jan 15 15:00:07 2026
+Total CPU time used: 1012.484375 seconds (0h:16m:52s)
+Total wall-clock time used: 1079.379705 seconds (0h:17m:59s)
+

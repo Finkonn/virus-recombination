@@ -1,0 +1,385 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Input file name: alignments_no_probang_etc\recombinant_free_regions\Asia1\Asia1_2993-3525_no_probang.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 753972
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 66 sequences with 533 nucleotide sites
+Number of constant sites: 353 (= 66.2289% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 353 (= 66.2289% of all sites)
+Number of parsimony informative sites: 117
+Number of distinct site patterns: 174
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+G4
+
+Rate parameter R:
+
+  A-C: 1.7505
+  A-G: 11.5068
+  A-T: 1.2330
+  C-G: 0.6012
+  C-T: 16.8748
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2375
+  pi(C) = 0.2884
+  pi(G) = 0.261
+  pi(T) = 0.2131
+
+Rate matrix Q:
+
+  A   -0.9271    0.1241    0.7384    0.0646
+  C    0.1022    -1.025   0.03858    0.8842
+  G     0.672   0.04263    -0.767    0.0524
+  T   0.07201     1.197   0.06417    -1.333
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.4644
+Gamma shape alpha: 0.6456
+
+ Category  Relative_rate  Proportion
+  0         0              0.4644
+  1         0.1169         0.1339
+  2         0.6287         0.1339
+  3         1.686          0.1339
+  4         5.037          0.1339
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -3265.9490 (s.e. 171.0428)
+Unconstrained log-likelihood (without tree): -1748.8920
+Number of free parameters (#branches + #model parameters): 123
+Akaike information criterion (AIC) score: 6777.8980
+Corrected Akaike information criterion (AICc) score: 6852.4799
+Bayesian information criterion (BIC) score: 7304.1562
+
+Total tree length (sum of branch lengths): 1.2422
+Sum of internal branch lengths: 0.2674 (21.5277% of tree length)
+
+WARNING: 14 near-zero internal branches (<0.0019) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'MN366244/BGD/cattle/2018/Asia1/ASIA/Unknown' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++-------------MN366244/BGD/cattle/2018/Asia1/ASIA/Unknown
+|
+|                             +----------JF749849/PAK/Unknown/2002/Asia1/ASIA/Unknown
+|                          +**| (66)
+|                          |  +------------HQ113233/AFG/cow/2009/Asia1/ASIA/Unknown
+|                       +--| (95)
+|                       |  +----------------------EF149010/CHN/Unknown/2005/Asia1/ASIA/Unknown
+|                  +----| (34)
+|                  |    |                         +**HQ631363/CHN/pig/2006/Asia1/ASIA/Unknown
+|                  |    |                      +**| (57)
+|                  |    |                      |  +--EF614458/MNG/cattle/2005/Asia1/ASIA/Unknown
+|                  |    |                   +**| (81)
+|                  |    |                   |  |  +**GQ452295/VNM/cattle/2007/Asia1/ASIA/Unknown
+|                  |    |                   |  +--| (99)
+|                  |    |                   |     +**GU125645/VNM/cattle/2007/Asia1/ASIA/Unknown
+|                  |    |    +--------------| (99)
+|                  |    |    |              |  +--FJ906802/CHN/pig/2006/Asia1/ASIA/Unknown
+|                  |    |    |              +--| (81)
+|                  |    |    |                 +-------------EF149009/CHN/Unknown/2005/Asia1/ASIA/Unknown
+|                  |    +----| (45)
+|                  |         +-----------DQ989313/IND/buffalo/1986/Asia1/ASIA/Unknown
+|               +--| (19)
+|               |  |                               +**OM471680/PAK/buffalo/2012/Asia1/ASIA/Unknown
+|               |  |                            +**| (55)
+|               |  |                            |  +**OM471673/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |                         +--| (99)
+|               |  |                         |  +--OM471660/PAK/buffalo/2012/Asia1/ASIA/Unknown
+|               |  |                      +--| (77)
+|               |  |                      |  |     +-----OM471677/PAK/buffalo/2012/Asia1/ASIA/Unknown
+|               |  |                      |  |  +**| (37)
+|               |  |                      |  |  |  |   +**OM471669/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |                      |  |  |  +---| (100)
+|               |  |                      |  |  |      +**OM471668/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |                      |  +**| (21)
+|               |  |                      |     |  +**OM471675/PAK/cattle/2011/Asia1/ASIA/Unknown
+|               |  |                      |     +**| (42)
+|               |  |                      |        +**OM471674/PAK/cattle/2011/Asia1/ASIA/Unknown
+|               |  |                   +**| (12)
+|               |  |                   |  |  +**OM471667/PAK/buffalo/2011/Asia1/ASIA/Unknown
+|               |  |                   |  +--| (98)
+|               |  |                   |     +**OM471666/PAK/buffalo/2011/Asia1/ASIA/Unknown
+|               |  |                +**| (20)
+|               |  |                |  |  +**OM471676/PAK/cattle/2011/Asia1/ASIA/Unknown
+|               |  |                |  +**| (30)
+|               |  |                |     +**OM471665/PAK/buffalo/2011/Asia1/ASIA/Unknown
+|               |  |             +--| (66)
+|               |  |             |  +---OM471661/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |        +----| (97)
+|               |  |        |    +-----KM268898/TUR/cattle/2013/Asia1/ASIA/Unknown
+|               |  |     +--| (75)
+|               |  |     |  +------------------------AY390432/Unknown/Unknown/2005/Asia1/ASIA/Unknown
+|               |  |  +--| (58)
+|               |  |  |  |          +**OM471679/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |  |  +----------| (100)
+|               |  |  |             +**OM471678/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  +--| (42)
+|               |     |            +-----DQ989315/IND/cattle/1993/Asia1/ASIA/Unknown
+|               |     |  +---------| (93)
+|               |     |  |         +------------------------DQ989310/IND/cattle/1999/Asia1/ASIA/Unknown
+|               |     +--| (46)
+|               |        +----------DQ989307/IND/cattle/1992/Asia1/ASIA/Unknown
+|            +--| (38)
+|            |  +-------------------JN006719/PAK/Unknown/2008/Asia1/ASIA/Unknown
+|         +--| (43)
+|         |  |   +----------JN006720/PAK/Unknown/2009/Asia1/ASIA/Unknown
+|         |  +---| (78)
+|         |      +-------------------------DQ989312/IND/sheep/1990/Asia1/ASIA/Unknown
+|     +---| (45)
+|     |   |    +--------MF782478/BGD/cattle/2013/Asia1/ASIA/Unknown
+|     |   +----| (91)
+|     |        |              +---DQ989323/IND/cattle/2002/Asia1/ASIA/Unknown
+|     |        |           +**| (41)
+|     |        |           |  +---DQ989321/IND/cattle/2001/Asia1/ASIA/Unknown
+|     |        |        +**| (53)
+|     |        |        |  |     +---DQ989322/IND/cattle/2002/Asia1/ASIA/Unknown
+|     |        |        |  |  +--| (95)
+|     |        |        |  |  |  +---DQ989314/IND/cattle/2001/Asia1/ASIA/Unknown
+|     |        |        |  +--| (98)
+|     |        |        |     +--DQ989320/IND/cattle/2002/Asia1/ASIA/Unknown
+|     |        |     +--| (93)
+|     |        |     |  +---DQ989318/IND/cattle/2002/Asia1/ASIA/Unknown
+|     |        |  +--| (98)
+|     |        |  |  +--DQ989317/IND/buffalo/2000/Asia1/ASIA/Unknown
+|     |        +--| (94)
+|     |           +------------------DQ989319/IND/cattle/2001/Asia1/ASIA/Unknown
+|  +--| (71)
+|  |  |                                    +**MF372126/IND/gayal/1994/Asia1/ASIA/Unknown
+|  |  |                        +-----------| (100)
+|  |  |                        |           +**DQ989309/IND/cattle/1996/Asia1/ASIA/Unknown
+|  |  |                +-------| (99)
+|  |  |                |       +--------DQ989308/IND/cattle/1994/Asia1/ASIA/Unknown
+|  |  |           +----| (88)
+|  |  |           |    +-----------DQ989305/IND/cattle/1990/Asia1/ASIA/Unknown
+|  |  |      +----| (73)
+|  |  |      |    |                +**AY593800/LBN/Unknown/1983/Asia1/ASIA/Unknown
+|  |  |      |    +----------------| (100)
+|  |  |      |                     +**AY593799/LBN/Unknown/1983/Asia1/ASIA/Unknown
+|  |  |   +--| (49)
+|  |  |   |  +----------------------------------HQ632774/MYS/cattle/1999/Asia1/ASIA/Unknown
+|  |  +---| (67)
+|  |      |  +-----------------DQ989311/IND/buffalo/2002/Asia1/ASIA/Unknown
+|  |      +--| (72)
+|  |         |                     +**DQ989306/IND/cattle/1986/Asia1/ASIA/Unknown
+|  |         |                  +**| (88)
+|  |         |                  |  +**DQ989304/IND/cattle/2000/Asia1/ASIA/Unknown
+|  |         |          +-------| (100)
+|  |         |          |       +--DQ989303/IND/cattle/1993/Asia1/ASIA/Unknown
+|  |         |  +-------| (98)
+|  |         |  |       +-----AY593796/ISR/Unknown/1963/Asia1/ASIA/Unknown
+|  |         +**| (71)
+|  |            +----------------------AY593795/PAK/Unknown/1954/Asia1/ASIA/Unknown
++--| (74)
+|  +-----------------------------------------MF372125/IND/gayal/2016/Asia1/ASIA/Unknown
+|
++---------------------GU125646/VNM/buffalo/2005/Asia1/ASIA/Unknown
+
+Tree in newick format:
+
+(MN366244/BGD/cattle/2018/Asia1/ASIA/Unknown:0.0270157228,(((((((((JF749849/PAK/Unknown/2002/Asia1/ASIA/Unknown:0.0211755320,HQ113233/AFG/cow/2009/Asia1/ASIA/Unknown:0.0256094375)66:0.0000020536,EF149010/CHN/Unknown/2005/Asia1/ASIA/Unknown:0.0442975192)95:0.0056025411,((((HQ631363/CHN/pig/2006/Asia1/ASIA/Unknown:0.0000009983,EF614458/MNG/cattle/2005/Asia1/ASIA/Unknown:0.0021104950)57:0.0000020530,(GQ452295/VNM/cattle/2007/Asia1/ASIA/Unknown:0.0000009983,GU125645/VNM/cattle/2007/Asia1/ASIA/Unknown:0.0000009983)99:0.0042641083)81:0.0018534925,(FJ906802/CHN/pig/2006/Asia1/ASIA/Unknown:0.0021784346,EF149009/CHN/Unknown/2005/Asia1/ASIA/Unknown:0.0277154156)81:0.0045707547)99:0.0291994210,DQ989313/IND/buffalo/1986/Asia1/ASIA/Unknown:0.0234112551)45:0.0099032990)34:0.0103574480,((((((((((OM471680/PAK/buffalo/2012/Asia1/ASIA/Unknown:0.0000009983,OM471673/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000024121)55:0.0000025217,OM471660/PAK/buffalo/2012/Asia1/ASIA/Unknown:0.0020896717)99:0.0042072144,((OM471677/PAK/buffalo/2012/Asia1/ASIA/Unknown:0.0129049773,(OM471669/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000009983,OM471668/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000009983)100:0.0085077721)37:0.0000020310,(OM471675/PAK/cattle/2011/Asia1/ASIA/Unknown:0.0000009983,OM471674/PAK/cattle/2011/Asia1/ASIA/Unknown:0.0000020036)42:0.0000020144)21:0.0000020194)77:0.0020903285,(OM471667/PAK/buffalo/2011/Asia1/ASIA/Unknown:0.0000009983,OM471666/PAK/buffalo/2011/Asia1/ASIA/Unknown:0.0000009983)98:0.0020913994)12:0.0000020237,(OM471676/PAK/cattle/2011/Asia1/ASIA/Unknown:0.0000009983,OM471665/PAK/buffalo/2011/Asia1/ASIA/Unknown:0.0000009983)30:0.0000020925)20:0.0000025068,OM471661/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0085478679)66:0.0020777659,KM268898/TUR/cattle/2013/Asia1/ASIA/Unknown:0.0131096918)97:0.0099238203,AY390432/Unknown/Unknown/2005/Asia1/ASIA/Unknown:0.0484652670)75:0.0070581062,(OM471679/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000009983,OM471678/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000009983)100:0.0217498981)58:0.0055602747,((DQ989315/IND/cattle/1993/Asia1/ASIA/Unknown:0.0123038979,DQ989310/IND/cattle/1999/Asia1/ASIA/Unknown:0.0479313635)93:0.0190125445,DQ989307/IND/cattle/1992/Asia1/ASIA/Unknown:0.0223873927)46:0.0022250815)42:0.0027666991)19:0.0026473205,JN006719/PAK/Unknown/2008/Asia1/ASIA/Unknown:0.0386105272)38:0.0059501153,(JN006720/PAK/Unknown/2009/Asia1/ASIA/Unknown:0.0212249767,DQ989312/IND/sheep/1990/Asia1/ASIA/Unknown:0.0508886002)78:0.0077752029)43:0.0027716344,(MF782478/BGD/cattle/2013/Asia1/ASIA/Unknown:0.0180692097,(((((DQ989323/IND/cattle/2002/Asia1/ASIA/Unknown:0.0085877311,DQ989321/IND/cattle/2001/Asia1/ASIA/Unknown:0.0086277215)41:0.0000009983,((DQ989322/IND/cattle/2002/Asia1/ASIA/Unknown:0.0086332711,DQ989314/IND/cattle/2001/Asia1/ASIA/Unknown:0.0087481354)95:0.0021507523,DQ989320/IND/cattle/2002/Asia1/ASIA/Unknown:0.0042588475)98:0.0042971830)53:0.0000009983,DQ989318/IND/cattle/2002/Asia1/ASIA/Unknown:0.0085740805)93:0.0021005181,DQ989317/IND/buffalo/2000/Asia1/ASIA/Unknown:0.0021533652)98:0.0048302823,DQ989319/IND/cattle/2001/Asia1/ASIA/Unknown:0.0371518899)94:0.0037709964)91:0.0102803621)45:0.0075972436,((((((MF372126/IND/gayal/1994/Asia1/ASIA/Unknown:0.0000009983,DQ989309/IND/cattle/1996/Asia1/ASIA/Unknown:0.0000009983)100:0.0242906521,DQ989308/IND/cattle/1994/Asia1/ASIA/Unknown:0.0170326449)99:0.0156334627,DQ989305/IND/cattle/1990/Asia1/ASIA/Unknown:0.0235108676)88:0.0095670970,(AY593800/LBN/Unknown/1983/Asia1/ASIA/Unknown:0.0000009983,AY593799/LBN/Unknown/1983/Asia1/ASIA/Unknown:0.0000009983)100:0.0332655521)73:0.0102981725,HQ632774/MYS/cattle/1999/Asia1/ASIA/Unknown:0.0669537821)49:0.0038543036,(DQ989311/IND/buffalo/2002/Asia1/ASIA/Unknown:0.0343146449,((((DQ989306/IND/cattle/1986/Asia1/ASIA/Unknown:0.0000009983,DQ989304/IND/cattle/2000/Asia1/ASIA/Unknown:0.0000009983)88:0.0000009983,DQ989303/IND/cattle/1993/Asia1/ASIA/Unknown:0.0021291096)100:0.0154145558,AY593796/ISR/Unknown/1963/Asia1/ASIA/Unknown:0.0121043868)98:0.0158891339,AY593795/PAK/Unknown/1954/Asia1/ASIA/Unknown:0.0453091090)71:0.0004894463)72:0.0035874324)67:0.0094166892)71:0.0075546548,MF372125/IND/gayal/2016/Asia1/ASIA/Unknown:0.0802007524)74:0.0051167239,GU125646/VNM/buffalo/2005/Asia1/ASIA/Unknown:0.0422451686);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -3265.971386
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-------------MN366244/BGD/cattle/2018/Asia1/ASIA/Unknown
+|
+|                             +----------JF749849/PAK/Unknown/2002/Asia1/ASIA/Unknown
+|                          +--| (66)
+|                          |  +------------HQ113233/AFG/cow/2009/Asia1/ASIA/Unknown
+|                       +--| (95)
+|                       |  +----------------------EF149010/CHN/Unknown/2005/Asia1/ASIA/Unknown
+|                  +----| (34)
+|                  |    |                         +--HQ631363/CHN/pig/2006/Asia1/ASIA/Unknown
+|                  |    |                      +--| (57)
+|                  |    |                      |  +--EF614458/MNG/cattle/2005/Asia1/ASIA/Unknown
+|                  |    |                   +--| (81)
+|                  |    |                   |  |  +--GQ452295/VNM/cattle/2007/Asia1/ASIA/Unknown
+|                  |    |                   |  +--| (99)
+|                  |    |                   |     +--GU125645/VNM/cattle/2007/Asia1/ASIA/Unknown
+|                  |    |    +--------------| (99)
+|                  |    |    |              |  +--FJ906802/CHN/pig/2006/Asia1/ASIA/Unknown
+|                  |    |    |              +--| (81)
+|                  |    |    |                 +-------------EF149009/CHN/Unknown/2005/Asia1/ASIA/Unknown
+|                  |    +----| (45)
+|                  |         +-----------DQ989313/IND/buffalo/1986/Asia1/ASIA/Unknown
+|               +--| (19)
+|               |  |                                        +**OM471680/PAK/buffalo/2012/Asia1/ASIA/Unknown
+|               |  |                                     +**|
+|               |  |                                     |  +**OM471670/PAK/buffalo/2012/Asia1/ASIA/Unknown
+|               |  |                                  +**|
+|               |  |                                  |  +**OM471662/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |                               +--|
+|               |  |                               |  +**OM471663/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |                            +--| (55)
+|               |  |                            |  +--OM471673/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |                         +--| (99)
+|               |  |                         |  +--OM471660/PAK/buffalo/2012/Asia1/ASIA/Unknown
+|               |  |                      +--| (77)
+|               |  |                      |  |     +-----OM471677/PAK/buffalo/2012/Asia1/ASIA/Unknown
+|               |  |                      |  |  +--| (37)
+|               |  |                      |  |  |  |      +**OM471669/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |                      |  |  |  |   +--|
+|               |  |                      |  |  |  |   |  +**OM471659/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |                      |  |  |  +---| (100)
+|               |  |                      |  |  |      +--OM471668/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |                      |  +--| (21)
+|               |  |                      |     |  +--OM471675/PAK/cattle/2011/Asia1/ASIA/Unknown
+|               |  |                      |     +--| (42)
+|               |  |                      |        +--OM471674/PAK/cattle/2011/Asia1/ASIA/Unknown
+|               |  |                   +--| (12)
+|               |  |                   |  |  +--OM471667/PAK/buffalo/2011/Asia1/ASIA/Unknown
+|               |  |                   |  +--| (98)
+|               |  |                   |     +--OM471666/PAK/buffalo/2011/Asia1/ASIA/Unknown
+|               |  |                +--| (20)
+|               |  |                |  |     +**OM471676/PAK/cattle/2011/Asia1/ASIA/Unknown
+|               |  |                |  |  +--|
+|               |  |                |  |  |  +**OM471664/PAK/buffalo/2011/Asia1/ASIA/Unknown
+|               |  |                |  +--| (30)
+|               |  |                |     +--OM471665/PAK/buffalo/2011/Asia1/ASIA/Unknown
+|               |  |             +--| (66)
+|               |  |             |  +---OM471661/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |        +----| (97)
+|               |  |        |    +-----KM268898/TUR/cattle/2013/Asia1/ASIA/Unknown
+|               |  |     +--| (75)
+|               |  |     |  +------------------------AY390432/Unknown/Unknown/2005/Asia1/ASIA/Unknown
+|               |  |  +--| (58)
+|               |  |  |  |                +**OM471679/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |  |  |             +**|
+|               |  |  |  |             |  +**OM471671/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |  |  |          +--|
+|               |  |  |  |          |  +**OM471672/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  |  |  +----------| (100)
+|               |  |  |             +--OM471678/PAK/cattle/2012/Asia1/ASIA/Unknown
+|               |  +--| (42)
+|               |     |            +-----DQ989315/IND/cattle/1993/Asia1/ASIA/Unknown
+|               |     |  +---------| (93)
+|               |     |  |         +------------------------DQ989310/IND/cattle/1999/Asia1/ASIA/Unknown
+|               |     +--| (46)
+|               |        +----------DQ989307/IND/cattle/1992/Asia1/ASIA/Unknown
+|            +--| (38)
+|            |  +-------------------JN006719/PAK/Unknown/2008/Asia1/ASIA/Unknown
+|         +--| (43)
+|         |  |   +----------JN006720/PAK/Unknown/2009/Asia1/ASIA/Unknown
+|         |  +---| (78)
+|         |      +-------------------------DQ989312/IND/sheep/1990/Asia1/ASIA/Unknown
+|     +---| (45)
+|     |   |    +--------MF782478/BGD/cattle/2013/Asia1/ASIA/Unknown
+|     |   +----| (91)
+|     |        |              +---DQ989323/IND/cattle/2002/Asia1/ASIA/Unknown
+|     |        |           +--| (41)
+|     |        |           |  +---DQ989321/IND/cattle/2001/Asia1/ASIA/Unknown
+|     |        |        +--| (53)
+|     |        |        |  |     +---DQ989322/IND/cattle/2002/Asia1/ASIA/Unknown
+|     |        |        |  |  +--| (95)
+|     |        |        |  |  |  +---DQ989314/IND/cattle/2001/Asia1/ASIA/Unknown
+|     |        |        |  +--| (98)
+|     |        |        |     +--DQ989320/IND/cattle/2002/Asia1/ASIA/Unknown
+|     |        |     +--| (93)
+|     |        |     |  +---DQ989318/IND/cattle/2002/Asia1/ASIA/Unknown
+|     |        |  +--| (98)
+|     |        |  |  +--DQ989317/IND/buffalo/2000/Asia1/ASIA/Unknown
+|     |        +--| (94)
+|     |           +------------------DQ989319/IND/cattle/2001/Asia1/ASIA/Unknown
+|  +--| (71)
+|  |  |                                    +--MF372126/IND/gayal/1994/Asia1/ASIA/Unknown
+|  |  |                        +-----------| (100)
+|  |  |                        |           +--DQ989309/IND/cattle/1996/Asia1/ASIA/Unknown
+|  |  |                +-------| (99)
+|  |  |                |       +--------DQ989308/IND/cattle/1994/Asia1/ASIA/Unknown
+|  |  |           +----| (88)
+|  |  |           |    +-----------DQ989305/IND/cattle/1990/Asia1/ASIA/Unknown
+|  |  |      +----| (73)
+|  |  |      |    |                   +**AY593800/LBN/Unknown/1983/Asia1/ASIA/Unknown
+|  |  |      |    |                +--|
+|  |  |      |    |                |  +**AY593798/LBN/Unknown/1983/Asia1/ASIA/Unknown
+|  |  |      |    +----------------| (100)
+|  |  |      |                     +--AY593799/LBN/Unknown/1983/Asia1/ASIA/Unknown
+|  |  |   +--| (49)
+|  |  |   |  +----------------------------------HQ632774/MYS/cattle/1999/Asia1/ASIA/Unknown
+|  |  +---| (67)
+|  |      |  +-----------------DQ989311/IND/buffalo/2002/Asia1/ASIA/Unknown
+|  |      +--| (72)
+|  |         |                     +--DQ989306/IND/cattle/1986/Asia1/ASIA/Unknown
+|  |         |                  +--| (88)
+|  |         |                  |  +--DQ989304/IND/cattle/2000/Asia1/ASIA/Unknown
+|  |         |          +-------| (100)
+|  |         |          |       +--DQ989303/IND/cattle/1993/Asia1/ASIA/Unknown
+|  |         |  +-------| (98)
+|  |         |  |       +-----AY593796/ISR/Unknown/1963/Asia1/ASIA/Unknown
+|  |         +--| (71)
+|  |            +----------------------AY593795/PAK/Unknown/1954/Asia1/ASIA/Unknown
++--| (74)
+|  +-----------------------------------------MF372125/IND/gayal/2016/Asia1/ASIA/Unknown
+|
++---------------------GU125646/VNM/buffalo/2005/Asia1/ASIA/Unknown
+
+
+Consensus tree in newick format: 
+
+(MN366244/BGD/cattle/2018/Asia1/ASIA/Unknown:0.0270426171,(((((((((JF749849/PAK/Unknown/2002/Asia1/ASIA/Unknown:0.0212028922,HQ113233/AFG/cow/2009/Asia1/ASIA/Unknown:0.0256429434)66:0.0000028435,EF149010/CHN/Unknown/2005/Asia1/ASIA/Unknown:0.0443579796)95:0.0056100399,((((HQ631363/CHN/pig/2006/Asia1/ASIA/Unknown:0.0000028371,EF614458/MNG/cattle/2005/Asia1/ASIA/Unknown:0.0021130462)57:0.0000028371,(GQ452295/VNM/cattle/2007/Asia1/ASIA/Unknown:0.0000028371,GU125645/VNM/cattle/2007/Asia1/ASIA/Unknown:0.0000028371)99:0.0042692707)81:0.0018548366,(FJ906802/CHN/pig/2006/Asia1/ASIA/Unknown:0.0021811001,EF149009/CHN/Unknown/2005/Asia1/ASIA/Unknown:0.0277504836)81:0.0045769805)99:0.0292420009,DQ989313/IND/buffalo/1986/Asia1/ASIA/Unknown:0.0234442565)45:0.0099076899)34:0.0103695578,(((((((((((((OM471680/PAK/buffalo/2012/Asia1/ASIA/Unknown:0.0000000000,OM471670/PAK/buffalo/2012/Asia1/ASIA/Unknown:0.0000000000):0.0000000000,OM471662/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000000000):0.0000000000,OM471663/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000000000):0.0000028371,OM471673/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000028371)55:0.0000028371,OM471660/PAK/buffalo/2012/Asia1/ASIA/Unknown:0.0020936035)99:0.0042133937,((OM471677/PAK/buffalo/2012/Asia1/ASIA/Unknown:0.0129242649,((OM471669/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000000000,OM471659/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000000000):0.0000028371,OM471668/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000028371)100:0.0085204703)37:0.0000028371,(OM471675/PAK/cattle/2011/Asia1/ASIA/Unknown:0.0000028371,OM471674/PAK/cattle/2011/Asia1/ASIA/Unknown:0.0000028371)42:0.0000028371)21:0.0000028371)77:0.0020942595,(OM471667/PAK/buffalo/2011/Asia1/ASIA/Unknown:0.0000028371,OM471666/PAK/buffalo/2011/Asia1/ASIA/Unknown:0.0000028371)98:0.0020953356)12:0.0000028371,((OM471676/PAK/cattle/2011/Asia1/ASIA/Unknown:0.0000000000,OM471664/PAK/buffalo/2011/Asia1/ASIA/Unknown:0.0000000000):0.0000028371,OM471665/PAK/buffalo/2011/Asia1/ASIA/Unknown:0.0000028371)30:0.0000028371)20:0.0000028371,OM471661/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0085604339)66:0.0020821887,KM268898/TUR/cattle/2013/Asia1/ASIA/Unknown:0.0131285103)97:0.0099294918,AY390432/Unknown/Unknown/2005/Asia1/ASIA/Unknown:0.0485417947)75:0.0070715119,(((OM471679/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000000000,OM471671/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000000000):0.0000000000,OM471672/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000000000):0.0000028371,OM471678/PAK/cattle/2012/Asia1/ASIA/Unknown:0.0000028371)100:0.0217834557)58:0.0055678153,((DQ989315/IND/cattle/1993/Asia1/ASIA/Unknown:0.0123205568,DQ989310/IND/cattle/1999/Asia1/ASIA/Unknown:0.0480026430)93:0.0190387767,DQ989307/IND/cattle/1992/Asia1/ASIA/Unknown:0.0224239022)46:0.0022219490)42:0.0027707042)19:0.0026526177,JN006719/PAK/Unknown/2008/Asia1/ASIA/Unknown:0.0386623971)38:0.0059546506,(JN006720/PAK/Unknown/2009/Asia1/ASIA/Unknown:0.0212587420,DQ989312/IND/sheep/1990/Asia1/ASIA/Unknown:0.0509532218)78:0.0077748504)43:0.0027730737,(MF782478/BGD/cattle/2013/Asia1/ASIA/Unknown:0.0180913511,(((((DQ989323/IND/cattle/2002/Asia1/ASIA/Unknown:0.0085972560,DQ989321/IND/cattle/2001/Asia1/ASIA/Unknown:0.0086372682)41:0.0000028371,((DQ989322/IND/cattle/2002/Asia1/ASIA/Unknown:0.0086427121,DQ989314/IND/cattle/2001/Asia1/ASIA/Unknown:0.0087576827)95:0.0021545323,DQ989320/IND/cattle/2002/Asia1/ASIA/Unknown:0.0042634990)98:0.0043018969)53:0.0000028371,DQ989318/IND/cattle/2002/Asia1/ASIA/Unknown:0.0085835910)93:0.0021042669,DQ989317/IND/buffalo/2000/Asia1/ASIA/Unknown:0.0021572133)98:0.0048371562,DQ989319/IND/cattle/2001/Asia1/ASIA/Unknown:0.0371974575)94:0.0037708825)91:0.0102970069)45:0.0075972823,((((((MF372126/IND/gayal/1994/Asia1/ASIA/Unknown:0.0000028371,DQ989309/IND/cattle/1996/Asia1/ASIA/Unknown:0.0000028371)100:0.0243120083,DQ989308/IND/cattle/1994/Asia1/ASIA/Unknown:0.0170482371)99:0.0156435422,DQ989305/IND/cattle/1990/Asia1/ASIA/Unknown:0.0235315698)88:0.0095704121,((AY593800/LBN/Unknown/1983/Asia1/ASIA/Unknown:0.0000000000,AY593798/LBN/Unknown/1983/Asia1/ASIA/Unknown:0.0000000000):0.0000028371,AY593799/LBN/Unknown/1983/Asia1/ASIA/Unknown:0.0000028371)100:0.0332984166)73:0.0103007781,HQ632774/MYS/cattle/1999/Asia1/ASIA/Unknown:0.0670220361)49:0.0038579701,(DQ989311/IND/buffalo/2002/Asia1/ASIA/Unknown:0.0343389919,((((DQ989306/IND/cattle/1986/Asia1/ASIA/Unknown:0.0000028371,DQ989304/IND/cattle/2000/Asia1/ASIA/Unknown:0.0000028371)88:0.0000028371,DQ989303/IND/cattle/1993/Asia1/ASIA/Unknown:0.0021315694)100:0.0154250142,AY593796/ISR/Unknown/1963/Asia1/ASIA/Unknown:0.0121168169)98:0.0159102183,AY593795/PAK/Unknown/1954/Asia1/ASIA/Unknown:0.0453589004)71:0.0004794374)72:0.0035910191)67:0.0094264813)71:0.0075611951,MF372125/IND/gayal/2016/Asia1/ASIA/Unknown:0.0803025805)74:0.0051225499,GU125646/VNM/buffalo/2005/Asia1/ASIA/Unknown:0.0422943695);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t alignments_no_probang_etc\recombinant_free_regions\Asia1\Asia1_2993-3525_no_probang.treefile -m "GTR{1.75045,11.5068,1.23297,0.60118,16.8748}+F{0.23753,0.288381,0.260982,0.213107}+I{0.464426}+G4{0.645606}" --length 533
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s alignments_no_probang_etc\recombinant_free_regions\Asia1\Asia1_2993-3525_no_probang.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s alignments_no_probang_etc\recombinant_free_regions\Asia1\Asia1_2993-3525_no_probang.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Jan 15 14:45:25 2026
+Total CPU time used: 113.328125 seconds (0h:1m:53s)
+Total wall-clock time used: 119.2656426 seconds (0h:1m:59s)
+

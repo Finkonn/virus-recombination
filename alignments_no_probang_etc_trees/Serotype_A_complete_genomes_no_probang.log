@@ -1,0 +1,448 @@
+IQ-TREE version 3.0.1 for Windows 64-bit built May  5 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-IAVMJI2 (AVX2, FMA3, 7 GB RAM)
+Command: bin/iqtree3.exe -s alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.fasta -bb 1000 -m GTR+F+I+G -pre alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang
+Seed:    514767 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Jan 15 14:47:14 2026
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.fasta ... Fasta format detected
+Reading fasta file: done in 0.0474607 secs using 98.77% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.0314338 secs using 49.71% CPU
+WARNING: 267 sites contain only gaps or ambiguous characters.
+Alignment has 190 sequences with 7293 columns, 3286 distinct patterns
+2954 parsimony-informative, 472 singleton sites, 3867 constant sites
+WARNING: Some sequence names are changed as follows:
+AY593766/KEN/Unknown/1965/A/?'/Unknown -> AY593766/KEN/Unknown/1965/A/__/Unknown
+
+                                                  Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0066382 secs using 235.4% CPU
+   1  MZ493234/PAK/cattle/2018/A/ASIA/Iran-05             3.99%    passed     98.49%
+   2  MZ493233/PAK/cattle/2018/A/ASIA/Iran-05             3.99%    passed     98.49%
+   3  MZ493232/PAK/cattle/2017/A/ASIA/Iran-05             3.99%    passed     96.90%
+   4  ON652967/VNM/cow/2013/A/ASIA/Sea-97                 4.03%    passed     99.44%
+   5  JF749848/TUR/Unknown/2003/A/ASIA/Unknown            3.99%    passed     96.43%
+   6  JF749843/EGY/Unknown/2006/A/AFRICA/Unknown          3.95%    passed     89.22%
+   7  JF749841/TUR/Unknown/2006/A/ASIA/Iran-05            3.91%    passed     98.74%
+   8  KC440882/EGY/Unknown/2012/A/ASIA/Iran-05            3.91%    passed     95.83%
+   9  KC440881/EGY/Unknown/2011/A/AFRICA/Unknown          4.07%    passed     88.33%
+  10  EF117837/PAK/cattle/2006/A/ASIA/Iran-05             3.87%    passed     96.44%
+  11  PP273559/IND/elephant/1988/A/ASIA/Unknown           3.99%    passed     96.71%
+  12  OQ356347/EGY/cow/2008/A/AFRICA/Unknown              3.87%    passed     88.80%
+  13  OQ356341/BRA/cow/1970/A/EURO-SA/Unknown             3.99%    passed     96.90%
+  14  OQ256242/ISR/cow/1969/A/EURO-SA/Unknown             4.03%    passed     79.17%
+  15  OQ745961/THA/cattle/2016/A/ASIA/Sea-97              4.03%    passed     99.80%
+  16  LC771233/IRQ/water-buffalo/2023/A/AFRICA/Unknown    4.07%    passed     88.44%
+  17  OM863581/KEN/cattle/2012/A/AFRICA/Unknown           3.99%    passed     91.30%
+  18  OM863580/EGY/cattle/2012/A/AFRICA/Unknown           4.07%    passed     68.10%
+  19  OM455484/PAK/buffalo/2012/A/ASIA/Iran-05            4.11%    passed     99.53%
+  20  OM455483/PAK/cattle/2012/A/ASIA/Iran-05             4.11%    passed     99.53%
+  21  OM455482/PAK/cattle/2009/A/ASIA/Iran-05             3.99%    passed     88.89%
+  22  OM455481/PAK/buffalo/2012/A/ASIA/Iran-05            3.99%    passed     98.56%
+  23  OM455480/PAK/cattle/2008/A/ASIA/Iran-05             3.99%    passed     88.89%
+  24  OM455479/PAK/cattle/2012/A/ASIA/Iran-05             4.11%    passed     99.53%
+  25  MG334583/IRQ/cow/2009/A/ASIA/Iran-05                3.95%    passed     94.94%
+  26  LC564923/THA/cow/2016/A/ASIA/Sea-97                 4.03%    passed     94.53%
+  27  LC564922/THA/cow/2016/A/ASIA/Sea-97                 4.03%    passed     93.39%
+  28  LC564921/THA/cow/2016/A/ASIA/Sea-97                 4.03%    passed     89.58%
+  29  LC564920/THA/cow/2015/A/ASIA/Sea-97                 4.03%    passed     94.16%
+  30  LC564919/THA/cow/2015/A/ASIA/Sea-97                 4.03%    passed     97.27%
+  31  LC564918/THA/cow/2015/A/ASIA/Sea-97                 4.03%    passed     94.50%
+  32  LC564917/THA/cow/2015/A/ASIA/Sea-97                 4.03%    passed     95.88%
+  33  LC564916/THA/cow/2014/A/ASIA/Sea-97                 4.03%    passed     91.23%
+  34  LC564915/THA/cow/2014/A/ASIA/Sea-97                 4.03%    passed     94.43%
+  35  LC564914/THA/cow/2014/A/ASIA/Sea-97                 4.03%    passed     97.31%
+  36  LC564912/THA/cow/2013/A/ASIA/Sea-97                 4.03%    passed     99.08%
+  37  LC564911/THA/cow/2013/A/ASIA/Sea-97                 4.03%    passed     98.69%
+  38  LC564909/THA/cow/2012/A/ASIA/Sea-97                 4.36%    passed     99.48%
+  39  LC564907/THA/cow/2011/A/ASIA/Sea-97                 4.03%    passed     92.09%
+  40  LC564906/THA/cow/2011/A/ASIA/Sea-97                 4.03%    passed     74.62%
+  41  LC564905/THA/cow/2011/A/ASIA/Sea-97                 4.04%    passed     94.22%
+  42  LC564904/THA/cow/2010/A/ASIA/Sea-97                 4.03%    passed     80.10%
+  43  LC564903/THA/cow/2010/A/ASIA/Sea-97                 4.03%    passed     88.37%
+  44  LC564902/THA/cow/2010/A/ASIA/Sea-97                 4.03%    passed     78.98%
+  45  LC564901/THA/cow/2009/A/ASIA/Sea-97                 4.03%    passed     80.25%
+  46  LC564900/THA/cow/2009/A/ASIA/Sea-97                 4.03%    passed     89.21%
+  47  LC564898/THA/cow/2008/A/ASIA/Sea-97                 4.03%    passed     98.35%
+  48  LC564896/THA/cow/2007/A/ASIA/Sea-97                 4.03%    passed     96.56%
+  49  LC564895/THA/cow/2007/A/ASIA/Sea-97                 4.03%    passed     97.15%
+  50  LC564894/THA/cow/2007/A/ASIA/Sea-97                 4.04%    passed     92.17%
+  51  MT602079/SDN/cattle/2018/A/AFRICA/Unknown           4.11%    passed     83.85%
+  52  MT602078/ETH/cattle/2019/A/AFRICA/Unknown           4.07%    passed     92.73%
+  53  MT602077/ETH/cattle/2018/A/AFRICA/Unknown           3.99%    passed     87.73%
+  54  MT863268/EGY/water-buffalo/2016/A/AFRICA/Unknown    4.07%    passed     88.81%
+  55  KY322680/VNM/cattle/2013/A/ASIA/Sea-97              4.03%    passed     93.48%
+  56  KY322679/THA/cattle/2014/A/ASIA/Sea-97              4.03%    passed     97.31%
+  57  KY322678/MYS/cattle/2013/A/ASIA/Sea-97              4.03%    passed     95.68%
+  58  KY322677/MYS/cattle/2013/A/ASIA/Sea-97              4.03%    passed     97.68%
+  59  KY322676/MYS/cattle/2013/A/ASIA/Sea-97              4.03%    passed     98.53%
+  60  KY322675/LAO/cattle/2014/A/ASIA/Sea-97              4.03%    passed     99.25%
+  61  MK940253/SAU/cattle/2017/A/ASIA/Unknown             4.03%    passed     70.62%
+  62  MN062587/PAK/cattle/2009/A/ASIA/Iran-05             3.91%    passed     99.76%
+  63  MN062586/AFG/cattle/2009/A/ASIA/Iran-05             3.91%    passed     51.62%
+  64  LC483874/THA/cow/2007/A/ASIA/Sea-97                 4.04%    passed     92.17%
+  65  MN116688/KEN/cow/2016/A/AFRICA/Unknown              3.99%    passed     91.30%
+  66  MG923580/DZA/cattle/2017/A/AFRICA/Unknown           4.11%    passed     86.22%
+  67  MG923579/DZA/cattle/2017/A/AFRICA/Unknown           4.11%    passed     89.20%
+  68  MH053307/ZMB/cattle/1990/A/AFRICA/Unknown           3.99%    passed     89.13%
+  69  MH053306/TCD/cattle/1973/A/AFRICA/Unknown           3.99%    passed     64.71%
+  70  MH053305/EGY/cattle/1972/A/AFRICA/Unknown           3.99%    passed     96.36%
+  71  MG725876/NER/cow/2015/A/AFRICA/Unknown              4.15%    passed     95.91%
+  72  MG725875/NER/cow/2015/A/AFRICA/Unknown              4.15%    passed     96.22%
+  73  MG725874/NER/cow/2015/A/AFRICA/Unknown              4.07%    passed     85.76%
+  74  MG725873/NER/cow/2015/A/AFRICA/Unknown              4.11%    passed     97.43%
+  75  MG725872/NER/cow/2013/A/AFRICA/Unknown              4.07%    passed     69.77%
+  76  JN099699/IRQ/cattle/2009/A/ASIA/Iran-05             3.91%    passed     96.95%
+  77  JN099698/IRQ/cattle/2009/A/ASIA/Iran-05             3.91%    passed     96.87%
+  78  JN099697/IRQ/cattle/2009/A/ASIA/Iran-05             3.91%    passed     98.84%
+  79  JN099694/IRQ/cattle/2009/A/ASIA/Iran-05             3.91%    passed     92.17%
+  80  JN099688/IRQ/cattle/2009/A/ASIA/Iran-05             3.91%    passed     93.68%
+  81  KX002205/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     98.61%
+  82  KX002204/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     97.22%
+  83  KX002203/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     94.17%
+  84  KX002202/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     97.01%
+  85  KX002201/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     95.25%
+  86  KX002200/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     92.49%
+  87  KX002199/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     92.49%
+  88  KX002198/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     97.49%
+  89  KX002197/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     97.49%
+  90  KX002196/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     96.12%
+  91  KX002194/ARG/cattle/2000/A/EURO-SA/Unknown          4.03%    passed     98.23%
+  92  KX002193/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     90.70%
+  93  KX002192/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     98.24%
+  94  KX002191/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     96.42%
+  95  KX002190/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     96.42%
+  96  KX002189/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     98.98%
+  97  KX002188/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     94.10%
+  98  KX002187/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     99.22%
+  99  KX002186/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     94.35%
+ 100  KX002185/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     96.12%
+ 101  KX002184/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     99.32%
+ 102  KX002183/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     97.06%
+ 103  KX002182/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     97.88%
+ 104  KX002181/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     93.59%
+ 105  KX002180/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     98.62%
+ 106  KX002179/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     98.62%
+ 107  KX002178/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     92.18%
+ 108  KX002177/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     92.18%
+ 109  KX002176/ARG/cattle/2001/A/EURO-SA/Unknown          4.03%    passed     96.85%
+ 110  KT968663/CHN/yak/2013/A/ASIA/Sea-97                 4.03%    passed     95.68%
+ 111  KU127247/SAU/cattle/2015/A/ASIA/Unknown             4.03%    passed     70.62%
+ 112  HQ268509/VNM/Unknown/2004/A/ASIA/Sea-97             4.04%    passed     98.92%
+ 113  HQ832592/IND/cattle/2009/A/ASIA/Unknown             4.03%    passed     81.45%
+ 114  HQ832591/IND/cattle/2008/A/ASIA/Unknown             4.03%    passed     70.13%
+ 115  HQ832590/IND/cattle/2007/A/ASIA/Unknown             4.03%    passed     81.55%
+ 116  HQ832589/IND/cattle/2006/A/ASIA/Unknown             3.99%    passed     99.49%
+ 117  HQ832588/IND/cattle/2005/A/ASIA/Unknown             3.99%    passed     96.46%
+ 118  HQ832586/IND/Unknown/2006/A/ASIA/Unknown            3.99%    passed     94.07%
+ 119  HQ832585/IND/Unknown/2005/A/ASIA/Unknown            3.99%    passed     61.13%
+ 120  HQ832584/IND/cattle/2005/A/ASIA/Unknown             3.99%    passed     90.11%
+ 121  HQ832583/IND/Unknown/2005/A/ASIA/Unknown            4.03%    passed     96.44%
+ 122  HQ832582/IND/buffalo/2004/A/ASIA/Unknown            4.03%    passed     94.75%
+ 123  HQ832581/IND/cattle/2004/A/ASIA/Unknown             4.03%    passed     84.52%
+ 124  HQ832580/IND/cattle/2003/A/ASIA/Unknown             4.03%    passed     93.11%
+ 125  HQ832579/IND/buffalo/2003/A/ASIA/Unknown            4.03%    passed     94.95%
+ 126  HQ832578/IND/Unknown/2003/A/ASIA/Unknown            4.03%    passed     94.61%
+ 127  HQ832577/IND/Unknown/1999/A/ASIA/Unknown            3.99%    passed     99.49%
+ 128  KJ608371/VNM/cattle/2013/A/ASIA/Sea-97              4.03%    passed     80.54%
+ 129  KP940474/EGY/cattle/2014/A/AFRICA/Unknown           4.07%    passed     86.10%
+ 130  KM268896/TUR/cattle/2013/A/ASIA/Iran-05             3.99%    passed     84.46%
+ 131  KJ933864/MYS/Unknown/1997/A/ASIA/Sea-97             4.03%    passed     98.53%
+ 132  KJ754939/BGD/cattle/2013/A/ASIA/Unknown             4.03%    passed     26.06%
+ 133  KC588943/KOR/cattle/2010/A/ASIA/Sea-97              4.03%    passed     66.04%
+ 134  JN006722/PAK/Unknown/2008/A/ASIA/Iran-05            3.99%    passed     96.41%
+ 135  HQ632773/MYS/cattle/2007/A/ASIA/Sea-97              4.03%    passed     98.96%
+ 136  GQ406252/VNM/buffalo/2009/A/ASIA/Sea-97             4.03%    passed     95.21%
+ 137  GQ406251/VNM/pig/2009/A/ASIA/Sea-97                 4.03%    passed     98.95%
+ 138  GQ406250/VNM/cattle/2009/A/ASIA/Sea-97              4.03%    passed     97.57%
+ 139  GQ406249/VNM/cattle/2009/A/ASIA/Sea-97              4.03%    passed     96.99%
+ 140  GQ406248/VNM/cattle/2009/A/ASIA/Sea-97              4.03%    passed     92.06%
+ 141  GQ406247/VNM/cattle/2009/A/ASIA/Sea-97              4.03%    passed     97.10%
+ 142  EF494488/PAK/cattle/2006/A/ASIA/Iran-05             3.91%    passed     99.76%
+ 143  EF494487/PAK/cattle/2006/A/ASIA/Iran-05             3.91%    passed     96.78%
+ 144  AY593803/BRA/Unknown/1979/A/EURO-SA/Unknown         3.99%    passed     88.03%
+ 145  AY593802/URY/Unknown/2001/A/EURO-SA/Unknown         3.99%    passed     96.38%
+ 146  AY593801/URY/Unknown/1968/A/EURO-SA/Unknown         3.99%    passed     96.38%
+ 147  AY593794/COL/Unknown/1985/A/EURO-SA/Unknown         3.95%    passed     97.91%
+ 148  AY593793/PHL/Unknown/1975/A/EURO-SA/Unknown         3.99%    passed     73.65%
+ 149  AY593792/ITA/Unknown/1962/A/EURO-SA/Unknown         4.03%    passed     96.56%
+ 150  AY593791/IRN/Unknown/1998/A/ASIA/Iran-96            3.99%    passed     97.42%
+ 151  AY593790/ARG/Unknown/2001/A/EURO-SA/Unknown         3.99%    passed     97.61%
+ 152  AY593789/ARG/Unknown/1961/A/EURO-SA/Unknown         4.03%    passed     89.98%
+ 153  AY593788/BRA/Unknown/1958/A/EURO-SA/Unknown         3.99%    passed     99.51%
+ 154  AY593786/ARG/Unknown/2001/A/EURO-SA/Unknown         3.99%    passed     98.91%
+ 155  AY593785/ARG/Unknown/2001/A/EURO-SA/Unknown         3.99%    passed     95.03%
+ 156  AY593784/ARG/Unknown/2001/A/EURO-SA/Unknown         3.99%    passed     94.90%
+ 157  AY593783/ARG/Unknown/2001/A/EURO-SA/Unknown         3.99%    passed     94.90%
+ 158  AY593782/ARG/Unknown/2000/A/EURO-SA/Unknown         3.99%    passed     94.74%
+ 159  AY593781/DEU/Unknown/1951/A/EURO-SA/Unknown         4.03%    passed     80.13%
+ 160  AY593780/FRA/Unknown/1960/A/EURO-SA/Unknown         4.03%    passed     96.85%
+ 161  AY593779/DEU/Unknown/1972/A/EURO-SA/Unknown         4.03%    passed     95.21%
+ 162  AY593776/DEU/Unknown/1968/A/EURO-SA/Unknown         4.03%    passed     99.67%
+ 163  AY593775/VEN/Unknown/1970/A/EURO-SA/Unknown         3.99%    passed     84.86%
+ 164  AY593774/ESP/Unknown/1969/A/EURO-SA/Unknown         4.03%    passed     94.71%
+ 165  AY593773/PER/Unknown/1969/A/EURO-SA/Unknown         3.99%    passed     85.03%
+ 166  AY593772/TUR/Unknown/1972/A/ASIA/A22                3.99%    passed     32.87%
+ 167  AY593771/COL/Unknown/1967/A/EURO-SA/Unknown         4.03%    passed     90.18%
+ 168  AY593770/ARG/Unknown/1966/A/EURO-SA/Unknown         3.99%    passed     55.32%
+ 169  AY593769/ARG/Unknown/1959/A/EURO-SA/Unknown         4.03%    passed     86.65%
+ 170  AY593768/BRA/Unknown/1955/A/EURO-SA/Unknown         3.99%    passed     96.04%
+ 171  AY593767/ARG/Unknown/1965/A/EURO-SA/Unknown         4.03%    passed     96.64%
+ 172  AY593766/KEN/Unknown/1965/A/__/Unknown              3.99%    passed     60.66%
+ 173  AY593765/TUR/Unknown/1965/A/ASIA/A22                3.99%    passed     18.32%
+ 174  AY593764/IRQ/Unknown/1970/A/ASIA/A22                3.99%    passed     20.49%
+ 175  AY593763/IRQ/Unknown/1964/A/ASIA/A22                3.99%    passed     20.49%
+ 176  AY593762/IRQ/Unknown/1964/A/ASIA/A22                3.99%    passed     20.49%
+ 177  AY593761/KEN/Unknown/1964/A/AFRICA/Unknown          3.95%    passed     82.98%
+ 178  AY593760/RUS/Unknown/1964/A/EURO-SA/Unknown         4.07%    passed     60.94%
+ 179  AY593759/DEU/Unknown/1971/A/EURO-SA/Unknown         4.03%    passed     89.10%
+ 180  AY593758/VEN/Unknown/1967/A/EURO-SA/Unknown         3.99%    passed     97.30%
+ 181  AY593757/BRA/Unknown/1967/A/EURO-SA/Unknown         3.99%    passed     98.38%
+ 182  AY593756/BRA/Unknown/1959/A/EURO-SA/Unknown         3.99%    passed     99.70%
+ 183  AY593755/THA/Unknown/1960/A/ASIA/Unknown            3.99%    passed     97.70%
+ 184  AY593754/ESP/Unknown/1959/A/EURO-SA/Unknown         4.03%    passed     95.58%
+ 185  AY593753/BRA/Unknown/1958/A/EURO-SA/Unknown         3.99%    passed     96.90%
+ 186  AY593751/NLD/Unknown/1942/A/EURO-SA/Unknown         4.03%    passed     92.11%
+ 187  FJ623456/KAZ/Unknown/1999/A/ASIA/A22                3.99%    passed      5.76%
+ 188  EF494486/TUR/cattle/2005/A/ASIA/Iran-05             3.91%    passed     99.76%
+ 189  MT340198/VNM/cattle/2017/A/ASIA/Sea-97              4.03%    passed     85.73%
+ 190  MT340197/VNM/cattle/2017/A/ASIA/Sea-97              4.03%    passed     86.42%
+****  TOTAL                                               4.02%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: MZ493233/PAK/cattle/2018/A/ASIA/Iran-05 is identical to MZ493234/PAK/cattle/2018/A/ASIA/Iran-05 but kept for subsequent analysis
+NOTE: AY593753/BRA/Unknown/1958/A/EURO-SA/Unknown is identical to OQ356341/BRA/cow/1970/A/EURO-SA/Unknown but kept for subsequent analysis
+NOTE: OM455483/PAK/cattle/2012/A/ASIA/Iran-05 is identical to OM455484/PAK/buffalo/2012/A/ASIA/Iran-05 but kept for subsequent analysis
+NOTE: OM455480/PAK/cattle/2008/A/ASIA/Iran-05 is identical to OM455482/PAK/cattle/2009/A/ASIA/Iran-05 but kept for subsequent analysis
+NOTE: KY322679/THA/cattle/2014/A/ASIA/Sea-97 is identical to LC564914/THA/cow/2014/A/ASIA/Sea-97 but kept for subsequent analysis
+NOTE: LC483874/THA/cow/2007/A/ASIA/Sea-97 is identical to LC564894/THA/cow/2007/A/ASIA/Sea-97 but kept for subsequent analysis
+NOTE: KU127247/SAU/cattle/2015/A/ASIA/Unknown is identical to MK940253/SAU/cattle/2017/A/ASIA/Unknown but kept for subsequent analysis
+NOTE: KX002199/ARG/cattle/2001/A/EURO-SA/Unknown is identical to KX002200/ARG/cattle/2001/A/EURO-SA/Unknown but kept for subsequent analysis
+NOTE: KX002197/ARG/cattle/2001/A/EURO-SA/Unknown is identical to KX002198/ARG/cattle/2001/A/EURO-SA/Unknown but kept for subsequent analysis
+NOTE: KX002190/ARG/cattle/2001/A/EURO-SA/Unknown is identical to KX002191/ARG/cattle/2001/A/EURO-SA/Unknown but kept for subsequent analysis
+NOTE: KX002179/ARG/cattle/2001/A/EURO-SA/Unknown is identical to KX002180/ARG/cattle/2001/A/EURO-SA/Unknown but kept for subsequent analysis
+NOTE: KX002177/ARG/cattle/2001/A/EURO-SA/Unknown is identical to KX002178/ARG/cattle/2001/A/EURO-SA/Unknown but kept for subsequent analysis
+NOTE: AY593801/URY/Unknown/1968/A/EURO-SA/Unknown is identical to AY593802/URY/Unknown/2001/A/EURO-SA/Unknown but kept for subsequent analysis
+NOTE: AY593783/ARG/Unknown/2001/A/EURO-SA/Unknown is identical to AY593784/ARG/Unknown/2001/A/EURO-SA/Unknown but kept for subsequent analysis
+NOTE: AY593763/IRQ/Unknown/1964/A/ASIA/A22 is identical to AY593764/IRQ/Unknown/1970/A/ASIA/A22 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.136688 secs
+Identifying sites to remove: done in 0.0311946 secs using 100.2% CPU
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: OM455479/PAK/cattle/2012/A/ASIA/Iran-05 (identical to OM455484/PAK/buffalo/2012/A/ASIA/Iran-05) is ignored but added at the end
+NOTE: AY593762/IRQ/Unknown/1964/A/ASIA/A22 (identical to AY593764/IRQ/Unknown/1970/A/ASIA/A22) is ignored but added at the end
+Alignment was printed to alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.uniqueseq.phy
+Creating fast initial parsimony tree by random order stepwise addition...
+0.209 seconds, parsimony score: 27912 (based on 3426 sites)
+Generating 1000 samples for ultrafast bootstrap (seed: 514767)...
+
+NOTE: 92 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.294 / LogL: -135591.063
+Init pinv, alpha: 0.059, 1.000 / Estimate: 0.460, 0.882 / LogL: -134931.319
+Init pinv, alpha: 0.118, 1.000 / Estimate: 0.460, 0.881 / LogL: -134931.378
+Init pinv, alpha: 0.177, 1.000 / Estimate: 0.460, 0.883 / LogL: -134931.340
+Init pinv, alpha: 0.236, 1.000 / Estimate: 0.460, 0.882 / LogL: -134931.372
+Init pinv, alpha: 0.295, 1.000 / Estimate: 0.460, 0.882 / LogL: -134931.427
+Init pinv, alpha: 0.353, 1.000 / Estimate: 0.460, 0.881 / LogL: -134931.462
+Init pinv, alpha: 0.412, 1.000 / Estimate: 0.460, 0.881 / LogL: -134931.480
+Init pinv, alpha: 0.471, 1.000 / Estimate: 0.461, 0.883 / LogL: -134931.476
+Init pinv, alpha: 0.530, 1.000 / Estimate: 0.463, 0.899 / LogL: -134931.542
+Optimal pinv,alpha: 0.460, 0.882 / LogL: -134931.319
+
+Parameters optimization took 312.325 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.797996 secs using 99.86% CPU
+Computing ML distances took 0.821447 sec (of wall-clock time) 0.812500 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0012172 secs
+Constructing RapidNJ tree: done in 0.003402 secs
+Computing RapidNJ tree took 0.125084 sec (of wall-clock time) 0.093750 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -134972.567
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 25.465 second
+Computing log-likelihood of 98 initial trees ... 65.938 seconds
+Current best score: -134903.109
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 10.3973 secs using 97.38% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -134639.427
+Optimizing NNI: done in 12.4118 secs using 95.05% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -134636.005
+Optimizing NNI: done in 12.3916 secs using 96.34% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -134628.434
+Optimizing NNI: done in 7.45805 secs using 94.91% CPU
+Optimizing NNI: done in 12.567 secs using 96.73% CPU
+Optimizing NNI: done in 11.2287 secs using 98.38% CPU
+Optimizing NNI: done in 9.70568 secs using 97.88% CPU
+Optimizing NNI: done in 10.3984 secs using 97.67% CPU
+Optimizing NNI: done in 11.1658 secs using 96.84% CPU
+Optimizing NNI: done in 6.98282 secs using 93.09% CPU
+Iteration 10 / LogL: -134712.032 / Time: 0h:8m:46s
+Optimizing NNI: done in 10.059 secs using 96% CPU
+Optimizing NNI: done in 11.6041 secs using 92.1% CPU
+Optimizing NNI: done in 9.9729 secs using 97.29% CPU
+Optimizing NNI: done in 9.45586 secs using 98.81% CPU
+Optimizing NNI: done in 10.3241 secs using 98.83% CPU
+Optimizing NNI: done in 7.86273 secs using 96.38% CPU
+Optimizing NNI: done in 8.91334 secs using 97.64% CPU
+Optimizing NNI: done in 11.1454 secs using 93.65% CPU
+Optimizing NNI: done in 9.97574 secs using 94.92% CPU
+Optimizing NNI: done in 10.2176 secs using 95.73% CPU
+Iteration 20 / LogL: -134633.556 / Time: 0h:10m:26s
+Finish initializing candidate tree set (20)
+Current best tree score: -134628.434 / CPU time: 305.645
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 8.72947 secs using 98.09% CPU
+Optimizing NNI: done in 8.23734 secs using 95.98% CPU
+Optimizing NNI: done in 7.78124 secs using 98.8% CPU
+Optimizing NNI: done in 9.38555 secs using 96.56% CPU
+Optimizing NNI: done in 11.8749 secs using 91.19% CPU
+Optimizing NNI: done in 8.7134 secs using 98.09% CPU
+Optimizing NNI: done in 11.2694 secs using 96.64% CPU
+Optimizing NNI: done in 11.3974 secs using 95.42% CPU
+Optimizing NNI: done in 10.7911 secs using 93.1% CPU
+Optimizing NNI: done in 8.86838 secs using 93.91% CPU
+Iteration 30 / LogL: -134636.059 / Time: 0h:12m:5s (0h:30m:25s left)
+Optimizing NNI: done in 9.21127 secs using 94.82% CPU
+Optimizing NNI: done in 9.14198 secs using 97.42% CPU
+Optimizing NNI: done in 9.15793 secs using 97.08% CPU
+Optimizing NNI: done in 9.83702 secs using 97.21% CPU
+Optimizing NNI: done in 9.16881 secs using 99.35% CPU
+Optimizing NNI: done in 11.9364 secs using 94.12% CPU
+Optimizing NNI: done in 10.9367 secs using 95.44% CPU
+Optimizing NNI: done in 11.7998 secs using 96.93% CPU
+Optimizing NNI: done in 13.8135 secs using 96.03% CPU
+Optimizing NNI: done in 11.9922 secs using 95.77% CPU
+Iteration 40 / LogL: -134630.088 / Time: 0h:13m:53s (0h:22m:26s left)
+Optimizing NNI: done in 10.65 secs using 94.19% CPU
+Optimizing NNI: done in 11.0827 secs using 93.19% CPU
+Optimizing NNI: done in 12.8621 secs using 95% CPU
+Optimizing NNI: done in 11.0909 secs using 91.29% CPU
+Optimizing NNI: done in 11.4455 secs using 95.15% CPU
+Optimizing NNI: done in 10.9266 secs using 93.66% CPU
+Optimizing NNI: done in 11.9255 secs using 96.69% CPU
+Optimizing NNI: done in 11.8383 secs using 97.27% CPU
+Optimizing NNI: done in 8.80599 secs using 97.23% CPU
+Optimizing NNI: done in 10.7902 secs using 99.34% CPU
+Iteration 50 / LogL: -134630.901 / Time: 0h:15m:46s (0h:17m:3s left)
+Log-likelihood cutoff on original alignment: -134724.932
+Optimizing NNI: done in 10.3611 secs using 96.51% CPU
+Optimizing NNI: done in 8.33652 secs using 96.34% CPU
+Optimizing NNI: done in 8.83499 secs using 97.8% CPU
+Optimizing NNI: done in 8.71603 secs using 98.24% CPU
+Optimizing NNI: done in 10.7138 secs using 98.88% CPU
+Optimizing NNI: done in 10.554 secs using 98.16% CPU
+Optimizing NNI: done in 9.62392 secs using 98.55% CPU
+Optimizing NNI: done in 9.17154 secs using 98.13% CPU
+Optimizing NNI: done in 9.47103 secs using 99.32% CPU
+Optimizing NNI: done in 10.8662 secs using 98.93% CPU
+Iteration 60 / LogL: -134637.682 / Time: 0h:17m:26s (0h:12m:42s left)
+Optimizing NNI: done in 9.95257 secs using 98.91% CPU
+Optimizing NNI: done in 9.65763 secs using 95.94% CPU
+Optimizing NNI: done in 9.34811 secs using 99.12% CPU
+Optimizing NNI: done in 8.60949 secs using 97.46% CPU
+Optimizing NNI: done in 10.492 secs using 96.5% CPU
+Optimizing NNI: done in 12.5562 secs using 96.44% CPU
+Optimizing NNI: done in 11.5603 secs using 95.96% CPU
+Optimizing NNI: done in 8.59799 secs using 95.04% CPU
+Optimizing NNI: done in 10.639 secs using 96.2% CPU
+Optimizing NNI: done in 10.3991 secs using 96.61% CPU
+Iteration 70 / LogL: -134628.936 / Time: 0h:19m:9s (0h:9m:9s left)
+Optimizing NNI: done in 10.8295 secs using 94.22% CPU
+Optimizing NNI: done in 9.86942 secs using 96.89% CPU
+Optimizing NNI: done in 12.6667 secs using 90.17% CPU
+Optimizing NNI: done in 11.2914 secs using 93.96% CPU
+Optimizing NNI: done in 10.6791 secs using 97.74% CPU
+Optimizing NNI: done in 11.9424 secs using 93.81% CPU
+Optimizing NNI: done in 10.6391 secs using 93.11% CPU
+Optimizing NNI: done in 15.6168 secs using 82.94% CPU
+Optimizing NNI: done in 11.7001 secs using 90.28% CPU
+Optimizing NNI: done in 12.1555 secs using 88.31% CPU
+Iteration 80 / LogL: -134628.501 / Time: 0h:21m:9s (0h:6m:9s left)
+Optimizing NNI: done in 10.7778 secs using 92.49% CPU
+Optimizing NNI: done in 11.8181 secs using 95.59% CPU
+Optimizing NNI: done in 7.95182 secs using 96.48% CPU
+Optimizing NNI: done in 10.9055 secs using 95.57% CPU
+Optimizing NNI: done in 8.73858 secs using 97.63% CPU
+Optimizing NNI: done in 6.97748 secs using 98.76% CPU
+Optimizing NNI: done in 11.5765 secs using 97.31% CPU
+Optimizing NNI: done in 8.32974 secs using 99.23% CPU
+Optimizing NNI: done in 9.9794 secs using 98.8% CPU
+Optimizing NNI: done in 10.304 secs using 99.02% CPU
+Iteration 90 / LogL: -134628.469 / Time: 0h:22m:48s (0h:3m:19s left)
+Optimizing NNI: done in 10.4887 secs using 98.77% CPU
+Optimizing NNI: done in 10.5197 secs using 95.21% CPU
+Optimizing NNI: done in 8.98591 secs using 95.11% CPU
+Optimizing NNI: done in 10.4717 secs using 97.14% CPU
+Optimizing NNI: done in 8.43049 secs using 97.86% CPU
+Optimizing NNI: done in 11.9605 secs using 97.85% CPU
+Optimizing NNI: done in 7.19023 secs using 98.01% CPU
+Optimizing NNI: done in 9.35951 secs using 97.33% CPU
+Optimizing NNI: done in 11.6777 secs using 94.73% CPU
+Optimizing NNI: done in 8.35811 secs using 96.65% CPU
+Iteration 100 / LogL: -134716.627 / Time: 0h:24m:27s (0h:0m:44s left)
+Log-likelihood cutoff on original alignment: -134724.932
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+Optimizing NNI: done in 8.32988 secs using 97.92% CPU
+Optimizing NNI: done in 7.63007 secs using 98.3% CPU
+Optimizing NNI: done in 11.2921 secs using 96.72% CPU
+Optimizing NNI: done in 11.1584 secs using 94.24% CPU
+TREE SEARCH COMPLETED AFTER 104 ITERATIONS / Time: 0h:25m:7s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -134628.434
+Optimal log-likelihood: -134628.425
+Rate parameters:  A-C: 1.17270  A-G: 9.00069  A-T: 1.33417  C-G: 0.56520  C-T: 12.98903  G-T: 1.00000
+Base frequencies:  A: 0.254  C: 0.279  G: 0.256  T: 0.210
+Proportion of invariable sites: 0.461
+Gamma shape alpha: 0.891
+Parameters optimization took 1 rounds (1.405 sec)
+BEST SCORE FOUND : -134628.425
+Creating bootstrap support values...
+Split supports printed to NEXUS file alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.splits.nex
+Total tree length: 5.026
+
+Total number of iterations: 104
+CPU time used for tree search: 1136.562 sec (0h:18m:56s)
+Wall-clock time used for tree search: 1186.148 sec (0h:19m:46s)
+Total CPU time used: 1431.484 sec (0h:23m:51s)
+Total wall-clock time used: 1510.442 sec (0h:25m:10s)
+
+Computing bootstrap consensus tree...
+Reading input file alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.splits.nex...
+188 taxa and 616 splits.
+Consensus tree written to alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.contree
+Reading input trees file alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.contree
+Log-likelihood of consensus tree: -134628.747
+
+Analysis results written to: 
+  IQ-TREE report:                alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.iqtree
+  Maximum-likelihood tree:       alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.treefile
+  Likelihood distances:          alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.splits.nex
+  Consensus tree:                alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.contree
+  Screen log file:               alignments_no_probang_etc\Serotype_A_complete_genomes_no_probang.log
+
+Date and Time: Thu Jan 15 15:12:29 2026

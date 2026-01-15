@@ -1,0 +1,625 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Input file name: alignments_no_probang_etc\recombinant_free_regions\SAT2\SAT2_4283-7008_no_probang.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 930266
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 142 sequences with 2798 nucleotide sites
+Number of constant sites: 1668 (= 59.614% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1668 (= 59.614% of all sites)
+Number of parsimony informative sites: 965
+Number of distinct site patterns: 1026
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+G4
+
+Rate parameter R:
+
+  A-C: 1.5712
+  A-G: 9.6561
+  A-T: 1.7034
+  C-G: 0.8362
+  C-T: 14.3838
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2566
+  pi(C) = 0.2677
+  pi(G) = 0.2628
+  pi(T) = 0.2129
+
+Rate matrix Q:
+
+  A   -0.9293    0.1177    0.7101    0.1015
+  C    0.1128    -1.031   0.06149    0.8571
+  G    0.6933   0.06264   -0.8155   0.05959
+  T    0.1223     1.078   0.07353    -1.273
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.4551
+Gamma shape alpha: 0.6276
+
+ Category  Relative_rate  Proportion
+  0         0              0.4551
+  1         0.108          0.1362
+  2         0.6006         0.1362
+  3         1.642          0.1362
+  4         4.99           0.1362
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -26763.2573 (s.e. 655.1433)
+Unconstrained log-likelihood (without tree): -12149.0736
+Number of free parameters (#branches + #model parameters): 211
+Akaike information criterion (AIC) score: 53948.5146
+Corrected Akaike information criterion (AICc) score: 53983.1101
+Bayesian information criterion (BIC) score: 55201.1499
+
+Total tree length (sum of branch lengths): 2.7801
+Sum of internal branch lengths: 1.2703 (45.6930% of tree length)
+
+WARNING: 13 near-zero internal branches (<0.0004) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'JF749864/ZWE/Unknown/2003/SAT2/I/Unknown' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--JF749864/ZWE/Unknown/2003/SAT2/I/Unknown
+|
+|                                     +--JF749862/UGA/Unknown/2002/SAT2/X/Unknown
+|                                  +--| (100)
+|                                  |  +---HM067705/UGA/african-buffalo/2007/SAT2/X/Unknown
+|                        +---------| (100)
+|                        |         +------HM067704/UGA/african-buffalo/2007/SAT2/X/Unknown
+|           +------------| (100)
+|           |            |                                               +--KC440884/EGY/Unknown/2012/SAT2/VII/Unknown
+|           |            |                                            +--| (83)
+|           |            |                                            |  |  +--MT602089/EGY/cattle/2018/SAT2/VII/Unknown
+|           |            |                                            |  +--| (87)
+|           |            |                                            |     +--JX014255/EGY/Unknown/2012/SAT2/VII/Unknown
+|           |            |                                       +----| (100)
+|           |            |                                       |    +--JX014256/PSE/cattle/2012/SAT2/VII/Unknown
+|           |            |                                    +--| (93)
+|           |            |                                    |  |       +--OQ401874/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |  |    +--| (91)
+|           |            |                                    |  |    |  |           +**OQ401873/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |  |    |  |        +**| (95)
+|           |            |                                    |  |    |  |        |  +--OQ401871/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |  |    |  |     +--| (99)
+|           |            |                                    |  |    |  |     |  +--OQ401866/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |  |    |  |  +**| (96)
+|           |            |                                    |  |    |  |  |  +--OQ401868/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |  |    |  +--| (96)
+|           |            |                                    |  |    |     +--OQ401869/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |  +----| (100)
+|           |            |                                    |       |     +**OQ401872/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |       |  +--| (100)
+|           |            |                                    |       |  |  +**OQ401867/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |       +**| (88)
+|           |            |                                    |          +**OQ401865/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                 +--| (100)
+|           |            |                                 |  |            +--MW715629/NER/cow/2017/SAT2/VII/Unknown
+|           |            |                                 |  |         +--| (100)
+|           |            |                                 |  |         |  +**MW715628/NER/cow/2017/SAT2/VII/Unknown
+|           |            |                                 |  |      +--| (100)
+|           |            |                                 |  |      |  |        +--MW715627/NER/cow/2017/SAT2/VII/Unknown
+|           |            |                                 |  |      |  |     +--| (100)
+|           |            |                                 |  |      |  |     |  +--MW715626/NER/cow/2017/SAT2/VII/Unknown
+|           |            |                                 |  |      |  |  +**| (81)
+|           |            |                                 |  |      |  |  |  +--MW715624/NER/cow/2017/SAT2/VII/Unknown
+|           |            |                                 |  |      |  +--| (100)
+|           |            |                                 |  |      |     +--MW715623/NER/cow/2017/SAT2/VII/Unknown
+|           |            |                                 |  |   +--| (100)
+|           |            |                                 |  |   |  +--MN103523/NER/cow/2014/SAT2/VII/Unknown
+|           |            |                                 |  +---| (100)
+|           |            |                                 |      +--MW715622/NER/cow/2018/SAT2/VII/Unknown
+|           |            |                             +---| (100)
+|           |            |                             |   +---------MT602090/ETH/cattle/2015/SAT2/VII/Unknown
+|           |            |                          +--| (89)
+|           |            |                          |  |      +--AY593849/KEN/Unknown/1960/SAT2/IX/Unknown
+|           |            |                          |  +------| (100)
+|           |            |                          |         +--AJ251473/KEN/Unknown/1957/SAT2/IX/Unknown
+|           |            +--------------------------| (100)
+|           |                                       |  +---OQ557397/ETH/cow/2022/SAT2/XIV/Unknown
+|           |                                       +--| (98)
+|           |                                          +------OQ557396/ETH/cattle/1991/SAT2/XIV/Unknown
+|        +--| (74)
+|        |  |     +--MW355671/MOZ/Unknown/1970/SAT2/I/Unknown
+|        |  |  +--| (39)
+|        |  |  |  |  +-----MH053334/ZMB/cattle/1964/SAT2/III/Unknown
+|        |  |  |  +--| (40)
+|        |  |  |     +--AY593848/Unknown/Unknown/1967/SAT2/I/Unknown
+|        |  +--| (90)
+|        |     +----MH053335/ZWE/cattle/1965/SAT2/I/Unknown
+|     +--| (100)
+|     |  |                       +--JF749861/KEN/Unknown/2002/SAT2/IV/Unknown
+|     |  |                    +--| (71)
+|     |  |                    |  |     +--OM562599/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |                    |  |  +--| (100)
+|     |  |                    |  |  |  |  +--OM562598/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |                    |  |  |  +--| (100)
+|     |  |                    |  |  |     +--OM562595/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |                    |  +--| (100)
+|     |  |                    |     |  +--OM562597/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |                    |     +--| (100)
+|     |  |                    |        +--OM562596/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |                 +--| (79)
+|     |  |                 |  +---KM268900/TZA/cattle/2012/SAT2/IV/Unknown
+|     |  |              +--| (72)
+|     |  |              |  |     +--MN116692/KEN/cow/2014/SAT2/IV/Unknown
+|     |  |              |  |  +--| (88)
+|     |  |              |  |  |  |  +**OM562544/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |  |  |  +--| (100)
+|     |  |              |  |  |     |     +**OM562476/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |  |  |     |  +**| (59)
+|     |  |              |  |  |     |  |  +**OM562475/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |  |  |     +--| (100)
+|     |  |              |  |  |        +--OM562474/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |  +--| (77)
+|     |  |              |     |                                                  +--OM562592/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                               +--| (93)
+|     |  |              |     |                                               |  |     +--OM562587/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                               |  |  +--| (81)
+|     |  |              |     |                                               |  |  |  +--OM562562/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                               |  +**| (56)
+|     |  |              |     |                                               |     +--OM562569/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                            +--| (78)
+|     |  |              |     |                                            |  +**OM562589/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                         +**| (48)
+|     |  |              |     |                                         |  |     +--OM562570/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                         |  |  +--| (92)
+|     |  |              |     |                                         |  |  |  +--OM562553/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                         |  +--| (82)
+|     |  |              |     |                                         |     +--OM562551/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                      +**| (80)
+|     |  |              |     |                                      |  +--OM562568/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                   +--| (93)
+|     |  |              |     |                                   |  +--OM562550/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                +--| (95)
+|     |  |              |     |                                |  +--OM562567/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                             +--| (100)
+|     |  |              |     |                             |  +--OM562586/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          +**| (64)
+|     |  |              |     |                          |  |  +--OM562473/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |  +--| (99)
+|     |  |              |     |                          |     |     +**OM562472/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |  +**| (58)
+|     |  |              |     |                          |     |  |  +**OM562471/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     +--| (100)
+|     |  |              |     |                          |        +--OM562461/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                       +--| (81)
+|     |  |              |     |                       |  |  +--OM562580/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                       |  +--| (84)
+|     |  |              |     |                       |     |  +--OM562578/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                       |     +--| (97)
+|     |  |              |     |                       |        |  +**OM562456/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                       |        +--| (100)
+|     |  |              |     |                       |           +**OM562455/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    +--| (89)
+|     |  |              |     |                    |  |     +**OM562492/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |  +**| (63)
+|     |  |              |     |                    |  |  |  +**OM562491/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  +--| (100)
+|     |  |              |     |                    |     +--OM562485/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                 +--| (100)
+|     |  |              |     |                 |  +--OM562584/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |              +--| (100)
+|     |  |              |     |              |  +--OM562583/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |           +--| (100)
+|     |  |              |     |           |  |  +**OM562501/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |           |  +--| (100)
+|     |  |              |     |           |     +**OM562500/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |        +--| (53)
+|     |  |              |     |        |  +--OM562575/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |     +--| (39)
+|     |  |              |     |     |  +--OM562554/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |  +--| (74)
+|     |  |              |     |  |  +--OM562577/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     +--| (64)
+|     |  |              |        +--OM562585/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |           +--| (71)
+|     |  |           |  +------MH053333/ETH/cattle/1989/SAT2/IV/Unknown
+|     |  |        +--| (65)
+|     |  |        |  |  +---MT602092/KEN/cattle/2017/SAT2/IV/Unknown
+|     |  |        |  +--| (93)
+|     |  |        |     +--OM562572/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     +--| (92)
+|     |  |     |  |                 +--OM562588/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |              +--| (97)
+|     |  |     |  |              |  +--OM562548/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           +--| (67)
+|     |  |     |  |           |  |     +**OM562564/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |  |  +--| (100)
+|     |  |     |  |           |  |  |  |  +**OM562507/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |  |  |  +--| (100)
+|     |  |     |  |           |  |  |     +**OM562506/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |  +--| (97)
+|     |  |     |  |           |     |     +**OM562513/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |     |  +**| (65)
+|     |  |     |  |           |     |  |  |  +**OM562511/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |     |  |  +**| (52)
+|     |  |     |  |           |     |  |     +**OM562509/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |     +--| (100)
+|     |  |     |  |           |        |  +**OM562512/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |        +--| (99)
+|     |  |     |  |           |           +**OM562510/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |        +--| (69)
+|     |  |     |  |        |  +--OM562561/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |     +--| (100)
+|     |  |     |  |     |  +--OM562552/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |  +--| (100)
+|     |  |     |  |  |  +--OM562549/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  +--| (99)
+|     |  |     |     +--OM562581/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |  +--| (77)
+|     |  |  |  +---OM562600/KEN/cow/2016/SAT2/IV/Unknown
+|     |  +--| (85)
+|     |     +--OM562593/KEN/cow/2016/SAT2/IV/Unknown
+|  +--| (100)
+|  |  +----AY593847/ZWE/Unknown/1948/SAT2/III/Unknown
++--| (67)
+|  |  +--MH053331/BWA/african-buffalo/1972/SAT2/II/Unknown
+|  +--| (52)
+|     +--KU821592/ZMB/cow/2009/SAT2/III/Unknown
+|
+|     +----MW355673/ZWE/cattle/1989/SAT2/II/Unknown
+|  +--| (90)
+|  |  +--MH053328/BWA/african-buffalo/1968/SAT2/III/Unknown
++--| (67)
+   +--MH053332/BWA/african-buffalo/1974/SAT2/II/Unknown
+
+Tree in newick format:
+
+(JF749864/ZWE/Unknown/2003/SAT2/I/Unknown:0.0382895394,(((((((JF749862/UGA/Unknown/2002/SAT2/X/Unknown:0.0231346879,HM067705/UGA/african-buffalo/2007/SAT2/X/Unknown:0.0417042193)100:0.0275009175,HM067704/UGA/african-buffalo/2007/SAT2/X/Unknown:0.0773173249)100:0.1053838499,(((((((KC440884/EGY/Unknown/2012/SAT2/VII/Unknown:0.0013135544,(MT602089/EGY/cattle/2018/SAT2/VII/Unknown:0.0017605496,JX014255/EGY/Unknown/2012/SAT2/VII/Unknown:0.0039460448)87:0.0003850074)83:0.0008459979,JX014256/PSE/cattle/2012/SAT2/VII/Unknown:0.0009020173)100:0.0541753575,((OQ401874/NER/cattle/2020/SAT2/VII/Unknown:0.0008618998,((((OQ401873/NER/cattle/2020/SAT2/VII/Unknown:0.0000010000,OQ401871/NER/cattle/2020/SAT2/VII/Unknown:0.0004293345)95:0.0000026638,OQ401866/NER/cattle/2020/SAT2/VII/Unknown:0.0004291251)99:0.0004289451,OQ401868/NER/cattle/2020/SAT2/VII/Unknown:0.0012897460)96:0.0000027635,OQ401869/NER/cattle/2020/SAT2/VII/Unknown:0.0008585223)96:0.0004284706)91:0.0004275953,((OQ401872/NER/cattle/2020/SAT2/VII/Unknown:0.0000010000,OQ401867/NER/cattle/2020/SAT2/VII/Unknown:0.0000010000)100:0.0004289401,OQ401865/NER/cattle/2020/SAT2/VII/Unknown:0.0000010000)88:0.0000027363)100:0.0541519110)93:0.0073810896,((((MW715629/NER/cow/2017/SAT2/VII/Unknown:0.0017271111,MW715628/NER/cow/2017/SAT2/VII/Unknown:0.0000010000)100:0.0008108643,(((MW715627/NER/cow/2017/SAT2/VII/Unknown:0.0004309425,MW715626/NER/cow/2017/SAT2/VII/Unknown:0.0004290329)100:0.0008601530,MW715624/NER/cow/2017/SAT2/VII/Unknown:0.0025931086)81:0.0000010000,MW715623/NER/cow/2017/SAT2/VII/Unknown:0.0021540940)100:0.0017782265)100:0.0243886341,MN103523/NER/cow/2014/SAT2/VII/Unknown:0.0081414330)100:0.0160145092,MW715622/NER/cow/2018/SAT2/VII/Unknown:0.0284108619)100:0.0436599414)100:0.0185430950,MT602090/ETH/cattle/2015/SAT2/VII/Unknown:0.1063401483)100:0.0514598105,(AY593849/KEN/Unknown/1960/SAT2/IX/Unknown:0.0166570287,AJ251473/KEN/Unknown/1957/SAT2/IX/Unknown:0.0189076541)100:0.0794579167)89:0.0144302177,(OQ557397/ETH/cow/2022/SAT2/XIV/Unknown:0.0493541746,OQ557396/ETH/cattle/1991/SAT2/XIV/Unknown:0.0822481381)98:0.0103924680)100:0.2794336091)100:0.1357436974,((MW355671/MOZ/Unknown/1970/SAT2/I/Unknown:0.0346724914,(MH053334/ZMB/cattle/1964/SAT2/III/Unknown:0.0619663633,AY593848/Unknown/Unknown/1967/SAT2/I/Unknown:0.0319029671)40:0.0051084766)39:0.0030949195,MH053335/ZWE/cattle/1965/SAT2/I/Unknown:0.0525698499)90:0.0039032405)74:0.0044537947,((((((((JF749861/KEN/Unknown/2002/SAT2/IV/Unknown:0.0306256287,((OM562599/KEN/cow/2016/SAT2/IV/Unknown:0.0109136208,(OM562598/KEN/cow/2016/SAT2/IV/Unknown:0.0172045187,OM562595/KEN/cow/2016/SAT2/IV/Unknown:0.0045216946)100:0.0037080159)100:0.0036020084,(OM562597/KEN/cow/2016/SAT2/IV/Unknown:0.0134880320,OM562596/KEN/cow/2016/SAT2/IV/Unknown:0.0158536766)100:0.0061833344)100:0.0214987898)71:0.0051369780,KM268900/TZA/cattle/2012/SAT2/IV/Unknown:0.0464780819)79:0.0051281971,((MN116692/KEN/cow/2014/SAT2/IV/Unknown:0.0171142614,(OM562544/KEN/cow/2016/SAT2/IV/Unknown:0.0000020782,((OM562476/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000,OM562475/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000)59:0.0000010000,OM562474/KEN/cow/2016/SAT2/IV/Unknown:0.0004288327)100:0.0083518950)100:0.0226175260)88:0.0168577535,(((((((((((((((((OM562592/KEN/cow/2016/SAT2/IV/Unknown:0.0043699233,((OM562587/KEN/cow/2016/SAT2/IV/Unknown:0.0106840996,OM562562/KEN/cow/2016/SAT2/IV/Unknown:0.0043824776)81:0.0004307812,OM562569/KEN/cow/2016/SAT2/IV/Unknown:0.0056915564)56:0.0000025554)93:0.0008666542,OM562589/KEN/cow/2016/SAT2/IV/Unknown:0.0000028052)78:0.0008656941,((OM562570/KEN/cow/2016/SAT2/IV/Unknown:0.0004339147,OM562553/KEN/cow/2016/SAT2/IV/Unknown:0.0008669534)92:0.0004248333,OM562551/KEN/cow/2016/SAT2/IV/Unknown:0.0057175893)82:0.0004398572)48:0.0000025921,OM562568/KEN/cow/2016/SAT2/IV/Unknown:0.0008657740)80:0.0002647748,OM562550/KEN/cow/2016/SAT2/IV/Unknown:0.0014704617)93:0.0010473287,OM562567/KEN/cow/2016/SAT2/IV/Unknown:0.0061792504)95:0.0012254912,OM562586/KEN/cow/2016/SAT2/IV/Unknown:0.0042416384)100:0.0131904971,(OM562473/KEN/cow/2016/SAT2/IV/Unknown:0.0048414357,((OM562472/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000,OM562471/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000)58:0.0000010000,OM562461/KEN/cow/2016/SAT2/IV/Unknown:0.0004300774)100:0.0053547960)99:0.0037069927)64:0.0002061749,(OM562580/KEN/cow/2016/SAT2/IV/Unknown:0.0036555942,(OM562578/KEN/cow/2016/SAT2/IV/Unknown:0.0105465661,(OM562456/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000,OM562455/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000)100:0.0028005859)97:0.0012797544)84:0.0019990522)81:0.0010696069,((OM562492/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000,OM562491/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000)63:0.0000010000,OM562485/KEN/cow/2016/SAT2/IV/Unknown:0.0004301974)100:0.0059796671)89:0.0031325123,OM562584/KEN/cow/2016/SAT2/IV/Unknown:0.0014705898)100:0.0102876009,OM562583/KEN/cow/2016/SAT2/IV/Unknown:0.0044465900)100:0.0079876706,(OM562501/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000,OM562500/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000)100:0.0176546214)100:0.0092561297,OM562575/KEN/cow/2016/SAT2/IV/Unknown:0.0226166335)53:0.0026926058,OM562554/KEN/cow/2016/SAT2/IV/Unknown:0.0177143634)39:0.0008816512,OM562577/KEN/cow/2016/SAT2/IV/Unknown:0.0116873908)74:0.0105816720,OM562585/KEN/cow/2016/SAT2/IV/Unknown:0.0305876311)64:0.0073381237)77:0.0047118215)72:0.0028389521,MH053333/ETH/cattle/1989/SAT2/IV/Unknown:0.0818729649)71:0.0027897552,(MT602092/KEN/cattle/2017/SAT2/IV/Unknown:0.0448947919,OM562572/KEN/cow/2016/SAT2/IV/Unknown:0.0254051637)93:0.0073185401)65:0.0021916561,((((((OM562588/KEN/cow/2016/SAT2/IV/Unknown:0.0090421433,OM562548/KEN/cow/2016/SAT2/IV/Unknown:0.0066614086)97:0.0012433445,((OM562564/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000,(OM562507/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000,OM562506/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000)100:0.0017352242)100:0.0091945552,((OM562513/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000,(OM562511/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000,OM562509/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000)52:0.0000027556)65:0.0000010000,(OM562512/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000,OM562510/KEN/cow/2016/SAT2/IV/Unknown:0.0000010000)99:0.0004315637)100:0.0089906384)97:0.0038821157)67:0.0005256246,OM562561/KEN/cow/2016/SAT2/IV/Unknown:0.0096851900)69:0.0017309108,OM562552/KEN/cow/2016/SAT2/IV/Unknown:0.0053514913)100:0.0150459237,OM562549/KEN/cow/2016/SAT2/IV/Unknown:0.0098185448)100:0.0105436123,OM562581/KEN/cow/2016/SAT2/IV/Unknown:0.0261602109)99:0.0069566533)92:0.0063076019,OM562600/KEN/cow/2016/SAT2/IV/Unknown:0.0459236910)77:0.0041640512,OM562593/KEN/cow/2016/SAT2/IV/Unknown:0.0283660380)85:0.0166641941)100:0.0071247710,AY593847/ZWE/Unknown/1948/SAT2/III/Unknown:0.0539750093)100:0.0176911590,(MH053331/BWA/african-buffalo/1972/SAT2/II/Unknown:0.0144752153,KU821592/ZMB/cow/2009/SAT2/III/Unknown:0.0310178052)52:0.0029753730)67:0.0020095900,((MW355673/ZWE/cattle/1989/SAT2/II/Unknown:0.0540132033,MH053328/BWA/african-buffalo/1968/SAT2/III/Unknown:0.0241782072)90:0.0050503415,MH053332/BWA/african-buffalo/1974/SAT2/II/Unknown:0.0151692039)67:0.0021163814);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -26764.569581
+Robinson-Foulds distance between ML tree and consensus tree: 4
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--JF749864/ZWE/Unknown/2003/SAT2/I/Unknown
+|
+|                                     +--JF749862/UGA/Unknown/2002/SAT2/X/Unknown
+|                                  +--| (100)
+|                                  |  +---HM067705/UGA/african-buffalo/2007/SAT2/X/Unknown
+|                        +---------| (100)
+|                        |         +------HM067704/UGA/african-buffalo/2007/SAT2/X/Unknown
+|           +------------| (100)
+|           |            |                                               +--KC440884/EGY/Unknown/2012/SAT2/VII/Unknown
+|           |            |                                            +--| (83)
+|           |            |                                            |  |  +--MT602089/EGY/cattle/2018/SAT2/VII/Unknown
+|           |            |                                            |  +--| (87)
+|           |            |                                            |     +--JX014255/EGY/Unknown/2012/SAT2/VII/Unknown
+|           |            |                                       +----| (100)
+|           |            |                                       |    +--JX014256/PSE/cattle/2012/SAT2/VII/Unknown
+|           |            |                                    +--| (93)
+|           |            |                                    |  |       +--OQ401874/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |  |    +--| (91)
+|           |            |                                    |  |    |  |           +--OQ401873/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |  |    |  |        +--| (95)
+|           |            |                                    |  |    |  |        |  +--OQ401871/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |  |    |  |     +--| (99)
+|           |            |                                    |  |    |  |     |  +--OQ401866/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |  |    |  |  +--| (96)
+|           |            |                                    |  |    |  |  |  +--OQ401868/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |  |    |  +--| (96)
+|           |            |                                    |  |    |     +--OQ401869/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |  +----| (100)
+|           |            |                                    |       |     +--OQ401872/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |       |  +--| (100)
+|           |            |                                    |       |  |  +--OQ401867/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                    |       +--| (88)
+|           |            |                                    |          +--OQ401865/NER/cattle/2020/SAT2/VII/Unknown
+|           |            |                                 +--| (100)
+|           |            |                                 |  |            +--MW715629/NER/cow/2017/SAT2/VII/Unknown
+|           |            |                                 |  |         +--| (100)
+|           |            |                                 |  |         |  +--MW715628/NER/cow/2017/SAT2/VII/Unknown
+|           |            |                                 |  |      +--| (100)
+|           |            |                                 |  |      |  |        +--MW715627/NER/cow/2017/SAT2/VII/Unknown
+|           |            |                                 |  |      |  |     +--| (100)
+|           |            |                                 |  |      |  |     |  +--MW715626/NER/cow/2017/SAT2/VII/Unknown
+|           |            |                                 |  |      |  |  +--| (81)
+|           |            |                                 |  |      |  |  |  +--MW715624/NER/cow/2017/SAT2/VII/Unknown
+|           |            |                                 |  |      |  +--| (100)
+|           |            |                                 |  |      |     +--MW715623/NER/cow/2017/SAT2/VII/Unknown
+|           |            |                                 |  |   +--| (100)
+|           |            |                                 |  |   |  +--MN103523/NER/cow/2014/SAT2/VII/Unknown
+|           |            |                                 |  +---| (100)
+|           |            |                                 |      +--MW715622/NER/cow/2018/SAT2/VII/Unknown
+|           |            |                             +---| (100)
+|           |            |                             |   +---------MT602090/ETH/cattle/2015/SAT2/VII/Unknown
+|           |            |                          +--| (89)
+|           |            |                          |  |      +--AY593849/KEN/Unknown/1960/SAT2/IX/Unknown
+|           |            |                          |  +------| (100)
+|           |            |                          |         +--AJ251473/KEN/Unknown/1957/SAT2/IX/Unknown
+|           |            +--------------------------| (100)
+|           |                                       |  +---OQ557397/ETH/cow/2022/SAT2/XIV/Unknown
+|           |                                       +--| (98)
+|           |                                          +------OQ557396/ETH/cattle/1991/SAT2/XIV/Unknown
+|        +--| (74)
+|        |  |        +--MW355671/MOZ/Unknown/1970/SAT2/I/Unknown
+|        |  |     +--| (55)
+|        |  |     |  +--AY593848/Unknown/Unknown/1967/SAT2/I/Unknown
+|        |  |  +--| (57)
+|        |  |  |  +----MH053335/ZWE/cattle/1965/SAT2/I/Unknown
+|        |  +--| (90)
+|        |     +-----MH053334/ZMB/cattle/1964/SAT2/III/Unknown
+|     +--| (100)
+|     |  |                       +--JF749861/KEN/Unknown/2002/SAT2/IV/Unknown
+|     |  |                    +--| (71)
+|     |  |                    |  |     +--OM562599/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |                    |  |  +--| (100)
+|     |  |                    |  |  |  |  +--OM562598/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |                    |  |  |  +--| (100)
+|     |  |                    |  |  |     +--OM562595/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |                    |  +--| (100)
+|     |  |                    |     |  +--OM562597/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |                    |     +--| (100)
+|     |  |                    |        +--OM562596/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |                 +--| (79)
+|     |  |                 |  +---KM268900/TZA/cattle/2012/SAT2/IV/Unknown
+|     |  |              +--| (72)
+|     |  |              |  |     +--MN116692/KEN/cow/2014/SAT2/IV/Unknown
+|     |  |              |  |  +--| (88)
+|     |  |              |  |  |  |  +--OM562544/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |  |  |  +--| (100)
+|     |  |              |  |  |     |     +--OM562476/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |  |  |     |  +--| (59)
+|     |  |              |  |  |     |  |  +--OM562475/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |  |  |     +--| (100)
+|     |  |              |  |  |        +--OM562474/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |  +--| (77)
+|     |  |              |     |                                                  +--OM562592/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                               +--| (93)
+|     |  |              |     |                                               |  |     +--OM562587/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                               |  |  +--| (81)
+|     |  |              |     |                                               |  |  |  +--OM562562/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                               |  +--| (56)
+|     |  |              |     |                                               |     +--OM562569/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                            +--| (78)
+|     |  |              |     |                                            |  +--OM562589/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                         +--| (48)
+|     |  |              |     |                                         |  |     +--OM562570/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                         |  |  +--| (92)
+|     |  |              |     |                                         |  |  |  +--OM562553/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                         |  +--| (82)
+|     |  |              |     |                                         |     +--OM562551/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                      +--| (80)
+|     |  |              |     |                                      |  +--OM562568/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                   +--| (93)
+|     |  |              |     |                                   |  +--OM562550/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                                +--| (95)
+|     |  |              |     |                                |  +--OM562567/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                             +--| (100)
+|     |  |              |     |                             |  +--OM562586/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          +--| (64)
+|     |  |              |     |                          |  |  +--OM562473/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |  +--| (99)
+|     |  |              |     |                          |     |                                            +**OM562472/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |                                         +**|
+|     |  |              |     |                          |     |                                         |  +**OM562468/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |                                      +**|
+|     |  |              |     |                          |     |                                      |  +**OM562459/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |                                   +**|
+|     |  |              |     |                          |     |                                   |  +**OM562458/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |                                +**|
+|     |  |              |     |                          |     |                                |  +**OM562469/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |                             +**|
+|     |  |              |     |                          |     |                             |  +**OM562463/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |                          +**|
+|     |  |              |     |                          |     |                          |  +**OM562466/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |                       +**|
+|     |  |              |     |                          |     |                       |  +**OM562465/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |                    +**|
+|     |  |              |     |                          |     |                    |  +**OM562457/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |                 +**|
+|     |  |              |     |                          |     |                 |  +**OM562462/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |              +**|
+|     |  |              |     |                          |     |              |  +**OM562470/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |           +**|
+|     |  |              |     |                          |     |           |  +**OM562460/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |        +**|
+|     |  |              |     |                          |     |        |  +**OM562467/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |     +--|
+|     |  |              |     |                          |     |     |  +**OM562464/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     |  +--| (58)
+|     |  |              |     |                          |     |  |  +--OM562471/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                          |     +--| (100)
+|     |  |              |     |                          |        +--OM562461/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                       +--| (81)
+|     |  |              |     |                       |  |  +--OM562580/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                       |  +--| (84)
+|     |  |              |     |                       |     |  +--OM562578/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                       |     +--| (97)
+|     |  |              |     |                       |        |        +**OM562456/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                       |        |     +**|
+|     |  |              |     |                       |        |     |  +**OM562454/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                       |        |  +--|
+|     |  |              |     |                       |        |  |  +**OM562453/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                       |        +--| (100)
+|     |  |              |     |                       |           +--OM562455/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    +--| (89)
+|     |  |              |     |                    |  |                                            +**OM562492/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |                                         +**|
+|     |  |              |     |                    |  |                                         |  +**OM562482/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |                                      +**|
+|     |  |              |     |                    |  |                                      |  +**OM562478/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |                                   +**|
+|     |  |              |     |                    |  |                                   |  +**OM562483/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |                                +**|
+|     |  |              |     |                    |  |                                |  +**OM562479/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |                             +**|
+|     |  |              |     |                    |  |                             |  +**OM562486/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |                          +**|
+|     |  |              |     |                    |  |                          |  +**OM562488/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |                       +**|
+|     |  |              |     |                    |  |                       |  +**OM562490/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |                    +**|
+|     |  |              |     |                    |  |                    |  +**OM562484/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |                 +**|
+|     |  |              |     |                    |  |                 |  +**OM562480/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |              +**|
+|     |  |              |     |                    |  |              |  +**OM562477/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |           +**|
+|     |  |              |     |                    |  |           |  +**OM562489/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |        +**|
+|     |  |              |     |                    |  |        |  +**OM562487/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |     +--|
+|     |  |              |     |                    |  |     |  +**OM562481/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  |  +--| (63)
+|     |  |              |     |                    |  |  |  +--OM562491/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                    |  +--| (100)
+|     |  |              |     |                    |     +--OM562485/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |                 +--| (100)
+|     |  |              |     |                 |  +--OM562584/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |              +--| (100)
+|     |  |              |     |              |  +--OM562583/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |           +--| (100)
+|     |  |              |     |           |  |                       +**OM562501/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |           |  |                    +**|
+|     |  |              |     |           |  |                    |  +**OM562498/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |           |  |                 +**|
+|     |  |              |     |           |  |                 |  +**OM562496/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |           |  |              +**|
+|     |  |              |     |           |  |              |  +**OM562495/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |           |  |           +**|
+|     |  |              |     |           |  |           |  +**OM562493/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |           |  |        +**|
+|     |  |              |     |           |  |        |  +**OM562497/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |           |  |     +**|
+|     |  |              |     |           |  |     |  +**OM562499/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |           |  |  +--|
+|     |  |              |     |           |  |  |  +**OM562494/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |           |  +--| (100)
+|     |  |              |     |           |     +--OM562500/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |        +--| (53)
+|     |  |              |     |        |  +--OM562575/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |     +--| (39)
+|     |  |              |     |     |  +--OM562554/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     |  +--| (74)
+|     |  |              |     |  |  +--OM562577/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |              |     +--| (64)
+|     |  |              |        +--OM562585/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |           +--| (71)
+|     |  |           |  +------MH053333/ETH/cattle/1989/SAT2/IV/Unknown
+|     |  |        +--| (65)
+|     |  |        |  |  +---MT602092/KEN/cattle/2017/SAT2/IV/Unknown
+|     |  |        |  +--| (93)
+|     |  |        |     +--OM562572/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     +--| (92)
+|     |  |     |  |                 +--OM562588/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |              +--| (97)
+|     |  |     |  |              |  +--OM562548/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           +--| (67)
+|     |  |     |  |           |  |     +--OM562564/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |  |  +--| (100)
+|     |  |     |  |           |  |  |  |              +**OM562507/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |  |  |  |           +**|
+|     |  |     |  |           |  |  |  |           |  +**OM562503/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |  |  |  |        +**|
+|     |  |     |  |           |  |  |  |        |  +**OM562505/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |  |  |  |     +**|
+|     |  |     |  |           |  |  |  |     |  +**OM562502/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |  |  |  |  +--|
+|     |  |     |  |           |  |  |  |  |  +**OM562504/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |  |  |  +--| (100)
+|     |  |     |  |           |  |  |     +--OM562506/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |  +--| (97)
+|     |  |     |  |           |     |     +--OM562513/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |     |  +--| (65)
+|     |  |     |  |           |     |  |  |     +**OM562511/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |     |  |  |  +--|
+|     |  |     |  |           |     |  |  |  |  +**OM562508/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |     |  |  +--| (52)
+|     |  |     |  |           |     |  |     +--OM562509/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |     +--| (100)
+|     |  |     |  |           |        |  +--OM562512/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |           |        +--| (99)
+|     |  |     |  |           |           +--OM562510/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |        +--| (69)
+|     |  |     |  |        |  +--OM562561/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |     +--| (100)
+|     |  |     |  |     |  +--OM562552/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  |  +--| (100)
+|     |  |     |  |  |  +--OM562549/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |     |  +--| (99)
+|     |  |     |     +--OM562581/KEN/cow/2016/SAT2/IV/Unknown
+|     |  |  +--| (77)
+|     |  |  |  +---OM562600/KEN/cow/2016/SAT2/IV/Unknown
+|     |  +--| (85)
+|     |     +--OM562593/KEN/cow/2016/SAT2/IV/Unknown
+|  +--| (100)
+|  |  +----AY593847/ZWE/Unknown/1948/SAT2/III/Unknown
++--| (67)
+|  |  +--MH053331/BWA/african-buffalo/1972/SAT2/II/Unknown
+|  +--| (52)
+|     +--KU821592/ZMB/cow/2009/SAT2/III/Unknown
+|
+|     +----MW355673/ZWE/cattle/1989/SAT2/II/Unknown
+|  +--| (90)
+|  |  +--MH053328/BWA/african-buffalo/1968/SAT2/III/Unknown
++--| (67)
+   +--MH053332/BWA/african-buffalo/1974/SAT2/II/Unknown
+
+
+Consensus tree in newick format: 
+
+(JF749864/ZWE/Unknown/2003/SAT2/I/Unknown:0.0382751792,(((((((JF749862/UGA/Unknown/2002/SAT2/X/Unknown:0.0231514881,HM067705/UGA/african-buffalo/2007/SAT2/X/Unknown:0.0417288374)100:0.0273915509,HM067704/UGA/african-buffalo/2007/SAT2/X/Unknown:0.0775091137)100:0.1047770462,(((((((KC440884/EGY/Unknown/2012/SAT2/VII/Unknown:0.0013131823,(MT602089/EGY/cattle/2018/SAT2/VII/Unknown:0.0017617186,JX014255/EGY/Unknown/2012/SAT2/VII/Unknown:0.0039478063)87:0.0003847625)83:0.0008450178,JX014256/PSE/cattle/2012/SAT2/VII/Unknown:0.0009016151)100:0.0542221320,((OQ401874/NER/cattle/2020/SAT2/VII/Unknown:0.0008620686,((((OQ401873/NER/cattle/2020/SAT2/VII/Unknown:0.0000023930,OQ401871/NER/cattle/2020/SAT2/VII/Unknown:0.0004290368)95:0.0000023930,OQ401866/NER/cattle/2020/SAT2/VII/Unknown:0.0004288274)99:0.0004286489,OQ401868/NER/cattle/2020/SAT2/VII/Unknown:0.0012888488)96:0.0000023930,OQ401869/NER/cattle/2020/SAT2/VII/Unknown:0.0008586869)96:0.0004281761)91:0.0004277233,((OQ401872/NER/cattle/2020/SAT2/VII/Unknown:0.0000023930,OQ401867/NER/cattle/2020/SAT2/VII/Unknown:0.0000023930)100:0.0004286419,OQ401865/NER/cattle/2020/SAT2/VII/Unknown:0.0000023930)88:0.0000022809)100:0.0541914033)93:0.0073851056,((((MW715629/NER/cow/2017/SAT2/VII/Unknown:0.0017281393,MW715628/NER/cow/2017/SAT2/VII/Unknown:0.0000023930)100:0.0008113336,(((MW715627/NER/cow/2017/SAT2/VII/Unknown:0.0004306041,MW715626/NER/cow/2017/SAT2/VII/Unknown:0.0004286971)100:0.0008602578,MW715624/NER/cow/2017/SAT2/VII/Unknown:0.0025934369)81:0.0000023930,MW715623/NER/cow/2017/SAT2/VII/Unknown:0.0021548262)100:0.0017781758)100:0.0243983413,MN103523/NER/cow/2014/SAT2/VII/Unknown:0.0081402834)100:0.0160748076,MW715622/NER/cow/2018/SAT2/VII/Unknown:0.0283865327)100:0.0436286242)100:0.0185615745,MT602090/ETH/cattle/2015/SAT2/VII/Unknown:0.1064268407)100:0.0514707617,(AY593849/KEN/Unknown/1960/SAT2/IX/Unknown:0.0166705435,AJ251473/KEN/Unknown/1957/SAT2/IX/Unknown:0.0189145368)100:0.0795269241)89:0.0141139058,(OQ557397/ETH/cow/2022/SAT2/XIV/Unknown:0.0493798177,OQ557396/ETH/cattle/1991/SAT2/XIV/Unknown:0.0823494422)98:0.0107062319)100:0.2813785937)100:0.1378036594,(((MW355671/MOZ/Unknown/1970/SAT2/I/Unknown:0.0337980212,AY593848/Unknown/Unknown/1967/SAT2/I/Unknown:0.0352892121)55:0.0029700788,MH053335/ZWE/cattle/1965/SAT2/I/Unknown:0.0536726751)57:0.0033176206,MH053334/ZMB/cattle/1964/SAT2/III/Unknown:0.0643650391)90:0.0040172091)74:0.0031089041,((((((((JF749861/KEN/Unknown/2002/SAT2/IV/Unknown:0.0306161521,((OM562599/KEN/cow/2016/SAT2/IV/Unknown:0.0109161248,(OM562598/KEN/cow/2016/SAT2/IV/Unknown:0.0172137970,OM562595/KEN/cow/2016/SAT2/IV/Unknown:0.0045233637)100:0.0037119247)100:0.0036061034,(OM562597/KEN/cow/2016/SAT2/IV/Unknown:0.0134974379,OM562596/KEN/cow/2016/SAT2/IV/Unknown:0.0158599285)100:0.0061850428)100:0.0215321008)71:0.0051366519,KM268900/TZA/cattle/2012/SAT2/IV/Unknown:0.0465276450)79:0.0051211958,((MN116692/KEN/cow/2014/SAT2/IV/Unknown:0.0170958609,(OM562544/KEN/cow/2016/SAT2/IV/Unknown:0.0000021284,((OM562476/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930,OM562475/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930)59:0.0000023930,OM562474/KEN/cow/2016/SAT2/IV/Unknown:0.0004286357)100:0.0083560329)100:0.0226598113)88:0.0168705752,(((((((((((((((((OM562592/KEN/cow/2016/SAT2/IV/Unknown:0.0043705450,((OM562587/KEN/cow/2016/SAT2/IV/Unknown:0.0106873573,OM562562/KEN/cow/2016/SAT2/IV/Unknown:0.0043831236)81:0.0004306381,OM562569/KEN/cow/2016/SAT2/IV/Unknown:0.0056923642)56:0.0000023930)93:0.0008667760,OM562589/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930)78:0.0008658113,((OM562570/KEN/cow/2016/SAT2/IV/Unknown:0.0004335911,OM562553/KEN/cow/2016/SAT2/IV/Unknown:0.0008670728)92:0.0004246902,OM562551/KEN/cow/2016/SAT2/IV/Unknown:0.0057183885)82:0.0004396022)48:0.0000023930,OM562568/KEN/cow/2016/SAT2/IV/Unknown:0.0008658945)80:0.0002659792,OM562550/KEN/cow/2016/SAT2/IV/Unknown:0.0014685018)93:0.0010475781,OM562567/KEN/cow/2016/SAT2/IV/Unknown:0.0061795946)95:0.0012254025,OM562586/KEN/cow/2016/SAT2/IV/Unknown:0.0042431227)100:0.0131932629,(OM562473/KEN/cow/2016/SAT2/IV/Unknown:0.0048420432,(((((((((((((((OM562472/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000,OM562468/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562459/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562458/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562469/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562463/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562466/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562465/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562457/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562462/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562470/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562460/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562467/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562464/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000023930,OM562471/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930)58:0.0000023930,OM562461/KEN/cow/2016/SAT2/IV/Unknown:0.0004297508)100:0.0053554992)99:0.0037070904)64:0.0002072950,(OM562580/KEN/cow/2016/SAT2/IV/Unknown:0.0036562269,(OM562578/KEN/cow/2016/SAT2/IV/Unknown:0.0105498290,(((OM562456/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000,OM562454/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562453/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000023930,OM562455/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930)100:0.0028011712)97:0.0012795079)84:0.0019978411)81:0.0010696453,(((((((((((((((OM562492/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000,OM562482/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562478/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562483/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562479/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562486/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562488/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562490/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562484/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562480/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562477/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562489/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562487/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562481/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000023930,OM562491/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930)63:0.0000023930,OM562485/KEN/cow/2016/SAT2/IV/Unknown:0.0004298499)100:0.0059811767)89:0.0031333479,OM562584/KEN/cow/2016/SAT2/IV/Unknown:0.0014701242)100:0.0102911913,OM562583/KEN/cow/2016/SAT2/IV/Unknown:0.0044480919)100:0.0079897041,((((((((OM562501/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000,OM562498/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562496/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562495/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562493/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562497/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562499/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562494/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000023930,OM562500/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930)100:0.0176620115)100:0.0092584757,OM562575/KEN/cow/2016/SAT2/IV/Unknown:0.0226286814)53:0.0026929238,OM562554/KEN/cow/2016/SAT2/IV/Unknown:0.0177226983)39:0.0008847442,OM562577/KEN/cow/2016/SAT2/IV/Unknown:0.0116900587)74:0.0106081509,OM562585/KEN/cow/2016/SAT2/IV/Unknown:0.0306060180)64:0.0073126396)77:0.0047194630)72:0.0028585516,MH053333/ETH/cattle/1989/SAT2/IV/Unknown:0.0820091349)71:0.0027970708,(MT602092/KEN/cattle/2017/SAT2/IV/Unknown:0.0449108986,OM562572/KEN/cow/2016/SAT2/IV/Unknown:0.0254159244)93:0.0072861952)65:0.0022001998,((((((OM562588/KEN/cow/2016/SAT2/IV/Unknown:0.0090460228,OM562548/KEN/cow/2016/SAT2/IV/Unknown:0.0066638633)97:0.0012430418,((OM562564/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930,(((((OM562507/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000,OM562503/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562505/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562502/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000000000,OM562504/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000023930,OM562506/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930)100:0.0017346631)100:0.0091983921,((OM562513/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930,((OM562511/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000,OM562508/KEN/cow/2016/SAT2/IV/Unknown:0.0000000000):0.0000023930,OM562509/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930)52:0.0000023930)65:0.0000023930,(OM562512/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930,OM562510/KEN/cow/2016/SAT2/IV/Unknown:0.0000023930)99:0.0004315930)100:0.0089938491)97:0.0038842486)67:0.0005254252,OM562561/KEN/cow/2016/SAT2/IV/Unknown:0.0096888827)69:0.0017328453,OM562552/KEN/cow/2016/SAT2/IV/Unknown:0.0053516068)100:0.0150243690,OM562549/KEN/cow/2016/SAT2/IV/Unknown:0.0098493794)100:0.0105055272,OM562581/KEN/cow/2016/SAT2/IV/Unknown:0.0262001027)99:0.0070084177)92:0.0063925461,OM562600/KEN/cow/2016/SAT2/IV/Unknown:0.0458651147)77:0.0037806943,OM562593/KEN/cow/2016/SAT2/IV/Unknown:0.0285304812)85:0.0163952953)100:0.0070487421,AY593847/ZWE/Unknown/1948/SAT2/III/Unknown:0.0535687091)100:0.0181124985,(MH053331/BWA/african-buffalo/1972/SAT2/II/Unknown:0.0143670076,KU821592/ZMB/cow/2009/SAT2/III/Unknown:0.0311589471)52:0.0029895452)67:0.0022276592,((MW355673/ZWE/cattle/1989/SAT2/II/Unknown:0.0540532739,MH053328/BWA/african-buffalo/1968/SAT2/III/Unknown:0.0241840563)90:0.0050424809,MH053332/BWA/african-buffalo/1974/SAT2/II/Unknown:0.0151806326)67:0.0020957520);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t alignments_no_probang_etc\recombinant_free_regions\SAT2\SAT2_4283-7008_no_probang.treefile -m "GTR{1.57115,9.65611,1.70344,0.836211,14.3838}+F{0.25658,0.267707,0.262777,0.212935}+I{0.455114}+G4{0.627592}" --length 2798
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s alignments_no_probang_etc\recombinant_free_regions\SAT2\SAT2_4283-7008_no_probang.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s alignments_no_probang_etc\recombinant_free_regions\SAT2\SAT2_4283-7008_no_probang.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Jan 15 15:41:11 2026
+Total CPU time used: 246.71875 seconds (0h:4m:6s)
+Total wall-clock time used: 253.9239767 seconds (0h:4m:13s)
+
