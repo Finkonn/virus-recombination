@@ -4,9 +4,11 @@ import seaborn as sns
 import os
 import numpy as np
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import r2_score
-from scipy import stats  
 from scipy.stats import linregress, pearsonr, spearmanr
+
+df = pd.read_excel('meta_no_probang_removed_seqs.xlsx')
+
+all_correlation_results = []
 
 for serotype in ['A', 'Asia1', 'O', 'C', 'SAT1', 'SAT2', 'SAT3']:
 
@@ -24,9 +26,21 @@ for serotype in ['A', 'Asia1', 'O', 'C', 'SAT1', 'SAT2', 'SAT3']:
     for ax, file in zip(axes, csv_files):
         file_path = os.path.join(main_path, file)
         data = pd.read_csv(file_path, sep='\t')
-
-        sns.scatterplot(data=data, x='date', y='distance', color='blue', ax=ax, size=1)
-
+        
+        data['accession'] = data['tip'].apply(lambda x: x.split('/')[0] if isinstance(x, str) else x)
+        data['in_meta_table'] = data['accession'].isin(df['Genbank accession'])
+        
+        data_in_meta = data[data['in_meta_table']]
+        data_not_in_meta = data[~data['in_meta_table']]
+        
+        if not data_not_in_meta.empty:
+            sns.scatterplot(data=data_not_in_meta, x='date', y='distance', 
+                           color='blue', ax=ax, size=1)
+        
+        if not data_in_meta.empty:
+            sns.scatterplot(data=data_in_meta, x='date', y='distance', 
+                           color='red', ax=ax, size=1)
+        
         X = data['date'].values.reshape(-1, 1)
         y = data['distance'].values
         
@@ -41,15 +55,29 @@ for serotype in ['A', 'Asia1', 'O', 'C', 'SAT1', 'SAT2', 'SAT3']:
 
         intercept_str = f"- {abs(intercept):.2f}" if intercept < 0 else f"+ {intercept:.2f}"
 
-        metrics_label = (#f'Pearson r: {pearson_corr:.2f}\n'
-                         #f'p-value: {pearson_p:.2e}\n'
+        metrics_label = (f'Pearson r: {pearson_corr:.2f}\n'
+                         f'p-value: {pearson_p:.2e}\n'
                          f'Spearman r: {spearman_corr:.2f}\n'
                          f'p-value: {spearman_p:.2e}\n'
-                         #f'Linear regression:\n'
+                         f'Linear regression:\n'
                          f'y = {slope:.2e}x {intercept_str}\n'
                          f'p-value: {linreg_pvalue:.2e}\n'
-                         #f'R²: {r_squared:.2f}'
+                         f'R²: {r_squared:.2f}'
                          )
+
+        result = {
+            'serotype': serotype,
+            'file': file.split('.')[0],
+            'pearson_corr': pearson_corr,
+            'pearson_p': pearson_p,
+            'spearman_corr': spearman_corr,
+            'spearman_p': spearman_p,
+            'slope': slope,
+            'intercept': intercept,
+            'r_squared': r_squared,
+            'linreg_pvalue': linreg_pvalue,
+        }
+        all_correlation_results.append(result)
 
         x_range = np.linspace(X.min(), X.max(), 100).reshape(-1, 1)
         y_range = model.predict(x_range)
@@ -59,11 +87,27 @@ for serotype in ['A', 'Asia1', 'O', 'C', 'SAT1', 'SAT2', 'SAT3']:
         ax.set_xlabel("Collection year", fontsize=9)
         ax.set_ylabel("Root-to-tip distance", fontsize=9)
         ax.tick_params(labelsize=7)
-        ax.legend([metrics_label], fontsize=7, handlelength=0)  
+        
+        ax.legend([metrics_label], fontsize=7, handlelength=0)
 
     plt.tight_layout(rect=[0, 0, 1, 0.96])
-    output_file_png = os.path.join(output_path,serotype+"_graph_LR_bigger.png")
-    output_file_svg = os.path.join(output_path,serotype+"_graph_LR_bigger.svg")
+    output_file_png = os.path.join(output_path, serotype + "_graph_LR_no_probang.png")
+    output_file_svg = os.path.join(output_path, serotype + "_graph_LR_no_probang.svg")
     plt.savefig(output_file_png, format='png')
     plt.savefig(output_file_svg, format='svg')
     plt.close()
+    
+    for file in csv_files:
+        file_path = os.path.join(main_path, file)
+        data = pd.read_csv(file_path, sep='\t')
+        data['accession'] = data['tip'].apply(lambda x: x.split('/')[0] if isinstance(x, str) else x)
+        data['in_meta_table'] = data['accession'].isin(df['Genbank accession'])
+        
+        total_points = len(data)
+        red_points = data['in_meta_table'].sum()
+        
+        print(f"  {file}: {red_points}/{total_points} points in meta table")
+
+correlation_df = pd.DataFrame(all_correlation_results)
+correlation_csv = "correlation_coefficients_new_data.csv"
+correlation_df.to_csv(correlation_csv, index=False)

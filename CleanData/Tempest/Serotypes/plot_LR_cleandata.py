@@ -8,6 +8,8 @@ from scipy.stats import linregress, pearsonr, spearmanr
 
 df = pd.read_excel('meta_no_probang_removed_seqs.xlsx')
 
+all_correlation_results = []
+
 for serotype in ['A', 'Asia1', 'O', 'C', 'SAT1', 'SAT2', 'SAT3']:
 
     main_path = os.path.join(serotype)
@@ -53,15 +55,29 @@ for serotype in ['A', 'Asia1', 'O', 'C', 'SAT1', 'SAT2', 'SAT3']:
 
         intercept_str = f"- {abs(intercept):.2f}" if intercept < 0 else f"+ {intercept:.2f}"
 
-        metrics_label = (#f'Pearson r: {pearson_corr:.2f}\n'
-                         #f'p-value: {pearson_p:.2e}\n'
+        metrics_label = (f'Pearson r: {pearson_corr:.2f}\n'
+                         f'p-value: {pearson_p:.2e}\n'
                          f'Spearman r: {spearman_corr:.2f}\n'
                          f'p-value: {spearman_p:.2e}\n'
-                         #f'Linear regression:\n'
+                         f'Linear regression:\n'
                          f'y = {slope:.2e}x {intercept_str}\n'
                          f'p-value: {linreg_pvalue:.2e}\n'
-                         #f'R²: {r_squared:.2f}'
+                         f'R²: {r_squared:.2f}'
                          )
+
+        result = {
+            'serotype': serotype,
+            'file': file.split('.')[0],
+            'pearson_corr': pearson_corr,
+            'pearson_p': pearson_p,
+            'spearman_corr': spearman_corr,
+            'spearman_p': spearman_p,
+            'slope': slope,
+            'intercept': intercept,
+            'r_squared': r_squared,
+            'linreg_pvalue': linreg_pvalue,
+        }
+        all_correlation_results.append(result)
 
         x_range = np.linspace(X.min(), X.max(), 100).reshape(-1, 1)
         y_range = model.predict(x_range)
@@ -91,3 +107,7 @@ for serotype in ['A', 'Asia1', 'O', 'C', 'SAT1', 'SAT2', 'SAT3']:
         red_points = data['in_meta_table'].sum()
         
         print(f"  {file}: {red_points}/{total_points} points in meta table")
+
+correlation_df = pd.DataFrame(all_correlation_results)
+correlation_csv = "correlation_coefficients_old_data.csv"
+correlation_df.to_csv(correlation_csv, index=False)
