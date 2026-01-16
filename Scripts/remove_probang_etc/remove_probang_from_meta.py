@@ -15,7 +15,6 @@ def remove_rows_by_genbank_accession(input_file, output_file):
     rows_being_removed = df_first_sheet[mask_to_remove]
     
     df_filtered = df_first_sheet[~mask_to_remove].copy()
-    df_filtered = df_filtered.drop(columns=['Genbank accession'], errors='ignore')
     df_filtered.to_excel(output_file, index=False)
     
     report_file = output_file.replace('.xlsx', '_removed_seqs.xlsx')
@@ -28,6 +27,6 @@ def remove_rows_by_genbank_accession(input_file, output_file):
 
 if __name__ == "__main__":
     input_file = "metadata_references_iso_source.xlsx" 
-    output_file = "meta_no_probang.xlsx"  
+    output_file = "meta_no_probang_test.xlsx"  
     
     remove_rows_by_genbank_accession(input_file, output_file)

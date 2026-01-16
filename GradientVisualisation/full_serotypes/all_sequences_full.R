@@ -8,17 +8,22 @@ library('ggplot2')
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 source("modified_gradients.R")
 
-trees = list.files(path = "all_sequences_treefiles/", full.names = TRUE, pattern = ".treefile$")
-meta_path = "metadata_all_sequences_pools.csv"
+trees = list.files(path = "no_probang_trees/", full.names = TRUE, pattern = ".treefile$")
+meta_path = "meta_no_probang_with_GBAC_upd_test.csv"
 info = read.csv(meta_path)
 
-unique_serotypes <- unique(info$serotype)
+unique_serotypes <- unique(info$Serotype)
 unique_topotypes <- unique(info$Topotype) 
-unique_lineages <- unique(info$lineage)
+unique_lineages <- unique(info$Lineage)
 unique_pools <- unique(info$pool)
+unique_hosts <- unique(info$Host)
 
-serotype_colors <- setNames(c("#b0b006","#d84a1c" ,"#43998c", "#857fa9","#9ec744", "#d3973f", "#6194b5"), 
+
+target_lineages <- c("PanAsia", "PanAsia-2", "Iran-05")
+
+serotype_colors <- setNames(c("#a53939","#ba6317","#3a3a7d","#419d4b", "#c1ac23" ,"#42d4f4", "#791397" ), 
                             unique_serotypes)
+serotype_colors
 
 lineage_colors <- c(
   "#7FC97F", "#BEAED4", "#FDC086", "#FFFF99", "#321faf", 
@@ -33,16 +38,35 @@ topotype_colors <- c(
   "#bbE535", "#FFFF00", "#A9A2F9", "#2FaFCC", "#A1D2AD",
   "#FDDAEC", "#F2a2F2", "#a1f8aa", "#FDCDAC", "#1EA5E8",
   "#00FFFF", "#E6F5C9", "#FF0080", "#32CD32", "#fa31f1",
-  "#f14e2f"
+  "#FFFFFF"
 )
-unique_pools
+
 
 pool_colors <- c("#ffffff", "#fed580ff","#ff8080ff","#e280ffff", "#cdcdcdff", "#7598beff", "#80b8ffff", "#fefe80ff",
                  "#bf5b80ff", "#a5f280ff", "#ca7842ff")
 
+host_colors <- c(
+  "#FF7F00",  
+  "#A6761D",
+  "#A6CEE3",
+  "#1F78B4",
+  "#c90303",  
+  "#33A02C",
+  "#FB9A99", 
+  "#1111ff",
+  "#FDBF6F",
+  "#E6AB02",
+  "#CAB2D6",
+  "#6A3D9A",
+  "#B15928",
+  "#8000FF",
+  "#B3CDE3" 
+)
+
 names(lineage_colors) <- unique_lineages
 names(topotype_colors) <- unique_topotypes
 names(pool_colors) <- unique_pools
+names(host_colors) <- unique_hosts
 
 plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors, topotype_colors, lineage_colors, pool_colors) {
   tree = read.tree(tree_file)
@@ -98,16 +122,17 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
   })
   
   heat_data = data.frame(
-    "serotype" = info$serotype,
+    "serotype" = info$Serotype,
     "Topotype" = info$Topotype,
-    "Lineage" = info$lineage,
-    "Pool" = info$pool
+    "Lineage" = ifelse(info$Lineage %in% target_lineages, as.character(info$Lineage), NA),
+    "Pool" = info$pool,
+    "Host" = info$Host
   )
   rownames(heat_data) <- info$GBAC
   
   t = ggtree(tree_rooted, size = 0.3) %<+% info +
     geom_point2(aes(label=label, 
-                    subset = !is.na(as.numeric(label)) & as.numeric(label) < 95), size=0.1, color="red",alpha=0.5) +
+                    subset = !is.na(as.numeric(label)) & as.numeric(label) > 95), size=0.1, color="black",alpha=0.5) +
     geom_tiplab(size = 0.4, aes(color=label)) +
     scale_color_manual(values=info$color, guide='none') + 
     theme(legend.position = "none") 
@@ -145,9 +170,18 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
                              color = NULL,
                              colnames = FALSE) +
     scale_fill_manual(values = pool_colors, name = "Pool", na.value = "white")
+  
+  t_with_pool <- t_with_pool + ggnewscale::new_scale_fill()
+  
+  t_with_host <- gheatmap(t_with_pool, heat_data["Host"],
+                          offset = 1.3,     
+                          width = 0.1,
+                          color = NULL,
+                          colnames = FALSE) +
+    scale_fill_manual(values = host_colors, name = "Host", na.value = "white")
 
   
-  return(t_with_pool)
+  return(t_with_host)
 }
 
 
@@ -170,11 +204,11 @@ for (file in trees) {
   legend <- cowplot::get_legend(g)
   g_nolegend <- g + theme(legend.position = "none")
   
-  svg_file <- paste0("Plots/", basename(file), ".svg")
+  svg_file <- paste0("Plots/no_probang/", basename(file), ".svg")
   
-  ggsave(svg_file, g_nolegend, height = 16, width = 7, dpi = 600)
+  ggsave(svg_file, g_nolegend, height = 12, width = 7, dpi = 600)
   
 }
 
-ggsave(paste0("Plots/", basename(file), "_legend.svg"), 
+ggsave(paste0("Plots/no_probang/", basename(file), "_legend.svg"), 
        plot = legend, height = 16, width = 7, dpi = 600)
