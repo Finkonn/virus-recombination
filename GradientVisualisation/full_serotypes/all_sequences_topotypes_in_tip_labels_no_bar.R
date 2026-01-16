@@ -12,7 +12,7 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 source("../modified_gradients.R")
 
 trees = list.files(path = "all_sequences_treefiles/", full.names = TRUE, pattern = ".treefile$")
-meta_path = "metadata_all_sequences.csv"
+meta_path = "metadata_with_gradient_tree_colors.csv"
 info = read.csv(meta_path)
 
 unique_serotypes <- unique(info$serotype)
@@ -107,7 +107,13 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
   )
   rownames(heat_data) <- info$GBAC
   
-  info$label_with_topotype <- paste0(info$GBAC, " [", info$Topotype, "]")
+  info$label_with_topotype <- paste(
+    info$GBAC,
+    info$Topotype,
+    info$pool,
+    sep = "/"
+  )
+  
   
   t = ggtree(tree_rooted, size = 0.2) %<+% info +
     geom_point2(aes(label=label, 
@@ -115,10 +121,18 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
     geom_tiplab(aes(label=label_with_topotype, color=label), size = 0.2) +
     scale_color_manual(values=info$color, guide='none') + 
     theme(legend.position = "none") +
-    theme_tree2()
+    theme_tree()
   
   return(t)
 }
+
+region_letters <- list(
+  "Lpro" = "A",
+  "P1"   = "B",
+  "P2"   = "C",
+  "P3"   = "D"
+)
+
 
 
 for (file in trees) {
@@ -135,25 +149,37 @@ for (file in trees) {
   region_key <- names(region_titles)[sapply(names(region_titles), function(x) grepl(x, file_base, ignore.case = TRUE))]
   region_title <- ifelse(length(region_key) == 1, region_titles[[region_key]], file_base)
   
-  g = plot_tree_with_gradient_and_heatmap(file, meta_path, serotype_colors, topotype_colors, lineage_colors) +
-    ggtitle(region_title) +
+  g = plot_tree_with_gradient_and_heatmap(
+    file, meta_path, serotype_colors, topotype_colors, lineage_colors
+  )
+  
+  plot_letter <- ifelse(
+    length(region_key) == 1,
+    region_letters[[region_key]],
+    ""
+  )
+  
+  g_nolegend <- g +
+    ggtitle(plot_letter) +
     theme(
-      plot.title = element_text(size = 34, hjust = 0.5)
+      legend.position = "none",
+      plot.title = element_text(
+        hjust = 0,        # left aligned
+        size = 32
+      ),
+      plot.title.position = "plot"
     )
   
-  g_nolegend <- g + theme(legend.position = "none")
-  
-  pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar_labeled.pdf")
+  pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar_labeled_test.pdf")
   ggsave(pdf_file, g_nolegend, height = 20, width = 12)
-  pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar_shrinked.pdf")
-  
-  ggsave(pdf_file, g_nolegend, height = 20, width = 2)
+  #pdf_file <- paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_no_bar_shrinked.pdf")
+  #ggsave(pdf_file, g_nolegend, height = 20, width = 2)
   
   
 }
 
-ggsave(paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_legend.png"), 
-       plot = legend, height = 10, width = 7, dpi = 600)
-ggsave(paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_legend.svg"), 
-       plot = legend, height = 10, width = 7, dpi = 600)
+#ggsave(paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_legend.png"), 
+#       plot = legend, height = 10, width = 7, dpi = 600)
+#ggsave(paste0("all_sequences_plots/topotypes_in_tip_labels/", basename(file), "_legend.svg"), 
+#       plot = legend, height = 10, width = 7, dpi = 600)
 

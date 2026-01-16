@@ -16,8 +16,8 @@ def genotyping(rep_in, tree_in, csv_in):
         #00ccff,GII
     
     '''
-    tl_fl = 0  # taxlabels have began
-    names_dict = {}  # names_dict[seq_name] = serotype
+    tl_fl = 0 
+    names_dict = {}  
     unknown_counter = 0
     conflict_counter = 0
 

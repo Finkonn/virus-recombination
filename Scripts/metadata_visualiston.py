@@ -2,7 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-metadata = pd.read_csv("Tables/metadata.csv")
+metadata = pd.read_csv("../Tables/clean_metadata.csv")
 
 metadata['serotype'] = metadata['serotype'].str.strip()
 metadata['Topotype'] = metadata['Topotype'].str.strip()

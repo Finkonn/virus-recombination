@@ -4,9 +4,7 @@ def process_nexus_file(input_file, output_file):
     reference_colors = {}  
     sequences = [] 
 
-
     color_pattern = re.compile(r"\[&!color=(?P<color>#\w+)\]")
-
 
     with open(input_file, 'r') as file:
         for line in file:
@@ -41,6 +39,6 @@ def process_nexus_file(input_file, output_file):
                 cleaned_seq = re.sub(r"\[&!color=#\w+\]", "", seq)
                 file.write(f"{cleaned_seq}_{topotype}\n")
 
-input_nexus_file = "../Trees/VP1_topotype_colored.nexus"  
-output_file = "../Maps/genotyped_topotypes.txt" 
+input_nexus_file = "../Trees/Colored/VP1_topotype_colored.nexus"  
+output_file = "genotyped_topotypes.txt" 
 process_nexus_file(input_nexus_file, output_file)

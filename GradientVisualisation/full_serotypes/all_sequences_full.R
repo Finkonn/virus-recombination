@@ -1,15 +1,12 @@
 library('ggtree')
-library('ggplot2')
-library('phytools')
 library('dplyr')
 library('ggnewscale')
-library('cowplot')
+library('phytools')
 library('ape')
-library('RColorBrewer')
-library('randomcoloR')
+library('ggplot2')
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-source("../modified_gradients.R")
+source("modified_gradients.R")
 
 trees = list.files(path = "all_sequences_treefiles/", full.names = TRUE, pattern = ".treefile$")
 meta_path = "metadata_all_sequences_pools.csv"
@@ -19,8 +16,6 @@ unique_serotypes <- unique(info$serotype)
 unique_topotypes <- unique(info$Topotype) 
 unique_lineages <- unique(info$lineage)
 unique_pools <- unique(info$pool)
-n_lineages <- length(unique_lineages)
-n_topotypes <- length(unique_topotypes)
 
 serotype_colors <- setNames(c("#b0b006","#d84a1c" ,"#43998c", "#857fa9","#9ec744", "#d3973f", "#6194b5"), 
                             unique_serotypes)
@@ -40,14 +35,15 @@ topotype_colors <- c(
   "#00FFFF", "#E6F5C9", "#FF0080", "#32CD32", "#fa31f1",
   "#f14e2f"
 )
+unique_pools
 
-pool_colors <- c("#ffffff", "#808080","#FFD700","#FF1493", "#1F78B4", "#CC0000", "#006400", "#FF9900", "#4B0082")
+pool_colors <- c("#ffffff", "#fed580ff","#ff8080ff","#e280ffff", "#cdcdcdff", "#7598beff", "#80b8ffff", "#fefe80ff",
+                 "#bf5b80ff", "#a5f280ff", "#ca7842ff")
 
 names(lineage_colors) <- unique_lineages
 names(topotype_colors) <- unique_topotypes
 names(pool_colors) <- unique_pools
-names(pool_colors)
-pool_colors
+
 plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors, topotype_colors, lineage_colors, pool_colors) {
   tree = read.tree(tree_file)
   tree_rooted = midpoint.root(tree)
@@ -113,9 +109,6 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
     geom_point2(aes(label=label, 
                     subset = !is.na(as.numeric(label)) & as.numeric(label) < 95), size=0.1, color="red",alpha=0.5) +
     geom_tiplab(size = 0.4, aes(color=label)) +
-    #geom_text2(aes(label = label, 
-    #               subset = !is.na(as.numeric(label)) & as.numeric(label) >= 95),
-    #           size = 0.5, color = "black") +
     scale_color_manual(values=info$color, guide='none') + 
     theme(legend.position = "none") 
   
@@ -177,20 +170,11 @@ for (file in trees) {
   legend <- cowplot::get_legend(g)
   g_nolegend <- g + theme(legend.position = "none")
   
-  png_file <- paste0("all_sequences_plots/test/", basename(file), "_combined.png")
-  svg_file <- paste0("all_sequences_plots/test/", basename(file), "_combined.svg")
-  pdf_file <- paste0("all_sequences_plots/test/", basename(file), "_combined.pdf")
+  svg_file <- paste0("Plots/", basename(file), ".svg")
   
-  ggsave(pdf_file, g_nolegend, height = 16, width = 7)
-  ggsave(png_file, g_nolegend, height = 16, width = 7, dpi = 600)
   ggsave(svg_file, g_nolegend, height = 16, width = 7, dpi = 600)
   
-
 }
 
-ggsave(paste0("all_sequences_plots/test/", basename(file), "_legend.png"), 
-       plot = legend, height = 16, width = 7, dpi = 600)
-ggsave(paste0("all_sequences_plots/test/", basename(file), "_legend.svg"), 
-       plot = legend, height = 16, width = 7, dpi = 600)
-ggsave(paste0("all_sequences_plots/test/", basename(file), "_legend.pdf"), 
+ggsave(paste0("Plots/", basename(file), "_legend.svg"), 
        plot = legend, height = 16, width = 7, dpi = 600)
