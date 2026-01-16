@@ -1,0 +1,1422 @@
+IQ-TREE version 3.0.1 for Windows 64-bit built May  5 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-IAVMJI2 (AVX2, FMA3, 7 GB RAM)
+Command: bin/iqtree3.exe -s alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.fasta -bb 1000 -m GTR+F+I+G -pre alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang
+Seed:    507811 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Jan 15 14:51:42 2026
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.fasta ... Fasta format detected
+Reading fasta file: done in 0.0177506 secs using 88.03% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.008346 secs
+WARNING: 12 sites contain only gaps or ambiguous characters.
+Alignment has 612 sequences with 686 columns, 421 distinct patterns
+346 parsimony-informative, 50 singleton sites, 290 constant sites
+                                                    Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.004426 secs
+   1  AH012985/KOR/Unknown/2000/O/ME-SA/PanAsia             9.18%    passed     92.62%
+   2  AH012984/KOR/Unknown/2000/O/ME-SA/PanAsia             9.18%    passed     77.63%
+   3  MH167966/UGA/cow/2015/O/EA-2/Unknown                  9.18%    passed     55.24%
+   4  MH167965/UGA/cow/2016/O/EA-2/Unknown                  9.18%    passed     68.66%
+   5  MH167964/UGA/cow/2015/O/EA-2/Unknown                  9.18%    passed     34.51%
+   6  MH167963/UGA/cow/2015/O/EA-2/Unknown                  9.18%    passed     66.60%
+   7  MH167962/UGA/cow/2015/O/EA-2/Unknown                  9.18%    passed     32.24%
+   8  MT018551/ISR/cattle/2018/O/ME-SA/PanAsia-2            9.18%    passed     82.63%
+   9  MT018550/ISR/cattle/2018/O/ME-SA/PanAsia-2            9.18%    passed     86.16%
+  10  MT018549/ISR/cattle/2018/O/ME-SA/PanAsia-2            9.18%    passed     95.58%
+  11  MT018548/ISR/pig/2018/O/ME-SA/PanAsia-2               9.18%    passed     97.18%
+  12  JF749852/Unknown/Unknown/2004/O/ME-SA/PanAsia-2       9.18%    passed     89.40%
+  13  JF749851/IRN/Unknown/2001/O/ME-SA/PanAsia             9.18%    passed     90.77%
+  14  GU384683/PAK/buffalo/2008/O/ME-SA/PanAsia-2           9.18%    passed     81.62%
+  15  GU384682/PAK/cattle/2008/O/ME-SA/PanAsia-2            9.18%    passed     81.62%
+  16  KC440883/EGY/Unknown/2011/O/ME-SA/PanAsia-2           9.18%    passed     90.97%
+  17  HM229661/HKG/pig/2010/O/SEA/Unknown                   8.75%    passed     89.31%
+  18  JQ900581/CHN/pig/2010/O/SEA/Unknown                   8.75%    passed     84.31%
+  19  FJ175666/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     96.42%
+  20  FJ175665/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     96.80%
+  21  FJ175664/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     95.25%
+  22  FJ175663/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     96.42%
+  23  FJ175661/ISR/goat/2007/O/ME-SA/PanAsia-2              9.18%    passed     91.24%
+  24  FJ461345/UGA/Unknown/2002/O/EA-2/Unknown              9.18%    passed     88.50%
+  25  FJ461344/UGA/cow/2002/O/EA-2/Unknown                  9.18%    passed     62.33%
+  26  OQ211407/PSE/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     87.40%
+  27  OQ211406/PSE/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     85.94%
+  28  OQ211405/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     95.16%
+  29  OQ211404/PSE/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     95.16%
+  30  OQ211403/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     93.47%
+  31  OQ211402/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     94.21%
+  32  OQ211401/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     94.21%
+  33  OQ211400/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     94.21%
+  34  OQ211399/ISR/gazelle/2007/O/ME-SA/PanAsia-2           9.18%    passed     96.88%
+  35  OQ211398/ISR/gazelle/2007/O/ME-SA/PanAsia-2           9.18%    passed     97.92%
+  36  OQ211397/ISR/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     89.81%
+  37  OQ211396/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     94.21%
+  38  OQ211394/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     93.99%
+  39  OQ211393/ISR/goat/2007/O/ME-SA/PanAsia-2              9.18%    passed     93.99%
+  40  OQ211392/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     95.25%
+  41  OQ211391/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     95.25%
+  42  OQ211390/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     95.25%
+  43  OQ211389/ISR/goat/2006/O/ME-SA/PanAsia-2              9.18%    passed     91.24%
+  44  OQ211388/PSE/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     87.40%
+  45  OQ211387/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     83.56%
+  46  OQ211386/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     96.42%
+  47  OQ211385/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     93.99%
+  48  OQ211384/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     89.81%
+  49  OQ211383/ISR/gazelle/2007/O/ME-SA/PanAsia-2           9.18%    passed     97.92%
+  50  OQ211382/ISR/gazelle/2007/O/ME-SA/PanAsia-2           9.18%    passed     97.92%
+  51  OQ211381/ISR/gazelle/2007/O/ME-SA/PanAsia-2           9.18%    passed     97.92%
+  52  OQ211380/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     97.07%
+  53  OQ211378/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     96.00%
+  54  OQ211377/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     82.82%
+  55  OQ211376/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     98.50%
+  56  OQ211375/PSE/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     87.40%
+  57  OQ211374/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     96.80%
+  58  OQ211373/ISR/goat/2007/O/ME-SA/PanAsia-2              9.18%    passed     85.94%
+  59  OQ211372/ISR/goat/2007/O/ME-SA/PanAsia-2              9.18%    passed     85.94%
+  60  OQ211371/PSE/goat/2007/O/ME-SA/PanAsia-2              9.18%    passed     73.97%
+  61  OQ211370/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     95.25%
+  62  OQ211369/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     91.24%
+  63  OQ211367/PSE/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     87.40%
+  64  OQ211366/PSE/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     87.40%
+  65  OQ211365/PSE/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     95.16%
+  66  OQ211364/PSE/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     95.16%
+  67  OQ211363/ISR/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     97.07%
+  68  OQ211362/PSE/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     89.81%
+  69  OQ211361/ISR/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     82.82%
+  70  OQ211360/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     83.56%
+  71  OQ211359/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     83.56%
+  72  OQ211358/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     83.56%
+  73  OQ211357/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     85.43%
+  74  OQ211356/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     83.56%
+  75  OQ211355/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     94.21%
+  76  OQ211354/PSE/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     97.07%
+  77  OQ211353/ISR/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     97.26%
+  78  OQ211352/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     87.71%
+  79  OQ211351/ISR/goat/2007/O/ME-SA/PanAsia-2              9.18%    passed     87.71%
+  80  OQ211350/ISR/cattle/2007/O/ME-SA/PanAsia-2            9.18%    passed     91.24%
+  81  OQ211349/PSE/sheep/2007/O/ME-SA/PanAsia-2             9.18%    passed     89.81%
+  82  OQ457195/NER/cattle/2020/O/EA-3/Unknown              10.06%    passed     42.62%
+  83  OQ457194/NER/cattle/2020/O/EA-3/Unknown              10.06%    passed     48.26%
+  84  OQ457193/NER/cattle/2020/O/EA-3/Unknown              10.06%    passed     38.70%
+  85  OQ457192/NER/cattle/2020/O/EA-3/Unknown              10.06%    passed     34.40%
+  86  OQ457191/NER/cattle/2020/O/EA-3/Unknown              10.06%    passed     38.70%
+  87  OQ457189/NER/cattle/2020/O/EA-3/Unknown              10.06%    passed     38.70%
+  88  OQ457188/NER/cattle/2020/O/EA-3/Unknown              10.06%    passed     38.70%
+  89  OQ457186/NER/cattle/2020/O/EA-3/Unknown              10.06%    passed     65.15%
+  90  OQ457185/NER/cattle/2020/O/EA-3/Unknown              10.06%    passed     65.15%
+  91  OQ457184/NER/cattle/2020/O/EA-3/Unknown              10.06%    passed     65.15%
+  92  OP957418/BGD/cattle/2021/O/ME-SA/PanAsia-2            9.18%    passed     96.42%
+  93  ON868623/VNM/pig/2017/O/CATHAY/Unknown                9.18%    passed     31.97%
+  94  ON868622/VNM/pig/2017/O/CATHAY/Unknown                9.18%    passed     43.82%
+  95  ON868620/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     97.38%
+  96  ON868619/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     97.38%
+  97  ON868618/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     97.38%
+  98  ON868617/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     97.38%
+  99  ON868616/VNM/pig/2018/O/SEA/Unknown                   9.18%    passed     95.72%
+ 100  ON868615/VNM/pig/2018/O/SEA/Unknown                   9.18%    passed     95.70%
+ 101  ON868614/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     92.75%
+ 102  ON868613/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     95.72%
+ 103  ON868612/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     95.96%
+ 104  ON868611/VNM/pig/2018/O/SEA/Unknown                   9.18%    passed     93.65%
+ 105  ON868610/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     95.72%
+ 106  ON868609/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     95.72%
+ 107  ON868608/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     95.96%
+ 108  ON868607/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     95.72%
+ 109  ON868606/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     95.70%
+ 110  ON868605/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     97.17%
+ 111  ON868604/VNM/pig/2018/O/SEA/Unknown                   9.18%    passed     93.61%
+ 112  ON868603/VNM/pig/2018/O/SEA/Unknown                   9.18%    passed     95.70%
+ 113  ON868602/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     97.59%
+ 114  ON868601/VNM/pig/2018/O/SEA/Unknown                   9.18%    passed     93.61%
+ 115  ON868600/VNM/pig/2018/O/SEA/Unknown                   9.18%    passed     95.96%
+ 116  ON868599/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     93.87%
+ 117  ON868598/VNM/pig/2018/O/SEA/Unknown                   9.18%    passed     95.96%
+ 118  ON868597/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     93.87%
+ 119  ON868596/VNM/pig/2018/O/SEA/Unknown                   9.18%    passed     96.14%
+ 120  ON868595/VNM/pig/2018/O/SEA/Unknown                   9.18%    passed     95.70%
+ 121  ON868594/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     95.96%
+ 122  ON868593/VNM/pig/2018/O/SEA/Unknown                   9.18%    passed     95.96%
+ 123  ON868592/VNM/pig/2018/O/SEA/Unknown                   9.18%    passed     95.96%
+ 124  ON868591/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     93.61%
+ 125  ON868590/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     93.87%
+ 126  ON868589/VNM/pig/2019/O/SEA/Unknown                   9.18%    passed     95.96%
+ 127  ON868579/VNM/cow/2017/O/ME-SA/Unknown                 9.18%    passed     97.87%
+ 128  ON868557/VNM/water-buffalo/2018/O/ME-SA/Unknown       9.18%    passed     94.60%
+ 129  ON868552/VNM/pig/2019/O/ME-SA/Unknown                 9.18%    passed     95.75%
+ 130  ON868549/VNM/cow/2018/O/ME-SA/Unknown                 9.18%    passed     89.51%
+ 131  ON868547/VNM/cow/2018/O/ME-SA/Unknown                 9.18%    passed     92.00%
+ 132  ON868542/VNM/pig/2018/O/ME-SA/Unknown                 9.18%    passed     83.05%
+ 133  ON868528/VNM/pig/2018/O/ME-SA/Unknown                 9.18%    passed     89.31%
+ 134  ON868521/VNM/pig/2018/O/ME-SA/Unknown                 9.18%    passed     94.77%
+ 135  OP751924/IDN/cattle/2022/O/ME-SA/Unknown              9.18%    passed     99.92%
+ 136  ON784047/UGA/cow/2015/O/EA-2/Unknown                  7.87%    passed     49.56%
+ 137  ON784046/UGA/cow/2015/O/EA-2/Unknown                  5.69%    passed     54.29%
+ 138  ON784045/UGA/cow/2015/O/EA-2/Unknown                  8.31%    passed     65.27%
+ 139  ON736860/UGA/cow/2015/O/EA-2/Unknown                  7.00%    passed     57.16%
+ 140  LC729872/THA/pig/2016/O/ME-SA/Unknown                 9.18%    passed     92.01%
+ 141  LC729871/THA/cow/2016/O/ME-SA/Unknown                 9.18%    passed     98.82%
+ 142  LC729870/THA/cow/2016/O/ME-SA/Unknown                 9.18%    passed     94.94%
+ 143  OP585403/IDN/cattle/2022/O/ME-SA/Unknown              9.18%    passed     99.45%
+ 144  OM160625/DZA/sheep/2015/O/ME-SA/Ind-2001d             9.18%    passed     99.67%
+ 145  OM160624/DZA/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     97.82%
+ 146  OM160623/DZA/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     99.06%
+ 147  OM160622/DZA/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     99.06%
+ 148  OM160621/DZA/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     99.06%
+ 149  OM160620/TUN/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     99.56%
+ 150  OM160619/TUN/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     98.27%
+ 151  OM160618/TUN/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     98.27%
+ 152  OM160617/TUN/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     99.08%
+ 153  OM160616/TUN/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     98.10%
+ 154  OM160615/TUN/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     99.56%
+ 155  OM160614/TUN/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     98.10%
+ 156  OM160613/TUN/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     98.10%
+ 157  OM160612/TUN/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     99.06%
+ 158  OM160611/TUN/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     99.08%
+ 159  OM160610/TUN/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     99.21%
+ 160  OM456150/PAK/buffalo/2010/O/ME-SA/PanAsia-2           9.18%    passed     82.47%
+ 161  OM456149/PAK/cattle/2012/O/ME-SA/PanAsia-2            9.18%    passed     93.45%
+ 162  OM456148/PAK/buffalo/2012/O/ME-SA/PanAsia-2           9.18%    passed     91.84%
+ 163  OM456147/PAK/cattle/2011/O/ME-SA/PanAsia-2            9.18%    passed     94.11%
+ 164  OM456146/PAK/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     79.74%
+ 165  OM456145/PAK/buffalo/2010/O/ME-SA/PanAsia-2           9.18%    passed     79.74%
+ 166  OM456144/PAK/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     90.92%
+ 167  OM456143/PAK/buffalo/2012/O/ME-SA/PanAsia-2           9.18%    passed     94.13%
+ 168  OM456142/PAK/buffalo/2011/O/ME-SA/PanAsia-2           9.18%    passed     86.91%
+ 169  OM456141/PAK/buffalo/2011/O/ME-SA/PanAsia-2           9.18%    passed     86.91%
+ 170  OM456140/PAK/buffalo/2011/O/ME-SA/PanAsia-2           9.18%    passed     86.91%
+ 171  OM456139/PAK/buffalo/2011/O/ME-SA/PanAsia-2           9.18%    passed     96.49%
+ 172  OM456138/PAK/buffalo/2009/O/ME-SA/PanAsia-2           9.18%    passed     86.91%
+ 173  OM456137/PAK/cattle/2012/O/ME-SA/PanAsia-2            9.18%    passed     75.91%
+ 174  OM456136/PAK/buffalo/2012/O/ME-SA/PanAsia-2           9.18%    passed     86.85%
+ 175  OM456135/PAK/cattle/2012/O/ME-SA/PanAsia-2            9.18%    passed     94.47%
+ 176  OM456134/PAK/cattle/2012/O/ME-SA/PanAsia-2            9.18%    passed     94.47%
+ 177  OM456133/PAK/cattle/2012/O/ME-SA/PanAsia-2            9.18%    passed     93.45%
+ 178  OM022649/NER/cattle/2017/O/EA-3/Unknown              10.06%    passed     52.36%
+ 179  OM022648/NER/cattle/2017/O/EA-3/Unknown              10.06%    passed     52.36%
+ 180  OM022646/NER/cattle/2017/O/EA-3/Unknown              10.06%    passed     75.03%
+ 181  OM022644/NER/cattle/2017/O/EA-3/Unknown              10.06%    passed     75.03%
+ 182  OM022643/NER/cattle/2017/O/EA-3/Unknown              10.06%    passed     77.57%
+ 183  OM022642/NER/cattle/2018/O/EA-3/Unknown              10.06%    passed     73.38%
+ 184  OK019689/IRN/cow/2016/O/ME-SA/PanAsia-2               9.18%    passed     91.46%
+ 185  KY444649/THA/pig/2016/O/SEA/Unknown                   9.18%    passed     98.63%
+ 186  KY444648/THA/pig/2016/O/SEA/Unknown                   9.18%    passed     98.63%
+ 187  KY444647/THA/pig/2016/O/SEA/Unknown                   9.18%    passed     98.63%
+ 188  KY444646/THA/pig/2016/O/SEA/Unknown                   9.18%    passed     97.62%
+ 189  KY444645/THA/pig/2016/O/SEA/Unknown                   9.18%    passed     97.62%
+ 190  KY444644/THA/pig/2013/O/SEA/Mya-98                    9.18%    passed     89.79%
+ 191  MT944983/IRN/goat/2016/O/ME-SA/PanAsia-2              9.18%    passed     80.16%
+ 192  MT944982/IRN/goat/2016/O/ME-SA/PanAsia-2              9.18%    passed     80.16%
+ 193  MT944981/IRN/dog/2016/O/ME-SA/PanAsia-2               9.18%    passed     84.13%
+ 194  MT602084/KEN/cattle/2018/O/EA-2/Unknown               9.18%    passed     50.51%
+ 195  MT602081/ETH/cattle/2015/O/EA-3/Unknown               9.18%    passed     41.17%
+ 196  KY322673/MYS/cattle/2014/O/SEA/Mya-98                 9.18%    passed     33.93%
+ 197  KY322672/MYS/cattle/2014/O/SEA/Unknown                9.18%    passed     99.35%
+ 198  KY322671/MYS/cattle/2014/O/SEA/Mya-98                 9.18%    passed     76.02%
+ 199  KY322670/LAO/cattle/2013/O/SEA/Mya-98                 9.18%    passed     70.96%
+ 200  MN983158/IND/cattle/2009/O/ME-SA/Unknown              9.18%    passed     30.20%
+ 201  MN983157/IND/cattle/2009/O/ME-SA/Ind-2001c            9.18%    passed     95.30%
+ 202  MN983156/IND/cattle/2008/O/ME-SA/Unknown              9.18%    passed     99.07%
+ 203  MN983155/IND/cattle/2008/O/ME-SA/Ind-2001b            9.18%    passed     97.20%
+ 204  MN983154/IND/cattle/2005/O/ME-SA/Ind-2001b            9.18%    passed     96.90%
+ 205  MN983153/IND/cattle/2001/O/ME-SA/Ind-2001b            9.18%    passed     99.56%
+ 206  MN983152/IND/cattle/1997/O/ME-SA/Ind-2001a            9.18%    passed     98.15%
+ 207  MN953620/PAK/cattle/2019/O/ME-SA/Unknown              9.18%    passed     97.73%
+ 208  MN953619/PAK/cattle/2019/O/ME-SA/Unknown              9.18%    passed     97.73%
+ 209  MN389541/CHN/pig/2010/O/SEA/Unknown                   8.75%    passed     90.25%
+ 210  MN062585/TUR/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     82.02%
+ 211  MN062583/PAK/cattle/2009/O/ME-SA/PanAsia-2            9.18%    passed     91.83%
+ 212  MN062582/PAK/buffalo/2009/O/ME-SA/PanAsia-2           9.18%    passed     97.92%
+ 213  MN062580/IRN/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     90.10%
+ 214  MN062579/IRN/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     81.24%
+ 215  MN250318/VNM/pig/2019/O/CATHAY/Unknown/O              9.18%    passed     49.05%
+ 216  MN250317/VNM/pig/2018/O/CATHAY/Unknown/O              9.18%    passed     48.18%
+ 217  MN250316/VNM/pig/2018/O/CATHAY/Unknown/O              9.18%    passed     29.64%
+ 218  MN250315/VNM/pig/2018/O/CATHAY/Unknown/O              9.18%    passed     29.67%
+ 219  MN250314/VNM/pig/2017/O/CATHAY/Unknown/O              9.18%    passed     31.97%
+ 220  MN116694/KEN/cow/2016/O/EA-2/Unknown                  9.62%    passed     97.79%
+ 221  MN116693/KEN/cow/2014/O/EA-2/Unknown                  9.18%    passed     32.53%
+ 222  MN095371/IND/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     94.21%
+ 223  MN095370/IND/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     94.21%
+ 224  MN095369/IND/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     94.21%
+ 225  MN095368/IND/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     94.21%
+ 226  MN095367/IND/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     94.21%
+ 227  MN095366/IND/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     94.21%
+ 228  MN095365/IND/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     94.21%
+ 229  MN095364/IND/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     94.21%
+ 230  MN095363/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     92.80%
+ 231  MN095362/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     92.80%
+ 232  MN095361/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     92.80%
+ 233  MN095360/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     92.80%
+ 234  MN095359/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     92.80%
+ 235  MN095358/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     92.80%
+ 236  MN095357/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     92.80%
+ 237  MN095356/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     92.80%
+ 238  MN095355/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     97.99%
+ 239  MN095354/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     92.25%
+ 240  NC_039210/GBR/Unknown/1965/O/EURO-SA/Unknown          9.18%    passed     91.21%
+ 241  LC456873/GHA/cow/2018/O/EA-3/Unknown                 10.06%    passed     71.91%
+ 242  LC456871/GHA/cow/2018/O/EA-3/Unknown                 10.06%    passed     71.91%
+ 243  LC456870/GHA/cow/2018/O/EA-3/Unknown                 10.06%    passed     71.91%
+ 244  MK071699/BGD/cattle/2013/O/ME-SA/Unknown              9.18%    passed     82.64%
+ 245  LC438823/MMR/cow/2016/O/ME-SA/Unknown                 9.18%    passed     99.36%
+ 246  LC438822/MMR/cow/2016/O/ME-SA/Unknown                 9.18%    passed     95.25%
+ 247  MH845413/VNM/pig/2014/O/SEA/Unknown                   9.18%    passed     93.01%
+ 248  MF947143/VNM/cattle/2013/O/ME-SA/Unknown              9.18%    passed     90.28%
+ 249  MF947137/VNM/buffalo/2012/O/ME-SA/Unknown             9.18%    passed     96.88%
+ 250  MF947132/VNM/buffalo/2015/O/ME-SA/Unknown             9.18%    passed     88.47%
+ 251  MF947131/VNM/pig/2013/O/ME-SA/Unknown                 9.18%    passed     92.78%
+ 252  MF947129/VNM/pig/2014/O/ME-SA/Unknown                 9.18%    passed     96.77%
+ 253  MF947128/VNM/cattle/2010/O/ME-SA/Unknown              9.18%    passed     96.49%
+ 254  MF947127/VNM/buffalo/2012/O/ME-SA/Unknown             9.18%    passed     96.00%
+ 255  MF947126/VNM/pig/2011/O/ME-SA/Unknown                 9.18%    passed     98.27%
+ 256  MF947124/VNM/cattle/2012/O/ME-SA/Unknown              9.18%    passed     96.45%
+ 257  MF947123/VNM/buffalo/2011/O/ME-SA/Unknown             9.18%    passed     96.49%
+ 258  MH891503/VNM/cow/2017/O/ME-SA/Unknown                 9.18%    passed     98.26%
+ 259  MH784405/PAK/cattle/2017/O/ME-SA/PanAsia-2            9.18%    passed     88.54%
+ 260  MH784404/PAK/water-buffalo/2017/O/ME-SA/PanAsia-2     9.18%    passed     81.06%
+ 261  MH784403/PAK/cattle/2016/O/ME-SA/PanAsia-2            9.18%    passed     89.93%
+ 262  MG983741/VNM/cattle/2016/O/ME-SA/Unknown              9.18%    passed     92.01%
+ 263  MG983740/VNM/cattle/2015/O/ME-SA/Ind-2001d            9.18%    passed     99.38%
+ 264  MG983739/ARE/cattle/2016/O/ME-SA/Unknown              9.18%    passed     99.35%
+ 265  MG983738/ARE/cattle/2016/O/ME-SA/Unknown              9.18%    passed     99.35%
+ 266  MG983737/ARE/gazelle/2014/O/ME-SA/Ind-2001d           9.18%    passed     94.21%
+ 267  MG983736/ARE/gazelle/2014/O/ME-SA/Ind-2001d           9.18%    passed     94.21%
+ 268  MG983735/TUN/Unknown/2014/O/ME-SA/Ind-2001d           9.18%    passed     99.21%
+ 269  MG983734/LKA/water-buffalo/2014/O/ME-SA/Ind-2001d     9.18%    passed     96.38%
+ 270  MG983733/LKA/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     97.31%
+ 271  MG983732/LKA/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     95.16%
+ 272  MG983731/LKA/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     96.80%
+ 273  MG983730/KOR/cattle/2017/O/ME-SA/Unknown              9.18%    passed     99.61%
+ 274  MG983729/SAU/cattle/2016/O/ME-SA/Unknown              9.18%    passed     99.81%
+ 275  MG983728/SAU/cattle/2016/O/ME-SA/Unknown              9.18%    passed     99.75%
+ 276  MG983727/SAU/cattle/2015/O/ME-SA/Unknown              9.18%    passed     99.39%
+ 277  MG983726/SAU/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     99.36%
+ 278  MG983725/SAU/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     98.50%
+ 279  MG983724/SAU/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.64%
+ 280  MG983723/SAU/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.64%
+ 281  MG983722/SAU/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.36%
+ 282  MG983721/SAU/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.36%
+ 283  MG983720/RUS/cattle/2016/O/ME-SA/Unknown              9.18%    passed     97.92%
+ 284  MG983719/NPL/cattle/2015/O/ME-SA/Unknown              9.18%    passed     98.34%
+ 285  MG983718/NPL/cattle/2015/O/ME-SA/Unknown              9.18%    passed     99.27%
+ 286  MG983717/NPL/cattle/2015/O/ME-SA/Ind-2001d            9.18%    passed     99.09%
+ 287  MG983716/NPL/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     94.94%
+ 288  MG983715/NPL/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     95.16%
+ 289  MG983714/NPL/pig/2013/O/ME-SA/Ind-2001d               9.18%    passed     98.47%
+ 290  MG983713/NPL/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     97.07%
+ 291  MG983712/NPL/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     97.07%
+ 292  MG983711/NPL/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     97.28%
+ 293  MG983710/NPL/water-buffalo/2012/O/ME-SA/Unknown       9.18%    passed     93.14%
+ 294  MG983709/NPL/cattle/2012/O/ME-SA/Ind-2001d            9.18%    passed     99.74%
+ 295  MG983708/NPL/cattle/2012/O/ME-SA/Ind-2001d            9.18%    passed     99.81%
+ 296  MG983707/NPL/water-buffalo/2012/O/ME-SA/Unknown       9.18%    passed     98.57%
+ 297  MG983706/NPL/cattle/2010/O/ME-SA/Ind-2001d            9.18%    passed     89.64%
+ 298  MG983705/NPL/cattle/2010/O/ME-SA/Ind-2001d            9.18%    passed     87.80%
+ 299  MG983704/NPL/cattle/2008/O/ME-SA/Unknown              9.18%    passed     97.91%
+ 300  MG983703/MMR/cattle/2016/O/ME-SA/Unknown              9.18%    passed     95.98%
+ 301  MG983702/MUS/cattle/2016/O/ME-SA/Unknown              9.18%    passed     98.39%
+ 302  MG983701/MUS/cattle/2016/O/ME-SA/Unknown              9.18%    passed     99.35%
+ 303  MG983700/MUS/cattle/2016/O/ME-SA/Unknown              9.18%    passed     99.35%
+ 304  MG983699/MUS/cattle/2016/O/ME-SA/Unknown              9.18%    passed     99.35%
+ 305  MG983698/MUS/cattle/2016/O/ME-SA/Unknown              9.18%    passed     99.35%
+ 306  MG983697/LBY/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.56%
+ 307  MG983696/LBY/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.16%
+ 308  MG983695/LBY/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     98.32%
+ 309  MG983694/LBY/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.16%
+ 310  MG983693/LAO/Unknown/2015/O/ME-SA/Ind-2001d           9.18%    passed     98.07%
+ 311  MG983692/IRN/cattle/2009/O/ME-SA/Ind-2001d            9.18%    passed     93.99%
+ 312  MG983691/BTN/cattle/2016/O/ME-SA/Unknown              9.18%    passed     99.75%
+ 313  MG983690/BTN/cattle/2016/O/ME-SA/Ind-2001d            9.18%    passed     91.08%
+ 314  MG983689/BTN/cattle/2012/O/ME-SA/Unknown              9.18%    passed     96.10%
+ 315  MG983688/BTN/cattle/2009/O/ME-SA/Ind-2001d            9.18%    passed     83.97%
+ 316  MG983687/BTN/cattle/2009/O/ME-SA/Ind-2001d            9.18%    passed     93.47%
+ 317  MG983686/BHR/cattle/2015/O/ME-SA/Ind-2001d            9.18%    passed     93.07%
+ 318  MG983685/BHR/cattle/2015/O/ME-SA/Ind-2001d            9.18%    passed     93.10%
+ 319  MG983684/BGD/cattle/2009/O/ME-SA/Ind-2001d            9.18%    passed     87.80%
+ 320  MG983683/DZA/Unknown/2014/O/ME-SA/Ind-2001d           9.18%    passed     99.06%
+ 321  MF461724/CHN/cattle/2017/O/ME-SA/Unknown              9.18%    passed     97.92%
+ 322  KY234502/CHN/pig/2015/O/ME-SA/Unknown                 9.18%    passed     79.61%
+ 323  KY234501/CHN/cow/2011/O/ME-SA/Unknown                 9.18%    passed     96.49%
+ 324  MH053318/UGA/Unknown/2002/O/EA-2/Unknown              9.18%    passed     91.43%
+ 325  MH053317/UGA/Unknown/1998/O/EA-4/Unknown              8.75%    passed     99.98%
+ 326  MH053316/UGA/cattle/1996/O/EA-1/Unknown               9.18%    passed     99.91%
+ 327  MH053315/SDN/Unknown/1976/O/WA/Unknown               10.50%    passed     80.78%
+ 328  MH053314/ETH/cattle/2007/O/EA-3/Unknown               9.18%    passed     28.45%
+ 329  MH053313/ETH/cattle/2006/O/EA-3/Unknown               9.18%    passed     68.86%
+ 330  MH053312/ETH/cattle/2005/O/EA-4/Unknown               8.75%    passed     95.06%
+ 331  MH053311/ETH/cattle/2004/O/EA-3/Unknown               9.18%    passed     36.58%
+ 332  LC320038/MNG/cow/2015/O/ME-SA/Unknown                 9.18%    passed     98.15%
+ 333  KX534089/KOR/pig/2016/O/SEA/Unknown                   9.18%    passed     87.16%
+ 334  LC149720/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 335  LC149719/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     88.80%
+ 336  LC149718/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 337  LC149717/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     95.25%
+ 338  LC149716/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 339  LC149713/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 340  LC149712/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 341  LC149711/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 342  LC149710/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.66%
+ 343  LC149709/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     94.51%
+ 344  LC149708/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 345  LC149707/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     87.55%
+ 346  LC149706/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 347  LC149705/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     88.80%
+ 348  LC149704/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     90.84%
+ 349  LC149702/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     94.51%
+ 350  LC149700/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     90.84%
+ 351  LC149699/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 352  LC149698/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 353  LC149697/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 354  LC149696/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 355  LC149695/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     89.27%
+ 356  LC149694/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 357  LC149693/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 358  LC149692/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.66%
+ 359  LC149690/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 360  LC149689/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     94.51%
+ 361  LC149688/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.66%
+ 362  LC149687/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 363  LC149686/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 364  LC149685/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.66%
+ 365  LC149684/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 366  LC149683/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 367  LC149682/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 368  LC149681/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 369  LC149680/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 370  LC149679/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     89.27%
+ 371  LC149677/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 372  LC149676/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     88.80%
+ 373  LC149675/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     94.51%
+ 374  LC149674/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     88.80%
+ 375  LC149673/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 376  LC149672/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 377  LC149671/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 378  LC149670/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 379  LC149669/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 380  LC149668/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 381  LC149667/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 382  LC149666/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 383  LC149665/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 384  LC149664/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 385  LC149663/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     94.51%
+ 386  LC149661/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.66%
+ 387  LC149660/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 388  LC149659/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.69%
+ 389  LC149658/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 390  LC149657/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     87.77%
+ 391  LC149656/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     93.40%
+ 392  LC149655/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     89.53%
+ 393  LC149654/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 394  LC149653/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 395  LC149652/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 396  LC149651/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     88.80%
+ 397  LC149650/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 398  LC149649/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 399  LC149648/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 400  LC149647/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     89.46%
+ 401  LC149646/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 402  LC149645/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 403  LC149644/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 404  LC149643/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 405  LC149642/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 406  LC149641/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 407  LC149640/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 408  LC149639/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     89.63%
+ 409  LC149638/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 410  LC149637/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     88.80%
+ 411  LC149636/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 412  LC149634/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 413  LC149633/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     89.46%
+ 414  LC149632/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 415  LC149631/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 416  LC149629/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     88.80%
+ 417  LC149628/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     88.80%
+ 418  LC149627/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 419  LC149626/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     88.80%
+ 420  LC149625/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     88.80%
+ 421  LC149624/JPN/pig/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 422  LC149623/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 423  LC149622/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     88.80%
+ 424  LC149621/JPN/wild-water-buffalo/2010/O/SEA/Unknown    9.18%    passed     92.04%
+ 425  LC149620/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 426  LC149619/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     87.77%
+ 427  LC149618/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 428  LC149617/JPN/cow/2010/O/SEA/Unknown                   9.18%    passed     92.04%
+ 429  KY446903/PAK/water-buffalo/2005/O/ME-SA/Unknown       9.18%    passed     90.01%
+ 430  KY657269/VNM/pig/2015/O/ME-SA/Ind-2001d               9.18%    passed     99.14%
+ 431  KY086466/KOR/pig/2016/O/SEA/Unknown                   9.18%    passed     90.78%
+ 432  KY086465/KOR/pig/2016/O/SEA/Unknown                   9.18%    passed     87.75%
+ 433  KX712091/BGD/pig/2015/O/ME-SA/Unknown                 9.18%    passed     99.81%
+ 434  KX162590/KOR/pig/2014/O/SEA/Unknown                   9.18%    passed     89.98%
+ 435  KU726614/GRC/sheep/1994/O/ME-SA/Unknown               9.18%    passed     87.06%
+ 436  KU821591/ZMB/cow/2010/O/EA-2/Unknown                  9.18%    passed     61.34%
+ 437  KU291242/MAR/cow/2015/O/ME-SA/Ind-2001d               9.18%    passed     99.09%
+ 438  KP940473/EGY/cattle/2014/O/ME-SA/Unknown              9.18%    passed     75.20%
+ 439  KJ825809/IND/buffalo/2013/O/ME-SA/Ind-2001d           9.18%    passed     92.01%
+ 440  KJ825808/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.40%
+ 441  KJ825807/IND/cattle/2014/O/ME-SA/Ind-2001d            9.18%    passed     91.21%
+ 442  KJ825806/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.27%
+ 443  KJ825805/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     94.94%
+ 444  KJ825804/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     97.07%
+ 445  KJ825803/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     97.07%
+ 446  KJ825802/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.16%
+ 447  KJ825801/IND/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.40%
+ 448  KJ206910/SAU/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.36%
+ 449  KJ206909/LBY/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.36%
+ 450  KJ206908/BTN/cattle/2013/O/ME-SA/Ind-2001d            9.18%    passed     99.98%
+ 451  HQ268524/BTN/Unknown/2004/O/ME-SA/PanAsia-2           9.18%    passed     94.94%
+ 452  KM268895/TUR/cattle/2013/O/ME-SA/PanAsia-2            9.18%    passed     97.27%
+ 453  KM257065/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     91.04%
+ 454  KM257064/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     95.83%
+ 455  KM257063/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     95.07%
+ 456  KM257062/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     95.07%
+ 457  KM257061/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     95.07%
+ 458  JX869188/GBR/sheep/1968/O/EURO-SA/Unknown             9.18%    passed     96.82%
+ 459  JX869187/GBR/cattle/1968/O/EURO-SA/Unknown            9.18%    passed     96.82%
+ 460  JX869186/GBR/cattle/1968/O/EURO-SA/Unknown            9.18%    passed     96.82%
+ 461  JX869185/GBR/cattle/1968/O/EURO-SA/Unknown            9.18%    passed     94.84%
+ 462  JX869184/GBR/cattle/1968/O/EURO-SA/Unknown            9.18%    passed     96.82%
+ 463  JX869183/GBR/cattle/1968/O/EURO-SA/Unknown            9.18%    passed     98.13%
+ 464  JX869182/GBR/cattle/1968/O/EURO-SA/Unknown            9.18%    passed     98.13%
+ 465  JX869181/GBR/cattle/1967/O/EURO-SA/Unknown            9.18%    passed     98.13%
+ 466  JX869180/GBR/cattle/1967/O/EURO-SA/Unknown            9.18%    passed     95.67%
+ 467  JX869179/GBR/cattle/1967/O/EURO-SA/Unknown            9.18%    passed     96.82%
+ 468  JX869178/GBR/cattle/1967/O/EURO-SA/Unknown            9.18%    passed     96.05%
+ 469  JX869177/GBR/cattle/1967/O/EURO-SA/Unknown            9.18%    passed     93.11%
+ 470  KF985189/BGD/cattle/2013/O/ME-SA/Unknown              9.18%    passed     99.23%
+ 471  KF694746/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     96.62%
+ 472  KF694745/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     96.62%
+ 473  KF694744/KOR/cow/2002/O/ME-SA/PanAsia                 9.18%    passed     95.81%
+ 474  KF694743/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     96.62%
+ 475  KF694742/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     97.47%
+ 476  KF694741/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     96.62%
+ 477  KF694740/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     96.62%
+ 478  KF694739/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     96.62%
+ 479  KF694738/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     68.35%
+ 480  KF694737/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     96.62%
+ 481  KF694736/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     96.62%
+ 482  KF694735/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     96.62%
+ 483  KF694734/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     96.62%
+ 484  KF694733/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     96.62%
+ 485  KF694732/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     68.35%
+ 486  KF694731/KOR/pig/2002/O/ME-SA/PanAsia                 9.18%    passed     96.62%
+ 487  KF112889/HKG/pig/2010/O/SEA/Unknown                   9.18%    passed     90.84%
+ 488  KF112888/KOR/cattle/2011/O/SEA/Unknown                9.18%    passed     96.48%
+ 489  KF112887/KOR/pig/2010/O/SEA/Unknown                   9.18%    passed     89.32%
+ 490  KF112886/KOR/cattle/2010/O/SEA/Unknown                9.62%    passed     79.83%
+ 491  KF112885/JPN/cattle/2010/O/SEA/Unknown                9.18%    passed     92.04%
+ 492  KF112884/RUS/cattle/2010/O/SEA/Mya-98                 9.18%    passed     76.05%
+ 493  KF112883/RUS/pig/2010/O/SEA/Unknown                   9.18%    passed     95.25%
+ 494  KF112882/MNG/cattle/2010/O/SEA/Mya-98                 9.18%    passed     80.13%
+ 495  KF112881/MNG/cattle/2010/O/SEA/Mya-98                 9.18%    passed     76.05%
+ 496  KF112880/MMR/cattle/2009/O/SEA/Unknown                9.18%    passed     95.25%
+ 497  KF112879/THA/pig/2009/O/SEA/Unknown                   9.18%    passed     84.58%
+ 498  JX040501/ISR/cattle/2011/O/ME-SA/PanAsia-2            9.18%    passed     96.93%
+ 499  JX040500/TUR/cattle/2011/O/ME-SA/PanAsia-2            9.18%    passed     81.24%
+ 500  JX040499/TUR/cattle/2011/O/ME-SA/PanAsia-2            9.18%    passed     77.25%
+ 501  JX040498/TUR/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     82.11%
+ 502  JX040497/TUR/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     79.74%
+ 503  JX040496/TUR/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     86.05%
+ 504  JX040495/TUR/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     86.05%
+ 505  JX040494/TUR/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     81.24%
+ 506  JX040493/TUR/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     70.63%
+ 507  JX040492/TUR/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     76.64%
+ 508  JX040491/TUR/cattle/2010/O/ME-SA/PanAsia-2            9.18%    passed     76.46%
+ 509  JX040490/BGR/cattle/2011/O/ME-SA/PanAsia-2            9.18%    passed     86.91%
+ 510  JX040489/BGR/cattle/2011/O/ME-SA/PanAsia-2            9.18%    passed     86.05%
+ 511  JX040488/BGR/cattle/2011/O/ME-SA/PanAsia-2            9.18%    passed     86.91%
+ 512  JX040487/BGR/cattle/2011/O/ME-SA/PanAsia-2            9.18%    passed     86.91%
+ 513  JX040486/BGR/cattle/2011/O/ME-SA/PanAsia-2            9.18%    passed     86.91%
+ 514  JX040485/BGR/pig/2010/O/ME-SA/PanAsia-2               9.18%    passed     90.10%
+ 515  JX066665/BGR/cattle/2011/O/ME-SA/PanAsia-2            9.18%    passed     86.05%
+ 516  JX066664/BGR/cattle/2011/O/ME-SA/PanAsia-2            9.18%    passed     86.05%
+ 517  JN998086/CHN/cattle/2010/O/SEA/Unknown                9.18%    passed     80.09%
+ 518  JN998085/CHN/pig/2010/O/SEA/Unknown                   9.18%    passed     87.77%
+ 519  HQ632772/MYS/cattle/2007/O/SEA/Mya-98                 9.18%    passed     71.60%
+ 520  HQ632771/MYS/pig/2005/O/CATHAY/Unknown                9.18%    passed     64.23%
+ 521  HQ632770/MYS/cattle/2004/O/ME-SA/PanAsia-2            9.18%    passed     92.83%
+ 522  HQ632769/MYS/cattle/2001/O/SEA/Cam-94                 9.18%    passed     98.07%
+ 523  HQ632768/MYS/pig/2000/O/ME-SA/PanAsia                 9.18%    passed     92.28%
+ 524  GU582116/VNM/Unknown/2009/O/SEA/Mya-98                9.18%    passed     74.61%
+ 525  GU582115/VNM/Unknown/2009/O/SEA/Mya-98                9.18%    passed     77.68%
+ 526  HQ113232/PAK/cow/2009/O/ME-SA/PanAsia-2               9.18%    passed     86.06%
+ 527  HM191257/UGA/cow/2006/O/EA-2/Unknown                  9.18%    passed     44.31%
+ 528  GU125650/VNM/cattle/2006/O/SEA/Mya-98                 9.18%    passed     95.29%
+ 529  GU125649/VNM/cattle/2006/O/SEA/Mya-98                 9.18%    passed     92.73%
+ 530  GU125648/VNM/buffalo/2006/O/SEA/Mya-98                9.18%    passed     92.73%
+ 531  GU125647/VNM/cattle/2006/O/SEA/Mya-98                 9.18%    passed     92.73%
+ 532  HM055510/VNM/Unknown/2009/O/SEA/Unknown               9.18%    passed     87.55%
+ 533  FJ542372/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     90.89%
+ 534  FJ542371/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     95.07%
+ 535  FJ542370/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     95.07%
+ 536  FJ542369/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     90.89%
+ 537  FJ542368/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     95.07%
+ 538  FJ542367/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     95.07%
+ 539  FJ542366/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     95.07%
+ 540  FJ542365/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     95.07%
+ 541  EU214601/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     95.07%
+ 542  EF614457/KOR/cattle/2002/O/ME-SA/PanAsia              9.18%    passed     95.81%
+ 543  AY593837/URY/Unknown/1963/O/EURO-SA/Unknown           9.18%    passed     95.44%
+ 544  AY593836/GBR/Unknown/2001/O/ME-SA/PanAsia             9.18%    passed     93.87%
+ 545  AY593835/TWN/Unknown/1997/O/CATHAY/Unknown            9.18%    passed     81.43%
+ 546  AY593834/IRN/Unknown/1966/O/SEA/Unknown               9.18%    passed     87.45%
+ 547  AY593833/TWN/Unknown/1999/O/CATHAY/Unknown            9.18%    passed     74.33%
+ 548  AY593832/GBR/Unknown/2002/O/ME-SA/PanAsia             9.18%    passed     95.07%
+ 549  AY593831/GBR/Unknown/2002/O/ME-SA/PanAsia             9.18%    passed     95.07%
+ 550  AY593830/POL/Unknown/1959/O/EURO-SA/Unknown           9.18%    passed     82.85%
+ 551  AY593829/GBR/Unknown/1965/O/EURO-SA/Unknown           9.18%    passed     91.21%
+ 552  AY593828/IND/Unknown/1962/O/SEA/Unknown               9.18%    passed     73.11%
+ 553  AY593827/VEN/Unknown/1971/O/EURO-SA/Unknown           9.18%    passed     97.80%
+ 554  AY593826/ITA/Unknown/1947/O/EURO-SA/Unknown           9.18%    passed     98.38%
+ 555  AY593825/ARG/Unknown/1939/O/EURO-SA/Unknown           9.18%    passed     74.42%
+ 556  AY593824/KOR/Unknown/2000/O/ME-SA/PanAsia             9.18%    passed     97.77%
+ 557  AY593823/TUR/Unknown/1969/O/ME-SA/Unknown             9.18%    passed     92.06%
+ 558  AY593821/ARG/Unknown/1967/O/EURO-SA/Unknown           9.18%    passed     97.34%
+ 559  AY593820/ARG/Unknown/1964/O/EURO-SA/Unknown           9.18%    passed     92.77%
+ 560  AY593818/ARG/Unknown/1958/O/EURO-SA/Unknown           9.18%    passed     95.55%
+ 561  AY593817/BEL/Unknown/1973/O/EURO-SA/Unknown           9.18%    passed     95.75%
+ 562  AY593814/ARG/Unknown/1965/O/EURO-SA/Unknown           9.18%    passed     96.61%
+ 563  AY593813/IDN/Unknown/1962/O/ISA-1/Unknown             9.18%    passed     91.22%
+ 564  AY593812/PHL/Unknown/1958/O/SEA/Unknown               9.18%    passed     73.99%
+ 565  AY593811/PHL/Unknown/1958/O/SEA/Unknown               9.18%    passed     73.99%
+ 566  AF511039/CHN/Unknown/1958/O/CATHAY/Unknown            9.18%    passed     48.34%
+ 567  EF175732/CHN/Unknown/1999/O/CATHAY/Unknown            9.18%    passed     67.67%
+ 568  DQ404180/GBR/pig/2001/O/ME-SA/PanAsia                 9.18%    passed     95.07%
+ 569  DQ404179/GBR/pig/2001/O/ME-SA/PanAsia                 9.18%    passed     95.07%
+ 570  DQ404178/GBR/pig/2001/O/ME-SA/PanAsia                 9.18%    passed     95.07%
+ 571  DQ404177/GBR/pig/2001/O/ME-SA/PanAsia                 9.18%    passed     95.07%
+ 572  DQ404176/GBR/cow/2001/O/ME-SA/PanAsia                 9.18%    passed     95.07%
+ 573  DQ404175/GBR/cow/2001/O/ME-SA/PanAsia                 9.18%    passed     95.07%
+ 574  DQ404174/IRL/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     95.07%
+ 575  DQ404173/GBR/cow/2001/O/ME-SA/PanAsia                 9.18%    passed     95.07%
+ 576  DQ404172/GBR/cow/2001/O/ME-SA/PanAsia                 9.18%    passed     95.07%
+ 577  DQ404171/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     95.07%
+ 578  DQ404169/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     95.70%
+ 579  DQ404170/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     95.83%
+ 580  DQ404168/GBR/cow/2001/O/ME-SA/PanAsia                 9.18%    passed     97.16%
+ 581  DQ404167/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     95.83%
+ 582  DQ404166/GBR/cow/2001/O/ME-SA/PanAsia                 9.18%    passed     95.83%
+ 583  DQ404165/GBR/cow/2001/O/ME-SA/PanAsia                 9.18%    passed     95.83%
+ 584  DQ404164/GBR/cow/2001/O/ME-SA/PanAsia                 9.18%    passed     94.54%
+ 585  DQ404163/GBR/cow/2001/O/ME-SA/PanAsia                 9.18%    passed     98.51%
+ 586  DQ404162/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     98.34%
+ 587  DQ404161/GBR/cow/2001/O/ME-SA/PanAsia                 9.18%    passed     96.91%
+ 588  DQ404160/GBR/cow/2001/O/ME-SA/PanAsia                 9.18%    passed     91.04%
+ 589  DQ404159/GBR/cow/2001/O/ME-SA/PanAsia                 9.18%    passed     91.04%
+ 590  DQ404158/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     91.62%
+ 591  AF026168/TWN/Unknown/1997/O/CATHAY/Unknown            9.18%    passed     60.34%
+ 592  AB079061/JPN/Unknown/2000/O/ME-SA/PanAsia             9.18%    passed     96.79%
+ 593  EU448370/GBR/cow/1967/O/EURO-SA/Unknown               9.18%    passed     96.82%
+ 594  EU448369/GBR/cow/1967/O/EURO-SA/Unknown               9.18%    passed     98.13%
+ 595  EU448368/GBR/cow/1967/O/EURO-SA/Unknown               9.18%    passed     96.82%
+ 596  AJ539137/TWN/Unknown/1999/O/ME-SA/PanAsia             9.18%    passed     98.26%
+ 597  AJ539136/TWN/Unknown/1999/O/ME-SA/PanAsia             9.18%    passed     98.26%
+ 598  AJ633821/FRA/Unknown/2001/O/ME-SA/PanAsia             9.18%    passed     97.16%
+ 599  AY317098/HKG/Unknown/2002/O/CATHAY/Unknown            9.18%    passed     51.04%
+ 600  EU400597/CHN/Unknown/2001/O/CATHAY/Unknown            9.18%    passed     53.88%
+ 601  AY686687/Unknown/Unknown/2001/O/CATHAY/Unknown        9.18%    passed     75.46%
+ 602  AF377945/Unknown/Unknown/2000/O/ME-SA/PanAsia         9.18%    passed     92.84%
+ 603  EF552697/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     95.70%
+ 604  EF552696/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     95.70%
+ 605  EF552695/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     95.83%
+ 606  EF552694/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     95.83%
+ 607  EF552693/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     95.83%
+ 608  EF552692/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     95.83%
+ 609  EF552691/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     93.04%
+ 610  EF552690/GBR/cattle/2001/O/ME-SA/PanAsia              9.18%    passed     92.90%
+ 611  EF552689/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     95.70%
+ 612  EF552688/GBR/sheep/2001/O/ME-SA/PanAsia               9.18%    passed     95.70%
+****  TOTAL                                                 9.20%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: GU384682/PAK/cattle/2008/O/ME-SA/PanAsia-2 is identical to GU384683/PAK/buffalo/2008/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211386/ISR/cattle/2007/O/ME-SA/PanAsia-2 is identical to FJ175666/ISR/cattle/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211374/ISR/cattle/2007/O/ME-SA/PanAsia-2 is identical to FJ175665/ISR/cattle/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211392/ISR/cattle/2007/O/ME-SA/PanAsia-2 is identical to FJ175664/ISR/cattle/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211389/ISR/goat/2006/O/ME-SA/PanAsia-2 is identical to FJ175661/ISR/goat/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211375/PSE/sheep/2007/O/ME-SA/PanAsia-2 is identical to OQ211407/PSE/sheep/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211373/ISR/goat/2007/O/ME-SA/PanAsia-2 is identical to OQ211406/PSE/sheep/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211404/PSE/cattle/2007/O/ME-SA/PanAsia-2 is identical to OQ211405/ISR/cattle/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211401/ISR/cattle/2007/O/ME-SA/PanAsia-2 is identical to OQ211402/ISR/cattle/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211383/ISR/gazelle/2007/O/ME-SA/PanAsia-2 is identical to OQ211398/ISR/gazelle/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211384/ISR/cattle/2007/O/ME-SA/PanAsia-2 is identical to OQ211397/ISR/sheep/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211393/ISR/goat/2007/O/ME-SA/PanAsia-2 is identical to OQ211394/ISR/cattle/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211354/PSE/cattle/2007/O/ME-SA/PanAsia-2 is identical to OQ211363/ISR/sheep/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211359/ISR/cattle/2007/O/ME-SA/PanAsia-2 is identical to OQ211360/ISR/cattle/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ211351/ISR/goat/2007/O/ME-SA/PanAsia-2 is identical to OQ211352/ISR/cattle/2007/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OQ457191/NER/cattle/2020/O/EA-3/Unknown is identical to OQ457193/NER/cattle/2020/O/EA-3/Unknown but kept for subsequent analysis
+NOTE: OQ457185/NER/cattle/2020/O/EA-3/Unknown is identical to OQ457186/NER/cattle/2020/O/EA-3/Unknown but kept for subsequent analysis
+NOTE: MN250314/VNM/pig/2017/O/CATHAY/Unknown/O is identical to ON868623/VNM/pig/2017/O/CATHAY/Unknown but kept for subsequent analysis
+NOTE: ON868617/VNM/pig/2019/O/SEA/Unknown is identical to ON868620/VNM/pig/2019/O/SEA/Unknown but kept for subsequent analysis
+NOTE: ON868608/VNM/pig/2019/O/SEA/Unknown is identical to ON868612/VNM/pig/2019/O/SEA/Unknown but kept for subsequent analysis
+NOTE: ON868609/VNM/pig/2019/O/SEA/Unknown is identical to ON868610/VNM/pig/2019/O/SEA/Unknown but kept for subsequent analysis
+NOTE: ON868601/VNM/pig/2018/O/SEA/Unknown is identical to ON868604/VNM/pig/2018/O/SEA/Unknown but kept for subsequent analysis
+NOTE: ON868590/VNM/pig/2019/O/SEA/Unknown is identical to ON868599/VNM/pig/2019/O/SEA/Unknown but kept for subsequent analysis
+NOTE: ON868593/VNM/pig/2018/O/SEA/Unknown is identical to ON868598/VNM/pig/2018/O/SEA/Unknown but kept for subsequent analysis
+NOTE: OM160622/DZA/cattle/2014/O/ME-SA/Ind-2001d is identical to OM160623/DZA/cattle/2014/O/ME-SA/Ind-2001d but kept for subsequent analysis
+NOTE: MG983683/DZA/Unknown/2014/O/ME-SA/Ind-2001d is identical to OM160621/DZA/cattle/2014/O/ME-SA/Ind-2001d but kept for subsequent analysis
+NOTE: OM160615/TUN/cattle/2014/O/ME-SA/Ind-2001d is identical to OM160620/TUN/cattle/2014/O/ME-SA/Ind-2001d but kept for subsequent analysis
+NOTE: OM160618/TUN/cattle/2014/O/ME-SA/Ind-2001d is identical to OM160619/TUN/cattle/2014/O/ME-SA/Ind-2001d but kept for subsequent analysis
+NOTE: MG983735/TUN/Unknown/2014/O/ME-SA/Ind-2001d is identical to OM160610/TUN/cattle/2014/O/ME-SA/Ind-2001d but kept for subsequent analysis
+NOTE: OM456133/PAK/cattle/2012/O/ME-SA/PanAsia-2 is identical to OM456149/PAK/cattle/2012/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OM456145/PAK/buffalo/2010/O/ME-SA/PanAsia-2 is identical to OM456146/PAK/cattle/2010/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OM456141/PAK/buffalo/2011/O/ME-SA/PanAsia-2 is identical to OM456142/PAK/buffalo/2011/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OM456134/PAK/cattle/2012/O/ME-SA/PanAsia-2 is identical to OM456135/PAK/cattle/2012/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: OM022648/NER/cattle/2017/O/EA-3/Unknown is identical to OM022649/NER/cattle/2017/O/EA-3/Unknown but kept for subsequent analysis
+NOTE: OM022644/NER/cattle/2017/O/EA-3/Unknown is identical to OM022646/NER/cattle/2017/O/EA-3/Unknown but kept for subsequent analysis
+NOTE: KY444648/THA/pig/2016/O/SEA/Unknown is identical to KY444649/THA/pig/2016/O/SEA/Unknown but kept for subsequent analysis
+NOTE: MT944982/IRN/goat/2016/O/ME-SA/PanAsia-2 is identical to MT944983/IRN/goat/2016/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: MN953619/PAK/cattle/2019/O/ME-SA/Unknown is identical to MN953620/PAK/cattle/2019/O/ME-SA/Unknown but kept for subsequent analysis
+NOTE: MN095370/IND/cattle/2014/O/ME-SA/Ind-2001d is identical to MN095371/IND/cattle/2014/O/ME-SA/Ind-2001d but kept for subsequent analysis
+NOTE: MN095362/IND/cattle/2013/O/ME-SA/Ind-2001d is identical to MN095363/IND/cattle/2013/O/ME-SA/Ind-2001d but kept for subsequent analysis
+NOTE: AY593829/GBR/Unknown/1965/O/EURO-SA/Unknown is identical to NC_039210/GBR/Unknown/1965/O/EURO-SA/Unknown but kept for subsequent analysis
+NOTE: LC456871/GHA/cow/2018/O/EA-3/Unknown is identical to LC456873/GHA/cow/2018/O/EA-3/Unknown but kept for subsequent analysis
+NOTE: MF947123/VNM/buffalo/2011/O/ME-SA/Unknown is identical to MF947128/VNM/cattle/2010/O/ME-SA/Unknown but kept for subsequent analysis
+NOTE: MG983738/ARE/cattle/2016/O/ME-SA/Unknown is identical to MG983739/ARE/cattle/2016/O/ME-SA/Unknown but kept for subsequent analysis
+NOTE: MG983736/ARE/gazelle/2014/O/ME-SA/Ind-2001d is identical to MG983737/ARE/gazelle/2014/O/ME-SA/Ind-2001d but kept for subsequent analysis
+NOTE: MG983723/SAU/cattle/2013/O/ME-SA/Ind-2001d is identical to MG983724/SAU/cattle/2013/O/ME-SA/Ind-2001d but kept for subsequent analysis
+NOTE: MG983721/SAU/cattle/2013/O/ME-SA/Ind-2001d is identical to MG983722/SAU/cattle/2013/O/ME-SA/Ind-2001d but kept for subsequent analysis
+NOTE: MF461724/CHN/cattle/2017/O/ME-SA/Unknown is identical to MG983720/RUS/cattle/2016/O/ME-SA/Unknown but kept for subsequent analysis
+NOTE: MG983712/NPL/cattle/2013/O/ME-SA/Ind-2001d is identical to MG983713/NPL/cattle/2013/O/ME-SA/Ind-2001d but kept for subsequent analysis
+NOTE: MG983700/MUS/cattle/2016/O/ME-SA/Unknown is identical to MG983701/MUS/cattle/2016/O/ME-SA/Unknown but kept for subsequent analysis
+NOTE: LC149718/JPN/cow/2010/O/SEA/Unknown is identical to LC149720/JPN/pig/2010/O/SEA/Unknown but kept for subsequent analysis
+NOTE: LC149629/JPN/cow/2010/O/SEA/Unknown is identical to LC149719/JPN/cow/2010/O/SEA/Unknown but kept for subsequent analysis
+NOTE: LC149663/JPN/cow/2010/O/SEA/Unknown is identical to LC149689/JPN/cow/2010/O/SEA/Unknown but kept for subsequent analysis
+NOTE: LC149661/JPN/cow/2010/O/SEA/Unknown is identical to LC149685/JPN/cow/2010/O/SEA/Unknown but kept for subsequent analysis
+NOTE: LC149633/JPN/pig/2010/O/SEA/Unknown is identical to LC149647/JPN/cow/2010/O/SEA/Unknown but kept for subsequent analysis
+NOTE: LC149628/JPN/pig/2010/O/SEA/Unknown is identical to LC149637/JPN/pig/2010/O/SEA/Unknown but kept for subsequent analysis
+NOTE: LC149625/JPN/cow/2010/O/SEA/Unknown is identical to LC149626/JPN/cow/2010/O/SEA/Unknown but kept for subsequent analysis
+NOTE: KJ825801/IND/cattle/2013/O/ME-SA/Ind-2001d is identical to KJ825808/IND/cattle/2013/O/ME-SA/Ind-2001d but kept for subsequent analysis
+NOTE: DQ404160/GBR/cow/2001/O/ME-SA/PanAsia is identical to KM257065/GBR/cattle/2001/O/ME-SA/PanAsia but kept for subsequent analysis
+NOTE: DQ404170/GBR/sheep/2001/O/ME-SA/PanAsia is identical to KM257064/GBR/cattle/2001/O/ME-SA/PanAsia but kept for subsequent analysis
+NOTE: KM257062/GBR/cattle/2001/O/ME-SA/PanAsia is identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia but kept for subsequent analysis
+NOTE: JX869187/GBR/cattle/1968/O/EURO-SA/Unknown is identical to JX869188/GBR/sheep/1968/O/EURO-SA/Unknown but kept for subsequent analysis
+NOTE: KF694745/KOR/pig/2002/O/ME-SA/PanAsia is identical to KF694746/KOR/pig/2002/O/ME-SA/PanAsia but kept for subsequent analysis
+NOTE: EF614457/KOR/cattle/2002/O/ME-SA/PanAsia is identical to KF694744/KOR/cow/2002/O/ME-SA/PanAsia but kept for subsequent analysis
+NOTE: KF694732/KOR/pig/2002/O/ME-SA/PanAsia is identical to KF694738/KOR/pig/2002/O/ME-SA/PanAsia but kept for subsequent analysis
+NOTE: JX040487/BGR/cattle/2011/O/ME-SA/PanAsia-2 is identical to JX040490/BGR/cattle/2011/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: JX066664/BGR/cattle/2011/O/ME-SA/PanAsia-2 is identical to JX066665/BGR/cattle/2011/O/ME-SA/PanAsia-2 but kept for subsequent analysis
+NOTE: GU125648/VNM/buffalo/2006/O/SEA/Mya-98 is identical to GU125649/VNM/cattle/2006/O/SEA/Mya-98 but kept for subsequent analysis
+NOTE: FJ542369/GBR/sheep/2001/O/ME-SA/PanAsia is identical to FJ542372/GBR/cattle/2001/O/ME-SA/PanAsia but kept for subsequent analysis
+NOTE: AY593811/PHL/Unknown/1958/O/SEA/Unknown is identical to AY593812/PHL/Unknown/1958/O/SEA/Unknown but kept for subsequent analysis
+NOTE: EF552697/GBR/sheep/2001/O/ME-SA/PanAsia is identical to DQ404169/GBR/sheep/2001/O/ME-SA/PanAsia but kept for subsequent analysis
+NOTE: AJ539136/TWN/Unknown/1999/O/ME-SA/PanAsia is identical to AJ539137/TWN/Unknown/1999/O/ME-SA/PanAsia but kept for subsequent analysis
+NOTE: EF552688/GBR/sheep/2001/O/ME-SA/PanAsia is identical to EF552696/GBR/cattle/2001/O/ME-SA/PanAsia but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.642428 secs using 4.864% CPU
+Identifying sites to remove: done in 0.0066742 secs
+NOTE: 142 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: OQ211391/ISR/cattle/2007/O/ME-SA/PanAsia-2 (identical to FJ175664/ISR/cattle/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211390/ISR/cattle/2007/O/ME-SA/PanAsia-2 (identical to FJ175664/ISR/cattle/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211370/ISR/cattle/2007/O/ME-SA/PanAsia-2 (identical to FJ175664/ISR/cattle/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211369/ISR/cattle/2007/O/ME-SA/PanAsia-2 (identical to FJ175661/ISR/goat/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211350/ISR/cattle/2007/O/ME-SA/PanAsia-2 (identical to FJ175661/ISR/goat/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211367/PSE/sheep/2007/O/ME-SA/PanAsia-2 (identical to OQ211407/PSE/sheep/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211366/PSE/sheep/2007/O/ME-SA/PanAsia-2 (identical to OQ211407/PSE/sheep/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211372/ISR/goat/2007/O/ME-SA/PanAsia-2 (identical to OQ211406/PSE/sheep/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211365/PSE/sheep/2007/O/ME-SA/PanAsia-2 (identical to OQ211405/ISR/cattle/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211364/PSE/sheep/2007/O/ME-SA/PanAsia-2 (identical to OQ211405/ISR/cattle/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211400/ISR/cattle/2007/O/ME-SA/PanAsia-2 (identical to OQ211402/ISR/cattle/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211382/ISR/gazelle/2007/O/ME-SA/PanAsia-2 (identical to OQ211398/ISR/gazelle/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211381/ISR/gazelle/2007/O/ME-SA/PanAsia-2 (identical to OQ211398/ISR/gazelle/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211358/ISR/cattle/2007/O/ME-SA/PanAsia-2 (identical to OQ211360/ISR/cattle/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ211356/ISR/cattle/2007/O/ME-SA/PanAsia-2 (identical to OQ211360/ISR/cattle/2007/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OQ457189/NER/cattle/2020/O/EA-3/Unknown (identical to OQ457193/NER/cattle/2020/O/EA-3/Unknown) is ignored but added at the end
+NOTE: OQ457188/NER/cattle/2020/O/EA-3/Unknown (identical to OQ457193/NER/cattle/2020/O/EA-3/Unknown) is ignored but added at the end
+NOTE: OQ457184/NER/cattle/2020/O/EA-3/Unknown (identical to OQ457186/NER/cattle/2020/O/EA-3/Unknown) is ignored but added at the end
+NOTE: ON868600/VNM/pig/2018/O/SEA/Unknown (identical to ON868612/VNM/pig/2019/O/SEA/Unknown) is ignored but added at the end
+NOTE: ON868594/VNM/pig/2019/O/SEA/Unknown (identical to ON868612/VNM/pig/2019/O/SEA/Unknown) is ignored but added at the end
+NOTE: ON868592/VNM/pig/2018/O/SEA/Unknown (identical to ON868612/VNM/pig/2019/O/SEA/Unknown) is ignored but added at the end
+NOTE: ON868589/VNM/pig/2019/O/SEA/Unknown (identical to ON868598/VNM/pig/2018/O/SEA/Unknown) is ignored but added at the end
+NOTE: OM456140/PAK/buffalo/2011/O/ME-SA/PanAsia-2 (identical to OM456142/PAK/buffalo/2011/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: OM456138/PAK/buffalo/2009/O/ME-SA/PanAsia-2 (identical to OM456142/PAK/buffalo/2011/O/ME-SA/PanAsia-2) is ignored but added at the end
+NOTE: MN095369/IND/cattle/2014/O/ME-SA/Ind-2001d (identical to MN095371/IND/cattle/2014/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: MN095368/IND/cattle/2014/O/ME-SA/Ind-2001d (identical to MN095371/IND/cattle/2014/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: MN095367/IND/cattle/2014/O/ME-SA/Ind-2001d (identical to MN095371/IND/cattle/2014/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: MN095366/IND/cattle/2014/O/ME-SA/Ind-2001d (identical to MN095371/IND/cattle/2014/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: MN095365/IND/cattle/2014/O/ME-SA/Ind-2001d (identical to MN095371/IND/cattle/2014/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: MN095364/IND/cattle/2014/O/ME-SA/Ind-2001d (identical to MN095371/IND/cattle/2014/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: MN095361/IND/cattle/2013/O/ME-SA/Ind-2001d (identical to MN095363/IND/cattle/2013/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: MN095360/IND/cattle/2013/O/ME-SA/Ind-2001d (identical to MN095363/IND/cattle/2013/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: MN095359/IND/cattle/2013/O/ME-SA/Ind-2001d (identical to MN095363/IND/cattle/2013/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: MN095358/IND/cattle/2013/O/ME-SA/Ind-2001d (identical to MN095363/IND/cattle/2013/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: MN095357/IND/cattle/2013/O/ME-SA/Ind-2001d (identical to MN095363/IND/cattle/2013/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: MN095356/IND/cattle/2013/O/ME-SA/Ind-2001d (identical to MN095363/IND/cattle/2013/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: LC456870/GHA/cow/2018/O/EA-3/Unknown (identical to LC456873/GHA/cow/2018/O/EA-3/Unknown) is ignored but added at the end
+NOTE: KY234501/CHN/cow/2011/O/ME-SA/Unknown (identical to MF947128/VNM/cattle/2010/O/ME-SA/Unknown) is ignored but added at the end
+NOTE: KJ206910/SAU/cattle/2013/O/ME-SA/Ind-2001d (identical to MG983722/SAU/cattle/2013/O/ME-SA/Ind-2001d) is ignored but added at the end
+NOTE: MG983699/MUS/cattle/2016/O/ME-SA/Unknown (identical to MG983701/MUS/cattle/2016/O/ME-SA/Unknown) is ignored but added at the end
+NOTE: MG983698/MUS/cattle/2016/O/ME-SA/Unknown (identical to MG983701/MUS/cattle/2016/O/ME-SA/Unknown) is ignored but added at the end
+NOTE: LC149716/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149713/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149712/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149711/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149708/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149706/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149699/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149698/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149697/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149696/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149694/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149693/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149690/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149687/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149684/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149683/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149682/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149681/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149680/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149677/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149673/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149672/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149671/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149670/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149669/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149668/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149667/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149666/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149665/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149664/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149660/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149658/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149654/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149653/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149652/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149650/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149649/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149648/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149646/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149645/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149644/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149643/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149642/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149641/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149640/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149638/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149636/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149634/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149632/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149631/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149627/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149624/JPN/pig/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149623/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149621/JPN/wild-water-buffalo/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149620/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149618/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149617/JPN/cow/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: KF112885/JPN/cattle/2010/O/SEA/Unknown (identical to LC149720/JPN/pig/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: LC149622/JPN/cow/2010/O/SEA/Unknown (identical to LC149626/JPN/cow/2010/O/SEA/Unknown) is ignored but added at the end
+NOTE: DQ404159/GBR/cow/2001/O/ME-SA/PanAsia (identical to KM257065/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404167/GBR/sheep/2001/O/ME-SA/PanAsia (identical to KM257064/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404166/GBR/cow/2001/O/ME-SA/PanAsia (identical to KM257064/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404165/GBR/cow/2001/O/ME-SA/PanAsia (identical to KM257064/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: EF552694/GBR/cattle/2001/O/ME-SA/PanAsia (identical to KM257064/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: EF552693/GBR/cattle/2001/O/ME-SA/PanAsia (identical to KM257064/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: EF552692/GBR/sheep/2001/O/ME-SA/PanAsia (identical to KM257064/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: KM257061/GBR/cattle/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: FJ542371/GBR/cattle/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: FJ542370/GBR/cattle/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: FJ542368/GBR/cattle/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: FJ542367/GBR/cattle/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: FJ542366/GBR/sheep/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: FJ542365/GBR/cattle/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: AY593832/GBR/Unknown/2002/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: AY593831/GBR/Unknown/2002/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404180/GBR/pig/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404179/GBR/pig/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404178/GBR/pig/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404177/GBR/pig/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404176/GBR/cow/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404175/GBR/cow/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404174/IRL/sheep/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404173/GBR/cow/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404172/GBR/cow/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: DQ404171/GBR/sheep/2001/O/ME-SA/PanAsia (identical to KM257063/GBR/cattle/2001/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: JX869184/GBR/cattle/1968/O/EURO-SA/Unknown (identical to JX869188/GBR/sheep/1968/O/EURO-SA/Unknown) is ignored but added at the end
+NOTE: JX869179/GBR/cattle/1967/O/EURO-SA/Unknown (identical to JX869188/GBR/sheep/1968/O/EURO-SA/Unknown) is ignored but added at the end
+NOTE: EU448370/GBR/cow/1967/O/EURO-SA/Unknown (identical to JX869188/GBR/sheep/1968/O/EURO-SA/Unknown) is ignored but added at the end
+NOTE: EU448368/GBR/cow/1967/O/EURO-SA/Unknown (identical to JX869188/GBR/sheep/1968/O/EURO-SA/Unknown) is ignored but added at the end
+NOTE: KF694743/KOR/pig/2002/O/ME-SA/PanAsia (identical to KF694746/KOR/pig/2002/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: KF694741/KOR/pig/2002/O/ME-SA/PanAsia (identical to KF694746/KOR/pig/2002/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: KF694740/KOR/pig/2002/O/ME-SA/PanAsia (identical to KF694746/KOR/pig/2002/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: KF694739/KOR/pig/2002/O/ME-SA/PanAsia (identical to KF694746/KOR/pig/2002/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: KF694737/KOR/pig/2002/O/ME-SA/PanAsia (identical to KF694746/KOR/pig/2002/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: KF694736/KOR/pig/2002/O/ME-SA/PanAsia (identical to KF694746/KOR/pig/2002/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: KF694735/KOR/pig/2002/O/ME-SA/PanAsia (identical to KF694746/KOR/pig/2002/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: KF694734/KOR/pig/2002/O/ME-SA/PanAsia (identical to KF694746/KOR/pig/2002/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: KF694733/KOR/pig/2002/O/ME-SA/PanAsia (identical to KF694746/KOR/pig/2002/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: KF694731/KOR/pig/2002/O/ME-SA/PanAsia (identical to KF694746/KOR/pig/2002/O/ME-SA/PanAsia) is ignored but added at the end
+NOTE: GU125647/VNM/cattle/2006/O/SEA/Mya-98 (identical to GU125649/VNM/cattle/2006/O/SEA/Mya-98) is ignored but added at the end
+NOTE: EF552689/GBR/sheep/2001/O/ME-SA/PanAsia (identical to DQ404169/GBR/sheep/2001/O/ME-SA/PanAsia) is ignored but added at the end
+Alignment was printed to alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.uniqueseq.phy
+Creating fast initial parsimony tree by random order stepwise addition...
+0.769 seconds, parsimony score: 3821 (based on 396 sites)
+Generating 1000 samples for ultrafast bootstrap (seed: 507811)...
+
+NOTE: 27 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.445 / LogL: -18906.569
+Init pinv, alpha: 0.047, 1.000 / Estimate: 0.321, 0.932 / LogL: -18846.903
+Init pinv, alpha: 0.094, 1.000 / Estimate: 0.320, 0.928 / LogL: -18846.929
+Init pinv, alpha: 0.141, 1.000 / Estimate: 0.321, 0.933 / LogL: -18846.910
+Init pinv, alpha: 0.188, 1.000 / Estimate: 0.320, 0.930 / LogL: -18846.933
+Init pinv, alpha: 0.235, 1.000 / Estimate: 0.321, 0.933 / LogL: -18846.934
+Init pinv, alpha: 0.282, 1.000 / Estimate: 0.321, 0.935 / LogL: -18846.947
+Init pinv, alpha: 0.329, 1.000 / Estimate: 0.322, 0.938 / LogL: -18846.978
+Init pinv, alpha: 0.376, 1.000 / Estimate: 0.326, 0.957 / LogL: -18846.983
+Init pinv, alpha: 0.423, 1.000 / Estimate: 0.328, 0.968 / LogL: -18847.049
+Optimal pinv,alpha: 0.321, 0.932 / LogL: -18846.903
+
+Parameters optimization took 60.534 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 2.58582 secs using 87.62% CPU
+Computing ML distances took 2.600572 sec (of wall-clock time) 2.265625 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0083412 secs using 374.6% CPU
+Constructing RapidNJ tree: done in 0.0272813 secs using 114.5% CPU
+Computing RapidNJ tree took 0.884896 sec (of wall-clock time) 0.718750 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -18960.298
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 58.141 second
+Computing log-likelihood of 98 initial trees ... 16.123 seconds
+Current best score: -18829.771
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 17.1909 secs using 96.71% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -18714.117
+Optimizing NNI: done in 6.80784 secs using 93.87% CPU
+Optimizing NNI: done in 17.7934 secs using 96.24% CPU
+Optimizing NNI: done in 17.4737 secs using 95.68% CPU
+Optimizing NNI: done in 15.4448 secs using 99.14% CPU
+Optimizing NNI: done in 14.8332 secs using 97.96% CPU
+Optimizing NNI: done in 14.3822 secs using 96.36% CPU
+Optimizing NNI: done in 15.8829 secs using 96.61% CPU
+Optimizing NNI: done in 16.5853 secs using 92.61% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 9: -18708.462
+Optimizing NNI: done in 16.5374 secs using 97.51% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 10: -18705.114
+Iteration 10 / LogL: -18705.114 / Time: 0h:4m:57s
+Optimizing NNI: done in 14.4968 secs using 98.3% CPU
+Optimizing NNI: done in 13.792 secs using 96.64% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 12: -18700.468
+Optimizing NNI: done in 16.3944 secs using 93.12% CPU
+Optimizing NNI: done in 11.5123 secs using 96.5% CPU
+Optimizing NNI: done in 14.9818 secs using 97.31% CPU
+Optimizing NNI: done in 12.8379 secs using 97.37% CPU
+Optimizing NNI: done in 15.44 secs using 93.51% CPU
+Optimizing NNI: done in 15.1955 secs using 96.35% CPU
+Optimizing NNI: done in 16.3629 secs using 95.97% CPU
+Optimizing NNI: done in 19.0242 secs using 94.12% CPU
+Iteration 20 / LogL: -18724.391 / Time: 0h:7m:28s
+Finish initializing candidate tree set (20)
+Current best tree score: -18700.468 / CPU time: 381.961
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 9.77264 secs using 94.65% CPU
+Optimizing NNI: done in 9.33 secs using 96.46% CPU
+Optimizing NNI: done in 13.637 secs using 96.7% CPU
+Optimizing NNI: done in 11.9677 secs using 97.27% CPU
+Optimizing NNI: done in 8.14888 secs using 97.21% CPU
+Optimizing NNI: done in 5.89213 secs using 96.53% CPU
+Optimizing NNI: done in 9.78993 secs using 93.37% CPU
+Optimizing NNI: done in 9.94299 secs using 96.96% CPU
+Optimizing NNI: done in 12.1699 secs using 95.27% CPU
+Optimizing NNI: done in 12.3064 secs using 94.34% CPU
+Iteration 30 / LogL: -18702.705 / Time: 0h:9m:13s (0h:26m:2s left)
+Optimizing NNI: done in 6.65557 secs using 96.96% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 31: -18697.534
+Optimizing NNI: done in 9.62099 secs using 95.82% CPU
+Optimizing NNI: done in 10.4956 secs using 92.3% CPU
+Optimizing NNI: done in 5.64899 secs using 92.38% CPU
+Optimizing NNI: done in 10.0149 secs using 93.92% CPU
+Optimizing NNI: done in 9.30795 secs using 92.33% CPU
+Optimizing NNI: done in 10.5385 secs using 93.56% CPU
+Optimizing NNI: done in 7.95833 secs using 96.99% CPU
+Optimizing NNI: done in 11.5579 secs using 93.01% CPU
+Optimizing NNI: done in 6.17399 secs using 98.45% CPU
+Iteration 40 / LogL: -18729.773 / Time: 0h:10m:43s (0h:24m:59s left)
+Optimizing NNI: done in 7.92977 secs using 97.54% CPU
+Optimizing NNI: done in 10.2813 secs using 98.33% CPU
+Optimizing NNI: done in 3.29797 secs using 97.12% CPU
+Optimizing NNI: done in 9.17779 secs using 98.06% CPU
+Optimizing NNI: done in 9.17781 secs using 98.4% CPU
+Optimizing NNI: done in 9.96037 secs using 93.18% CPU
+Optimizing NNI: done in 8.05717 secs using 97.93% CPU
+Optimizing NNI: done in 11.0274 secs using 96.92% CPU
+Optimizing NNI: done in 11.4034 secs using 98.52% CPU
+Optimizing NNI: done in 9.59314 secs using 97.73% CPU
+Iteration 50 / LogL: -18722.144 / Time: 0h:12m:14s (0h:20m:13s left)
+Log-likelihood cutoff on original alignment: -18773.131
+Optimizing NNI: done in 5.75425 secs using 99.11% CPU
+Optimizing NNI: done in 10.5886 secs using 99.02% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 52: -18697.200
+Optimizing NNI: done in 10.525 secs using 99.17% CPU
+Optimizing NNI: done in 7.6663 secs using 98.44% CPU
+Optimizing NNI: done in 11.256 secs using 98.97% CPU
+Optimizing NNI: done in 11.2211 secs using 97.75% CPU
+Optimizing NNI: done in 6.91222 secs using 99.01% CPU
+Optimizing NNI: done in 12.6803 secs using 95.62% CPU
+Optimizing NNI: done in 5.63764 secs using 96.73% CPU
+Optimizing NNI: done in 9.41539 secs using 95.26% CPU
+Iteration 60 / LogL: -18715.535 / Time: 0h:13m:53s (0h:21m:38s left)
+Optimizing NNI: done in 9.34052 secs using 93.68% CPU
+Optimizing NNI: done in 2.71049 secs using 96.85% CPU
+Optimizing NNI: done in 12.8438 secs using 95.86% CPU
+Optimizing NNI: done in 9.91534 secs using 94.08% CPU
+Optimizing NNI: done in 9.7238 secs using 96.57% CPU
+Optimizing NNI: done in 13.1726 secs using 97.15% CPU
+Optimizing NNI: done in 13.6803 secs using 87.72% CPU
+Optimizing NNI: done in 10.9753 secs using 84.71% CPU
+Optimizing NNI: done in 11.7143 secs using 96.84% CPU
+Optimizing NNI: done in 3.90376 secs using 98.46% CPU
+Iteration 70 / LogL: -18958.342 / Time: 0h:15m:33s (0h:18m:28s left)
+Optimizing NNI: done in 12.3807 secs using 93.77% CPU
+Optimizing NNI: done in 12.3739 secs using 90.03% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 72: -18697.002
+Optimizing NNI: done in 7.1927 secs using 85.37% CPU
+Optimizing NNI: done in 15.7116 secs using 82.14% CPU
+Optimizing NNI: done in 3.98196 secs using 91.43% CPU
+Optimizing NNI: done in 4.50512 secs using 87.75% CPU
+Optimizing NNI: done in 6.18784 secs using 93.93% CPU
+Optimizing NNI: done in 12.7811 secs using 90.83% CPU
+Optimizing NNI: done in 6.22673 secs using 91.59% CPU
+Optimizing NNI: done in 9.25562 secs using 95.89% CPU
+Iteration 80 / LogL: -18699.925 / Time: 0h:17m:7s (0h:19m:55s left)
+Optimizing NNI: done in 7.86792 secs using 95.72% CPU
+Optimizing NNI: done in 9.55993 secs using 97.9% CPU
+Optimizing NNI: done in 9.58054 secs using 98.67% CPU
+Optimizing NNI: done in 10.5483 secs using 97.76% CPU
+Optimizing NNI: done in 8.40636 secs using 99.44% CPU
+Optimizing NNI: done in 5.17981 secs using 98.64% CPU
+Optimizing NNI: done in 11.8974 secs using 99.42% CPU
+Optimizing NNI: done in 13.1057 secs using 98.84% CPU
+Optimizing NNI: done in 8.65599 secs using 89.71% CPU
+Optimizing NNI: done in 10.0122 secs using 97.23% CPU
+Iteration 90 / LogL: -18715.875 / Time: 0h:18m:44s (0h:17m:15s left)
+Optimizing NNI: done in 10.2961 secs using 95.61% CPU
+Optimizing NNI: done in 5.9277 secs using 97.53% CPU
+Optimizing NNI: done in 7.54811 secs using 99.16% CPU
+Optimizing NNI: done in 12.5179 secs using 98.36% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 94: -18695.425
+Optimizing NNI: done in 6.98483 secs using 99.1% CPU
+Optimizing NNI: done in 3.93343 secs using 97.32% CPU
+Optimizing NNI: done in 10.0981 secs using 96.24% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 97: -18693.776
+Optimizing NNI: done in 11.0545 secs using 96.96% CPU
+Optimizing NNI: done in 3.51001 secs using 99.27% CPU
+Optimizing NNI: done in 3.65107 secs using 97.57% CPU
+Iteration 100 / LogL: -18744.705 / Time: 0h:20m:2s (0h:19m:37s left)
+Log-likelihood cutoff on original alignment: -18773.131
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.992
+Optimizing NNI: done in 8.0043 secs using 97.6% CPU
+Optimizing NNI: done in 6.36806 secs using 95.45% CPU
+Optimizing NNI: done in 10.3892 secs using 91.89% CPU
+Optimizing NNI: done in 9.04646 secs using 97.24% CPU
+Optimizing NNI: done in 12.2516 secs using 91.06% CPU
+Optimizing NNI: done in 9.81163 secs using 88.86% CPU
+Optimizing NNI: done in 13.0169 secs using 85.59% CPU
+Optimizing NNI: done in 9.35266 secs using 97.4% CPU
+Optimizing NNI: done in 10.3498 secs using 97.98% CPU
+Optimizing NNI: done in 2.37914 secs using 96.54% CPU
+Iteration 110 / LogL: -18777.774 / Time: 0h:21m:41s (0h:17m:53s left)
+Optimizing NNI: done in 10.1303 secs using 99.18% CPU
+Optimizing NNI: done in 9.61828 secs using 96.33% CPU
+Optimizing NNI: done in 11.9786 secs using 93.26% CPU
+Optimizing NNI: done in 7.01677 secs using 97.31% CPU
+Optimizing NNI: done in 5.5948 secs using 95.79% CPU
+Optimizing NNI: done in 8.93841 secs using 97.54% CPU
+Optimizing NNI: done in 11.8568 secs using 98.7% CPU
+Optimizing NNI: done in 7.34997 secs using 98.21% CPU
+Optimizing NNI: done in 7.11966 secs using 99.2% CPU
+Optimizing NNI: done in 9.37234 secs using 97.69% CPU
+Iteration 120 / LogL: -18707.161 / Time: 0h:23m:12s (0h:15m:35s left)
+Optimizing NNI: done in 10.2934 secs using 99.43% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 121: -18692.832
+Optimizing NNI: done in 10.2705 secs using 97.06% CPU
+Optimizing NNI: done in 11.1526 secs using 98.07% CPU
+Optimizing NNI: done in 9.25439 secs using 97.93% CPU
+Optimizing NNI: done in 10.5755 secs using 99.43% CPU
+Optimizing NNI: done in 8.84746 secs using 99.25% CPU
+Optimizing NNI: done in 7.04635 secs using 98.46% CPU
+Optimizing NNI: done in 7.72962 secs using 96.63% CPU
+Optimizing NNI: done in 13.0958 secs using 92.95% CPU
+Optimizing NNI: done in 8.34817 secs using 98.45% CPU
+Iteration 130 / LogL: -18695.621 / Time: 0h:24m:51s (0h:17m:31s left)
+Optimizing NNI: done in 4.28692 secs using 96.22% CPU
+Optimizing NNI: done in 13.0476 secs using 99.04% CPU
+Optimizing NNI: done in 3.79954 secs using 98.28% CPU
+Optimizing NNI: done in 10.4396 secs using 99.23% CPU
+Optimizing NNI: done in 10.2867 secs using 91.14% CPU
+Optimizing NNI: done in 9.97683 secs using 94.28% CPU
+Optimizing NNI: done in 7.27433 secs using 96.44% CPU
+Optimizing NNI: done in 8.56203 secs using 93.98% CPU
+Optimizing NNI: done in 7.36428 secs using 93.36% CPU
+Optimizing NNI: done in 8.18666 secs using 98.1% CPU
+Iteration 140 / LogL: -18694.238 / Time: 0h:26m:17s (0h:15m:18s left)
+Optimizing NNI: done in 7.59231 secs using 97.76% CPU
+Optimizing NNI: done in 9.72371 secs using 98.18% CPU
+Optimizing NNI: done in 8.33616 secs using 94.84% CPU
+Optimizing NNI: done in 10.7184 secs using 98.98% CPU
+Optimizing NNI: done in 11.1953 secs using 98.67% CPU
+Optimizing NNI: done in 8.43195 secs using 98.4% CPU
+Optimizing NNI: done in 11.1321 secs using 98.81% CPU
+Optimizing NNI: done in 7.00841 secs using 98.77% CPU
+Optimizing NNI: done in 6.69188 secs using 99.93% CPU
+Optimizing NNI: done in 9.30164 secs using 99.11% CPU
+Iteration 150 / LogL: -18699.885 / Time: 0h:27m:49s (0h:13m:15s left)
+Log-likelihood cutoff on original alignment: -18773.131
+Optimizing NNI: done in 9.0122 secs using 98.48% CPU
+Optimizing NNI: done in 3.15074 secs using 95.71% CPU
+Optimizing NNI: done in 9.4682 secs using 98.36% CPU
+Optimizing NNI: done in 9.38682 secs using 95.55% CPU
+Optimizing NNI: done in 10.0316 secs using 94.86% CPU
+Optimizing NNI: done in 7.17545 secs using 94.94% CPU
+Optimizing NNI: done in 10.2071 secs using 96.29% CPU
+Optimizing NNI: done in 7.28756 secs using 91.98% CPU
+Optimizing NNI: done in 7.72496 secs using 99.11% CPU
+Optimizing NNI: done in 9.67844 secs using 99.45% CPU
+Iteration 160 / LogL: -18697.170 / Time: 0h:29m:20s (0h:11m:15s left)
+Optimizing NNI: done in 7.9981 secs using 98.85% CPU
+Optimizing NNI: done in 3.99853 secs using 99.26% CPU
+Optimizing NNI: done in 8.87718 secs using 97.86% CPU
+Optimizing NNI: done in 9.22447 secs using 94.35% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 164: -18692.562
+Optimizing NNI: done in 3.36028 secs using 98.11% CPU
+Optimizing NNI: done in 9.14098 secs using 96.24% CPU
+Optimizing NNI: done in 10.3727 secs using 97.01% CPU
+Optimizing NNI: done in 6.58255 secs using 98.03% CPU
+Optimizing NNI: done in 11.8976 secs using 99.68% CPU
+Optimizing NNI: done in 6.8072 secs using 99.85% CPU
+Iteration 170 / LogL: -18724.495 / Time: 0h:30m:42s (0h:17m:4s left)
+Optimizing NNI: done in 6.5466 secs using 99.53% CPU
+Optimizing NNI: done in 10.3575 secs using 95.64% CPU
+Optimizing NNI: done in 3.42753 secs using 96.19% CPU
+Optimizing NNI: done in 10.3689 secs using 97.2% CPU
+Optimizing NNI: done in 9.59086 secs using 97.91% CPU
+Optimizing NNI: done in 10.3405 secs using 96.56% CPU
+Optimizing NNI: done in 9.19726 secs using 98.03% CPU
+Optimizing NNI: done in 8.10112 secs using 97.79% CPU
+Optimizing NNI: done in 3.26315 secs using 98.16% CPU
+Optimizing NNI: done in 3.98103 secs using 98.51% CPU
+Iteration 180 / LogL: -18743.244 / Time: 0h:32m:0s (0h:15m:0s left)
+Optimizing NNI: done in 6.85067 secs using 98.99% CPU
+Optimizing NNI: done in 7.53364 secs using 97.06% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 182: -18692.461
+Optimizing NNI: done in 10.4151 secs using 94.81% CPU
+Optimizing NNI: done in 12.8151 secs using 97.66% CPU
+Optimizing NNI: done in 7.90509 secs using 97.25% CPU
+Optimizing NNI: done in 9.26494 secs using 94.27% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 186: -18692.363
+Optimizing NNI: done in 11.3915 secs using 95.88% CPU
+Optimizing NNI: done in 10.0456 secs using 96.9% CPU
+Optimizing NNI: done in 8.65401 secs using 95.69% CPU
+Optimizing NNI: done in 7.9428 secs using 98.36% CPU
+Iteration 190 / LogL: -18701.355 / Time: 0h:33m:37s (0h:17m:4s left)
+Optimizing NNI: done in 11.1617 secs using 98.55% CPU
+Optimizing NNI: done in 10.8499 secs using 97.5% CPU
+Optimizing NNI: done in 8.83931 secs using 97.22% CPU
+Optimizing NNI: done in 8.4292 secs using 96.76% CPU
+Optimizing NNI: done in 10.9599 secs using 96.37% CPU
+Optimizing NNI: done in 9.18791 secs using 95.06% CPU
+Optimizing NNI: done in 10.8204 secs using 97.91% CPU
+Optimizing NNI: done in 6.8999 secs using 98.51% CPU
+Optimizing NNI: done in 8.30917 secs using 98.16% CPU
+Optimizing NNI: done in 11.7806 secs using 97.49% CPU
+Iteration 200 / LogL: -18694.631 / Time: 0h:35m:17s (0h:15m:14s left)
+Log-likelihood cutoff on original alignment: -18773.131
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.991
+Optimizing NNI: done in 9.222 secs using 98.44% CPU
+Optimizing NNI: done in 5.76873 secs using 96.7% CPU
+Optimizing NNI: done in 11.4992 secs using 98.38% CPU
+Optimizing NNI: done in 3.0799 secs using 98.93% CPU
+Optimizing NNI: done in 9.78153 secs using 98.72% CPU
+Optimizing NNI: done in 9.74589 secs using 98.92% CPU
+Optimizing NNI: done in 10.9098 secs using 99.39% CPU
+Optimizing NNI: done in 9.20946 secs using 98.91% CPU
+Optimizing NNI: done in 3.17873 secs using 99.29% CPU
+Optimizing NNI: done in 11.4503 secs using 99.07% CPU
+Iteration 210 / LogL: -18696.774 / Time: 0h:36m:49s (0h:15m:51s left)
+Optimizing NNI: done in 11.0886 secs using 99.06% CPU
+Optimizing NNI: done in 8.41808 secs using 98.56% CPU
+Optimizing NNI: done in 8.22834 secs using 99.31% CPU
+Optimizing NNI: done in 12.9219 secs using 95.04% CPU
+Optimizing NNI: done in 6.39737 secs using 82.55% CPU
+Optimizing NNI: done in 14.5335 secs using 62.68% CPU
+Optimizing NNI: done in 7.98643 secs using 95.87% CPU
+Optimizing NNI: done in 15.9489 secs using 69.85% CPU
+Optimizing NNI: done in 9.93995 secs using 83% CPU
+Optimizing NNI: done in 11.7063 secs using 92.5% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 220: -18691.960
+Iteration 220 / LogL: -18691.960 / Time: 0h:38m:42s (0h:17m:39s left)
+Optimizing NNI: done in 15.5565 secs using 77.64% CPU
+Optimizing NNI: done in 8.24609 secs using 87.92% CPU
+Optimizing NNI: done in 13.6358 secs using 95.91% CPU
+Optimizing NNI: done in 9.39102 secs using 93.67% CPU
+Optimizing NNI: done in 10.2393 secs using 92.17% CPU
+Optimizing NNI: done in 9.30011 secs using 92.4% CPU
+Optimizing NNI: done in 9.66531 secs using 97.16% CPU
+Optimizing NNI: done in 7.68419 secs using 84.39% CPU
+Optimizing NNI: done in 7.50226 secs using 89.56% CPU
+Optimizing NNI: done in 14.2858 secs using 77.22% CPU
+Iteration 230 / LogL: -18698.882 / Time: 0h:40m:31s (0h:15m:55s left)
+Optimizing NNI: done in 9.51093 secs using 98.08% CPU
+Optimizing NNI: done in 11.0965 secs using 98.85% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 232: -18691.301
+Optimizing NNI: done in 10.2612 secs using 98.98% CPU
+Optimizing NNI: done in 12.0655 secs using 98.94% CPU
+Optimizing NNI: done in 9.55072 secs using 97.51% CPU
+Optimizing NNI: done in 10.041 secs using 94.3% CPU
+Optimizing NNI: done in 11.8097 secs using 96.58% CPU
+Optimizing NNI: done in 8.62405 secs using 97.84% CPU
+Optimizing NNI: done in 11.0263 secs using 97.78% CPU
+Optimizing NNI: done in 6.7581 secs using 95.95% CPU
+Iteration 240 / LogL: -18760.503 / Time: 0h:42m:16s (0h:16m:16s left)
+Optimizing NNI: done in 10.3168 secs using 98.9% CPU
+Optimizing NNI: done in 12.1555 secs using 98.98% CPU
+Optimizing NNI: done in 12.6387 secs using 98.53% CPU
+Optimizing NNI: done in 13.3535 secs using 79.22% CPU
+Optimizing NNI: done in 4.99598 secs using 92.89% CPU
+Optimizing NNI: done in 12.1643 secs using 94.92% CPU
+Optimizing NNI: done in 7.84664 secs using 96.58% CPU
+Optimizing NNI: done in 7.82433 secs using 98.45% CPU
+Optimizing NNI: done in 8.4333 secs using 98.57% CPU
+Optimizing NNI: done in 6.67233 secs using 99.29% CPU
+Iteration 250 / LogL: -18701.406 / Time: 0h:43m:56s (0h:14m:28s left)
+Log-likelihood cutoff on original alignment: -18773.131
+Optimizing NNI: done in 4.83048 secs using 98.98% CPU
+Optimizing NNI: done in 3.28031 secs using 100% CPU
+Optimizing NNI: done in 9.08844 secs using 96.1% CPU
+Optimizing NNI: done in 7.13799 secs using 99.82% CPU
+Optimizing NNI: done in 5.69511 secs using 99.32% CPU
+Optimizing NNI: done in 4.24058 secs using 99.85% CPU
+Optimizing NNI: done in 7.13676 secs using 99.84% CPU
+Optimizing NNI: done in 4.46593 secs using 100.1% CPU
+Optimizing NNI: done in 7.28479 secs using 99.95% CPU
+Optimizing NNI: done in 6.42983 secs using 99.15% CPU
+Iteration 260 / LogL: -18738.323 / Time: 0h:45m:3s (0h:12m:31s left)
+Optimizing NNI: done in 8.55806 secs using 100.1% CPU
+Optimizing NNI: done in 4.60488 secs using 99.08% CPU
+Optimizing NNI: done in 6.11389 secs using 98.14% CPU
+Optimizing NNI: done in 13.9281 secs using 86.72% CPU
+Optimizing NNI: done in 8.19928 secs using 97.19% CPU
+Optimizing NNI: done in 5.76663 secs using 98.63% CPU
+Optimizing NNI: done in 5.02818 secs using 99.44% CPU
+Optimizing NNI: done in 6.13258 secs using 99.11% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 268: -18691.170
+Optimizing NNI: done in 8.03501 secs using 98.4% CPU
+Optimizing NNI: done in 6.81096 secs using 99.33% CPU
+Iteration 270 / LogL: -18740.208 / Time: 0h:46m:20s (0h:16m:52s left)
+Optimizing NNI: done in 8.07133 secs using 98.92% CPU
+Optimizing NNI: done in 6.31188 secs using 98.28% CPU
+Optimizing NNI: done in 8.49477 secs using 99.14% CPU
+Optimizing NNI: done in 3.7141 secs using 97.18% CPU
+Optimizing NNI: done in 8.33345 secs using 98.81% CPU
+Optimizing NNI: done in 10.6379 secs using 94.88% CPU
+Optimizing NNI: done in 8.46597 secs using 96.34% CPU
+Optimizing NNI: done in 5.16485 secs using 94.99% CPU
+Optimizing NNI: done in 7.53712 secs using 98.89% CPU
+Optimizing NNI: done in 7.52628 secs using 95.91% CPU
+Iteration 280 / LogL: -18694.681 / Time: 0h:47m:38s (0h:15m:1s left)
+Optimizing NNI: done in 6.32226 secs using 99.6% CPU
+Optimizing NNI: done in 6.33332 secs using 98.19% CPU
+Optimizing NNI: done in 8.6179 secs using 99.9% CPU
+Optimizing NNI: done in 4.2047 secs using 99.59% CPU
+Optimizing NNI: done in 6.29621 secs using 99.02% CPU
+Optimizing NNI: done in 7.74651 secs using 98.43% CPU
+Optimizing NNI: done in 6.34677 secs using 96.26% CPU
+Optimizing NNI: done in 8.82186 secs using 96.35% CPU
+Optimizing NNI: done in 7.74279 secs using 95.45% CPU
+Optimizing NNI: done in 8.90241 secs using 96.01% CPU
+Iteration 290 / LogL: -18710.594 / Time: 0h:48m:53s (0h:13m:11s left)
+Optimizing NNI: done in 8.4979 secs using 97.63% CPU
+Optimizing NNI: done in 7.45987 secs using 97.4% CPU
+Optimizing NNI: done in 5.31515 secs using 97.89% CPU
+Optimizing NNI: done in 7.21313 secs using 99.21% CPU
+Optimizing NNI: done in 4.88586 secs using 100.1% CPU
+Optimizing NNI: done in 3.38872 secs using 100.1% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 296: -18691.039
+Optimizing NNI: done in 3.74256 secs using 99.78% CPU
+Optimizing NNI: done in 3.30627 secs using 99.72% CPU
+Optimizing NNI: done in 5.37537 secs using 99.99% CPU
+Optimizing NNI: done in 4.64509 secs using 99.9% CPU
+Iteration 300 / LogL: -18709.892 / Time: 0h:49m:50s (0h:15m:59s left)
+Log-likelihood cutoff on original alignment: -18773.131
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.991
+Optimizing NNI: done in 4.72479 secs using 99.87% CPU
+Optimizing NNI: done in 5.41476 secs using 99.55% CPU
+Optimizing NNI: done in 3.6234 secs using 100% CPU
+Optimizing NNI: done in 1.65381 secs using 100.1% CPU
+Optimizing NNI: done in 5.67309 secs using 99.7% CPU
+Optimizing NNI: done in 4.40827 secs using 99.6% CPU
+Optimizing NNI: done in 4.72779 secs using 100.1% CPU
+Optimizing NNI: done in 4.3855 secs using 100.1% CPU
+Optimizing NNI: done in 4.06545 secs using 100.3% CPU
+Optimizing NNI: done in 4.45156 secs using 100% CPU
+Iteration 310 / LogL: -18700.759 / Time: 0h:50m:38s (0h:14m:44s left)
+Optimizing NNI: done in 4.58046 secs using 99.95% CPU
+Optimizing NNI: done in 2.04528 secs using 100.1% CPU
+Optimizing NNI: done in 5.22103 secs using 99.96% CPU
+Optimizing NNI: done in 4.63606 secs using 100.1% CPU
+Optimizing NNI: done in 2.97312 secs using 99.33% CPU
+Optimizing NNI: done in 4.27717 secs using 100.1% CPU
+Optimizing NNI: done in 5.767 secs using 99.71% CPU
+Optimizing NNI: done in 5.78439 secs using 99.95% CPU
+Optimizing NNI: done in 4.33971 secs using 100.1% CPU
+Optimizing NNI: done in 2.90486 secs using 100% CPU
+Iteration 320 / LogL: -18702.384 / Time: 0h:51m:23s (0h:12m:53s left)
+Optimizing NNI: done in 4.38032 secs using 99.88% CPU
+Optimizing NNI: done in 3.94657 secs using 99.77% CPU
+Optimizing NNI: done in 6.06253 secs using 100% CPU
+Optimizing NNI: done in 3.38216 secs using 99.79% CPU
+Optimizing NNI: done in 5.06173 secs using 100% CPU
+Optimizing NNI: done in 1.96821 secs using 100% CPU
+Optimizing NNI: done in 4.93049 secs using 100.1% CPU
+Optimizing NNI: done in 5.24094 secs using 99.87% CPU
+Optimizing NNI: done in 6.44676 secs using 99.13% CPU
+Optimizing NNI: done in 2.96629 secs using 100.1% CPU
+Iteration 330 / LogL: -18697.237 / Time: 0h:52m:11s (0h:11m:6s left)
+Optimizing NNI: done in 4.01861 secs using 99.93% CPU
+Optimizing NNI: done in 5.64271 secs using 99.69% CPU
+Optimizing NNI: done in 7.1248 secs using 99.34% CPU
+Optimizing NNI: done in 5.00493 secs using 99.9% CPU
+Optimizing NNI: done in 5.95073 secs using 99.78% CPU
+Optimizing NNI: done in 2.08268 secs using 99.78% CPU
+Optimizing NNI: done in 4.12069 secs using 100.1% CPU
+Optimizing NNI: done in 6.43529 secs using 100% CPU
+Optimizing NNI: done in 4.86285 secs using 99.93% CPU
+Optimizing NNI: done in 4.34309 secs using 99.66% CPU
+Iteration 340 / LogL: -18697.399 / Time: 0h:53m:3s (0h:9m:23s left)
+Optimizing NNI: done in 1.7839 secs using 99.85% CPU
+Optimizing NNI: done in 4.29399 secs using 100.1% CPU
+Optimizing NNI: done in 4.62822 secs using 99.59% CPU
+Optimizing NNI: done in 3.89352 secs using 99.93% CPU
+Optimizing NNI: done in 4.84424 secs using 99.99% CPU
+Optimizing NNI: done in 4.07792 secs using 100% CPU
+Optimizing NNI: done in 1.83026 secs using 99.88% CPU
+Optimizing NNI: done in 4.07623 secs using 99.66% CPU
+Optimizing NNI: done in 4.05511 secs using 99.8% CPU
+Optimizing NNI: done in 4.68847 secs using 99.98% CPU
+Iteration 350 / LogL: -18694.845 / Time: 0h:53m:44s (0h:7m:41s left)
+Log-likelihood cutoff on original alignment: -18756.401
+Optimizing NNI: done in 4.69057 secs using 99.93% CPU
+Optimizing NNI: done in 3.90178 secs using 100.1% CPU
+Optimizing NNI: done in 1.70683 secs using 99.78% CPU
+Optimizing NNI: done in 4.70547 secs using 100.3% CPU
+Optimizing NNI: done in 4.02867 secs using 100.1% CPU
+Optimizing NNI: done in 3.33783 secs using 100.2% CPU
+Optimizing NNI: done in 1.50416 secs using 100.8% CPU
+Optimizing NNI: done in 4.80025 secs using 99.93% CPU
+Optimizing NNI: done in 4.47174 secs using 99.93% CPU
+Optimizing NNI: done in 4.79707 secs using 99.67% CPU
+Iteration 360 / LogL: -18697.257 / Time: 0h:54m:27s (0h:6m:4s left)
+Optimizing NNI: done in 3.5925 secs using 100% CPU
+Optimizing NNI: done in 4.40212 secs using 99.03% CPU
+Optimizing NNI: done in 5.40542 secs using 100% CPU
+Optimizing NNI: done in 3.74041 secs using 100.3% CPU
+Optimizing NNI: done in 4.35325 secs using 99.78% CPU
+Optimizing NNI: done in 4.85042 secs using 100.2% CPU
+Optimizing NNI: done in 4.57313 secs using 99.77% CPU
+Optimizing NNI: done in 4.33752 secs using 99.78% CPU
+Optimizing NNI: done in 3.88402 secs using 99.77% CPU
+Optimizing NNI: done in 3.2068 secs using 99.89% CPU
+Iteration 370 / LogL: -18698.601 / Time: 0h:55m:13s (0h:4m:29s left)
+Optimizing NNI: done in 2.84032 secs using 100.1% CPU
+Optimizing NNI: done in 4.51842 secs using 99.94% CPU
+Optimizing NNI: done in 4.44196 secs using 99.9% CPU
+Optimizing NNI: done in 2.2724 secs using 100.4% CPU
+Optimizing NNI: done in 5.17622 secs using 100.2% CPU
+Optimizing NNI: done in 5.48002 secs using 99.79% CPU
+Optimizing NNI: done in 4.42114 secs using 100% CPU
+Optimizing NNI: done in 5.82999 secs using 99.97% CPU
+Optimizing NNI: done in 4.35377 secs using 100.1% CPU
+Optimizing NNI: done in 3.6608 secs using 99.88% CPU
+Iteration 380 / LogL: -18702.901 / Time: 0h:55m:59s (0h:2m:57s left)
+Optimizing NNI: done in 5.0424 secs using 99.78% CPU
+Optimizing NNI: done in 2.52762 secs using 100.1% CPU
+Optimizing NNI: done in 4.02068 secs using 100.3% CPU
+Optimizing NNI: done in 4.85273 secs using 100.1% CPU
+Optimizing NNI: done in 5.35733 secs using 100% CPU
+Optimizing NNI: done in 4.5242 secs using 99.81% CPU
+Optimizing NNI: done in 4.74919 secs using 100% CPU
+Optimizing NNI: done in 3.42148 secs using 100% CPU
+Optimizing NNI: done in 4.33145 secs using 99.92% CPU
+Optimizing NNI: done in 3.74937 secs using 100% CPU
+Iteration 390 / LogL: -18711.250 / Time: 0h:56m:44s (0h:1m:27s left)
+Optimizing NNI: done in 3.40612 secs using 100% CPU
+Optimizing NNI: done in 5.28737 secs using 99.88% CPU
+Optimizing NNI: done in 4.61574 secs using 99.86% CPU
+Optimizing NNI: done in 2.4195 secs using 100.1% CPU
+Optimizing NNI: done in 3.79047 secs using 99.76% CPU
+Optimizing NNI: done in 3.81746 secs using 99.87% CPU
+Optimizing NNI: done in 4.64042 secs using 100% CPU
+TREE SEARCH COMPLETED AFTER 397 ITERATIONS / Time: 0h:57m:15s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -18691.039
+Optimal log-likelihood: -18691.039
+Rate parameters:  A-C: 1.38990  A-G: 12.08704  A-T: 1.07184  C-G: 0.59501  C-T: 15.45195  G-T: 1.00000
+Base frequencies:  A: 0.255  C: 0.270  G: 0.249  T: 0.226
+Proportion of invariable sites: 0.323
+Gamma shape alpha: 0.950
+Parameters optimization took 1 rounds (0.267 sec)
+BEST SCORE FOUND : -18691.039
+Creating bootstrap support values...
+Split supports printed to NEXUS file alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.splits.nex
+Total tree length: 7.364
+
+Total number of iterations: 397
+CPU time used for tree search: 3241.188 sec (0h:54m:1s)
+Wall-clock time used for tree search: 3368.078 sec (0h:56m:8s)
+Total CPU time used: 3305.969 sec (0h:55m:5s)
+Total wall-clock time used: 3437.860 sec (0h:57m:17s)
+
+Computing bootstrap consensus tree...
+Reading input file alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.splits.nex...
+470 taxa and 7739 splits.
+Consensus tree written to alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.contree
+Reading input trees file alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.contree
+Log-likelihood of consensus tree: -18692.989
+
+Analysis results written to: 
+  IQ-TREE report:                alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.iqtree
+  Maximum-likelihood tree:       alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.treefile
+  Likelihood distances:          alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.splits.nex
+  Consensus tree:                alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.contree
+  Screen log file:               alignments_no_probang_etc\recombinant_free_regions\O\O_1-623_no_probang.log
+
+Date and Time: Thu Jan 15 15:49:08 2026

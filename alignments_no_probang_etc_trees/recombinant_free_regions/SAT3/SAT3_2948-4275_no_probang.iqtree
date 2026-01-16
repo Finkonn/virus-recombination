@@ -1,0 +1,209 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Input file name: alignments_no_probang_etc\recombinant_free_regions\SAT3\SAT3_2948-4275_no_probang.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 102219
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 18 sequences with 1346 nucleotide sites
+Number of constant sites: 1011 (= 75.1114% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1011 (= 75.1114% of all sites)
+Number of parsimony informative sites: 175
+Number of distinct site patterns: 235
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+G4
+
+Rate parameter R:
+
+  A-C: 1.1987
+  A-G: 8.7963
+  A-T: 0.9141
+  C-G: 0.8132
+  C-T: 16.8485
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2518
+  pi(C) = 0.2967
+  pi(G) = 0.2463
+  pi(T) = 0.2052
+
+Rate matrix Q:
+
+  A   -0.7453   0.09782    0.5959   0.05158
+  C   0.08301    -1.089   0.05509    0.9507
+  G    0.6092   0.06637    -0.732   0.05642
+  T    0.0633     1.375   0.06775    -1.506
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.5732
+Gamma shape alpha: 0.6102
+
+ Category  Relative_rate  Proportion
+  0         0              0.5732
+  1         0.1294         0.1067
+  2         0.7448         0.1067
+  3         2.077          0.1067
+  4         6.42           0.1067
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4930.8399 (s.e. 149.2043)
+Unconstrained log-likelihood (without tree): -3944.5282
+Number of free parameters (#branches + #model parameters): 43
+Akaike information criterion (AIC) score: 9947.6798
+Corrected Akaike information criterion (AICc) score: 9950.5861
+Bayesian information criterion (BIC) score: 10171.4902
+
+Total tree length (sum of branch lengths): 0.9585
+Sum of internal branch lengths: 0.1439 (15.0094% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0007) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'ON557390/ZMB/cow/2015/SAT3/I-SEZ/Unknown' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--ON557390/ZMB/cow/2015/SAT3/I-SEZ/Unknown
+|
+|              +--MW355677/ZAF/cattle/1979/SAT3/I-SEZ/Unknown
+|           +--| (46)
+|           |  |  +---MH053344/ZWE/cattle/1974/SAT3/I-SEZ/Unknown
+|           |  +--| (49)
+|           |     +---------------------------------------------------KJ820999/UGA/cattle/2013/SAT3/V-EA/Unknown
+|        +--| (24)
+|        |  +---MH053347/ZWE/cattle/1976/SAT3/I-SEZ/Unknown
+|     +--| (18)
+|     |  +----MH053343/ZWE/cattle/1934/SAT3/III-NWZ/Unknown
+|  +--| (100)
+|  |  |               +**MW355676/ZWE/cattle/1976/SAT3/I-SEZ/Unknown
+|  |  |            +**| (60)
+|  |  |            |  +--MH053348/ZWE/cattle/1977/SAT3/I-SEZ/Unknown
+|  |  |        +---| (100)
+|  |  |        |   +--MH053346/ZWE/cattle/1976/SAT3/I-SEZ/Unknown
+|  |  |     +--| (45)
+|  |  |     |  +----MH053352/ZWE/african-buffalo/1990/SAT3/III-NWZ/Unknown
+|  |  |  +--| (26)
+|  |  |  |  +--MH053350/ZWE/african-buffalo/1983/SAT3/I-SEZ/Unknown
+|  |  +--| (9)
+|  |     |  +---KM268901/ZWE/cattle/1991/SAT3/I-SEZ/Unknown
+|  |     +--| (33)
+|  |        +--AY593850/ZAF/Unknown/1959/SAT3/I-SEZ/Unknown
++--| (91)
+|  |     +--MH053338/BWA/cattle/1966/SAT3/II-WZ/Unknown
+|  |  +--| (100)
+|  |  |  +--AY593853/BWA/Unknown/1965/SAT3/II-WZ/Unknown
+|  +--| (92)
+|     |  +**AY593852/KEN/Unknown/1960/SAT3/II-WZ/Unknown
+|     +--| (100)
+|        +**AY593851/BWA/Unknown/1961/SAT3/II-WZ/Unknown
+|
++--MH053351/ZWE/cattle/1984/SAT3/II-WZ/Unknown
+
+Tree in newick format:
+
+(ON557390/ZMB/cow/2015/SAT3/I-SEZ/Unknown:0.0269591209,(((((MW355677/ZAF/cattle/1979/SAT3/I-SEZ/Unknown:0.0191473638,(MH053344/ZWE/cattle/1974/SAT3/I-SEZ/Unknown:0.0389944160,KJ820999/UGA/cattle/2013/SAT3/V-EA/Unknown:0.4501382204)49:0.0171636491)46:0.0043678918,MH053347/ZWE/cattle/1976/SAT3/I-SEZ/Unknown:0.0410302916)24:0.0025337989,MH053343/ZWE/cattle/1934/SAT3/III-NWZ/Unknown:0.0437567866)18:0.0051609239,(((((MW355676/ZWE/cattle/1976/SAT3/I-SEZ/Unknown:0.0000010044,MH053348/ZWE/cattle/1977/SAT3/I-SEZ/Unknown:0.0023668320)60:0.0000024614,MH053346/ZWE/cattle/1976/SAT3/I-SEZ/Unknown:0.0023630754)100:0.0371660786,MH053352/ZWE/african-buffalo/1990/SAT3/III-NWZ/Unknown:0.0466290381)45:0.0078326259,MH053350/ZWE/african-buffalo/1983/SAT3/I-SEZ/Unknown:0.0243050808)26:0.0029354573,(KM268901/ZWE/cattle/1991/SAT3/I-SEZ/Unknown:0.0406145437,AY593850/ZAF/Unknown/1959/SAT3/I-SEZ/Unknown:0.0289359270)33:0.0027647947)9:0.0019753260)100:0.0258494568,((MH053338/BWA/cattle/1966/SAT3/II-WZ/Unknown:0.0083344749,AY593853/BWA/Unknown/1965/SAT3/II-WZ/Unknown:0.0032202588)100:0.0224198580,(AY593852/KEN/Unknown/1960/SAT3/II-WZ/Unknown:0.0000010044,AY593851/BWA/Unknown/1961/SAT3/II-WZ/Unknown:0.0000010044)100:0.0221955356)92:0.0067163189)91:0.0069786987,MH053351/ZWE/cattle/1984/SAT3/II-WZ/Unknown:0.0156566187);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -4930.845391
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--ON557390/ZMB/cow/2015/SAT3/I-SEZ/Unknown
+|
+|              +--MW355677/ZAF/cattle/1979/SAT3/I-SEZ/Unknown
+|           +--| (46)
+|           |  |  +---MH053344/ZWE/cattle/1974/SAT3/I-SEZ/Unknown
+|           |  +--| (49)
+|           |     +---------------------------------------------------KJ820999/UGA/cattle/2013/SAT3/V-EA/Unknown
+|        +--| (24)
+|        |  +---MH053347/ZWE/cattle/1976/SAT3/I-SEZ/Unknown
+|     +--| (18)
+|     |  +----MH053343/ZWE/cattle/1934/SAT3/III-NWZ/Unknown
+|  +--| (100)
+|  |  |               +--MW355676/ZWE/cattle/1976/SAT3/I-SEZ/Unknown
+|  |  |            +--| (60)
+|  |  |            |  +--MH053348/ZWE/cattle/1977/SAT3/I-SEZ/Unknown
+|  |  |        +---| (100)
+|  |  |        |   +--MH053346/ZWE/cattle/1976/SAT3/I-SEZ/Unknown
+|  |  |     +--| (45)
+|  |  |     |  +----MH053352/ZWE/african-buffalo/1990/SAT3/III-NWZ/Unknown
+|  |  |  +--| (26)
+|  |  |  |  +--MH053350/ZWE/african-buffalo/1983/SAT3/I-SEZ/Unknown
+|  |  +--| (9)
+|  |     |  +---KM268901/ZWE/cattle/1991/SAT3/I-SEZ/Unknown
+|  |     +--| (33)
+|  |        +--AY593850/ZAF/Unknown/1959/SAT3/I-SEZ/Unknown
++--| (91)
+|  |     +--MH053338/BWA/cattle/1966/SAT3/II-WZ/Unknown
+|  |  +--| (100)
+|  |  |  +--AY593853/BWA/Unknown/1965/SAT3/II-WZ/Unknown
+|  +--| (92)
+|     |  +--AY593852/KEN/Unknown/1960/SAT3/II-WZ/Unknown
+|     +--| (100)
+|        +--AY593851/BWA/Unknown/1961/SAT3/II-WZ/Unknown
+|
++--MH053351/ZWE/cattle/1984/SAT3/II-WZ/Unknown
+
+
+Consensus tree in newick format: 
+
+(ON557390/ZMB/cow/2015/SAT3/I-SEZ/Unknown:0.0269155377,(((((MW355677/ZAF/cattle/1979/SAT3/I-SEZ/Unknown:0.0191127850,(MH053344/ZWE/cattle/1974/SAT3/I-SEZ/Unknown:0.0387647836,KJ820999/UGA/cattle/2013/SAT3/V-EA/Unknown:0.4495956879)49:0.0173335522)46:0.0043713147,MH053347/ZWE/cattle/1976/SAT3/I-SEZ/Unknown:0.0409676943)24:0.0025415752,MH053343/ZWE/cattle/1934/SAT3/III-NWZ/Unknown:0.0436857599)18:0.0051555749,(((((MW355676/ZWE/cattle/1976/SAT3/I-SEZ/Unknown:0.0000024510,MH053348/ZWE/cattle/1977/SAT3/I-SEZ/Unknown:0.0023628709)60:0.0000024510,MH053346/ZWE/cattle/1976/SAT3/I-SEZ/Unknown:0.0023591213)100:0.0371012737,MH053352/ZWE/african-buffalo/1990/SAT3/III-NWZ/Unknown:0.0465392775)45:0.0078222119,MH053350/ZWE/african-buffalo/1983/SAT3/I-SEZ/Unknown:0.0242618147)26:0.0029296345,(KM268901/ZWE/cattle/1991/SAT3/I-SEZ/Unknown:0.0405403978,AY593850/ZAF/Unknown/1959/SAT3/I-SEZ/Unknown:0.0288854983)33:0.0027643660)9:0.0019712869)100:0.0258021739,((MH053338/BWA/cattle/1966/SAT3/II-WZ/Unknown:0.0083236135,AY593853/BWA/Unknown/1965/SAT3/II-WZ/Unknown:0.0032154887)100:0.0223821479,(AY593852/KEN/Unknown/1960/SAT3/II-WZ/Unknown:0.0000024510,AY593851/BWA/Unknown/1961/SAT3/II-WZ/Unknown:0.0000024510)100:0.0221628866)92:0.0067084294)91:0.0069743299,MH053351/ZWE/cattle/1984/SAT3/II-WZ/Unknown:0.0156321340);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t alignments_no_probang_etc\recombinant_free_regions\SAT3\SAT3_2948-4275_no_probang.treefile -m "GTR{1.19869,8.79626,0.914105,0.813219,16.8485}+F{0.251799,0.296729,0.246319,0.205154}+I{0.573155}+G4{0.610204}" --length 1346
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s alignments_no_probang_etc\recombinant_free_regions\SAT3\SAT3_2948-4275_no_probang.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s alignments_no_probang_etc\recombinant_free_regions\SAT3\SAT3_2948-4275_no_probang.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Jan 15 15:34:48 2026
+Total CPU time used: 10.890625 seconds (0h:0m:10s)
+Total wall-clock time used: 12.5222409 seconds (0h:0m:12s)
+
