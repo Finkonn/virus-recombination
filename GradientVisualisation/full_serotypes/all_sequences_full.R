@@ -12,10 +12,7 @@ trees = list.files(path = "no_probang_trees/", full.names = TRUE, pattern = ".tr
 meta_path = "meta_no_probang_with_GBAC_upd_test.csv"
 info = read.csv(meta_path)
 
-info$Host <- case_when(
-  info$Host == "cow" ~ "cattle",
-  TRUE ~ as.character(info$Host)
-)
+
 
 unique_serotypes <- unique(info$Serotype)
 unique_topotypes <- unique(info$Topotype) 
@@ -24,11 +21,7 @@ unique_pools <- unique(info$pool)
 unique_hosts <- unique(info$Host)
 
 
-allowed_hosts <- c("african-buffalo", "buffalo", "cattle", "goat", "pig", 
-                   "sheep", "water-buffalo", "wild-water-buffalo", "yak")
-
-
-target_lineages <- c("PanAsia", "PanAsia-2", "Iran-05", "Ind-2001d", "Mya-98", "A22", "Sea-97")
+target_lineages <- c("PanAsia", "PanAsia-2", "Iran-05")
 
 serotype_colors <- setNames(c("#a53939","#ba6317","#3a3a7d","#419d4b", "#c1ac23" ,"#42d4f4", "#791397" ), 
                             unique_serotypes)
@@ -39,8 +32,6 @@ lineage_colors <- c(
   "#F0027F", "#BF5B17", "#842f16", "#1B9E77", "#A1aa00",
   "#7570B3", "#5168EE", "#66A6fE"
 )
-
-lineage_colors
 
 topotype_colors <- c(
   "#FF7F00", "#A6761D", "#A6CEE3", "#1F78B4", "#c90303",
@@ -58,19 +49,19 @@ pool_colors <- c("#ffffff", "#fed580ff","#ff8080ff","#e280ffff", "#cdcdcdff", "#
 
 host_colors <- c(
   "#FF7F00",  
-  "#fa31f1",
+  "#A6761D",
   "#A6CEE3",
-  "#8000FF",
+  "#1F78B4",
   "#c90303",  
   "#33A02C",
   "#FB9A99", 
   "#1111ff",
   "#FDBF6F",
-  "#FFFF00",
+  "#E6AB02",
   "#CAB2D6",
   "#6A3D9A",
   "#B15928",
-  "#8300FF",
+  "#8000FF",
   "#B3CDE3" 
 )
 
@@ -137,7 +128,7 @@ plot_tree_with_gradient_and_heatmap = function(tree_file, meta, serotype_colors,
     "Topotype" = info$Topotype,
     "Lineage" = ifelse(info$Lineage %in% target_lineages, as.character(info$Lineage), NA),
     "Pool" = info$pool,
-    "Host" = ifelse(info$Host %in% allowed_hosts, as.character(info$Host), NA)
+    "Host" = info$Host
   )
   rownames(heat_data) <- info$GBAC
   

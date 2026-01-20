@@ -91,8 +91,8 @@ for serotype in ['A', 'Asia1', 'O', 'C', 'SAT1', 'SAT2', 'SAT3']:
         ax.legend([metrics_label], fontsize=7, handlelength=0)
 
     plt.tight_layout(rect=[0, 0, 1, 0.96])
-    output_file_png = os.path.join(output_path, serotype + "_graph_LR_no_probang.png")
-    output_file_svg = os.path.join(output_path, serotype + "_graph_LR_no_probang.svg")
+    output_file_png = os.path.join(output_path, serotype + "_graph_LR.png")
+    output_file_svg = os.path.join(output_path, serotype + "_graph_LR.svg")
     plt.savefig(output_file_png, format='png')
     plt.savefig(output_file_svg, format='svg')
     plt.close()
@@ -109,5 +109,50 @@ for serotype in ['A', 'Asia1', 'O', 'C', 'SAT1', 'SAT2', 'SAT3']:
         print(f"  {file}: {red_points}/{total_points} points in meta table")
 
 correlation_df = pd.DataFrame(all_correlation_results)
+
+# Функция для форматирования чисел
+def format_number(x):
+    """Форматирует число: 
+       - если экспонента >= -1 (т.е. e-01, e-00 и т.д.), то в обычном формате с 2 знаками
+       - иначе в научной нотации с 2 знаками"""
+    try:
+        if pd.isnull(x):
+            return x
+        
+        # Преобразуем в строку в научной нотации
+        str_e = f"{x:.2e}"
+        
+        # Извлекаем экспоненту
+        if 'e' in str_e:
+            base, exp_str = str_e.split('e')
+            exp = int(exp_str)
+            
+            # Если экспонента >= -1 (т.е. e-01, e-00, e+...), используем обычный формат
+            if exp >= -1:
+                return f"{x:.2f}"
+            else:
+                # Для очень маленьких чисел оставляем научную нотацию
+                return str_e
+        else:
+            # Если нет 'e', значит это обычное число
+            return f"{x:.2f}"
+    except:
+        return str(x)
+
+# Создаем отформатированный DataFrame
+formatted_df = correlation_df.copy()
+
+# Применяем форматирование только к числовым столбцам
+numeric_cols = ['pearson_corr', 'pearson_p', 'spearman_corr', 'spearman_p', 
+                'slope', 'intercept', 'r_squared', 'linreg_pvalue']
+
+for col in numeric_cols:
+    if col in formatted_df.columns:
+        formatted_df[col] = formatted_df[col].apply(format_number)
+
+# Сохраняем отформатированный DataFrame
 correlation_csv = "correlation_coefficients_old_data.csv"
-correlation_df.to_csv(correlation_csv, index=False)
+formatted_df.to_csv(correlation_csv, index=False)
+
+print(f"Результаты сохранены в файл: {correlation_csv}")
+print(f"Количество записей: {len(correlation_df)}")
